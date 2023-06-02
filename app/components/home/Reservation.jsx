@@ -3,7 +3,7 @@ const Reservation = () => {
     <section className="tf__reservation mt_100 xs_mt_70">
       <div className="container">
         {/* <div className="tf__reservation_bg" style="background: url(images/reservation_bg.jpg);"> */}
-        <div className="tf__reservation_bg">
+        <div className="tf__reservation_bg" style={{ backgroundImage: "url(" + "/images/reservation_bg.jpg" + ")" }}>
           <div className="row">
             <div className="col-xl-6 ms-auto">
               <div className="tf__reservation_form wow fadeInRight" data-wow-duration="1s">

@@ -39,7 +39,7 @@ const DownloadApp = () => {
           <div className="row download_slider">
             <div className="col-xl-3 wow fadeInUp" data-wow-duration="1s">
               <div className="tf__download_slider">
-                <Image width={200} height={200} src="/images/download_slider_3.jpg" alt="app download" className="img-fluid w-100" />
+                <Image width={200} height={200} src="/images/download_slider_1.jpg" alt="app download" className="img-fluid w-100" />
               </div>
             </div>
             <div className="col-xl-3 wow fadeInUp" data-wow-duration="1s">
