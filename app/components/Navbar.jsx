@@ -4,9 +4,9 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg main_menu">
       <div className="container">
-        <a className="navbar-brand" href="index.html">
+        <Link className="navbar-brand" href="/">
           <img src="images/logo-kansha-header.png" alt="RegFood" className="img-fluid" />
-        </a>
+        </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <i className="far fa-bars menu_icon_bar"></i>
@@ -21,12 +21,13 @@ const Navbar = () => {
               <Link className="nav-link" href="/about">about</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="menu.html">menu</a>
+              <Link className="nav-link" href="/menu">menu</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="chefs.html">chefs</a>
+              <Link className="nav-link" href="/chefs">chefs</Link>
             </li>
-            <li className="nav-item">
+
+            {/* <li className="nav-item">
               <a className="nav-link" href="#">pages <i className="far fa-angle-down"></i></a>
               <ul className="droap_menu">
                 <li><a href="menu_details.html">menu details</a></li>
@@ -46,9 +47,10 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="blogs.html">blog</a>
-            </li>
+            </li> */}
+
             <li className="nav-item">
-              <a className="nav-link" href="contact.html">contact</a>
+              <Link className="nav-link" href="/contact">contact</Link>
             </li>
           </ul>
           <ul className="menu_icon d-flex flex-wrap">
