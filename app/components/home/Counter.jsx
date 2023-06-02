@@ -1,7 +1,6 @@
 const Counter = () => {
   return (
-    // <section className="tf__counter" style="background: url(images/counter_bg.jpg);">
-    <section className="tf__counter">
+    <section className="tf__counter" style={{ backgroundImage: "url(" + "/images/counter_bg.jpg" + ")" }}>
       <div className="tf__counter_overlay pt_120 xs_pt_90 pb_100 xs_pb_0">
         <div className="container">
           <div className="row">

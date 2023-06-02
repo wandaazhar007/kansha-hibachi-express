@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Blog = () => {
   return (
     <section className="tf__blog pt_95 xs_pt_65 pb_65 xs_pb_35">
@@ -15,11 +17,11 @@ const Blog = () => {
           <div className="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1s">
             <div className="tf__single_blog">
               <div className="tf__single_blog_img">
-                <img src="images/blog_1.jpg" alt="author" className="img-fluid w-100" />
+                <Image src="/images/blog_1.jpg" width={200} height={200} alt="author" className="img-fluid w-100" />
               </div>
               <div className="tf__single_blog_author">
                 <div className="img">
-                  <img src="images/client_1.png" alt="author" className="img-fluid w-100" />
+                  <Image src="/images/client_1.png" width={200} height={200} alt="author" className="img-fluid w-100" />
                 </div>
                 <div className="text">
                   <h5>moni islam</h5>
@@ -43,11 +45,11 @@ const Blog = () => {
           <div className="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1s">
             <div className="tf__single_blog">
               <div className="tf__single_blog_img">
-                <img src="images/blog_2.jpg" alt="author" className="img-fluid w-100" />
+                <Image src="/images/blog_2.jpg" width={200} height={200} alt="author" className="img-fluid w-100" />
               </div>
               <div className="tf__single_blog_author">
                 <div className="img">
-                  <img src="images/client_2.png" alt="author" className="img-fluid w-100" />
+                  <Image src="/images/client_2.png" width={200} height={200} alt="author" className="img-fluid w-100" />
                 </div>
                 <div className="text">
                   <h5>john deo</h5>
@@ -71,11 +73,11 @@ const Blog = () => {
           <div className="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1s">
             <div className="tf__single_blog">
               <div className="tf__single_blog_img">
-                <img src="images/blog_3.jpg" alt="author" className="img-fluid w-100" />
+                <Image src="/images/blog_3.jpg" width={200} height={200} alt="author" className="img-fluid w-100" />
               </div>
               <div className="tf__single_blog_author">
                 <div className="img">
-                  <img src="images/client_3.png" alt="author" className="img-fluid w-100" />
+                  <Image src="/images/client_3.png" width={200} height={200} alt="author" className="img-fluid w-100" />
                 </div>
                 <div className="text">
                   <h5>jakia taima</h5>
@@ -99,11 +101,11 @@ const Blog = () => {
           <div className="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1s">
             <div className="tf__single_blog">
               <div className="tf__single_blog_img">
-                <img src="images/blog_4.jpg" alt="author" className="img-fluid w-100" />
+                <Image src="/images/blog_4.jpg" width={200} height={200} alt="author" className="img-fluid w-100" />
               </div>
               <div className="tf__single_blog_author">
                 <div className="img">
-                  <img src="images/client_1.png" alt="author" className="img-fluid w-100" />
+                  <Image src="/images/client_1.png" width={200} height={200} alt="author" className="img-fluid w-100" />
                 </div>
                 <div className="text">
                   <h5>israt sultana</h5>

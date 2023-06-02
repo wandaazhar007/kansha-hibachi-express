@@ -1,10 +1,12 @@
+import Image from "next/image";
+
 const DownloadApp = () => {
   return (
     <section className="tf__download mt_100 xs_mt_70">
       <div className="row">
         <div className="col-xl-4 col-lg-4">
           {/* <div className="tf__download_text_bg" style="background: url(images/download_img.png);"> */}
-          <div className="tf__download_text_bg">
+          <div className="tf__download_text_bg" style={{ backgroundImage: "url(" + "/images/download_img.png" + ")" }}>
             <div className="tf__download_text_overlay">
               <div className="tf__download_text wow fadeInUp" data-wow-duration="1s">
                 <h5>$5.00 Cashback</h5>
@@ -37,27 +39,27 @@ const DownloadApp = () => {
           <div className="row download_slider">
             <div className="col-xl-3 wow fadeInUp" data-wow-duration="1s">
               <div className="tf__download_slider">
-                <img src="images/download_slider_4.jpg" alt="app download" className="img-fluid w-100" />
+                <Image width={200} height={200} src="/images/download_slider_3.jpg" alt="app download" className="img-fluid w-100" />
               </div>
             </div>
             <div className="col-xl-3 wow fadeInUp" data-wow-duration="1s">
               <div className="tf__download_slider">
-                <img src="images/download_slider_3.jpg" alt="app download" className="img-fluid w-100" />
+                <Image width={200} height={200} src="/images/download_slider_3.jpg" alt="app download" className="img-fluid w-100" />
               </div>
             </div>
             <div className="col-xl-3 wow fadeInUp" data-wow-duration="1s">
               <div className="tf__download_slider">
-                <img src="images/download_slider_2.jpg" alt="app download" className="img-fluid w-100" />
+                <Image width={200} height={200} src="/images/download_slider_2.jpg" alt="app download" className="img-fluid w-100" />
               </div>
             </div>
             <div className="col-xl-3 wow fadeInUp" data-wow-duration="1s">
               <div className="tf__download_slider">
-                <img src="images/download_slider_1.jpg" alt="app download" className="img-fluid w-100" />
+                <Image width={200} height={200} src="/images/download_slider_1.jpg" alt="app download" className="img-fluid w-100" />
               </div>
             </div>
             <div className="col-xl-3 wow fadeInUp" data-wow-duration="1s">
               <div className="tf__download_slider">
-                <img src="images/download_slider_5.jpg" alt="app download" className="img-fluid w-100" />
+                <Image width={200} height={200} src="/images/download_slider_5.jpg" alt="app download" className="img-fluid w-100" />
               </div>
             </div>
           </div>

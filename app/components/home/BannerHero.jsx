@@ -1,28 +1,30 @@
+import Image from "next/image";
+
 const BannerHero = () => {
   return (
     <section className="tf__banner">
       <div className="tf__banner_overlay">
         <span className="banner_shape_1">
-          <img src="images/tree_5.png" alt="shape" className="img-fluid w-100" />
+          <Image src="/images/tree_5.png" width={200} height={200} alt="Kansha Hibachi Express" className="img-fluid w-100" />
         </span>
         <span className="banner_shape_2">
-          <img src="images/tree_3.png" alt="shape" className="img-fluid w-100" />
+          <Image src="/images/tree_3.png" width={200} height={200} alt="Kansha Hibachi Express" className="img-fluid w-100" />
         </span>
         <span className="banner_shape_3">
-          <img src="images/tree_4.png" alt="shape" className="img-fluid w-100" />
+          <Image src="/images/tree_4.png" width={200} height={200} alt="Kansha Hibachi Express" className="img-fluid w-100" />
         </span>
         <span className="banner_shape_4">
-          <img src="images/tree_6.png" alt="shape" className="img-fluid w-100" />
+          <Image src="/images/tree_6.png" width={200} height={200} alt="Kansha Hibachi Express" className="img-fluid w-100" />
         </span>
         <span className="banner_shape_5">
-          <img src="images/tree_7.png" alt="shape" className="img-fluid w-100" />
+          <Image src="/images/tree_7.png" width={200} height={200} alt="Kansha Hibachi Express" className="img-fluid w-100" />
         </span>
         <span className="banner_shape_6">
-          <img src="images/tree_2.png" alt="shape" className="img-fluid w-100" />
+          <Image src="/images/tree_2.png" width={200} height={200} alt="Kansha Hibachi Express" className="img-fluid w-100" />
         </span>
         <div className="col-12">
           {/* <div className="tf__banner_slider" style="background: url(images/banner_bg.jpg);"> */}
-          <div className="tf__banner_slider">
+          <div className="tf__banner_slider" style={{ backgroundImage: "url(" + "/images/banner_bg.jpg" + ")" }}>
             <div className="tf__banner_slider_overlay">
               <div className=" container">
                 <div className="row justify-content-center">
@@ -41,7 +43,7 @@ const BannerHero = () => {
                   <div className="col-xxl-5 col-xl-6 col-sm-10 col-md-9 col-lg-6">
                     <div className="tf__banner_img wow fadeInRight" data-wow-duration="1s">
                       <div className="img">
-                        <img src="images/slider_img_1.png" alt="food item" className="img-fluid w-100" />
+                        <Image src="/images/slider_img_1.png" width={200} height={200} alt="Kansha Hibachi Express" className="img-fluid w-100" />
                         <span>
                           35% off
                         </span>

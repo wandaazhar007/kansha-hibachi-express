@@ -12,8 +12,7 @@ const DailyOffer = () => {
         </div>
         <div className="row offer_item_slider wow fadeInUp" data-wow-duration="1s">
           <div className="col-xl-4">
-            {/* <div className="tf__offer_item_single" style="background: url(images/offer_item_img1.jpg);"> */}
-            <div className="tf__offer_item_single">
+            <div className="tf__offer_item_single" style={{ backgroundImage: "url(" + "/images/offer_item_img1.jpg" + ")" }}>
               <span>37% off</span>
               <a className="title" href="menu_details.html">Chicken Nuggets</a>
               <p>Enim ipsam voluptat in quia voluptas sit aspe rnatur aut odit aut.</p>
@@ -27,7 +26,7 @@ const DailyOffer = () => {
           </div>
           <div className="col-xl-4">
             {/* <div className="tf__offer_item_single" style="background: url(images/offer_item_img2.jpg);"> */}
-            <div className="tf__offer_item_single" >
+            <div className="tf__offer_item_single" style={{ backgroundImage: "url(" + "/images/offer_item_img2.jpg" + ")" }}>
               <span>40% off</span>
               <a className="title" href="menu_details.html">Beef Masala</a>
               <p>Enim ipsam voluptat in quia voluptas sit aspe rnatur aut odit aut.</p>
@@ -41,7 +40,7 @@ const DailyOffer = () => {
           </div>
           <div className="col-xl-4">
             {/* <div className="tf__offer_item_single" style="background: url(images/offer_item_img3.jpg);"> */}
-            <div className="tf__offer_item_single" >
+            <div className="tf__offer_item_single" style={{ backgroundImage: "url(" + "/images/offer_item_img3.jpg" + ")" }}>
               <span>55% off</span>
               <a className="title" href="menu_details.html">Dal Makhani</a>
               <p>Enim ipsam voluptat in quia voluptas sit aspe rnatur aut odit aut.</p>
@@ -55,7 +54,7 @@ const DailyOffer = () => {
           </div>
           <div className="col-xl-4">
             {/* <div className="tf__offer_item_single" style="background: url(images/offer_item_img2.jpg);"> */}
-            <div className="tf__offer_item_single" >
+            <div className="tf__offer_item_single" style={{ backgroundImage: "url(" + "/images/offer_item_img2.jpg" + ")" }}>
               <span>45% off</span>
               <a className="title" href="menu_details.html">Beef Masala</a>
               <p>Enim ipsam voluptat in quia voluptas sit aspe rnatur aut odit aut.</p>
