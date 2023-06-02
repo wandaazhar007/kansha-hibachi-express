@@ -21,14 +21,15 @@ const BannerHero = () => {
           <img src="images/tree_2.png" alt="shape" className="img-fluid w-100" />
         </span>
         <div className="col-12">
-          <div className="tf__banner_slider" style="background: url(images/banner_bg.jpg);">
+          {/* <div className="tf__banner_slider" style="background: url(images/banner_bg.jpg);"> */}
+          <div className="tf__banner_slider">
             <div className="tf__banner_slider_overlay">
               <div className=" container">
                 <div className="row justify-content-center">
                   <div className="col-xxl-6 col-xl-6 col-md-10 col-lg-6">
                     <div className="tf__banner_text wow fadeInLeft" data-wow-duration="1s">
                       <h3>Satisfy Your Cravings</h3>
-                      <h1>Delicious Foods With Wonderful Eating</h1>
+                      <h1>Delicious Foods With Kansha Hibachi</h1>
                       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit
                         minimaet debitis ut distinctio optio.</p>
                       <form>
