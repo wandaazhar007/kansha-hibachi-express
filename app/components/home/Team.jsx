@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Team = () => {
   return (
     <section className="tf__team mt_100 xs_mt_70 pt_95 xs_pt_65 pb_95 xs_pb_65">
@@ -15,7 +17,7 @@ const Team = () => {
           <div className="col-xl-3 wow fadeInUp" data-wow-duration="1s">
             <div className="tf__single_team">
               <div className="tf__single_team_img">
-                <img src="images/wanda-azhar.jpg" alt="team" className="img-fluid w-100" />
+                <Image width={100} height={100} src="/images/wanda-azhar.jpg" alt="team" className="img-fluid w-100" />
               </div>
               <div className="tf__single_team_text">
                 <h4>Wanda Azhar</h4>
@@ -32,7 +34,7 @@ const Team = () => {
           <div className="col-xl-3 wow fadeInUp" data-wow-duration="1s">
             <div className="tf__single_team">
               <div className="tf__single_team_img">
-                <img src="images/founder-1.jpeg" alt="team" className="img-fluid w-100" />
+                <Image width={100} height={100} src="/images/founder-1.jpeg" alt="team" className="img-fluid w-100" />
               </div>
               <div className="tf__single_team_text">
                 <h4>arun chandra</h4>
@@ -49,7 +51,7 @@ const Team = () => {
           <div className="col-xl-3 wow fadeInUp" data-wow-duration="1s">
             <div className="tf__single_team">
               <div className="tf__single_team_img">
-                <img src="images/vicky2.jpg" alt="team" className="img-fluid w-100" />
+                <Image width={100} height={100} src="/images/vicky2.jpg" alt="team" className="img-fluid w-100" />
               </div>
               <div className="tf__single_team_text">
                 <h4>isita rahman</h4>
@@ -66,7 +68,7 @@ const Team = () => {
           <div className="col-xl-3 wow fadeInUp" data-wow-duration="1s">
             <div className="tf__single_team">
               <div className="tf__single_team_img">
-                <img src="images/dani.jpg" alt="team" className="img-fluid w-100" />
+                <Image width={100} height={100} src="/images/dani.jpg" alt="team" className="img-fluid w-100" />
               </div>
               <div className="tf__single_team_text">
                 <h4>khandakar rashed</h4>
@@ -83,7 +85,7 @@ const Team = () => {
           <div className="col-xl-3 wow fadeInUp" data-wow-duration="1s">
             <div className="tf__single_team">
               <div className="tf__single_team_img">
-                <img src="images/yadi-mulyadi.jpg" alt="team" className="img-fluid w-100" />
+                <Image width={100} height={100} src="/images/yadi-mulyadi.jpg" alt="team" className="img-fluid w-100" />
               </div>
               <div className="tf__single_team_text">
                 <h4>naurin nipu</h4>
