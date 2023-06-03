@@ -1,13 +1,10 @@
 'use client'
 import { useState } from "react";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 const Navbar = () => {
-  // const { asPath } = useRouter();
-  // const router = useRouter();
   const pathname = usePathname();
-  console.log('test', pathname)
   const [show, setShow] = useState(false);
 
   const handleShow = () => {
