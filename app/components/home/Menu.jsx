@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Menu = () => {
   return (
     <section className="tf__menu mt_95 xs_mt_65">
@@ -24,7 +26,7 @@ const Menu = () => {
           <div className="col-xxl-3 col-sm-6 col-lg-4 chicken wow fadeInUp" data-wow-duration="1s">
             <div className="tf__menu_item">
               <div className="tf__menu_item_img">
-                <img src="images/menu2_img_1.jpg" alt="menu" className="img-fluid w-100" />
+                <Image height={100} width={100} src="/images/menu2_img_1.jpg" alt="menu" className="img-fluid w-100" />
               </div>
               <div className="tf__menu_item_text">
                 <a className="category" href="#">Biryani</a>
@@ -50,7 +52,7 @@ const Menu = () => {
           <div className="col-xxl-3 col-sm-6 col-lg-4 burger dresserts wow fadeInUp" data-wow-duration="1s">
             <div className="tf__menu_item">
               <div className="tf__menu_item_img">
-                <img src="images/menu2_img_2.jpg" alt="menu" className="img-fluid w-100" />
+                <Image height={100} width={100} src="/images/menu2_img_2.jpg" alt="menu" className="img-fluid w-100" />
               </div>
               <div className="tf__menu_item_text">
                 <a className="category" href="#">Chicken</a>
@@ -76,7 +78,7 @@ const Menu = () => {
           <div className="col-xxl-3 col-sm-6 col-lg-4 chicken wow fadeInUp" data-wow-duration="1s">
             <div className="tf__menu_item">
               <div className="tf__menu_item_img">
-                <img src="images/menu2_img_3.jpg" alt="menu" className="img-fluid w-100" />
+                <Image height={100} width={100} src="/images/menu2_img_3.jpg" alt="menu" className="img-fluid w-100" />
               </div>
               <div className="tf__menu_item_text">
                 <a className="category" href="#">burger</a>
@@ -102,7 +104,7 @@ const Menu = () => {
           <div className="col-xxl-3 col-sm-6 col-lg-4 burger pizza wow fadeInUp" data-wow-duration="1s">
             <div className="tf__menu_item">
               <div className="tf__menu_item_img">
-                <img src="images/menu2_img_4.jpg" alt="menu" className="img-fluid w-100" />
+                <Image height={100} width={100} src="/images/menu2_img_4.jpg" alt="menu" className="img-fluid w-100" />
               </div>
               <div className="tf__menu_item_text">
                 <a className="category" href="#">dressert</a>
@@ -128,7 +130,7 @@ const Menu = () => {
           <div className="col-xxl-3 col-sm-6 col-lg-4 chicken dresserts wow fadeInUp" data-wow-duration="1s">
             <div className="tf__menu_item">
               <div className="tf__menu_item_img">
-                <img src="images/menu2_img_5.jpg" alt="menu" className="img-fluid w-100" />
+                <Image height={100} width={100} src="/images/menu2_img_5.jpg" alt="menu" className="img-fluid w-100" />
               </div>
               <div className="tf__menu_item_text">
                 <a className="category" href="#">kabab</a>
@@ -154,7 +156,7 @@ const Menu = () => {
           <div className="col-xxl-3 col-sm-6 col-lg-4 burger pizza wow fadeInUp" data-wow-duration="1s">
             <div className="tf__menu_item">
               <div className="tf__menu_item_img">
-                <img src="images/menu2_img_6.jpg" alt="menu" className="img-fluid w-100" />
+                <Image height={100} width={100} src="/images/menu2_img_6.jpg" alt="menu" className="img-fluid w-100" />
               </div>
               <div className="tf__menu_item_text">
                 <a className="category" href="#">kacchi</a>
@@ -180,7 +182,7 @@ const Menu = () => {
           <div className="col-xxl-3 col-sm-6 col-lg-4 chicken dresserts wow fadeInUp" data-wow-duration="1s">
             <div className="tf__menu_item">
               <div className="tf__menu_item_img">
-                <img src="images/menu2_img_7.jpg" alt="menu" className="img-fluid w-100" />
+                <Image height={100} width={100} src="/images/menu2_img_7.jpg" alt="menu" className="img-fluid w-100" />
               </div>
               <div className="tf__menu_item_text">
                 <a className="category" href="#">noodles</a>
@@ -206,7 +208,7 @@ const Menu = () => {
           <div className="col-xxl-3 col-sm-6 col-lg-4 burger pizza wow fadeInUp" data-wow-duration="1s">
             <div className="tf__menu_item">
               <div className="tf__menu_item_img">
-                <img src="images/menu2_img_8.jpg" alt="menu" className="img-fluid w-100" />
+                <Image height={100} width={100} src="/images/menu2_img_8.jpg" alt="menu" className="img-fluid w-100" />
               </div>
               <div className="tf__menu_item_text">
                 <a className="category" href="#">grill</a>

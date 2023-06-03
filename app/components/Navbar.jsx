@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -10,13 +11,18 @@ const Navbar = () => {
 
   const changeTopbar = () => {
     // console.log(window.scrollY);
+    // const window = 
     if (window.scrollY >= 10) {
       setHideTopbar(true);
     } else {
       setHideTopbar(false);
     }
   }
-  window.addEventListener('scroll', changeTopbar);
+
+  if (typeof window !== "undefined") {
+    window.addEventListener('scroll', changeTopbar);
+  }
+  // window.addEventListener('scroll', changeTopbar);
   const handleShow = () => {
     setShow(!show);
     // alert("test")
@@ -25,7 +31,7 @@ const Navbar = () => {
     <nav className={`navbar navbar-expand-lg main_menu ${hideTopbar ? 'menu_fix' : ''} `}>
       <div className="container">
         <Link className="navbar-brand" href="/">
-          <img src="images/logo-kansha-header.png" alt="RegFood" className="img-fluid" />
+          <Image height={100} width={100} src="/images/logo-kansha-header.png" alt="RegFood" className="img-fluid" />
         </Link>
         <button className={`navbar-toggler ${show ? 'show' : ''}`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

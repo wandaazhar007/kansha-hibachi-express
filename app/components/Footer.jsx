@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Footer = () => {
   return (
     // <footer style="background: url(images/footer_bg.jpg);">
@@ -8,7 +10,7 @@ const Footer = () => {
             <div className="col-xxl-4 col-lg-4 col-sm-9 col-md-7">
               <div className="tf__footer_content">
                 <a className="footer_logo" href="index.html">
-                  <img src="images/logo-kansha-header.png" alt="RegFood" className="img-fluid w-100" />
+                  <Image width={100} height={100} src="/images/logo-kansha-header.png" alt="RegFood" className="img-fluid w-100" />
                 </a>
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere delectus qui
                   placeat inventore consectetur repellendus optio debitis.</span>
