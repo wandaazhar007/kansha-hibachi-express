@@ -103,13 +103,13 @@ export default function Home() {
       <BannerHero />
       <DailyOffer />
       <Reservation />
-      <Menu />
+      {/* <Menu /> */}
       <Team />
       <Ads />
-      <DownloadApp />
-      <Testimonial />
-      <Counter />
-      <Blog />
+      {/* <DownloadApp /> */}
+      {/* <Testimonial /> */}
+      {/* <Counter /> */}
+      {/* <Blog /> */}
     </>
   )
 }

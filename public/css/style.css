@@ -116,6 +116,7 @@ button {
 :root {
     --colorPrimary: #FFE473;
     --colorRed: #eb0029;
+    --colorGrey: #acacac;
     --paraColor: #484747;
     --colorBlack: #231f40;
     --colorWhite: #ffffff;
