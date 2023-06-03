@@ -6,13 +6,23 @@ import Link from "next/link";
 const Navbar = () => {
   const pathname = usePathname();
   const [show, setShow] = useState(false);
+  const [hideTopbar, setHideTopbar] = useState(false);
 
+  const changeTopbar = () => {
+    // console.log(window.scrollY);
+    if (window.scrollY >= 10) {
+      setHideTopbar(true);
+    } else {
+      setHideTopbar(false);
+    }
+  }
+  window.addEventListener('scroll', changeTopbar);
   const handleShow = () => {
     setShow(!show);
     // alert("test")
   }
   return (
-    <nav className="navbar navbar-expand-lg main_menu">
+    <nav className={`navbar navbar-expand-lg main_menu ${hideTopbar ? 'menu_fix' : ''} `}>
       <div className="container">
         <Link className="navbar-brand" href="/">
           <img src="images/logo-kansha-header.png" alt="RegFood" className="img-fluid" />
