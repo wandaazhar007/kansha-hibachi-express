@@ -1,22 +1,10 @@
 import Link from "next/link";
+import BreadcrumbAbout from "../components/about/Breadcrumb";
 
 const AboutPage = () => {
   return (
     <>
-      {/* <section className="tf__breadcrumb" style="background: url(images/breadcrumb_bg.jpg);"> */}
-      <section className="tf__breadcrumb">
-        <div className="tf__breadcrumb_overlay">
-          <div className="container">
-            <div className="tf__breadcrumb_text">
-              <h1>about us</h1>
-              <ul>
-                <li><Link href="/">home</Link></li>
-                <li><Link href="/about">about us</Link></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+      <BreadcrumbAbout />
       <section className="tf__about_us mt_100 xs_mt_70">
         <div className="container">
           <div className="row">
