@@ -12,25 +12,25 @@ const Reservation = () => {
                   <div className="row">
                     <div className="col-xl-6 col-lg-6">
                       <div className="tf__reservation_input_single">
-                        <label for="name">name</label>
+                        <label htmlFor="name">name</label>
                         <input type="text" id="name" placeholder="Name" />
                       </div>
                     </div>
                     <div className="col-xl-6 col-lg-6">
                       <div className="tf__reservation_input_single">
-                        <label for="email">email</label>
+                        <label htmlFor="email">email</label>
                         <input type="email" id="email" placeholder="Email" />
                       </div>
                     </div>
                     <div className="col-xl-6 col-lg-6">
                       <div className="tf__reservation_input_single">
-                        <label for="phone">phone</label>
+                        <label htmlFor="phone">phone</label>
                         <input type="number" id="phone" placeholder="Phone" />
                       </div>
                     </div>
                     <div className="col-xl-6 col-lg-6">
                       <div className="tf__reservation_input_single">
-                        <label for="date">select date</label>
+                        <label htmlFor="date">select date</label>
                         <input type="date" id="date" />
                       </div>
                     </div>
