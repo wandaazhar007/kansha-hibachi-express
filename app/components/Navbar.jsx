@@ -1,8 +1,13 @@
 'use client'
 import { useState } from "react";
+import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 
 const Navbar = () => {
+  // const { asPath } = useRouter();
+  // const router = useRouter();
+  const pathname = usePathname();
+  console.log('test', pathname)
   const [show, setShow] = useState(false);
 
   const handleShow = () => {
@@ -23,16 +28,16 @@ const Navbar = () => {
         <div className={`collapse navbar-collapse ${show ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav m-auto">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" href="/" onClick={() => handleShow()}>Home</Link>
+              <Link className={`nav-link ${pathname === '/' ? 'active' : ''}`} aria-current="page" href="/" onClick={() => handleShow()}>Home</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/about" onClick={() => handleShow()}>about</Link>
+              <Link className={`nav-link ${pathname === '/about' ? 'active' : ''}`} href="/about" onClick={() => handleShow()}>about</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/menu" onClick={() => handleShow()}>menu</Link>
+              <Link className={`nav-link ${pathname === '/menu' ? 'active' : ''}`} href="/menu" onClick={() => handleShow()}>menu</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/chefs" onClick={() => handleShow()}>chefs</Link>
+              <Link className={`nav-link ${pathname === '/chefs' ? 'active' : ''}`} href="/chefs" onClick={() => handleShow()}>chefs</Link>
             </li>
 
             {/* <li className="nav-item">
@@ -58,7 +63,7 @@ const Navbar = () => {
             </li> */}
 
             <li className="nav-item">
-              <Link className="nav-link" href="/contact" onClick={() => handleShow()}>contact</Link>
+              <Link className={`nav-link ${pathname === '/contact' ? 'active' : ''}`} href="/contact" onClick={() => handleShow()}>contact</Link>
             </li>
           </ul>
           <ul className="menu_icon d-flex flex-wrap">

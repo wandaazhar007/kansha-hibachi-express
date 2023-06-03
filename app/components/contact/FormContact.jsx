@@ -13,12 +13,12 @@ const FormContact = () => {
                 </div>
                 <div className="tf__contact_info">
                   <h3>mail</h3>
-                  <p>websolutionus1@gmail.com</p>
-                  <p>example@gmail.com</p>
+                  <p>wandaazhar@gmail.com</p>
+                  <p>wandaazhar@gmail.com</p>
                 </div>
                 <div className="tf__contact_info border-0 p-0 m-0">
                   <h3>location</h3>
-                  <p>7232 Broadway Suite 308, Jackson Heights, 11372, NY, United States</p>
+                  <p>208 E Young Ave, Warrensburg, MO 64093, United States</p>
                 </div>
               </div>
             </div>
