@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const WhyChooseUs = () => {
   return (
-    <section className="tf__about_choose mt_100 xs_mt_70">
+    <section className="tf__about_choose mt_100 xs_mt_70" style={{ marginBottom: "50px" }}>
       <div className="container">
         <div className="row">
           <div className="col-xxl-8 col-lg-7 wow fadeInLeft" data-wow-duration="1s">
