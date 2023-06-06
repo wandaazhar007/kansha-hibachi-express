@@ -34,10 +34,10 @@ const BannerHero = () => {
                       <h1>Delicious Foods With Kansha Hibachi</h1>
                       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit
                         minimaet debitis ut distinctio optio.</p>
-                      <form>
+                      {/* <form>
                         <input type="text" placeholder="Search . . ." />
                         <button type="submit" className="common_btn">search</button>
-                      </form>
+                      </form> */}
                     </div>
                   </div>
                   <div className="col-xxl-5 col-xl-6 col-sm-10 col-md-9 col-lg-6">
