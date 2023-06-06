@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { faHeart, faSquareCaretRight } from "@fortawesome/free-solid-svg-icons";
+import { faEye, faHeart, faSquareCaretRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Menu = () => {
+
+  const testDesc = 'test ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, fugit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque aperiam ad saepe libero vel amet nesciunt iste eum fugit nostrum.'
   return (
     <>
       {/* <section className="tf__menu mt_95 xs_mt_65">
@@ -247,57 +249,147 @@ const Menu = () => {
                 <FontAwesomeIcon icon={faSquareCaretRight} className="icon" />
                 <span>Our Menu</span>
               </h1>
-              <Link href="/products"><button className="btn-sm">View All</button></Link>
+              <Link href="/menu"><button className="btn-sm">View All</button></Link>
             </div>
             <div className="content">
-              <div className="box">
-                <div className="box-images">
-                  <Image height={100} width={100} src="/images/menu2_img_1.jpg" alt="menu" />
-                </div>
-                <div className="box-contents">
-                  <Link href={`/products/`}><h1 className="title">Test</h1></Link>
-                  <p className="price">$322</p>
-                  <div className="footer-products">
-                    <div className="desc">
-                      <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                    <div className="btn-cart"><div className="add-cart"></div>
+              <Link href="#">
+                <div className="box">
+                  <div className="box-images">
+                    <Image height={100} width={100} src="/images/menu2_img_1.jpg" alt="menu" />
+                  </div>
+                  <div className="box-contents">
+                    <h1 className="title">Hibachi Steak</h1>
+                    <p className="price">$322</p>
+                    <div className="footer-products">
+                      <div className="desc">
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                      </div>
+                      <div className="btn-cart"><div className="add-cart"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="box">
-                <div className="box-images">
-                  <Image height={100} width={100} src="/images/menu2_img_1.jpg" alt="menu" />
-                </div>
-                <div className="box-contents">
-                  <Link href={`/products/`}><h1 className="title">Test</h1></Link>
-                  <p className="price">$322</p>
-                  <div className="footer-products">
-                    <div className="desc">
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quas.</p>
-                    </div>
-                    <div className="btn-cart"><div className="add-cart"></div>
+              </Link>
+
+              <Link href="#">
+                <div className="box">
+                  <div className="box-images">
+                    <Image height={100} width={100} src="/images/menu2_img_2.jpg" alt="menu" />
+                  </div>
+                  <div className="box-contents">
+                    <h1 className="title">Hibachi Chiken</h1>
+                    <p className="price">$322</p>
+                    <div className="footer-products">
+                      <div className="desc">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quas.</p>
+                      </div>
+                      <div className="btn-cart"><div className="add-cart"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="box">
-                <div className="box-images">
-                  <Image height={100} width={100} src="/images/menu2_img_1.jpg" alt="menu" />
-                </div>
-                <div className="box-contents">
-                  <Link href={`/products/`}><h1 className="title">Test</h1></Link>
-                  <p className="price">$322</p>
-                  <div className="footer-products">
-                    <div className="desc">
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quas.</p>
-                    </div>
-                    <div className="btn-cart"><div className="add-cart"></div>
+              </Link>
+
+              <Link href="#">
+                <div className="box">
+                  <div className="box-images">
+                    <Image height={100} width={100} src="/images/menu2_img_3.jpg" alt="menu" />
+                  </div>
+                  <div className="box-contents">
+                    <h1 className="title">Hibachi Shirmp</h1>
+                    <p className="price">$322</p>
+                    <div className="footer-products">
+                      <div className="desc">
+                        <p>{testDesc.substring(0, 40)}...</p>
+                      </div>
+                      <div className="btn-cart"><div className="add-cart"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
+
+              <Link href="#">
+                <div className="box">
+                  <div className="box-images">
+                    <Image height={100} width={100} src="/images/menu2_img_2.jpg" alt="menu" />
+                  </div>
+                  <div className="box-contents">
+                    <h1 className="title">Hibachi Chiken</h1>
+                    <p className="price">$322</p>
+                    <div className="footer-products">
+                      <div className="desc">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quas.</p>
+                      </div>
+                      <div className="btn-cart"><div className="add-cart"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="#">
+                <div className="box">
+                  <div className="box-images">
+                    <Image height={100} width={100} src="/images/menu2_img_2.jpg" alt="menu" />
+                  </div>
+                  <div className="box-contents">
+                    <h1 className="title">Hibachi Chiken</h1>
+                    <p className="price">$322</p>
+                    <div className="footer-products">
+                      <div className="desc">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quas.</p>
+                      </div>
+                      <div className="btn-cart"><div className="add-cart"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="#">
+                <div className="box">
+                  <div className="box-images">
+                    <Image height={100} width={100} src="/images/menu2_img_2.jpg" alt="menu" />
+                  </div>
+                  <div className="box-contents">
+                    <h1 className="title">Hibachi Chiken</h1>
+                    <p className="price">$322</p>
+                    <div className="footer-products">
+                      <div className="desc">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quas.</p>
+                      </div>
+                      <div className="btn-cart"><div className="add-cart"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="#">
+                <div className="box">
+                  <div className="box-images">
+                    <Image height={100} width={100} src="/images/menu2_img_2.jpg" alt="menu" />
+                  </div>
+                  <div className="box-contents">
+                    <h1 className="title">Hibachi Chiken</h1>
+                    <p className="price">$322</p>
+                    <div className="footer-products">
+                      <div className="desc">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quas.</p>
+                      </div>
+                      <div className="btn-cart"><div className="add-cart"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+
+            <div className="link-menu">
+              <Link href={'/menu'}>
+                <button className="btn-view-product"> <FontAwesomeIcon icon={faEye} className="icon" /> View All Menu</button>
+              </Link>
             </div>
 
           </div>

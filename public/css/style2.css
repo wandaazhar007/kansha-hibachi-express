@@ -1,6 +1,8 @@
 .products {
   width: 95%;
   margin: 2rem auto 0;
+  padding: 2rem 0;
+  /* background-color: rgb(225, 225, 223); */
 }
 
 .products .container .box-container .header {
@@ -9,8 +11,16 @@
   justify-content: space-between;
 }
 
+
+.products .container .box-container .header .title {
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
 .products .container .box-container .header .title .icon {
   height: 1.5rem;
+  color: red;
 }
 
 .btn-sm {
@@ -20,12 +30,9 @@
   color: #fff;
 }
 
-.products .container .box-container .header .title .icon {
-  height: 1.5rem;
-}
-
 
 .products .container .box-container .content {
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   justify-items: center;
@@ -34,13 +41,18 @@
 }
 
 .products .container .box-container .content .box {
-  padding: 1rem;
+  padding: .5rem;
   box-sizing: border-box;
+  background-color: #fff;
+  /* width: 20rem; */
   max-width: 25rem;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px; */
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
-  align-items: center;
+  /* align-items: center; */
+  gap: .5rem;
+  border-radius: .5rem;
 }
 
 
@@ -49,13 +61,44 @@
   border: .3rem solid yellow;
 }
 
+.products .container .box-container .content .box .box-images image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 .products .container .box-container .content .box .box-contents {
   flex-grow: 2;
 }
 
-.products .container .box-container .content .box .box-images image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.products .container .box-container .content .box .box-contents .title {
+  font-size: 1rem;
+}
+
+.products .container .box-container .content .box .box-contents .price {
+  font-size: 1rem;
+}
+
+.products .container .box-container .content .box .box-contents .footer-products .desc p {
+  font-size: .7rem;
+  color: grey;
+}
+
+.products .container .box-container .link-menu {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.products .container .box-container .link-menu .icon {
+  width: 1.2rem;
+}
+
+.products .container .box-container .link-menu .btn-view-product {
+  padding: 1rem;
+  background-color: rgb(255, 251, 0);
+  color: grey;
+  border-radius: .5rem;
 }
