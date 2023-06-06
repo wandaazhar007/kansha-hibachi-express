@@ -103,7 +103,7 @@ export default function Home() {
       <BannerHero />
       <DailyOffer />
       <Reservation />
-      {/* <Menu /> */}
+      <Menu />
       <Team />
       <Ads />
       {/* <DownloadApp /> */}

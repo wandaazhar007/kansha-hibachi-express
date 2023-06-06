@@ -1214,6 +1214,12 @@ button {
 /* reservation end */
 
 
+/* custom */
+/* .products-grid {
+    border: .1rem solid salmon;
+    background-color: salmon;
+} */
+
 /* menu item start */
 .tf__menu,
 .tf__blog {
@@ -1240,7 +1246,7 @@ button {
 .tf__blog::after,
 .tf__menu::after {
     top: auto;
-    left: auto;
+    /* left: auto; */
     right: -350px;
     bottom: 0;
 }
@@ -3732,7 +3738,7 @@ footer {
 .quentity_btn {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .quentity_btn button {
