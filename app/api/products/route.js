@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
-import { getServerSession } from 'next-auth/next'
-import { authOptions } from '../../api/auth/[...nextauth]/route'
+// import { getServerSession } from 'next-auth/next'
+// import { authOptions } from '../../api/auth/[...nextauth]/route'
 import { productsArray } from '../ProductsArray'
 
 // export async function GET() {
