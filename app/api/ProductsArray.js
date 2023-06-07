@@ -31,7 +31,7 @@ const productsArray = [
     name: "Crab Rangoon (4 Pcs)",
     title: "crab-rangoon",
     category: "appetizer",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 3.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -40,7 +40,7 @@ const productsArray = [
     name: "Egg Roll (2 Pcs)",
     title: "eeg-roll",
     category: "appetizer",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 2.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -49,7 +49,7 @@ const productsArray = [
     name: "Spring Roll (4 Pcs)",
     title: "spring-roll",
     category: "appetizer",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 2.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -58,7 +58,7 @@ const productsArray = [
     name: "Lobster Roll (Cooked)",
     title: "lobster-roll",
     category: "roll",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 13.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -67,7 +67,7 @@ const productsArray = [
     name: "Warrensburg Roll (Deep Fried)",
     title: "warrensburg-roll",
     category: "roll",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 11.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -76,7 +76,7 @@ const productsArray = [
     name: "OMG Roll (Deep Fried)",
     title: "omg-roll",
     category: "roll",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 11.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -85,7 +85,7 @@ const productsArray = [
     name: "Kansha Roll (Deep Fried)",
     title: "kansha-roll",
     category: "roll",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 10.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -94,7 +94,7 @@ const productsArray = [
     name: "Volcano Roll (Cooked)",
     title: "volcano-roll",
     category: "roll",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 9.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -103,7 +103,7 @@ const productsArray = [
     name: "Crunchy Roll (Cooked)",
     title: "crunchy-roll",
     category: "roll",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 8.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -112,7 +112,7 @@ const productsArray = [
     name: "Philadelphia Roll (Cooked)",
     title: "philadelphia-roll",
     category: "roll",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 5.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -121,7 +121,7 @@ const productsArray = [
     name: "California Roll (Cooked)",
     title: "california-roll",
     category: "roll",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 4.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -130,7 +130,7 @@ const productsArray = [
     name: "Veggie Roll (Cooked)",
     title: "veggie-roll",
     category: "roll",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 3.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -139,7 +139,7 @@ const productsArray = [
     name: "Seafood Lover (Pick 3)",
     title: "seafood-lover",
     category: "hibachi",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 3.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -148,7 +148,7 @@ const productsArray = [
     name: "Kansha Special (Pick 3)",
     title: "kansha-special",
     category: "hibachi",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 3.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -157,7 +157,7 @@ const productsArray = [
     name: "Kansha Super (Pick 3)",
     title: "hibachi",
     category: "hibachi",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 3.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -166,7 +166,7 @@ const productsArray = [
     name: "Kansha Super (Pick 3)",
     title: "kansha-super",
     category: "hibachi",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 3.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -175,7 +175,7 @@ const productsArray = [
     name: "Kansha Duos (Pick 2)",
     title: "kansha-duos",
     category: "hibachi",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 3.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -184,7 +184,7 @@ const productsArray = [
     name: "Hibachi Lobster",
     title: "hibachi-lobster",
     category: "entrees",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 11.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -193,7 +193,7 @@ const productsArray = [
     name: "Hibachi Tuna",
     title: "hibachi-tuna",
     category: "entrees",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 11.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -202,7 +202,7 @@ const productsArray = [
     name: "Hibachi Scallop",
     title: "hibachi-scallop",
     category: "entrees",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 11.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -211,7 +211,7 @@ const productsArray = [
     name: "Hibachi Steak",
     title: "hibachi-steak",
     category: "entrees",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 10.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -220,7 +220,7 @@ const productsArray = [
     name: "Hibachi Calamari",
     title: "hibachi-calamari",
     category: "entrees",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 10.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -229,7 +229,7 @@ const productsArray = [
     name: "Hibachi Salmon",
     title: "hibachi-salmon",
     category: "entrees",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 10.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -238,7 +238,7 @@ const productsArray = [
     name: "Hibachi Shrimp",
     title: "hibachi-shrimp",
     category: "entrees",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 10.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -247,7 +247,7 @@ const productsArray = [
     name: "Sukiyaki Steak",
     title: "sukiyaki-steak",
     category: "entrees",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 10.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -256,7 +256,7 @@ const productsArray = [
     name: "Hibachi Chiken",
     title: "hibachi-chiken",
     category: "entrees",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 9.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -265,7 +265,7 @@ const productsArray = [
     name: "Hibachi Chiken",
     title: "hibachi-chiken",
     category: "entrees",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 7.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -274,7 +274,7 @@ const productsArray = [
     name: "Lobster",
     title: "lobster",
     category: "sideorders",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 7.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -283,7 +283,7 @@ const productsArray = [
     name: "Tuna",
     title: "tuna",
     category: "sideorders",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 7.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -292,7 +292,7 @@ const productsArray = [
     name: "Scallop",
     title: "scallop",
     category: "sideorders",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 7.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -301,7 +301,7 @@ const productsArray = [
     name: "Salmon",
     title: "salmon",
     category: "sideorders",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 7.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -310,7 +310,7 @@ const productsArray = [
     name: "Steak",
     title: "steak",
     category: "sideorders",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 6.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -319,7 +319,7 @@ const productsArray = [
     name: "Shrimp",
     title: "shrimp",
     category: "sideorders",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 6.49,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -328,7 +328,7 @@ const productsArray = [
     name: "Calamari",
     title: "calamari",
     category: "sideorders",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 6.49,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -337,7 +337,7 @@ const productsArray = [
     name: "Chiken",
     title: "chiken",
     category: "sideorders",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 5.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -346,7 +346,7 @@ const productsArray = [
     name: "Noodles",
     title: "noodles",
     category: "sideorders",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 3.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -355,7 +355,7 @@ const productsArray = [
     name: "Vegetables",
     title: "vegetables",
     category: "sideorders",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 3.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
@@ -364,7 +364,7 @@ const productsArray = [
     name: "Fried Rice",
     title: "fried-rice",
     category: "sideorders",
-    desc: "Fried Crab Rangoon",
+    desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 3.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },

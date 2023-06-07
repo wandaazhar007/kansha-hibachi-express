@@ -29,7 +29,12 @@ const Menu = () => {
               <FontAwesomeIcon icon={faSquareCaretRight} className="icon" />
               <span>Our Menu</span>
             </h1>
-            <Link href="/menu"><button className="btn-sm">View All</button></Link>
+            <div className="btn-menu-group">
+              <button className="btn-menu active">Hibachi</button>
+              <button className="btn-menu">Roll</button>
+              <button className="btn-menu">Appetizer</button>
+              <button className="btn-menu">Side Order</button>
+            </div>
           </div>
           <div className="content">
             {menus.map((menu, index) => (
