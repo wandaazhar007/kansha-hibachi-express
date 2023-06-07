@@ -5,10 +5,10 @@ const Topbar = () => {
         <div className="row">
           <div className="col-xl-6 col-sm-6 col-md-8">
             <ul className="tf__topbar_info d-flex flex-wrap d-none d-sm-flex">
-              <li><a href="mailto:example@gmail.com"><i className="fas fa-envelope"></i> kansha@gmail.com</a>
+              <li><a href="mailto:example@gmail.com"><i className="fas fa-envelope"></i> ss.kansha@gmail.com</a>
               </li>
-              <li className="d-none d-md-block"><a href="callto:123456789"><i className="fas fa-phone-alt"></i>
-                +646-467-1926</a></li>
+              <li className="d-none d-md-block"><a href="callto:4787873300"><i className="fas fa-phone-alt"></i>
+                +1-478-787-3300</a></li>
             </ul>
           </div>
           <div className="col-xl-6 col-sm-6 col-md-4">

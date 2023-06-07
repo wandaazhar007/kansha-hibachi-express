@@ -275,13 +275,19 @@ button {
 }
 
 .tf__topbar_info li a {
-    color: var(--colorWhite);
+    color: var(--colorBlack);
     font-size: 16px;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+}
+
+@media screen and (max-width: 992px) {
+    .tf__topbar_info li a {
+        color: var(--colorWhite);
+    }
 }
 
 .tf__topbar_info li a:hover {
