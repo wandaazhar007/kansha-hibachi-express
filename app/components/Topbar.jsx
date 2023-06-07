@@ -14,9 +14,8 @@ const Topbar = () => {
           <div className="col-xl-6 col-sm-6 col-md-4">
             <ul className="topbar_icon d-flex flex-wrap">
               <li><a href="#"><i className="fab fa-facebook-f"></i></a> </li>
-              <li><a href="#"><i className="fab fa-twitter"></i></a> </li>
-              <li><a href="#"><i className="fab fa-linkedin-in"></i></a> </li>
-              <li><a href="#"><i className="fab fa-behance"></i></a> </li>
+              <li><a href="#"><i className="fab fa-instagram"></i></a> </li>
+              <li><a href="#"><i className="fab fa-google"></i></a> </li>
             </ul>
           </div>
         </div>

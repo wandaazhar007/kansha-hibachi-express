@@ -31,7 +31,7 @@ const Navbar = () => {
     <nav className={`navbar navbar-expand-lg main_menu ${hideTopbar ? 'menu_fix' : ''} `}>
       <div className="container">
         <Link className="navbar-brand" href="/">
-          <Image height={100} width={100} src="/images/logo-kansha-header.png" alt="RegFood" className="img-fluid" />
+          <Image height={100} width={100} src="/images/logo-kansha-header.png" alt="Kansha Hibachi Express" className="img-fluid" />
         </Link>
         <button className={`navbar-toggler ${show ? 'show' : ''}`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,12 +80,12 @@ const Navbar = () => {
             </li>
           </ul>
           <ul className="menu_icon d-flex flex-wrap">
-            <li>
+            {/* <li>
               <a className="cart_icon" href="cart_view.html"><i className="fas fa-shopping-basket"></i>
                 <span>05</span></a>
-            </li>
+            </li> */}
             <li>
-              <a href="dashboard.html"><i className="fas fa-user"></i></a>
+              <a href="#"><i className="fas fa-phone"></i></a>
             </li>
           </ul>
         </div>
