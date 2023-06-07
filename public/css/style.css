@@ -763,6 +763,14 @@ button {
     padding-bottom: 40px;
 }
 
+.tf__banner_text span {
+    /* background-color: var(--colorPrimary); */
+    font-size: 58px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--colorPrimary);
+}
+
 .tf__banner_text h1 {
     font-size: 58px;
     font-weight: 700;
