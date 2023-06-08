@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const BannerHero = () => {
   return (
@@ -34,6 +35,25 @@ const BannerHero = () => {
                       <h1>Delicious Foods With <span>Kansha</span> Hibachi</h1>
                       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit
                         minimaet debitis ut distinctio optio.</p>
+                      <div className="review-hero">
+                        <div className="stars-review">
+                          <i className="fas fa-star"></i>
+                          <i className="fas fa-star"></i>
+                          <i className="fas fa-star"></i>
+                          <i className="fas fa-star"></i>
+                          <i className="fas fa-star"></i>
+                        </div>
+
+                        <div className="desc-review">
+                          <p>5 Stars Ratings on <Link href="#" target="_blank"><span>Google Review</span></Link></p>
+                        </div>
+                      </div>
+
+                      <div className="cta-hero">
+                        <Link href="#">
+                          <button className="btn-cta-hero"><i className="fas fa-phone"></i> Call Us Now</button>
+                        </Link>
+                      </div>
                       {/* <form>
                         <input type="text" placeholder="Search . . ." />
                         <button type="submit" className="common_btn">search</button>
