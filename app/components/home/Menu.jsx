@@ -38,8 +38,8 @@ const Menu = () => {
           </div>
           <div className="content">
             {menus.map((menu, index) => (
-              <Link href={`/menu/${menu.title}`}>
-                <div className="box" key={index}>
+              <Link href={`/menu/${menu.title}`} key={index}>
+                <div className="box">
                   <div className="box-images">
                     <Image height={100} width={100} src={menu.image} alt={menu.name} />
                   </div>

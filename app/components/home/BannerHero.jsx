@@ -50,7 +50,7 @@ const BannerHero = () => {
                       </div>
 
                       <div className="cta-hero">
-                        <Link href="#">
+                        <Link href="tel:16604299074">
                           <button className="btn-cta-hero"><i className="fas fa-phone"></i> Call Us Now</button>
                         </Link>
                       </div>
