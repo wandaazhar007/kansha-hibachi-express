@@ -28,13 +28,12 @@ const BannerHero = () => {
           <div className="tf__banner_slider" style={{ backgroundImage: "url(" + "/images/banner_bg.jpg" + ")" }}>
             <div className="tf__banner_slider_overlay">
               <div className=" container">
-                <div className="row justify-content-center">
+                <div className="row ">
                   <div className="col-xxl-6 col-xl-6 col-md-10 col-lg-6">
                     <div className="tf__banner_text wow fadeInLeft" data-wow-duration="1s">
                       <h3>Satisfy Your Cravings</h3>
                       <h1>Delicious Foods With <span>Kansha</span> Hibachi</h1>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit
-                        minimaet debitis ut distinctio optio.</p>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit</p>
                       <div className="review-hero">
                         <div className="stars-review">
                           <i className="fas fa-star"></i>

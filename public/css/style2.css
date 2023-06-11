@@ -32,9 +32,8 @@
   color: var(--colorPrimary);
 }
 
-.review-hero .desc-review {
-  /* border: .1rem solid white; */
-}
+/* .review-hero .desc-review {
+} */
 
 .review-hero .desc-review span {
   color: white;
