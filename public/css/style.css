@@ -620,7 +620,7 @@ button {
 
 /* banner start */
 .tf__banner {
-    /* padding-top: 130px; */
+    padding-top: 130px;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -628,13 +628,6 @@ button {
     position: relative;
     overflow: hidden;
 }
-
-/* 
-@media screen and (max-width: 428px) {
-    .tf__banner {
-        padding-top: 130px;
-    }
-} */
 
 .tf__banner_overlay,
 .tf__banner_slider_overlay {
@@ -769,6 +762,7 @@ button {
     flex-direction: column;
     justify-content: center !important;
     padding-bottom: 40px;
+    /* z-index: 9999; */
     border: .1rem solid white;
 }
 
@@ -787,10 +781,15 @@ button {
     color: var(--colorWhite);
 }
 
-/* @media screen and (max-width: 428px) {
+@media screen and (max-width: 428px) {
+
+
+    .tf__banner_text {
+        z-index: 99;
+    }
 
     .tf__banner_text h3 {
-        margin-top: -40px !important;
+        /* margin-top: -40px !important; */
     }
 
     .tf__banner_text h1 {
@@ -804,7 +803,7 @@ button {
         font-size: 45px;
     }
 
-} */
+}
 
 .tf__banner_text h3 {
     color: var(--colorPrimary) !important;
