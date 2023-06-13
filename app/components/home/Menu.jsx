@@ -11,7 +11,7 @@ const Menu = () => {
   const [menus, setMenus] = useState([]);
 
   const getMenu = async () => {
-    const response = await axios.get('http://localhost:3000/api/products');
+    const response = await axios.get('https://kansha-hibachi-express.vercel.app/api/products');
     setMenus(response.data);
   }
 
