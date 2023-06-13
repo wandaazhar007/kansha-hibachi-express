@@ -293,11 +293,11 @@ button {
 }
 
 .tf__topbar_info li a:hover {
-    color: var(--colorBlue);
+    color: var(--colorYellow);
 }
 
 .tf__topbar_info li a i {
-    font-size: 16px;
+    font-size: 1.6rem;
     margin-right: 10px;
 }
 
