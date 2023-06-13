@@ -604,7 +604,7 @@
     .main_menu .navbar-nav {
         line-height: 60px;
         background: var(--colorWhite);
-        border-top: 1px solid var(--colorYellow);
+        /* border-top: 1px solid var(--colorYellow); */
         margin-top: 13px !important;
         padding-top: 15px;
         padding-bottom: 15px;
