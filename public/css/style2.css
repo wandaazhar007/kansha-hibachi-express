@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&family=Oleo+Script:wght@400;700&display=swap');
+
 ::root {
-  --colorPrimary: #FFE473;
+  --colorYellow: #FFE473;
   --colorOrange: #FE7C14;
   --colorRed: #eb0029;
   --colorGrey: #acacac;
   --paraColor: #484747;
-  --colorBlack: #231f40;
+  /* --colorBlue: #231f40; */
+  --colorBlue: #00274C;
   --colorWhite: #ffffff;
   --paraFont: 'Manrope', sans-serif;
   --headingFont: 'Barlow', sans-serif;
@@ -12,35 +15,145 @@
   --boxShadow: rgba(100, 100, 111, 0.15) 0px 7px 29px 0px;
 }
 
-.review-hero {
+html {
+  font-size: 62.5%;
+}
+
+*::selection {
+  background-color: var(--colorYellow);
+  color: var(--colorBlue);
+  /* -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white; */
+}
+
+.hero {
+  margin-top: 130px;
+  height: 85.5vh;
+  border: .1rem solid salmon;
+  background: #231f40c4;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero::before {
+  content: '';
+  height: 85.5vh;
+  width: 100%;
+  color: var(--colorWhite);
+  position: absolute;
+  top: 0;
+  background-color: rgba(35, 31, 64, .70);
+  /* z-index: -1; */
+}
+
+/* .hero .banner-hero {
+
+} */
+
+
+.hero .container .banner-hero {
+  display: flex;
+  flex-wrap: wrap;
+  border: .5rem solid yellow;
+  /* z-index: 9; */
+}
+
+.hero .container .banner-hero .col-left {
+  height: 85.5vh;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+  gap: 1rem;
+  border: .1rem solid green;
+  padding: 0 2rem;
+}
+
+
+.hero .container .banner-hero .col-left h1 {
+  color: white;
+  font-family: var(--headingFont);
+  font-size: 5.8rem;
+  font-weight: 700;
+}
+
+.hero .container .banner-hero .col-left h3 {
+  color: var(--colorOrange) !important;
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: var(--cursiveFont);
+}
+
+.hero .container .banner-hero .col-left h1>span {
+  color: var(--colorWhite);
+  font-family: var(--headingFont);
+  font-size: 5.8rem;
+  font-weight: 700;
+  -webkit-text-stroke-width: .1rem;
+  -webkit-text-stroke-color: var(--colorWhite);
+  text-shadow: #ffffff;
+}
+
+.hero .container .banner-hero .col-left p {
+  color: var(--colorWhite);
+  font-size: 1.8rem;
+}
+
+.hero .container .banner-hero .col-left .review-hero {
   height: 6rem !important;
   display: flex;
   flex-direction: column;
 }
 
-.review-hero .stars-review {
+.hero .container .banner-hero .col-left .review-hero {
   display: flex;
   gap: .2rem;
 }
 
-.review-hero .stars-review i {
-  font-size: 1.7rem;
-  color: var(--colorPrimary);
+.hero .container .banner-hero .col-left .review-hero .stars-review i {
+  font-size: 1.4rem;
+  color: var(--colorYellow);
 }
 
-.review-hero .desc-review span {
+
+.hero .container .banner-hero .col-left .review-hero .desc-review p {
   color: white;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-style: italic;
 }
 
-.cta-hero .btn-cta-hero {
+.hero .container .banner-hero .col-left .review-hero .desc-review span {
+  color: white;
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+.hero .container .banner-hero .col-left .cta-hero .btn-cta-hero {
   padding: 1rem 2rem;
-  background-color: var(--colorPrimary);
+  background-color: var(--colorYellow);
   border-radius: .7rem;
   font-weight: 700;
 }
 
+/* .hero .container .banner-hero .col-right {
+  background-color: salmon;
+  width: 20%;
+  height: 85.5vh;
+  z-index: 2;
+} */
+
+
+
+.hero .container .banner-hero .col-right a {}
+
+/* END HER0 SECTION */
+
+
+/* PRODUCTS CSS */
 .products {
   width: 95%;
   margin: 2rem auto 0;
@@ -166,4 +279,10 @@
   background-color: rgb(255, 251, 0);
   color: grey;
   border-radius: .5rem;
+}
+
+@media screen and (max-width: 428px) {
+  html {
+    font-size: 52.5%;
+  }
 }

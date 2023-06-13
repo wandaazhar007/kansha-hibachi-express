@@ -73,7 +73,7 @@ const BannerHero = () => {
       </div>
     </section> */}
 
-      <section className="hero">
+      <section className="hero" style={{ backgroundImage: "url(" + "/images/banner_bg.jpg" + ")" }}>
         <div className="container">
           <div className="banner-hero">
             <div className="img-overlay">
@@ -96,10 +96,15 @@ const BannerHero = () => {
                 <Image src="/images/tree_2.png" width={200} height={200} alt="Kansha Hibachi Express" className="img-fluid w-100" />
               </span>
             </div>
-            <div className="col-left">
+            <div className="col-left" >
               <h3>Satisfy Your Cravings</h3>
               <h1>Delicious Foods With <span>Kansha</span> Hibachi</h1>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit</p>
+              <div className="cta-hero">
+                <Link href="tel:16604299074">
+                  <button className="btn-cta-hero"><i className="fas fa-phone"></i> Call Us Now</button>
+                </Link>
+              </div>
               <div className="review-hero">
                 <div className="stars-review">
                   <i className="fas fa-star"></i>
@@ -114,10 +119,11 @@ const BannerHero = () => {
                 </div>
               </div>
 
-              <div className="cta-hero">
-                <Link href="tel:16604299074">
-                  <button className="btn-cta-hero"><i className="fas fa-phone"></i> Call Us Now</button>
-                </Link>
+
+            </div>
+            <div className="col-right">
+              <div className="image-right">
+                {/* <Image src={'/images/slider_img_1.png'} alt="kansha hibachi express" height={100} width={100} /> */}
               </div>
             </div>
           </div>

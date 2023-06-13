@@ -62,7 +62,7 @@ h6 {
     margin: 0;
     padding: 0;
     font-family: var(--headingFont);
-    color: var(--colorBlack);
+    color: var(--colorBlue);
 }
 
 p,
@@ -114,12 +114,13 @@ button {
 }
 
 :root {
-    --colorPrimary: #FFE473;
+    --colorYellow: #FFE473;
     --colorOrange: #FE7C14;
     --colorRed: #eb0029;
     --colorGrey: #acacac;
     --paraColor: #484747;
-    --colorBlack: #231f40;
+    /* --colorBlue: #231f40; */
+    --colorBlue: #00274C;
     --colorWhite: #ffffff;
     --paraFont: 'Manrope', sans-serif;
     --headingFont: 'Barlow', sans-serif;
@@ -128,7 +129,7 @@ button {
 }
 
 .common_btn {
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     text-transform: capitalize;
     color: var(--colorWhite);
     padding: 12px 40px 12px 40px;
@@ -173,7 +174,7 @@ button {
 }
 
 .common_btn:hover {
-    background: var(--colorBlack);
+    background: var(--colorBlue);
     padding: 12px 25px 12px 55px;
     color: var(--colorWhite);
 }
@@ -184,7 +185,7 @@ button {
 }
 
 .tf__section_heading h4 {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     font-family: var(--cursiveFont);
     font-size: 24px;
     font-weight: 600;
@@ -242,7 +243,7 @@ button {
 .tf__topbar {
     width: 100%;
     height: 50px;
-    background: var(--colorBlack);
+    background: var(--colorBlue);
     position: fixed;
     top: 0;
     left: 0;
@@ -260,7 +261,7 @@ button {
     content: "";
     width: 100%;
     height: 100%;
-    background-color: var(--colorPrimary);
+    background-color: var(--colorYellow);
     top: 0;
     left: 0;
     z-index: -1;
@@ -276,7 +277,7 @@ button {
 }
 
 .tf__topbar_info li a {
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     font-size: 16px;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
@@ -292,7 +293,7 @@ button {
 }
 
 .tf__topbar_info li a:hover {
-    color: var(--colorBlack);
+    color: var(--colorBlue);
 }
 
 .tf__topbar_info li a i {
@@ -306,12 +307,12 @@ button {
 }
 
 .topbar_icon li a {
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     width: 30px;
     height: 30px;
     line-height: 30px;
     border-radius: 50%;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     text-align: center;
     margin-left: 10px;
     font-size: 14px;
@@ -341,7 +342,7 @@ button {
     top: 50px;
     width: 100%;
     height: 80px;
-    background: var(--colorBlack);
+    background: var(--colorBlue);
 
     /* border-bottom: 1px solid #eee; */
     z-index: 999;
@@ -359,7 +360,7 @@ button {
 @media screen and (max-width: 991px) {
 
     /* .main_menu {
-        background: var(--colorBlack) !important;
+        background: var(--colorBlue) !important;
     } */
     .main_menu .container {
         display: flex !important;
@@ -371,11 +372,12 @@ button {
 
     .navbar-nav {
         /* margin-top: -20px !important; */
-        background: var(--colorBlack) !important;
+        background: var(--colorBlue) !important;
+        z-index: 99;
     }
 
     .menu_icon {
-        background: var(--colorBlack) !important;
+        background: var(--colorBlue) !important;
 
     }
 
@@ -404,7 +406,7 @@ button {
 .main_menu .navbar-nav .nav-item .nav-link {
     font-size: 16px;
     font-weight: 600;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     text-transform: capitalize;
     margin: 0px 15px;
     padding: 0;
@@ -421,7 +423,7 @@ button {
     content: "";
     width: 100%;
     height: 2px;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     bottom: 0;
     left: 50%;
     opacity: 0;
@@ -439,7 +441,7 @@ button {
 
 .main_menu .navbar-nav .nav-item:hover .nav-link,
 .main_menu .navbar-nav .nav-item .nav-link.active {
-    color: var(--colorPrimary) !important;
+    color: var(--colorYellow) !important;
 }
 
 .main_menu .navbar-nav .nav-item:hover .nav-link::after,
@@ -497,7 +499,7 @@ button {
     text-transform: capitalize;
     font-size: 16px;
     font-weight: 500;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     position: relative;
     padding: 0px 15px 0px 30px;
     border-bottom: 1px solid #eee;
@@ -513,7 +515,7 @@ button {
     content: "";
     width: 7px;
     height: 7px;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     top: 50%;
     left: 15px;
     opacity: 0;
@@ -535,7 +537,7 @@ button {
 
 .droap_menu li a:hover,
 .droap_menu li a.active {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     padding-left: 35px;
 }
 
@@ -561,7 +563,7 @@ button {
 .main_menu .menu_icon li a {
     font-size: 16px;
     font-weight: 600;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     text-transform: capitalize;
     margin: 0px 10px;
     padding: 0;
@@ -583,7 +585,7 @@ button {
 .main_menu .menu_icon li a:hover,
 .main_menu .menu_icon li a.active {
     background: var(--colorWhite);
-    color: var(--colorBlack);
+    color: var(--colorBlue);
 }
 
 .main_menu .menu_icon li a span {
@@ -591,7 +593,7 @@ button {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     color: var(--colorWhite);
     border: 1px solid var(--colorWhite);
     line-height: 24px;
@@ -767,11 +769,11 @@ button {
 }
 
 .tf__banner_text span {
-    /* background-color: var(--colorPrimary); */
+    /* background-color: var(--colorYellow); */
     font-size: 58px;
     font-weight: 700;
     text-transform: capitalize;
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .tf__banner_text h1 {
@@ -806,7 +808,7 @@ button {
 }
 
 .tf__banner_text h3 {
-    color: var(--colorPrimary) !important;
+    color: var(--colorYellow) !important;
     text-transform: capitalize;
     font-size: 30px;
     font-weight: 600;
@@ -887,7 +889,7 @@ button {
 
 .tf__banner_img span {
     position: absolute;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     width: 140px;
     height: 140px;
     top: 30px;
@@ -942,7 +944,7 @@ button {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    border: 3px solid var(--colorPrimary);
+    border: 3px solid var(--colorYellow);
     margin: 0px 3px;
     padding: 0;
     opacity: .2;
@@ -961,7 +963,7 @@ button {
     content: "";
     width: 12px;
     height: 12px;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     border-radius: 50%;
     top: 50%;
     left: 50%;
@@ -1015,7 +1017,7 @@ button {
     width: 60px;
     height: 60px;
     line-height: 18px;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     border: 2px solid var(--colorWhite);
     border-radius: 50%;
     color: var(--colorWhite);
@@ -1037,7 +1039,7 @@ button {
     margin: 10px 0px 5px;
     transition: all linear .3s;
     display: block;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     font-family: var(--headingFont);
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -1059,7 +1061,7 @@ button {
 .tf__offer_item_single ul li a {
     width: 30px;
     height: 30px;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     text-align: center;
     margin-right: 5px;
     line-height: 30px;
@@ -1078,11 +1080,11 @@ button {
 }
 
 .tf__offer_item_single:hover .title {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .tf__offer_item_single ul li a:hover {
-    background: var(--colorBlack);
+    background: var(--colorBlue);
 }
 
 .related_product_slider .nextArrow,
@@ -1097,7 +1099,7 @@ button {
 .offer_item_slider .prevArrow {
     width: 40px;
     height: 40px;
-    background: var(--colorBlack);
+    background: var(--colorBlue);
     line-height: 40px;
     text-align: center;
     color: var(--colorWhite);
@@ -1125,12 +1127,12 @@ button {
 .team_slider .prevArrow,
 .offer_item_slider .prevArrow {
     right: 62px;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
 }
 
 .nextArrow:hover,
 .prevArrow:hover {
-    background: var(--colorBlack);
+    background: var(--colorBlue);
 }
 
 .tf__cart_popup .btn-close {
@@ -1143,7 +1145,7 @@ button {
     line-height: 30px;
     text-align: center;
     font-size: 17px;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     border-radius: 50%;
     opacity: 1;
     color: var(--colorWhite);
@@ -1181,7 +1183,7 @@ button {
     border-top: 1px solid #eee;
     padding-top: 15px;
     font-family: var(--headingFont);
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     display: block;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
@@ -1191,7 +1193,7 @@ button {
 }
 
 .tf__cart_popup_text .title:hover {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .tf__cart_popup_text .rating {
@@ -1217,7 +1219,7 @@ button {
 
 .tf__cart_popup_text .price del {
     font-size: 16px;
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     font-weight: 500;
     margin-left: 10px;
 }
@@ -1282,7 +1284,7 @@ button {
 .tf__reservation_form form button {
     width: 100%;
     border-radius: 4px;
-    background: var(--colorBlack);
+    background: var(--colorBlue);
     margin-top: 5px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -1340,11 +1342,11 @@ button {
 .menu_filter button {
     padding: 5px 25px;
     text-transform: capitalize;
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     margin: 5px 0px 0px 10px;
     border-radius: 4px;
     background: var(--colorWhite);
-    border: 1px solid var(--colorPrimary);
+    border: 1px solid var(--colorYellow);
     font-weight: 500;
     font-size: 15px;
     transition: all linear .3s;
@@ -1360,7 +1362,7 @@ button {
 
 .menu_filter button:hover,
 .menu_filter button.active {
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     color: var(--colorWhite);
 }
 
@@ -1415,7 +1417,7 @@ button {
     position: absolute;
     top: -16px;
     right: 0;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     padding: 3px 15px;
     box-shadow: var(--boxShadow);
     border-radius: 4px 0px 0px 4px;
@@ -1431,12 +1433,12 @@ button {
 }
 
 .tf__menu_item_text .category:hover {
-    color: var(--colorBlack);
+    color: var(--colorBlue);
 }
 
 .tf__menu_item_text .title {
     text-transform: capitalize;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     font-size: 20px;
     font-family: var(--headingFont);
     font-weight: 700;
@@ -1476,7 +1478,7 @@ button {
 .tf__menu_item_text .price {
     font-size: 22px;
     font-weight: 700;
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     text-transform: capitalize;
     margin-bottom: 30px;
     margin-top: 13px;
@@ -1497,7 +1499,7 @@ button {
     position: absolute;
     left: -12px;
     bottom: 25px;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     padding: 6px 25px 6px 25px;
     text-transform: capitalize;
     font-size: 16px;
@@ -1530,7 +1532,7 @@ button {
 }
 
 .tf__menu_item_text .tf__add_to_cart:hover {
-    background: var(--colorBlack);
+    background: var(--colorBlue);
 }
 
 .tf__menu_item_text .tf__add_to_cart:hover::after {
@@ -1543,12 +1545,12 @@ button {
     line-height: 35px;
     text-align: center;
     background: var(--colorWhite);
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     font-size: 14px;
     margin-left: 10px;
     border-radius: 3px;
     transition: all linear .3s;
-    border: 1px solid var(--colorPrimary);
+    border: 1px solid var(--colorYellow);
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
@@ -1564,11 +1566,11 @@ button {
 }
 
 .tf__menu_item .title:hover {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .tf__menu_item_text ul li a:hover {
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     color: var(--colorWhite);
 }
 
@@ -1621,7 +1623,7 @@ button {
     content: "";
     width: 100%;
     height: 30%;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     top: 0;
     left: 0;
     clip-path: polygon(0 0, 100% 0%, 100% 25%, 50% 100%, 0 25%);
@@ -1655,7 +1657,7 @@ button {
     overflow: hidden;
     margin: 0 auto;
     padding: 10px;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     position: relative;
     z-index: 1;
     transition: all linear .3s;
@@ -1715,7 +1717,7 @@ button {
     line-height: 35px;
     text-align: center;
     background: #ff7c0821;
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     font-size: 16px;
     margin: 0px 5px;
     border-radius: 50%;
@@ -1731,7 +1733,7 @@ button {
 }
 
 .tf__single_team_text ul li a:hover {
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     color: var(--colorWhite);
 }
 
@@ -1744,7 +1746,7 @@ button {
 }
 
 .tf__single_team:hover h4 {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .tf__single_team:hover .tf__single_team_img img {
@@ -1783,13 +1785,13 @@ button {
 
 .tf__add_slider_single h5 {
     font-family: var(--cursiveFont);
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     text-transform: capitalize;
     font-size: 20px;
 }
 
 .tf__add_slider_single h2 {
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 10px;
@@ -1801,9 +1803,9 @@ button {
     text-transform: capitalize;
     font-size: 17px;
     font-weight: 700;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     margin-top: 30px;
-    border-bottom: 1px solid var(--colorBlack);
+    border-bottom: 1px solid var(--colorBlue);
     padding-bottom: 0px;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
@@ -1817,8 +1819,8 @@ button {
 }
 
 .tf__add_slider_single a:hover {
-    color: var(--colorPrimary);
-    border-color: var(--colorPrimary);
+    color: var(--colorYellow);
+    border-color: var(--colorYellow);
 }
 
 /* add slider end */
@@ -1843,7 +1845,7 @@ button {
 }
 
 .tf__download_text h5 {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     text-align: center;
     font-size: 25px;
     font-family: var(--cursiveFont);
@@ -1862,7 +1864,7 @@ button {
 }
 
 .tf__download_text ul li a {
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     padding: 8px 25px;
     border-radius: 5px;
     display: flex;
@@ -1932,7 +1934,7 @@ button {
 .tf__single_testimonial::after {
     position: absolute;
     content: "";
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     width: 50%;
     height: 100%;
     bottom: 0;
@@ -1959,7 +1961,7 @@ button {
 }
 
 .tf__single_testimonial_text {
-    background: var(--colorBlack);
+    background: var(--colorBlue);
     padding: 90px 30px 40px 30px;
     border-radius: 25px;
     position: relative;
@@ -2020,7 +2022,7 @@ button {
 .tf__single_testimonial_text .rating {
     font-size: 18px;
     text-align: center;
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     display: block;
 }
 
@@ -2096,7 +2098,7 @@ button {
     display: block;
     width: 50px;
     height: 50px;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     line-height: 50px;
     color: var(--colorWhite);
     border-radius: 50%;
@@ -2202,7 +2204,7 @@ button {
 .tf__single_blog_author .text p {
     text-transform: capitalize;
     font-size: 13px;
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .tf__single_blog_text p {
@@ -2218,7 +2220,7 @@ button {
     top: -95px;
     right: 18px;
     font-family: var(--cursiveFont);
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     color: var(--colorWhite);
     padding: 6px 20px;
     text-transform: capitalize;
@@ -2235,7 +2237,7 @@ button {
 }
 
 .tf__single_blog_text .category:hover {
-    color: var(--colorBlack);
+    color: var(--colorBlue);
 }
 
 .tf__single_blog_text .title {
@@ -2243,7 +2245,7 @@ button {
     font-size: 24px;
     font-weight: 700;
     text-transform: capitalize;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     font-family: var(--headingFont);
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -2277,7 +2279,7 @@ button {
     text-transform: capitalize;
     font-size: 16px;
     font-weight: 600;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -2290,11 +2292,11 @@ button {
 }
 
 .tf__single_blog_footer span {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .tf__single_blog_footer a:hover {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .tf__single_blog:hover {
@@ -2302,7 +2304,7 @@ button {
 }
 
 .tf__single_blog_text .title:hover {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 /* blog end */
@@ -2335,7 +2337,7 @@ footer {
     height: 35px;
     text-align: center;
     line-height: 35px;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     border-radius: 50%;
     margin-right: 10px;
     margin-top: 0;
@@ -2349,7 +2351,7 @@ footer {
 
 .tf__footer_content .social_link li a:hover {
     background: var(--colorWhite);
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .tf__footer_content .info {
@@ -2369,7 +2371,7 @@ footer {
 
 .tf__footer_content .info i {
     font-size: 20px;
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     position: absolute;
     left: 0;
     top: 3px;
@@ -2381,7 +2383,7 @@ footer {
     font-weight: 700;
     text-transform: capitalize;
     margin-bottom: 12px;
-    border-bottom: 1px solid var(--colorPrimary);
+    border-bottom: 1px solid var(--colorYellow);
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -2406,7 +2408,7 @@ footer {
     content: "";
     width: 7px;
     height: 7px;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     top: 9px;
     left: 0;
     transition: all linear .3s;
@@ -2417,7 +2419,7 @@ footer {
 }
 
 .tf__footer_content ul li a:hover {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .tf__footer_social_link ul li a {
@@ -2454,7 +2456,7 @@ footer {
 
 .tf__footer_bottom {
     padding: 20px 0px;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
 }
 
 .tf__scroll_btn {
@@ -2469,7 +2471,7 @@ footer {
     width: 45px;
     height: 45px;
     line-height: 45px;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     border: 1px solid var(--colorWhite);
     border-radius: 50%;
     transition: all linear .3s;
@@ -2486,7 +2488,7 @@ footer {
 }
 
 .tf__scroll_btn:hover {
-    background: var(--colorBlack);
+    background: var(--colorBlue);
 }
 
 @keyframes scroll_amini {
@@ -2558,12 +2560,12 @@ footer {
 }
 
 .tf__breadcrumb_text ul li a:hover {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .tf__breadcrumb_text ul li:last-child a {
     padding-right: 0;
-    color: var(--colorPrimary) !important;
+    color: var(--colorYellow) !important;
 }
 
 .tf__breadcrumb_text ul li:last-child a::after {
@@ -2611,7 +2613,7 @@ footer {
     position: absolute;
     top: 50px;
     right: 50px;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     width: 180px;
     height: 180px;
     border-radius: 50%;
@@ -2641,7 +2643,7 @@ footer {
 
 .tf__about_us_img p {
     position: absolute;
-    background: var(--colorBlack);
+    background: var(--colorBlue);
     color: var(--colorWhite);
     width: 350px;
     padding: 20px;
@@ -2657,7 +2659,7 @@ footer {
 
 .tf__about_us_img p span {
     display: block;
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     font-size: 20px;
     font-weight: 600;
     text-transform: capitalize;
@@ -2677,7 +2679,7 @@ footer {
 .tf__about_us_text ol li {
     text-transform: capitalize;
     font-size: 16px;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     padding-left: 85px;
     position: relative;
     margin-bottom: 35px;
@@ -2738,7 +2740,7 @@ footer {
     align-items: center;
     margin-top: 30px;
     background: var(--colorWhite);
-    background: var(--colorBlack);
+    background: var(--colorBlue);
     padding: 20px 20px 20px 25px;
     border-radius: 10px;
     border: 1px solid #eee;
@@ -2761,8 +2763,8 @@ footer {
 
 .tf__mission_text ul li .icon,
 .tf__mission_text ol li .icon {
-    border: 2px solid var(--colorPrimary);
-    background: var(--colorPrimary);
+    border: 2px solid var(--colorYellow);
+    background: var(--colorYellow);
     font-size: 25px;
     margin-right: 30px;
     width: 60px;
@@ -2826,7 +2828,7 @@ footer {
     padding: 20px 20px 20px 55px;
     background: #f1f0fa;
     margin-top: 25px;
-    border-left: 3px solid var(--colorPrimary);
+    border-left: 3px solid var(--colorYellow);
     border-radius: 10px;
     transform: skewX(-10deg);
     position: relative;
@@ -2843,7 +2845,7 @@ footer {
 
 .tf__about_choose_text_box span {
     display: block;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     font-size: 25px;
     width: 60px;
     height: 60px;
@@ -2887,7 +2889,7 @@ footer {
 }
 
 .tf__about_choose_text_box.orange {
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
 }
 
 .tf__about_choose_text_box.orange span {
@@ -2951,7 +2953,7 @@ footer {
 }
 
 .tf__menu_page .menu_heading {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     text-transform: capitalize;
     font-size: 35px;
     font-family: var(--cursiveFont);
@@ -2983,9 +2985,9 @@ footer {
 
 .tf__pagination ul li a:hover,
 .tf__pagination ul li.active a {
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     color: var(--colorWhite) !important;
-    border-color: var(--colorPrimary);
+    border-color: var(--colorYellow);
 }
 
 .tf__pagination ul li a:focus {
@@ -3018,7 +3020,7 @@ footer {
     display: block;
     line-height: 70px;
     text-align: center;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     border-radius: 50%;
     color: var(--colorWhite);
     font-size: 30px;
@@ -3037,7 +3039,7 @@ footer {
     height: 80px;
     top: -5px;
     left: -5px;
-    border: 1px dashed var(--colorPrimary);
+    border: 1px dashed var(--colorYellow);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -3071,14 +3073,14 @@ footer {
     font-weight: 600;
     text-align: center;
     margin-bottom: 15px;
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .tf__contact_info p {
     display: block;
     text-align: center;
     font-size: 16px;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     line-height: 29px;
 }
 
@@ -3114,7 +3116,7 @@ footer {
     left: 0;
     transform: translateY(-50%);
     background: #ff7c082e;
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     border-right: 1px solid #E4E7E9;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -3191,7 +3193,7 @@ footer {
 }
 
 .tf__blog_details_text .details_bloger li i {
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     width: 25px;
     height: 25px;
     text-align: center;
@@ -3269,7 +3271,7 @@ footer {
     position: relative;
     padding-left: 35px;
     margin-top: 15px;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     font-size: 16px;
 }
 
@@ -3296,7 +3298,7 @@ footer {
 .blog_tags_share span {
     font-size: 20px;
     font-weight: 700;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     text-transform: capitalize;
     margin-right: 10px;
 }
@@ -3305,7 +3307,7 @@ footer {
 .blog_tags_share .share ul li a {
     font-size: 16px;
     font-weight: 400;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     text-transform: capitalize;
     margin-right: 10px;
     transition: all linear .3s;
@@ -3316,7 +3318,7 @@ footer {
 }
 
 .blog_tags_share .tags ul li a:hover {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .blog_tags_share .share ul li a {
@@ -3324,7 +3326,7 @@ footer {
     height: 30px;
     text-align: center;
     line-height: 32px;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     color: var(--colorWhite);
     border-radius: 50%;
     font-size: 14px;
@@ -3340,7 +3342,7 @@ footer {
 }
 
 .blog_tags_share .share ul li a:hover {
-    background: var(--colorBlack);
+    background: var(--colorBlue);
 }
 
 .blog_tags_share .tags ul li:last-child a,
@@ -3362,7 +3364,7 @@ footer {
 .tf__comment h4 {
     font-size: 24px;
     font-weight: 700;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     font-family: var(--headingFont);
 }
 
@@ -3394,7 +3396,7 @@ footer {
 .tf__single_comm_text h3 {
     font-size: 20px !important;
     font-weight: 600 !important;
-    color: var(--colorBlack) !important;
+    color: var(--colorBlue) !important;
     text-transform: capitalize !important;
     display: flex;
     flex-wrap: wrap;
@@ -3404,7 +3406,7 @@ footer {
 }
 
 .tf__single_comm_text h3 span {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     text-transform: capitalize;
     font-size: 16px;
     display: block;
@@ -3413,7 +3415,7 @@ footer {
 }
 
 .tf__single_comm_text h3 a {
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     font-size: 20px;
     font-weight: 600;
     text-transform: capitalize;
@@ -3425,7 +3427,7 @@ footer {
 }
 
 .tf__single_comm_text a:hover {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .tf__single_comm_text .rating {
@@ -3495,14 +3497,14 @@ footer {
 .comment_input h4 {
     font-size: 24px;
     font-weight: 700;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     text-transform: capitalize;
 }
 
 .comment_input p {
     font-size: 14px;
     font-weight: 400;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     margin-top: 14px;
 }
 
@@ -3525,7 +3527,7 @@ footer {
     margin-bottom: 30px;
     padding-left: 25px;
     padding-bottom: 10px;
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     line-height: 24px;
     position: relative;
 }
@@ -3535,7 +3537,7 @@ footer {
     content: "";
     width: 15px;
     height: 3px;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     top: 14px;
     left: 0;
 }
@@ -3554,7 +3556,7 @@ footer {
     top: 10px;
     right: 20px;
     font-size: 18px;
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     background: none;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
@@ -3564,7 +3566,7 @@ footer {
 }
 
 .blog_sidebar form button:hover {
-    color: var(--colorBlack);
+    color: var(--colorBlue);
 }
 
 .tf__related_blog ul li {
@@ -3591,7 +3593,7 @@ footer {
 .tf__related_blog ul li .text a {
     font-size: 16px;
     font-weight: 600;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -3605,7 +3607,7 @@ footer {
 }
 
 .tf__related_blog ul li .text a:hover {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .tf__related_blog ul li .text p {
@@ -3615,7 +3617,7 @@ footer {
 
 .tf__related_blog ul li .text p i {
     width: 20px;
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .tf__blog_categori ul li a {
@@ -3640,14 +3642,14 @@ footer {
 }
 
 .tf__blog_categori ul li a span {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     width: 35px;
     text-align: right;
     border-left: 1px solid #ded8d8;
 }
 
 .tf__blog_categori ul li a:hover {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .tf__blog_tags ul {
@@ -3676,7 +3678,7 @@ footer {
 }
 
 .tf__blog_tags ul li a:hover {
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     color: var(--colorWhite);
 }
 
@@ -3692,7 +3694,7 @@ footer {
     text-transform: capitalize;
     font-size: 15px;
     font-weight: 500;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     margin-top: 20px;
 }
 
@@ -3746,7 +3748,7 @@ footer {
 
 .tf__menu_details_text .price del {
     font-size: 18px;
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     font-weight: 500;
     margin-left: 10px;
 }
@@ -3771,7 +3773,7 @@ footer {
     text-transform: capitalize;
     font-size: 18px;
     font-weight: 600;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     margin-bottom: 10px;
 }
 
@@ -3798,14 +3800,14 @@ footer {
 
 .details_size .form-check input:checked,
 .details_extra_item .form-check input:checked {
-    background-color: var(--colorPrimary);
-    border-color: var(--colorPrimary);
+    background-color: var(--colorYellow);
+    border-color: var(--colorYellow);
 }
 
 .details_size .form-check label,
 .details_extra_item .form-check label {
     text-transform: capitalize;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     font-size: 16px;
     font-weight: 400;
     display: flex;
@@ -3826,7 +3828,7 @@ footer {
     line-height: 35px;
     font-size: 15px;
     color: #fff;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     outline: none;
     border: none;
     padding: 0;
@@ -3843,7 +3845,7 @@ footer {
 }
 
 .quentity_btn button:hover {
-    background: var(--colorBlack);
+    background: var(--colorBlue);
 }
 
 .quentity_btn input {
@@ -3855,7 +3857,7 @@ footer {
     margin: 0px 5px;
     font-size: 16px;
     font-weight: 400;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
@@ -3879,7 +3881,7 @@ footer {
     text-align: center;
     line-height: 45px;
     margin-right: 0;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     color: var(--colorWhite);
     border-radius: 50%;
     transition: all linear .3s;
@@ -3894,12 +3896,12 @@ footer {
 }
 
 .details_button_area .wishlist:hover {
-    background: var(--colorBlack);
+    background: var(--colorBlue);
 }
 
 .tf__menu_description_area .nav {
     margin-bottom: 25px;
-    border-bottom: 1px solid var(--colorPrimary);
+    border-bottom: 1px solid var(--colorYellow);
 }
 
 .tf__menu_description_area .nav .nav-item:last-child {
@@ -3914,7 +3916,7 @@ footer {
     font-size: 16px;
     font-weight: 600;
     padding: 10px 40px;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -3928,7 +3930,7 @@ footer {
 }
 
 .tf__menu_description_area .nav .nav-item .nav-link.active {
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     color: var(--colorWhite);
 }
 
@@ -3990,7 +3992,7 @@ footer {
 
 .tf__post_review form .rating {
     text-transform: capitalize;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     font-size: 15px;
 }
 
@@ -4005,7 +4007,7 @@ footer {
 }
 
 .tf__post_review form .rating i:hover {
-    color: var(--colorBlack);
+    color: var(--colorBlue);
 }
 
 .tf__post_review form input,
@@ -4103,7 +4105,7 @@ footer {
 
 .tf__cart_list .tf__pro_tk h6,
 .tf__cart_list .tf__pro_status h6 {
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     font-size: 18px;
     font-weight: 700;
 }
@@ -4151,7 +4153,7 @@ footer {
 .tf__cart_list table tr th,
 .tf__cart_list table tr td {
     border: none;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     text-align: center;
     text-transform: capitalize;
     font-size: 16px;
@@ -4165,12 +4167,12 @@ footer {
 }
 
 .tf__cart_list table tr th {
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     color: var(--colorWhite);
 }
 
 .tf__cart_list table tr th .clear_all {
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     padding: 0;
     font-size: 16px;
     font-weight: 900;
@@ -4196,7 +4198,7 @@ footer {
 }
 
 .tf__cart_list table tbody tr td a {
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     font-size: 18px;
     display: block;
     margin-bottom: 5px;
@@ -4210,7 +4212,7 @@ footer {
 }
 
 .tf__cart_list table tbody tr td a:hover {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .tf__cart_list table tbody tr td p {
@@ -4221,7 +4223,7 @@ footer {
 .tf__cart_list table tbody tr td span {
     display: block;
     width: 100%;
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     font-size: 14px;
 }
 
@@ -4359,7 +4361,7 @@ footer {
     padding: 5px 20px 6px 20px;
     text-align: center;
     border-radius: 30px;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     color: var(--colorWhite);
     font-size: 14px;
     font-weight: 600;
@@ -4379,7 +4381,7 @@ footer {
 }
 
 .tf__cart_list_footer_button button:hover {
-    background: var(--colorBlack);
+    background: var(--colorBlue);
 }
 
 .tf__cart_list_footer_button .common_btn i {
@@ -4388,7 +4390,7 @@ footer {
 
 .tf__cart_list_footer_button h6 {
     border: none;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     text-transform: capitalize;
     font-size: 18px;
     font-weight: 600;
@@ -4402,25 +4404,25 @@ footer {
     display: flex;
     justify-content: space-between;
     font-size: 15px;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     font-weight: 500;
 }
 
 .tf__cart_list_footer_button p span {
     font-size: 15px;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     font-weight: 500;
 }
 
 .tf__cart_list_footer_button .total {
     border-top: 1px solid #ff7c0845;
     padding-top: 10px;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
 }
 
 .tf__cart_list_footer_button .total span {
     font-weight: 600;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     font-size: 18px;
 }
 
@@ -4460,7 +4462,7 @@ footer {
 .tf__checkout_form h5 a {
     font-size: 15px;
     font-weight: 600;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     color: var(--colorWhite);
     padding: 9px 20px;
     border-radius: 30px;
@@ -4481,7 +4483,7 @@ footer {
 }
 
 .tf__checkout_form h5 a:hover {
-    background: var(--colorBlack);
+    background: var(--colorBlue);
 }
 
 .tf__address_modal .modal-dialog {
@@ -4531,13 +4533,13 @@ footer {
 .tf__checkout_single_address .form-check input {
     margin-right: 15px;
     padding: 0;
-    border-color: var(--colorPrimary);
+    border-color: var(--colorYellow);
     margin-left: 0;
 }
 
 .tf__checkout_single_address .form-check input:checked {
-    background-color: var(--colorPrimary);
-    border-color: var(--colorPrimary);
+    background-color: var(--colorYellow);
+    border-color: var(--colorYellow);
 }
 
 .tf__checkout_single_address .form-check label {
@@ -4551,7 +4553,7 @@ footer {
     display: inline-block;
     font-size: 14px;
     font-weight: 600;
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .tf__checkout_single_address .form-check label .icon i {
@@ -4588,8 +4590,8 @@ footer {
     height: 27px;
     line-height: 25px;
     background: var(--colorWhite);
-    color: var(--colorPrimary) !important;
-    border: 1px solid var(--colorPrimary);
+    color: var(--colorYellow) !important;
+    border: 1px solid var(--colorYellow);
     font-size: 12px;
     text-align: center;
     margin: 3px;
@@ -4607,7 +4609,7 @@ footer {
 }
 
 .tf__checkout_single_address ul li a:hover {
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     color: var(--colorWhite) !important;
 }
 
@@ -4641,14 +4643,14 @@ footer {
 .tf__login_area h2 {
     font-weight: 700;
     font-size: 35px;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     text-transform: capitalize;
     margin-bottom: 5px;
     text-align: center;
 }
 
 .tf__login_area p {
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     text-transform: capitalize;
     margin-bottom: 25px;
     text-align: center;
@@ -4690,7 +4692,7 @@ footer {
 
 .tf__login_area .form-check input {
     padding: 0px;
-    border: 1px solid var(--colorPrimary);
+    border: 1px solid var(--colorYellow);
     border-radius: 50%;
     width: 20px;
     height: 20px;
@@ -4698,8 +4700,8 @@ footer {
 }
 
 .tf__login_area .form-check input:checked {
-    background-color: var(--colorPrimary);
-    border-color: var(--colorPrimary);
+    background-color: var(--colorYellow);
+    border-color: var(--colorYellow);
 }
 
 .form-check-input:focus {
@@ -4719,7 +4721,7 @@ footer {
     text-transform: capitalize;
     font-size: 16px;
     font-weight: 400;
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     transition: all 0.3s linear 0s;
     -webkit-transition: all 0.3s linear 0s;
     -moz-transition: all 0.3s linear 0s;
@@ -4728,7 +4730,7 @@ footer {
 }
 
 .tf__login_imput a:hover {
-    color: var(--colorBlack);
+    color: var(--colorBlue);
 }
 
 .tf__login_area .or {
@@ -4741,14 +4743,14 @@ footer {
     width: 30px;
     height: 30px;
     display: inline-block;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     background: #f3f7fb;
     font-size: 12px;
     font-weight: 800;
     text-align: center;
     line-height: 29px;
-    color: var(--colorPrimary);
-    border: 1px solid var(--colorPrimary);
+    color: var(--colorYellow);
+    border: 1px solid var(--colorYellow);
     border-radius: 50%;
     position: relative;
     z-index: 1;
@@ -4761,7 +4763,7 @@ footer {
 .tf__login_area .or::after {
     position: absolute;
     content: "";
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     width: 98%;
     height: 1px;
     top: 50%;
@@ -4780,7 +4782,7 @@ footer {
 .tf__login_area ul li a {
     width: 35px;
     height: 35px;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     color: var(--colorWhite);
     text-align: center;
     line-height: 35px;
@@ -4800,7 +4802,7 @@ footer {
 }
 
 .tf__login_area ul li a:hover {
-    background: var(--colorBlack);
+    background: var(--colorBlue);
 }
 
 .tf__login_area .create_account {
@@ -4810,7 +4812,7 @@ footer {
 }
 
 .tf__login_area .create_account a {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     text-transform: capitalize;
     font-weight: 500;
     transition: all .3s linear 0s;
@@ -4821,7 +4823,7 @@ footer {
 }
 
 .tf__login_area .create_account a:hover {
-    color: var(--colorBlack);
+    color: var(--colorBlue);
 }
 
 /* ==================================
@@ -4930,7 +4932,7 @@ footer {
 }
 
 .tf__payment_btn_area button.btn-danger:hover {
-    background: var(--colorBlack);
+    background: var(--colorBlue);
 }
 
 /*============================
@@ -4947,8 +4949,8 @@ footer {
     border-radius: 10px !important;
     overflow: hidden;
     background: #f3f7fb;
-    border-left: 4px solid var(--colorPrimary);
-    border-right: 4px solid var(--colorPrimary);
+    border-left: 4px solid var(--colorYellow);
+    border-right: 4px solid var(--colorYellow);
     -webkit-border-radius: 10px !important;
     -moz-border-radius: 10px !important;
     -ms-border-radius: 10px !important;
@@ -4957,7 +4959,7 @@ footer {
 
 .tf__faq_area .accordion-item h2 button {
     background: #f3f7fb;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     text-transform: capitalize;
     font-size: 16px;
     font-weight: 500;
@@ -4966,7 +4968,7 @@ footer {
 }
 
 .tf__faq_area .accordion-button:not(.collapsed) {
-    background: var(--colorPrimary) !important;
+    background: var(--colorYellow) !important;
     color: var(--colorWhite) !important;
 }
 
@@ -5141,7 +5143,7 @@ footer {
 }
 
 .tf__dashboard_menu {
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     overflow: hidden;
 }
 
@@ -5199,7 +5201,7 @@ footer {
 }
 
 .dasboard_header .dasboard_header_img label:hover {
-    background: var(--colorBlack);
+    background: var(--colorBlue);
     color: var(--colorWhite);
 }
 
@@ -5265,7 +5267,7 @@ footer {
 .tf_dashboard_body h3 {
     font-size: 24px;
     font-weight: 700;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     text-transform: capitalize;
     margin-bottom: 20px;
     display: flex;
@@ -5277,7 +5279,7 @@ footer {
 .tf_dashboard_body h3 .dash_add_new_address {
     border-radius: 30px;
     padding: 8px 15px;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     color: var(--colorWhite) !important;
     cursor: pointer;
     font-size: 14px;
@@ -5294,7 +5296,7 @@ footer {
 }
 
 .tf_dashboard_body h3 .dash_add_new_address:hover {
-    background: var(--colorBlack);
+    background: var(--colorBlue);
 }
 
 .tf_dash_personal_info {
@@ -5315,7 +5317,7 @@ footer {
     font-size: 18px;
     font-weight: 700;
     text-transform: capitalize;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -5325,7 +5327,7 @@ footer {
 
 .tf_dash_personal_info h4 a {
     font-size: 14px;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     color: var(--colorWhite);
     font-weight: 600;
     padding: 8px 20px 7px 20px;
@@ -5342,11 +5344,11 @@ footer {
 }
 
 .tf_dash_personal_info h4 a:hover {
-    background: var(--colorBlack);
+    background: var(--colorBlue);
 }
 
 .tf_dash_personal_info p {
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -5366,7 +5368,7 @@ footer {
     display: inline-block;
     min-width: 120px;
     font-weight: 600;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
 }
 
 .tf_dashboard_existing_address .tf__checkout_single_address {
@@ -5428,7 +5430,7 @@ footer {
     text-transform: capitalize;
     font-size: 16px;
     font-weight: 400;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     display: block;
     width: 100%;
 }
@@ -5440,8 +5442,8 @@ footer {
 
 .tf_dashboard_new_address .form-check input:checked,
 .tf_dashboard_edit_address .form-check input:checked {
-    background-color: var(--colorPrimary);
-    border-color: var(--colorPrimary);
+    background-color: var(--colorYellow);
+    border-color: var(--colorYellow);
 }
 
 .tf_dashboard_new_address button,
@@ -5478,7 +5480,7 @@ footer {
 }
 
 .tf_dashboard_order table tr th {
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     text-transform: capitalize;
     font-size: 18px;
     font-weight: 500;
@@ -5497,7 +5499,7 @@ footer {
 }
 
 .tf_dashboard_order table tr td h5 {
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     font-size: 16px;
     font-weight: 500;
 }
@@ -5510,11 +5512,11 @@ footer {
 .tf_dashboard_order table tr td a {
     font-size: 13px;
     font-weight: 400;
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     color: var(--colorWhite);
     text-transform: capitalize;
     transition: all 0.3s linear 0s;
-    border: 1px solid var(--colorPrimary);
+    border: 1px solid var(--colorYellow);
     padding: 6px 15px 5px 15px;
     border-radius: 30px;
     cursor: pointer;
@@ -5529,7 +5531,7 @@ footer {
 }
 
 .tf_dashboard_order table tr td a:hover {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     background: var(--colorWhite);
 }
 
@@ -5558,7 +5560,7 @@ footer {
 
 .tf_dashboard_order table tr td .active {
     background: #292b751c;
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .tf_dashboard_body .tf__dashoard_wishlist {
@@ -5622,7 +5624,7 @@ footer {
 .tf__dashboard p b {
     font-size: 18px;
     font-weight: 900;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     display: block;
 }
 
@@ -5670,7 +5672,7 @@ footer {
 }
 
 .tf__invoice .go_back {
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     border-radius: 30px;
     padding: 8px 15px;
     font-size: 14px;
@@ -5694,7 +5696,7 @@ footer {
 }
 
 .tf__invoice .go_back:hover {
-    background: var(--colorBlack);
+    background: var(--colorBlue);
 }
 
 .tf__track_order {
@@ -5719,7 +5721,7 @@ footer {
     position: relative;
     font-size: 16px;
     font-weight: 500;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     text-transform: capitalize;
     padding-top: 25px;
     text-align: center;
@@ -5740,7 +5742,7 @@ footer {
 .tf__track_order ul li::before {
     position: absolute;
     content: "\f1ce";
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
     font-family: "Font Awesome 5 Free";
     font-size: 16px;
     font-weight: 600;
@@ -5821,7 +5823,7 @@ footer {
 }
 
 .tf__invoice_header p span {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .tf__invoice_header h5 {
@@ -5842,7 +5844,7 @@ footer {
 }
 
 .tf__invoice table tr th {
-    background: var(--colorPrimary);
+    background: var(--colorYellow);
     border: none;
     font-weight: 700;
     font-size: 16px;
@@ -5862,12 +5864,12 @@ footer {
 }
 
 .tf__invoice table tr td {
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     vertical-align: middle;
 }
 
 .tf__invoice table tr td p {
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     margin: 0;
     font-weight: 500;
 }
@@ -5876,12 +5878,12 @@ footer {
 .tf__invoice table tr td .coca_cola,
 .tf__invoice table tr td .coca_cola2 {
     display: block;
-    color: var(--colorBlack);
+    color: var(--colorBlue);
     text-transform: capitalize;
 }
 
 .tf__invoice table tr td .size {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .tf__invoice table tr td b {
@@ -5929,7 +5931,7 @@ footer {
 }
 
 .tf__invoice table tfoot .coupon b {
-    color: var(--colorPrimary);
+    color: var(--colorYellow);
 }
 
 .tf_dashboard_body .tf__invoice {
