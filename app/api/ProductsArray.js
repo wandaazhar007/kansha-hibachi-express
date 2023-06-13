@@ -6,7 +6,7 @@ const productsArray = [
     category: "appetizer",
     desc: "Fried Shrimp",
     price: 3.99,
-    image: "/images/products/albacore-toro-bintoro-sushi.jpg"
+    image: "/images/products/menu2_img_1.jpg"
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const productsArray = [
     category: "appetizer",
     desc: "Fried Dumpling",
     price: 3.99,
-    image: "/images/products/albacore-toro-bintoro-sushi.jpg"
+    image: "/images/products/menu2_img_2.jpg"
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const productsArray = [
     category: "appetizer",
     desc: "Fried Crab Stick",
     price: 3.99,
-    image: "/images/products/albacore-toro-bintoro-sushi.jpg"
+    image: "/images/products/menu2_img_3.jpg"
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const productsArray = [
     category: "appetizer",
     desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 3.99,
-    image: "/images/products/albacore-toro-bintoro-sushi.jpg"
+    image: "/images/products/menu2_img_4.jpg"
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const productsArray = [
     category: "appetizer",
     desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 2.99,
-    image: "/images/products/albacore-toro-bintoro-sushi.jpg"
+    image: "/images/products/menu2_img_5.jpg"
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const productsArray = [
     category: "appetizer",
     desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 2.99,
-    image: "/images/products/albacore-toro-bintoro-sushi.jpg"
+    image: "/images/products/menu2_img_6.jpg"
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ const productsArray = [
     category: "roll",
     desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 13.99,
-    image: "/images/products/albacore-toro-bintoro-sushi.jpg"
+    image: "/images/products/menu2_img_7.jpg"
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ const productsArray = [
     category: "roll",
     desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
     price: 11.99,
-    image: "/images/products/albacore-toro-bintoro-sushi.jpg"
+    image: "/images/products/menu2_img_1.jpg"
   },
   {
     id: 9,
