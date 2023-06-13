@@ -75,27 +75,28 @@ const BannerHero = () => {
 
       <section className="hero" style={{ backgroundImage: "url(" + "/images/banner_bg.jpg" + ")" }}>
         <div className="container">
+          <div className="img-overlay">
+            <span className="banner_shape_1">
+              <Image src="/images/tree_5.png" width={200} height={200} alt="Kansha Hibachi Express" className="img-fluid w-100" />
+            </span>
+            <span className="banner_shape_2">
+              <Image src="/images/tree_3.png" width={200} height={200} alt="Kansha Hibachi Express" className="img-fluid w-100" />
+            </span>
+            <span className="banner_shape_3">
+              <Image src="/images/tree_4.png" width={200} height={200} alt="Kansha Hibachi Express" className="img-fluid w-100" />
+            </span>
+            <span className="banner_shape_4">
+              <Image src="/images/tree_6.png" width={200} height={200} alt="Kansha Hibachi Express" className="img-fluid w-100" />
+            </span>
+            <span className="banner_shape_5">
+              <Image src="/images/tree_7.png" width={200} height={200} alt="Kansha Hibachi Express" className="img-fluid w-100" />
+            </span>
+            <span className="banner_shape_6">
+              <Image src="/images/tree_2.png" width={200} height={200} alt="Kansha Hibachi Express" className="img-fluid w-100" />
+            </span>
+          </div>
           <div className="banner-hero">
-            <div className="img-overlay">
-              <span className="banner_shape_1">
-                <Image src="/images/tree_5.png" width={200} height={200} alt="Kansha Hibachi Express" className="img-fluid w-100" />
-              </span>
-              <span className="banner_shape_2">
-                <Image src="/images/tree_3.png" width={200} height={200} alt="Kansha Hibachi Express" className="img-fluid w-100" />
-              </span>
-              <span className="banner_shape_3">
-                <Image src="/images/tree_4.png" width={200} height={200} alt="Kansha Hibachi Express" className="img-fluid w-100" />
-              </span>
-              <span className="banner_shape_4">
-                <Image src="/images/tree_6.png" width={200} height={200} alt="Kansha Hibachi Express" className="img-fluid w-100" />
-              </span>
-              <span className="banner_shape_5">
-                <Image src="/images/tree_7.png" width={200} height={200} alt="Kansha Hibachi Express" className="img-fluid w-100" />
-              </span>
-              <span className="banner_shape_6">
-                <Image src="/images/tree_2.png" width={200} height={200} alt="Kansha Hibachi Express" className="img-fluid w-100" />
-              </span>
-            </div>
+
             <div className="col-left" >
               <h3>Satisfy Your Cravings</h3>
               <h1>Delicious Foods With <span>Kansha</span> Hibachi</h1>
@@ -123,7 +124,7 @@ const BannerHero = () => {
             </div>
             <div className="col-right">
               <div className="image-right">
-                {/* <Image src={'/images/slider_img_1.png'} alt="kansha hibachi express" height={100} width={100} /> */}
+                <Image src={'/images/slider_img_1.png'} alt="kansha hibachi express" height={100} width={100} />
               </div>
             </div>
           </div>

@@ -29,7 +29,7 @@ html {
 .hero {
   margin-top: 130px;
   height: 85.5vh;
-  border: .1rem solid salmon;
+  /* border: .1rem solid salmon; */
   background: #231f40c4;
   position: relative;
   background-position: center;
@@ -55,21 +55,23 @@ html {
 
 .hero .container .banner-hero {
   display: flex;
-  flex-wrap: wrap;
-  border: .5rem solid yellow;
+  /* flex-wrap: wrap; */
+  /* border: .5rem solid yellow; */
+  justify-content: space-between;
   /* z-index: 9; */
 }
 
 .hero .container .banner-hero .col-left {
   height: 85.5vh;
-  max-width: 600px;
+  max-width: 60rem;
+  /* width: 6rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   z-index: 2;
-  position: relative;
+  /* position: relative; */
   gap: 1rem;
-  border: .1rem solid green;
+  /* border: .1rem solid green; */
   padding: 0 2rem;
 }
 
@@ -82,7 +84,7 @@ html {
 }
 
 .hero .container .banner-hero .col-left h3 {
-  color: var(--colorOrange) !important;
+  color: var(--colorYellow) !important;
   font-size: 3rem;
   font-weight: 600;
   font-family: var(--cursiveFont);
@@ -112,6 +114,7 @@ html {
 .hero .container .banner-hero .col-left .review-hero {
   display: flex;
   gap: .2rem;
+  margin-top: 1rem;
 }
 
 .hero .container .banner-hero .col-left .review-hero .stars-review i {
@@ -135,15 +138,33 @@ html {
 .hero .container .banner-hero .col-left .cta-hero .btn-cta-hero {
   padding: 1rem 2rem;
   background-color: var(--colorYellow);
+  color: var(--colorBlue);
   border-radius: .7rem;
   font-weight: 700;
 }
 
-/* .hero .container .banner-hero .col-right {
-  background-color: salmon;
-  width: 20%;
+.hero .container .banner-hero .col-right {
+  /* background-color: salmon; */
+  width: 60rem;
   height: 85.5vh;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+.hero .container .banner-hero .col-right .image-right {
+  width: 50rem;
+  border-radius: 50%;
+  border: 1rem solid var(--colorYellow);
+  overflow: hidden;
+}
+
+/* .hero .container .banner-hero .col-right .image-right img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
 } */
 
 
@@ -168,7 +189,6 @@ html {
   gap: 1rem;
 }
 
-
 .products .container .box-container .header .btn-menu-group {
   display: flex;
   flex-wrap: wrap;
@@ -177,11 +197,6 @@ html {
   /* margin: 0 auto; */
 }
 
-@media screen and (max-width: 767px) {
-  .products .container .box-container .header .btn-menu-group {
-    margin: 0 auto;
-  }
-}
 
 .products .container .box-container .header .title {
   display: flex;
@@ -279,6 +294,80 @@ html {
   background-color: rgb(255, 251, 0);
   color: grey;
   border-radius: .5rem;
+}
+
+
+
+
+
+
+/* RESPONSIVE BREAKPOINT */
+@media screen and (max-width: 1199px) {
+
+
+  .hero .container .banner-hero .col-right {
+    /* background-color: salmon; */
+    width: 40rem;
+    height: 85.5vh;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+
+  .hero .container .banner-hero .col-right .image-right {
+    width: 30rem;
+    border-radius: 50%;
+    border: 1rem solid var(--colorYellow);
+    overflow: hidden;
+  }
+}
+
+/* RESPONSIVE BREAKPOINT */
+@media screen and (max-width: 767px) {
+
+  .hero .container .banner-hero {
+    justify-content: center;
+    margin: 0 auto;
+    /* border: .2rem solid red; */
+
+  }
+
+  .hero .container .banner-hero .col-left {
+    height: 85.5vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    /* position: relative; */
+    gap: 1rem;
+    /* border: .2rem solid white; */
+    padding: 0 2rem;
+  }
+
+  .hero .container .banner-hero .col-left h1 {
+    text-align: center;
+  }
+
+  .hero .container .banner-hero .col-left p {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .hero .container .banner-hero .col-left .review-hero {
+    align-items: center;
+  }
+
+  .hero .container .banner-hero .col-right {
+    display: none;
+  }
+
+  .products .container .box-container .header .btn-menu-group {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 428px) {
