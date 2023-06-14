@@ -546,6 +546,25 @@ html {
 
 
 
+@media screen and (max-width: 589px) {
+  .tf__about_us .container .row .about-img .primary-img {
+    width: 40rem;
+    height: 40rem;
+  }
+
+  .tf__about_us .container .row .about-img .experience {
+    top: 5rem;
+    right: 2rem;
+  }
+
+  .tf__about_choose_img {
+    width: 305px !important;
+    height: 365px !important;
+    margin-left: 90px;
+  }
+}
+
+
 @media screen and (max-width: 520px) {
   .tf__about_us .container .row .about-img .primary-img {
     width: 40rem;
@@ -626,6 +645,14 @@ html {
     right: 1rem;
   }
 
+
+  .tf__about_choose_img {
+    /* border: .5rem solid var(--colorBlue); */
+    width: 205px !important;
+    height: 265px !important;
+    margin-left: 90px;
+  }
+
 }
 
 
@@ -638,5 +665,9 @@ html {
   .tf__about_us .container .row .about-img .experience {
     top: 5rem;
     right: 0;
+  }
+
+  .tf__about_us .container .row .about-img .quote {
+    top: 27rem;
   }
 }
