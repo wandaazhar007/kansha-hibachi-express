@@ -2334,7 +2334,7 @@ footer {
 }
 
 .tf__footer_content .social_link li a {
-    color: var(--colorWhite);
+    color: var(--colorBlue);
     width: 35px;
     height: 35px;
     text-align: center;
@@ -2600,8 +2600,8 @@ footer {
 
 .tf__about_us_img .img {
     overflow: hidden;
-    width: 500px;
-    height: 500px;
+    width: 50rem;
+    height: 50rem;
     border-radius: 0px 100px 100px 0px;
     border: 10px solid var(--colorWhite);
     box-shadow: var(--boxShadow);

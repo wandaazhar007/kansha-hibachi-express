@@ -16,9 +16,6 @@ const Footer = () => {
                   placeat inventore consectetur repellendus optio debitis.</span>
                 <ul className="social_link d-flex flex-wrap">
                   <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
-                  <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i className="fab fa-behance"></i></a></li>
                   <li><a href="#"><i className="fab fa-instagram"></i></a></li>
                   <li><a href="#"><i className="fab fa-google-plus-g"></i></a></li>
                 </ul>

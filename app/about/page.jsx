@@ -13,7 +13,7 @@ const AboutPage = () => {
 
 
 
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
       <Counter />
       <Testimonial />
     </>

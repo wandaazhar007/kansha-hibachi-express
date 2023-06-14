@@ -6,7 +6,7 @@ const About = () => {
       <div className="container">
         <div className="row">
           <div className="col-xl-6 col-lg-6 wow fadeInLeft" data-wow-duration="1s">
-            <div className="tf__about_us_img">
+            {/* <div className="tf__about_us_img">
               <div className="img">
                 <Image width={100} height={100} src="/images/about_chef.jpg" alt="kansha hibachi express" className="img-fluid w-100" />
               </div>
@@ -15,6 +15,23 @@ const About = () => {
                 reiciendis.
                 <span>jhon deo</span>
               </p>
+            </div> */}
+            <div className="about-img">
+              <div className="primary-img">
+                <Image width={100} height={100} src="/images/about_chef.jpg" alt="kansha hibachi express" />
+              </div>
+              <div className="experience">
+                <h1>12</h1>
+                <p>Years Experiences</p>
+              </div>
+              <div className="quote">
+                <div className="quote-desc">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quos. Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div className="quote-name">
+                  <p>Krisdiyanto</p>
+                </div>
+              </div>
             </div>
           </div>
           <div className="col-xl-6 col-lg-6 wow fadeInRight" data-wow-duration="1s">
