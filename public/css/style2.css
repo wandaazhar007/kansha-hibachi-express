@@ -630,17 +630,6 @@ html {
   .tf__about_us .container .row .about-img .quote {
     width: 32rem;
     height: 12.2rem;
-    background-color: var(--colorBlue);
-    border: .6rem solid var(--colorYellow);
-    border-radius: 3rem 0 3rem 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .5rem;
-    justify-content: flex-end;
-    padding: 1rem 2rem;
-    position: absolute;
     top: 32rem;
     right: 1rem;
   }
