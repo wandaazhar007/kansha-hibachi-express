@@ -647,7 +647,6 @@ html {
 
 
   .tf__about_choose_img {
-    /* border: .5rem solid var(--colorBlue); */
     width: 205px !important;
     height: 265px !important;
     margin-left: 90px;
