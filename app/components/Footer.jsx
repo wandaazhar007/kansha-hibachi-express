@@ -48,7 +48,7 @@ const Footer = () => {
             <div className="col-xxl-3 col-lg-4 col-sm-9 col-md-7 order-lg-4">
               <div className="tf__footer_content">
                 <h3>contact us</h3>
-                <p className="info"><i className="fas fa-phone-alt"></i> + (1) 660-429-907</p>
+                <p className="info"><i className="fas fa-phone-alt"></i> + (1) 660-429-9074</p>
                 <p className="info"><i className="fas fa-envelope"></i> ss.kansha@gmail.com</p>
                 <p className="info"><i className="fas fa-map-marker-alt"></i> 208 E Young Ave, Warrensburg, MO 64093, United States</p>
               </div>
