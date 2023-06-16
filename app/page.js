@@ -114,7 +114,7 @@ export default function Home() {
       {/* <DownloadApp /> */}
       {/* <Testimonial /> */}
       <Counter />
-      <Blog />
+      {/* <Blog /> */}
     </>
   )
 }

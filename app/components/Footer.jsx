@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     // <footer style="background: url(images/footer_bg.jpg);">
     <footer>
-      <div className="footer_overlay pt_100 xs_pt_70 pb_100 xs_pb_20">
+      <div className="footer_overlay pt_100 xs_pt_70 pb_100 xs_pb_20" style={{ padding: '0 20px' }}>
         <div className="container wow fadeInUp" data-wow-duration="1s">
           <div className="row justify-content-between">
             <div className="col-xxl-4 col-lg-4 col-sm-9 col-md-7">

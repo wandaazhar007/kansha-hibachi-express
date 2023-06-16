@@ -85,7 +85,7 @@ const Navbar = () => {
                 <span>05</span></a>
             </li> */}
             <li>
-              <a href="#"><i className="fas fa-phone"></i></a>
+              <a href="tel:+16604299074"><i className="fas fa-phone"></i></a>
             </li>
           </ul>
         </div>

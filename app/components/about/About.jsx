@@ -34,7 +34,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-6 col-lg-6 wow fadeInRight" data-wow-duration="1s">
+          <div className="col-xl-6 col-lg-6 wow fadeInRight" data-wow-duration="1s" style={{ padding: '0 20px' }}>
             <div className="tf__section_heading mb_25">
               <h4>About Company</h4>
               <h2>Healthy Foods Provider</h2>
