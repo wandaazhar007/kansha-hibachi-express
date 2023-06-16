@@ -27,7 +27,7 @@ html {
 }
 
 .hero {
-  margin-top: 130px;
+  margin-top: 13rem;
   height: 85.5vh;
   /* border: .1rem solid salmon; */
   background: #231f40c4;
@@ -174,7 +174,86 @@ html {
 /* END HER0 SECTION */
 
 
-/* PRODUCTS CSS */
+
+
+
+
+/* === DAILY OFFER SECTION === */
+
+.dialy-offer {
+  /* width: 90%; */
+  /* margin: 0 auto; */
+  padding: 2rem 0;
+  /* border: .1rem solid salmon; */
+  margin-top: 2rem;
+  background-color: #E5FEFD;
+}
+
+.dialy-offer .heading-dialy-offer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dialy-offer .heading-dialy-offer h1 {
+  font-size: 2rem;
+}
+
+
+.dialy-offer .content-dialy-offer {
+  margin-top: 2rem;
+  /* border: .1rem solid salmon; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.dialy-offer .content-dialy-offer .box {
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-size: contain;
+  width: 30rem;
+  height: 17rem;
+  /* border: .1rem solid salmon; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 1rem;
+  gap: 1rem;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  border-radius: 1rem;
+}
+
+.dialy-offer .content-dialy-offer .box .title-dialy-offer {
+  font-size: 2.4rem;
+  color: var(--colorBlue);
+}
+
+.dialy-offer .content-dialy-offer .box p {
+  font-size: 1.4rem;
+  text-align: end;
+  color: grey;
+  /* border: .1rem solid salmon; */
+  width: 60%;
+  line-height: 1.7rem;
+}
+
+
+.dialy-offer .content-dialy-offer .box .icons {
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--colorBlue);
+}
+
+/* === END DAILY OFFER SECTION === */
+
+
+
+
+
+/* === PRODUCTS SECTION === */
+
 .products {
   width: 95%;
   margin: 2rem auto 0;
@@ -297,7 +376,6 @@ html {
   align-items: center;
 }
 
-
 .products .container .box-container .link-menu .icon {
   width: 1.5rem;
   color: var(--colorYellow);
@@ -309,6 +387,10 @@ html {
   color: var(--colorWhite);
   border-radius: .5rem;
 }
+
+/* === END PRODUCTS SECTION === */
+
+
 
 
 .tf__about_us .container .row .about-img {
@@ -392,69 +474,11 @@ html {
 
 
 
-.dialy-offer {
-  width: 90%;
-  margin: 0 auto;
-  /* border: .1rem solid salmon; */
-  margin-top: 2rem;
-}
-
-.dialy-offer .heading-dialy-offer {
-  display: flex;
-  justify-content: space-between;
-}
-
-.dialy-offer .heading-dialy-offer h1 {
-  font-size: 2rem;
-}
 
 
-.dialy-offer .content-dialy-offer {
-  margin-top: 2rem;
-  /* border: .1rem solid salmon; */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 1rem;
-  justify-items: center;
-}
-
-.dialy-offer .content-dialy-offer .box {
-  background-repeat: no-repeat;
-  object-fit: contain;
-  background-size: contain;
-  width: 30rem;
-  height: 17rem;
-  /* border: .1rem solid salmon; */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 0 1rem;
-  gap: 1rem;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-  border-radius: 1rem;
-}
-
-.dialy-offer .content-dialy-offer .box .title-dialy-offer {
-  font-size: 2.4rem;
-  color: var(--colorBlue);
-}
-
-.dialy-offer .content-dialy-offer .box p {
-  font-size: 1.4rem;
-  text-align: end;
-  color: grey;
-  /* border: .1rem solid salmon; */
-  width: 60%;
-  line-height: 1.7rem;
-}
 
 
-.dialy-offer .content-dialy-offer .box .icons {
-  font-size: 2rem;
-  cursor: pointer;
-  color: var(--colorBlue);
-}
+
 
 
 /* === FAQ SECTION === */

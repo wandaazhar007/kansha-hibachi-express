@@ -14,7 +14,7 @@ const Reviews = () => {
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1 }}
             className="header">
-            <p>Apa kata orang tentang biro jasa sahabat</p>
+            <p>What people say about Kansha Hibachi Express</p>
             <h1>Rated 5/5 on <FontAwesomeIcon icon={faStar} className="icon" /> <span>Google</span></h1>
           </motion.div>
           <div className="content">
