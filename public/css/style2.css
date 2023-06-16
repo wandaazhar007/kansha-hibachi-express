@@ -299,13 +299,14 @@ html {
 
 
 .products .container .box-container .link-menu .icon {
-  width: 1.2rem;
+  width: 1.5rem;
+  color: var(--colorYellow);
 }
 
 .products .container .box-container .link-menu .btn-view-product {
-  padding: 1rem;
-  background-color: rgb(255, 251, 0);
-  color: grey;
+  padding: 1rem 2rem;
+  background-color: var(--colorBlue);
+  color: var(--colorWhite);
   border-radius: .5rem;
 }
 
@@ -454,6 +455,269 @@ html {
   cursor: pointer;
   color: var(--colorBlue);
 }
+
+
+/* === FAQ SECTION === */
+.faq {
+  /* margin: 4rem 0; */
+  padding: 5rem 0;
+  /* background-color: var(--colorYellow); */
+  background-color: rgb(255, 228, 116, .3);
+  /* color: var(--colorWhite); */
+}
+
+.faq .container .box-container .header h1 {
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+.faq .container .box-container .header p {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.faq .container .box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.faq .container .box-container .accordion {
+  width: 90%;
+}
+
+.faq .container .box-container .accordion li {
+  list-style: none;
+  width: 100%;
+  margin: 0rem 0;
+  padding: .2rem;
+  border-radius: .8rem;
+  background: var(--white);
+  /* border: .1rem solid white; */
+}
+
+.faq .container .box-container .accordion li label {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.faq .container .box-container .accordion li label::before {
+  content: '+';
+  margin-right: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.faq .container .box-container .accordion li input[type="radio"] {
+  display: none;
+}
+
+.faq .container .box-container .accordion .content {
+  color: var(--primary);
+  padding: 0 1rem;
+  line-height: 1.6rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.faq .container .box-container .accordion li input[type="radio"]:checked+label+.content {
+  max-height: 90rem;
+  padding: 1rem;
+}
+
+.faq .container .box-container .accordion li input[type="radio"]:checked+label::before {
+  content: '-';
+}
+
+.faq .container .box-container .accordion li>label {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.faq .container .box-container .accordion .content p {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: grey;
+}
+
+/* === END FAQ SECTION === */
+
+
+/* === REVIEW SECTION === */
+.review {
+  padding: 4rem 0;
+  background-color: rgb(0, 39, 76, .1);
+}
+
+.review .container .box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--grey);
+}
+
+.review .container .box-container .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.review .container .box-container .header p {
+  font-size: 1.6rem;
+}
+
+.review .container .box-container .header h1 {
+  font-size: 3rem;
+}
+
+.review .container .box-container .header .icon {
+  font-size: 3rem;
+  width: 2rem;
+}
+
+.review .container .box-container .header span {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.review .container .box-container .content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+  gap: 2rem;
+}
+
+.review .container .box-container .content .col-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.review .container .box-container .content .col-left .box {
+  background-color: var(--colorBlue);
+  border-radius: 1rem;
+  padding: 3rem 3rem 3rem 6rem;
+}
+
+.review .container .box-container .content .col-left .box.heading::before {
+  content: '';
+}
+
+.review .container .box-container .content .col-left .box::before {
+  content: '"';
+  position: absolute;
+  font-size: 5rem;
+  color: var(--colorYellow);
+  margin-left: -4rem;
+  margin-top: -2rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.review .container .box-container .content .col-left .box.heading {
+  background-color: transparent;
+  padding: 3rem;
+}
+
+.review .container .box-container .content .col-left .box h1 {
+  font-size: 4.6rem;
+  color: var(--colorBlue);
+}
+
+.review .container .box-container .content .col-left .box.heading .desc {
+  font-size: 1.8rem;
+  color: var(--colorBlue);
+}
+
+.review .container .box-container .content .col-left .box .review-content {
+  font-size: 1.6rem;
+  line-height: 2;
+  text-align: start;
+  color: var(--colorWhite);
+  opacity: .6;
+}
+
+.review .container .box-container .content .col-left .box .name {
+  font-size: 1.6rem;
+  line-height: 2;
+  text-align: start;
+  margin-top: 2rem;
+  font-weight: bold;
+  color: var(--colorYellow);
+  opacity: .8;
+
+}
+
+.review .container .box-container .content .col-right {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  flex: 1;
+}
+
+.review .container .box-container .content .col-right .box {
+  background-color: var(--colorBlue);
+  /* background-color: rgb(0, 39, 76, .3); */
+  border-radius: 1rem;
+  padding: 3rem 3rem 3rem 6rem;
+}
+
+.review .container .box-container .content .col-right .box::before {
+  content: '"';
+  position: absolute;
+  font-size: 5rem;
+  color: var(--colorYellow);
+  margin-left: -4rem;
+  margin-top: -2rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.review .container .box-container .content .col-right .box .review-content {
+  font-size: 1.6rem;
+  line-height: 2;
+  text-align: start;
+  color: var(--colorWhite);
+  opacity: .6;
+}
+
+.review .container .box-container .content .col-right .box .name {
+  font-size: 1.6rem;
+  line-height: 2;
+  text-align: start;
+  margin-top: 2rem;
+  font-weight: bold;
+  color: var(--colorYellow);
+  opacity: .8;
+}
+
+.review .container .box-container .footer-review p {
+  text-align: center;
+  font-size: 1.6rem;
+  color: grey;
+  margin-top: 3rem;
+}
+
+.review .container .box-container .footer-review p>a {
+  color: #1385e2;
+  text-decoration: underline;
+}
+
+.review .container .box-container .footer-review .icon {
+  width: 2rem;
+  color: green;
+}
+
+/* === END REVIEW SECTION === */
+
 
 
 /* RESPONSIVE BREAKPOINT */

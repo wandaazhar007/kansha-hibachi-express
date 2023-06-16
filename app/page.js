@@ -8,6 +8,9 @@ import DownloadApp from './components/home/DownloadApp'
 import Testimonial from './components/home/Testimonial'
 import Counter from './components/home/Counter'
 import Blog from './components/home/Blog'
+import Faq from './components/home/Faq'
+import Review from './components/home/Reviews'
+import Reviews from './components/home/Reviews'
 
 export default function Home() {
   return (
@@ -104,6 +107,8 @@ export default function Home() {
       <DailyOffer />
       {/* <Reservation /> */}
       <Menu />
+      <Faq />
+      <Reviews />
       <Team />
       <Ads />
       {/* <DownloadApp /> */}

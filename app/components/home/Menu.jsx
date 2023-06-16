@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import Link from "next/link";
-import { faEye, faHeart, faSquareCaretRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowAltCircleRight, faEye, faHeart, faSquareCaretRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -63,7 +63,7 @@ const Menu = () => {
 
           <div className="link-menu">
             <Link href={'/menu'}>
-              <button className="btn-view-product"> <FontAwesomeIcon icon={faEye} className="icon" /> View All Menu</button>
+              <button className="btn-view-product"> <FontAwesomeIcon icon={faArrowAltCircleRight} className="icon" /> View All Menu</button>
             </Link>
           </div>
 
