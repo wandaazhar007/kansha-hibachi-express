@@ -24,6 +24,11 @@ html {
   color: var(--colorBlue);
 }
 
+
+
+
+/* === HERO SECTION === */
+
 .hero {
   margin-top: 13rem;
   height: 85.5vh;
@@ -155,7 +160,7 @@ html {
 
 /* .hero .container .banner-hero .col-right a {} */
 
-/* END HER0 SECTION */
+/* === END HERO SECTION === */
 
 
 
