@@ -15,9 +15,9 @@ const Footer = () => {
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere delectus qui
                   placeat inventore consectetur repellendus optio debitis.</span>
                 <ul className="social_link d-flex flex-wrap">
-                  <li><a href="https://www.facebook.com/kanshahibachiexpress/" target="_blank"><i className="fab fa-facebook-f"></i></a></li>
+                  <li><a href="https://www.facebook.com/kanshahibachiexpress/" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f"></i></a></li>
                   <li><a href="#" target="_blank"><i className="fab fa-instagram"></i></a></li>
-                  <li><a href="https://goo.gl/maps/V9qXQh6mKFZmb15Z7" target="_blank"><i className="fab fa-google-plus-g"></i></a></li>
+                  <li><a href="https://goo.gl/maps/V9qXQh6mKFZmb15Z7" target="_blank" rel="noreferrer"><i className="fab fa-google-plus-g"></i></a></li>
                 </ul>
               </div>
             </div>
