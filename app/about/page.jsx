@@ -10,9 +10,6 @@ const AboutPage = () => {
     <>
       <BreadcrumbAbout />
       <About />
-
-
-
       <WhyChooseUs />
       <Counter />
       <Testimonial />
