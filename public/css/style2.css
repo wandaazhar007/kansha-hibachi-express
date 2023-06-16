@@ -1,3 +1,33 @@
+/* ***************************************
+Website Name: Kansha Hibachi Express
+Author: Wanda Azhar 
+Author Email: wandaazhar@gmail.com
+website: https://wandaazhar.vercel.app/
+Version: 1.0
+Date Release: June-16-2023
+Description: This website is designed based on Grid System. and fully responsive layout. It fits perfectly on various displays and resolutions from regular desktop screens to tablets, iPads, iPhones, and small mobile devices.
+***************************************
+
+CSS TABLE OF CONTENTS
+===================================
+01. GLOBAL CSS 
+02. HOME PAGE
+03. ABOUT US PAGE
+04. MENU PAGE
+05. CONTACT PAGE
+06. BLOG DETAILS PAGE
+07. MENU DETAILS PAGE
+08. CART VIEW PAGE
+09. CHECKOUT PAGE
+10. SIGN IN PAGE
+11. PAYMENT PAGE
+12. FAQ PAGE
+13. TERMS AND CONDITION PAGE
+14. 404 PAGE
+15. DASHBOARD PAGE
+
+================================*/
+
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&family=Oleo+Script:wght@400;700&display=swap');
 
 ::root {
@@ -373,95 +403,12 @@ html {
 
 
 
-.tf__about_us .container .row .about-img {
-  width: 100%;
-  border: .1rem solid salmon;
-  position: relative;
-  margin-bottom: 7rem;
-}
-
-.tf__about_us .container .row .about-img .primary-img {
-  width: 50rem;
-  height: 50rem;
-  border-radius: 0 10rem 10rem 0;
-  overflow: hidden;
-}
-
-.tf__about_us .container .row .about-img .experience {
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-  background-color: var(--colorBlue);
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: .6rem solid var(--colorYellow);
-  padding: 4rem;
-  position: absolute;
-  top: 5rem;
-  right: 4rem;
-}
-
-.tf__about_us .container .row .about-img .experience h1 {
-  color: var(--colorWhite);
-  font-size: 5.2rem;
-}
-
-.tf__about_us .container .row .about-img .experience p {
-  color: var(--colorWhite);
-  font-size: 1.9rem;
-  line-height: 2rem;
-  text-align: center;
-}
-
-.tf__about_us .container .row .about-img .quote {
-  width: 35rem;
-  height: 15.2rem;
-  background-color: var(--colorBlue);
-  border: .6rem solid var(--colorYellow);
-  border-radius: 5rem 0 5rem 0;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  justify-content: flex-end;
-  padding: 1rem 3rem;
-  position: absolute;
-  top: 31rem;
-  right: 1rem;
-}
-
-.tf__about_us .container .row .about-img .quote .quote-desc p {
-  color: var(--colorWhite);
-}
-
-
-.tf__about_us .container .row .about-img .quote .quote-name {
-  /* border: .1rem solid white; */
-  width: 100%;
-}
-
-.tf__about_us .container .row .about-img .quote .quote-name p {
-  color: var(--colorWhite);
-  text-align: end;
-  font-family: var(--cursiveFont);
-  font-weight: 700;
-  font-size: 2rem;
-}
-
-
-
-
-
-
 
 
 
 
 /* === FAQ SECTION === */
+
 .faq {
   /* margin: 4rem 0; */
   padding: 5rem 0;
@@ -551,6 +498,10 @@ html {
 }
 
 /* === END FAQ SECTION === */
+
+
+
+
 
 
 /* === REVIEW SECTION === */
@@ -724,7 +675,88 @@ html {
 
 
 
-/* RESPONSIVE BREAKPOINT */
+
+.tf__about_us .container .row .about-img {
+  width: 100%;
+  border: .1rem solid salmon;
+  position: relative;
+  margin-bottom: 7rem;
+}
+
+.tf__about_us .container .row .about-img .primary-img {
+  width: 50rem;
+  height: 50rem;
+  border-radius: 0 10rem 10rem 0;
+  overflow: hidden;
+}
+
+.tf__about_us .container .row .about-img .experience {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: var(--colorBlue);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: .6rem solid var(--colorYellow);
+  padding: 4rem;
+  position: absolute;
+  top: 5rem;
+  right: 4rem;
+}
+
+.tf__about_us .container .row .about-img .experience h1 {
+  color: var(--colorWhite);
+  font-size: 5.2rem;
+}
+
+.tf__about_us .container .row .about-img .experience p {
+  color: var(--colorWhite);
+  font-size: 1.9rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.tf__about_us .container .row .about-img .quote {
+  width: 35rem;
+  height: 15.2rem;
+  background-color: var(--colorBlue);
+  border: .6rem solid var(--colorYellow);
+  border-radius: 5rem 0 5rem 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-end;
+  padding: 1rem 3rem;
+  position: absolute;
+  top: 31rem;
+  right: 1rem;
+}
+
+.tf__about_us .container .row .about-img .quote .quote-desc p {
+  color: var(--colorWhite);
+}
+
+
+.tf__about_us .container .row .about-img .quote .quote-name {
+  /* border: .1rem solid white; */
+  width: 100%;
+}
+
+.tf__about_us .container .row .about-img .quote .quote-name p {
+  color: var(--colorWhite);
+  text-align: end;
+  font-family: var(--cursiveFont);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+
+/* === RESPONSIVE BREAKPOINT === */
 
 @media screen and (max-width: 1399px) {
   .tf__about_us .container .row .about-img .primary-img {
