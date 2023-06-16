@@ -204,26 +204,34 @@ html {
   gap: .3rem;
 }
 
+.products .container .box-container .header .title span {
+  color: var(--colorBlue);
+  font-size: 2.3rem;
+  font-weight: 700;
+  font-family: var(--cursiveFont);
+}
+
 .products .container .box-container .header .title .icon {
   height: 3rem;
-  color: red;
+  color: var(--colorBlue);
 }
 
 .btn-menu {
-  width: 6rem;
+  width: 7rem;
   border-radius: .2rem;
-  border: .1rem solid red;
-  color: grey;
+  border: .1rem solid var(--colorBlue);
+  color: var(--colorBlue);
   padding-top: .5rem;
   padding-bottom: .5rem;
   font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .btn-menu.active {
   width: 6rem;
   border-radius: .2rem;
-  background-color: red;
-  color: white;
+  background-color: var(--colorBlue);
+  color: var(--colorYellow);
   padding-top: .5rem;
   padding-bottom: .5rem;
 }
@@ -641,6 +649,17 @@ html {
   .tf__about_us .container .row .about-img .experience {
     top: 5rem;
     right: 2rem;
+  }
+
+  .products .container .box-container .header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .products .container .box-container .header .title .icon {
+    display: none;
   }
 }
 

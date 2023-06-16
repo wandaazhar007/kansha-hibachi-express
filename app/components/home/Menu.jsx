@@ -34,6 +34,7 @@ const Menu = () => {
               <button className="btn-menu">Roll</button>
               <button className="btn-menu">Appetizer</button>
               <button className="btn-menu">Side Order</button>
+              <button className="btn-menu">All Menu</button>
             </div>
           </div>
           <div className="content">
