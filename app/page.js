@@ -109,12 +109,12 @@ export default function Home() {
       <Menu />
       <Faq />
       <Reviews />
-      <Team />
+      {/* <Team /> */}
       <Ads />
       {/* <DownloadApp /> */}
       {/* <Testimonial /> */}
-      {/* <Counter /> */}
-      {/* <Blog /> */}
+      <Counter />
+      <Blog />
     </>
   )
 }

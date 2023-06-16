@@ -15,9 +15,9 @@ const Footer = () => {
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere delectus qui
                   placeat inventore consectetur repellendus optio debitis.</span>
                 <ul className="social_link d-flex flex-wrap">
-                  <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-                  <li><a href="#"><i className="fab fa-google-plus-g"></i></a></li>
+                  <li><a href="https://www.facebook.com/kanshahibachiexpress/" target="_blank"><i className="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#" target="_blank"><i className="fab fa-instagram"></i></a></li>
+                  <li><a href="https://goo.gl/maps/V9qXQh6mKFZmb15Z7" target="_blank"><i className="fab fa-google-plus-g"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -48,9 +48,9 @@ const Footer = () => {
             <div className="col-xxl-3 col-lg-4 col-sm-9 col-md-7 order-lg-4">
               <div className="tf__footer_content">
                 <h3>contact us</h3>
-                <p className="info"><i className="fas fa-phone-alt"></i> + (1) 646-4671926</p>
-                <p className="info"><i className="fas fa-envelope"></i> wandaazhar@gmail.com</p>
-                <p className="info"><i className="far fa-map-marker-alt"></i> 208 E Young Ave, Warrensburg, MO 64093, United States</p>
+                <p className="info"><i className="fas fa-phone-alt"></i> + (1) 660-429-907</p>
+                <p className="info"><i className="fas fa-envelope"></i> ss.kansha@gmail.com</p>
+                <p className="info"><i className="fas fa-map-marker-alt"></i> 208 E Young Ave, Warrensburg, MO 64093, United States</p>
               </div>
             </div>
           </div>
