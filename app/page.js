@@ -112,10 +112,10 @@ export default function Home() {
       <Reviews />
       {/* <Team /> */}
       <Ads />
-      {/* <DownloadApp /> */}
-      {/* <Testimonial /> */}
       <Counter />
       <ContactSection />
+      {/* <DownloadApp /> */}
+      {/* <Testimonial /> */}
       {/* <Blog /> */}
     </>
   )

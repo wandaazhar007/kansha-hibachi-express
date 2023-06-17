@@ -1,4 +1,4 @@
-import { faArrowUpRightDots, faArrowUpRightFromSquare, faEnvelope, faHome, faMap, faPhone, faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faHome, faMap, faPhone, faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
@@ -23,6 +23,7 @@ const ContactSection = () => {
             <div className="contact-group">
               <FontAwesomeIcon icon={faEnvelope} className="icons" />
               <Link href="mailto:" rel="noreferrer"> <h1 className="email">ss.kansha@gmail.com</h1></Link>
+              <FontAwesomeIcon icon={faSquareArrowUpRight} className="icons-link" />
             </div>
             <div className="contact-group">
               <FontAwesomeIcon icon={faMap} className="icons" />
