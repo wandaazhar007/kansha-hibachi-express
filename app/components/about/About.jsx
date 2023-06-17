@@ -26,7 +26,7 @@ const About = () => {
               </div>
               <div className="quote">
                 <div className="quote-desc">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quos. Lorem ipsum dolor sit amet.</p>
+                  <p>At Kansha Hibachi Express, we're committed to serving you more than just exceptional food ...</p>
                 </div>
                 <div className="quote-name">
                   <p>Krisdiyanto</p>
@@ -36,12 +36,11 @@ const About = () => {
           </div>
           <div className="col-xl-6 col-lg-6 wow fadeInRight" data-wow-duration="1s" style={{ padding: '0 20px' }}>
             <div className="tf__section_heading mb_25">
-              <h4>About Company</h4>
+              <h4>About Kansha Hibachi Express</h4>
               <h2>Healthy Foods Provider</h2>
             </div>
             <div className="tf__about_us_text">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aspernatur molestiae
-                minima pariatur consequatur voluptate sapiente deleniti soluta,.</p>
+              <p>Step into our vibrant and dynamic space, designed to cater to your busy lifestyle. Whether you're stopping by during a lunch break or grabbing dinner on the go, With a focus on efficiency without compromising on taste, we offer a streamlined dining process that ensures you can enjoy your meal without delay.</p>
               <ul>
                 <li>
                   <h4>trusted partner</h4>

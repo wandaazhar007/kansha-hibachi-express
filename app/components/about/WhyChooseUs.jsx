@@ -11,8 +11,7 @@ const WhyChooseUs = () => {
               <h2>Why we are the best</h2>
             </div>
             <div className="tf__about_choose_text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius culpa, itaque repudiandae
-                praesentium tempore quos, totam, facilis doloribus doloremque illo delectus.</p>
+              <p>At Kansha Hibachi Express, we're committed to serving you more than just exceptional food. Our friendly and attentive staff are here to make your visit an enjoyable one, providing prompt service and answering any questions you may have. We take pride in creating a dining experience that not only tantalizes your taste buds but also leaves you with a smile</p>
               <div className="row">
                 <div className="col-xl-6">
                   <div className="tf__about_choose_text_box">
