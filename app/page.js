@@ -11,6 +11,7 @@ import Blog from './components/home/Blog'
 import Faq from './components/home/Faq'
 import Review from './components/home/Reviews'
 import Reviews from './components/home/Reviews'
+import ContactSection from './components/home/ContactSection'
 
 export default function Home() {
   return (
@@ -114,6 +115,7 @@ export default function Home() {
       {/* <DownloadApp /> */}
       {/* <Testimonial /> */}
       <Counter />
+      <ContactSection />
       {/* <Blog /> */}
     </>
   )

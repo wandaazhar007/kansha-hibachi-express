@@ -754,3 +754,56 @@ html {
   font-weight: 700;
   font-size: 2rem;
 }
+
+.contact-section {
+  background-color: #D4FEE3;
+  padding: 5rem 0;
+}
+
+.contact-section .container .heading h1 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.contact-section .container .box-container {
+  display: flex;
+}
+
+.contact-section .container .box-container .col-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.contact-section .container .box-container .col-left .contact-group {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  /* border: .1rem solid salmon; */
+  position: relative;
+}
+
+
+.contact-section .container .box-container .col-left .contact-group::after {
+  content: '';
+  width: 100%;
+  border-bottom: .1rem solid gray;
+  display: block;
+  position: absolute;
+  bottom: -1rem;
+  opacity: .4;
+}
+
+.contact-section .container .box-container .col-left .contact-group .icons {
+  font-size: 2rem;
+  /* width: 20rem; */
+}
+
+.contact-section .container .box-container .col-left .contact-group h1 {
+  font-size: 1.8rem;
+}
+
+.contact-section .container .box-container .col-left .contact-group .icons-link {
+  font-size: 1.5rem;
+  margin-left: -1rem;
+}
