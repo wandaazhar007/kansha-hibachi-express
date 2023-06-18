@@ -62,7 +62,7 @@ const Footer = () => {
             <div className="col-12">
               <div className="tf__footer_bottom_text">
                 {/* <p>Copyright ©<b> Kansha Express</b> 2023. All Rights Reserved</p> */}
-                <p>Build with love by<b> Wanda Azhar</b> 2023. in Michigan</p>
+                <p>Made with ❤️ by<b> Kansha Hibachi</b> © 2023 in Michigan, USA 🇺🇸</p>
               </div>
             </div>
           </div>
