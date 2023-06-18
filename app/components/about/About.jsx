@@ -36,7 +36,7 @@ const About = () => {
           </div>
           <div className="col-xl-6 col-lg-6 wow fadeInRight" data-wow-duration="1s" style={{ padding: '0 20px' }}>
             <div className="tf__section_heading mb_25">
-              <h4>About Kansha Hibachi Express</h4>
+              <h4>About Kansha Hibachi</h4>
               <h2>Healthy Foods Provider</h2>
             </div>
             <div className="tf__about_us_text">

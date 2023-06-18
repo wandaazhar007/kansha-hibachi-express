@@ -815,7 +815,7 @@ html {
 
 .contact-section .container .box-container .col-left .contact-group .icons-link {
   font-size: 1.5rem;
-  margin-left: -1rem;
+  /* margin-left: -1rem; */
 }
 
 .contact-section .container .box-container .col-right {
