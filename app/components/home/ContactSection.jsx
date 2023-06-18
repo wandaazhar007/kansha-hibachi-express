@@ -1,4 +1,4 @@
-import { faEnvelope, faHome, faMap, faPhone, faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
+import { faCommentAlt, faEnvelope, faHome, faMap, faPhone, faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
@@ -28,6 +28,16 @@ const ContactSection = () => {
             <div className="contact-group">
               <FontAwesomeIcon icon={faMap} className="icons" />
               <Link href="https://goo.gl/maps/V9qXQh6mKFZmb15Z7" target="_blank" rel="noreferrer"> <h1 className="location">208 E Young Ave, Warrensburg, MO 64093, United States</h1></Link>
+              <FontAwesomeIcon icon={faSquareArrowUpRight} className="icons-link" />
+            </div>
+            <div className="contact-group">
+              <FontAwesomeIcon icon={faCommentAlt} className="icons" />
+              <Link href="/faq" rel="noreferrer"> <h1 className="location">Frequently Asked Questions</h1></Link>
+              <FontAwesomeIcon icon={faSquareArrowUpRight} className="icons-link" />
+            </div>
+            <div className="contact-group">
+              <FontAwesomeIcon icon={faCommentAlt} className="icons" />
+              <Link href="https://www.google.com/maps/place/Kansha+Hibachi+Express/@38.7709022,-93.7368245,15z/data=!4m18!1m9!3m8!1s0x87c3e304e1e59d4d:0xd91636cc2fb9e159!2sKansha+Hibachi+Express!8m2!3d38.7709022!4d-93.7368245!9m1!1b1!16s%2Fg%2F11n_yrrmnf!3m7!1s0x87c3e304e1e59d4d:0xd91636cc2fb9e159!8m2!3d38.7709022!4d-93.7368245!9m1!1b1!16s%2Fg%2F11n_yrrmnf?entry=ttu" target="_blank" rel="noreferrer"> <h1 className="location">Our Reviews on Google</h1></Link>
               <FontAwesomeIcon icon={faSquareArrowUpRight} className="icons-link" />
             </div>
           </div>
