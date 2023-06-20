@@ -98,9 +98,9 @@ const BannerHero = () => {
           <div className="banner-hero">
 
             <div className="col-left" >
-              <h3>Satisfy Your Cravings</h3>
-              <h1>Delicious Foods With <span>Kansha</span> Hibachi</h1>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit</p>
+              <h3>Grill. Entertain. Delight.</h3>
+              <h1>Where Culinary Art Meets Entertainment</h1>
+              <p>Visit us today and experience the thrill of hibachi cuisine brought to life at Kansha Hibachi Express. We look forward to serving you and sharing the joy of our flavorful creations.</p>
               <div className="cta-hero">
                 <Link href="tel:16604299074">
                   <button className="btn-cta-hero"><i className="fas fa-phone"></i> Call Us Now</button>
