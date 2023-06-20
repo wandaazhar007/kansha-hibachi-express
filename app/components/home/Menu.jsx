@@ -5,21 +5,53 @@ import { faArrowAltCircleRight, faEye, faHeart, faSquareCaretRight } from "@fort
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import ReactPaginate from "react-paginate";
 
 const Menu = () => {
 
+  const [page, setPage] = useState(0);
+  const [limit, setLimit] = useState(3);
+  const [pages, setPages] = useState(0);
+  const [keyword, setKeyword] = useState(1);
+  const [msg, setMsg] = useState("");
+  const [rows, setRows] = useState(0);
   const [menus, setMenus] = useState([]);
 
   const getMenu = async () => {
-    const response = await axios.get('https://kansha-hibachi-express.vercel.app/api/products');
-    setMenus(response.data);
+    // const response = await axios.get('https://kansha-hibachi-express.vercel.app/api/products');
+    // const response = await axios.get(process.env.NEXT_PUBLIC_URL_PRODUCTS);
+    const response = await axios.get(`http://localhost:2000/products?search_query=${keyword}&page=${page}&limit=${limit}`);
+    // const response = await axios.get(`http://localhost:2000/products?search_query=hibachi&page=${page}&limit=${limit}`);
+    // console.log('nama menu', response.data)
+    setMenus(response.data.result);
+    setPage(response.data.page);
+    setPages(response.data.totalPage);
+    setRows(response.data.totalRows);
+  }
+
+  const changePage = ({ selected }) => {
+    setPage(selected);
+    if (selected === 9) {
+      setMsg(
+        "Please search by specific keyword..."
+      );
+    } else {
+      setMsg("");
+    }
+  };
+
+  const handleClickMenu = (id) => {
+    setPage('')
+    setKeyword(id)
+    // alert(id)
   }
 
   useEffect(() => {
-    getMenu();
-  }, [])
+    getMenu()
+  }, [page, keyword])
 
-  const testDesc = 'test ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, fugit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque aperiam ad saepe libero vel amet nesciunt iste eum fugit nostrum.'
+
+  // const testDesc = 'test ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, fugit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque aperiam ad saepe libero vel amet nesciunt iste eum fugit nostrum.'
   return (
     <section className="products">
       <div className="container">
@@ -30,19 +62,19 @@ const Menu = () => {
               <span>Our Menu</span>
             </h1>
             <div className="btn-menu-group">
-              <button className="btn-menu active">Hibachi</button>
-              <button className="btn-menu">Roll</button>
-              <button className="btn-menu">Appetizer</button>
-              <button className="btn-menu">Side Order</button>
-              <button className="btn-menu">All Menu</button>
+              <button className={`btn-menu ${keyword === 1 ? 'active' : ''}`} onClick={() => handleClickMenu(1)}>Hibachi</button>
+              <button className={`btn-menu ${keyword === 2 ? 'active' : ''}`} onClick={() => handleClickMenu(2)}>Roll</button>
+              <button className={`btn-menu ${keyword === 3 ? 'active' : ''}`} onClick={() => handleClickMenu(3)}>Appetizer</button>
+              <button className={`btn-menu ${keyword === 4 ? 'active' : ''}`} onClick={() => handleClickMenu(4)}>Side Order</button>
+              <button className={`btn-menu ${keyword === '' ? 'active' : ''}`} onClick={() => handleClickMenu('')}>All Menu</button>
             </div>
           </div>
           <div className="content">
             {menus.map((menu, index) => (
-              <Link href={`/menu/${menu.title}`} key={index}>
+              <Link href={`/menu/${menu.slug}`} key={index}>
                 <div className="box">
                   <div className="box-images">
-                    <Image height={100} width={100} src={menu.image} alt={menu.name} />
+                    <Image height={100} width={100} src={menu.urlImage} alt={menu.name} />
                   </div>
                   <div className="box-contents">
                     <h1 className="title">{menu.name}</h1>
@@ -58,7 +90,23 @@ const Menu = () => {
                 </div>
               </Link>
             ))}
-
+          </div>
+          <p>Total Rows: {rows} Page: {rows ? page + 1 : 0} of {pages}</p>
+          <div className="pagination">
+            <div className="box-container">
+              <ReactPaginate
+                previousLabel={"<"}
+                nextLabel={">"}
+                pageCount={Math.min(10, pages)}
+                onPageChange={changePage}
+                containerClassName={"pagination box-container"}
+                pageLinkClassName={"link"}
+                previousLinkClassName={"link"}
+                nextLinkClassName={"link"}
+                activeLinkClassName={"link active"}
+                disabledLinkClassName={"disabled"}
+              />
+            </div>
           </div>
 
           <div className="link-menu">
