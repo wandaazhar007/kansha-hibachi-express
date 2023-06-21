@@ -2365,6 +2365,11 @@ footer {
     position: relative;
 }
 
+
+.tf__footer_content .info a {
+    color: var(--colorWhite);
+}
+
 .tf__footer_content .info:last-child {
     margin-bottom: 0;
 }

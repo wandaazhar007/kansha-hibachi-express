@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -25,11 +26,11 @@ const Footer = () => {
               <div className="tf__footer_content">
                 <h3>Short Link</h3>
                 <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                  <li><a href="#">Our Service</a></li>
-                  <li><a href="#">gallery</a></li>
+                  <li><Link href="/">Home</Link></li>
+                  <li><Link href="/about">About Us</Link></li>
+                  <li><Link href="/contact">Contact Us</Link></li>
+                  <li><Link href="/about">Our Service</Link></li>
+                  <li><Link href="/galery">gallery</Link></li>
                 </ul>
               </div>
             </div>
@@ -37,20 +38,32 @@ const Footer = () => {
               <div className="tf__footer_content">
                 <h3>Help Link</h3>
                 <ul>
-                  <li><a href="#">Terms & Conditions</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Refund Policy</a></li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">contact</a></li>
+                  <li><Link href="/term-condition">Terms & Conditions</Link></li>
+                  <li><Link href="/privacy-policy">Privacy Policy</Link></li>
+                  <li><Link href="/refund-policy">Refund Policy</Link></li>
+                  <li><Link href="/faq">FAQ</Link></li>
+                  <li><Link href="/contact">contact</Link></li>
                 </ul>
               </div>
             </div>
             <div className="col-xxl-3 col-lg-4 col-sm-9 col-md-7 order-lg-4">
               <div className="tf__footer_content">
                 <h3>contact us</h3>
-                <p className="info"><i className="fas fa-phone-alt"></i>660-429-9074</p>
-                <p className="info"><i className="fas fa-envelope"></i>ss.kansha@gmail.com</p>
-                <p className="info"><i className="fas fa-map-marker-alt"></i> 208 E Young Ave, Warrensburg, MO 64093, United States</p>
+                <p className="info">
+                  <Link href="tel:+16604299074" target="_blank" rel="noreferrer">
+                    <i className="fas fa-phone-alt"></i>660-429-9074
+                  </Link>
+                </p>
+                <p className="info">
+                  <Link href="tel:+16604299074" target="_blank" rel="noreferrer">
+                    <i className="fas fa-envelope"></i>ss.kansha@gmail.com
+                  </Link>
+                </p>
+                <p className="info">
+                  <Link href="tel:+16604299074" target="_blank" rel="noreferrer">
+                    <i className="fas fa-map-marker-alt"></i> 208 E Young Ave, Warrensburg, MO 64093, United States
+                  </Link>
+                </p>
               </div>
             </div>
           </div>
