@@ -91,7 +91,7 @@ const Menu = () => {
               </Link>
             ))}
           </div>
-          <p>Total Rows: {rows} Page: {rows ? page + 1 : 0} of {pages}</p>
+          <p className="total-row">Total {keyword === 1 ? 'Hibachi' : '' || keyword === 2 ? 'Roll' : '' || keyword === 3 ? 'Appetizer' : '' || keyword === 4 ? 'Side Order' : '' || keyword === '' ? 'All Menu' : ''} {rows} Page: {rows ? page + 1 : 0} of {pages}</p>
           <div className="pagination">
             <div className="box-container">
               <ReactPaginate
