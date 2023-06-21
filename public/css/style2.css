@@ -337,15 +337,14 @@ html {
 }
 
 .products .container .box-container .content .box {
-  padding: .5rem;
+  padding: 1rem;
   box-sizing: border-box;
   background-color: var(--colorWhite);
   max-width: 37rem;
-  /* min-width: 25rem; */
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
-  gap: .5rem;
+  gap: 1rem;
   border-radius: .5rem;
 }
 
@@ -363,10 +362,12 @@ html {
 
 .products .container .box-container .content .box .box-contents {
   flex-grow: 2;
+  /* border: .1rem solid salmon; */
 }
 
 .products .container .box-container .content .box .box-contents .title {
   font-size: 1.7rem;
+  font-weight: 600;
 }
 
 .products .container .box-container .content .box .box-contents .price {
@@ -377,6 +378,7 @@ html {
   font-size: 1.4rem;
   color: grey;
   line-height: 1.7rem;
+  opacity: .7;
 }
 
 .products .container .box-container .link-menu {

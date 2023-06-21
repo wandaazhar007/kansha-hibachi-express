@@ -1,3 +1,7 @@
+import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
+
 const Faq = () => {
   return (
     <section className="faq">
@@ -53,6 +57,11 @@ const Faq = () => {
               </div>
             </li>
           </ul>
+          <div className="all-faq">
+            <Link href="/faq">
+              <p>See All Faq's <FontAwesomeIcon icon={faSquareArrowUpRight} className="icon" /></p>
+            </Link>
+          </div>
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
 'use client'
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faSquareArrowUpRight, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -56,7 +56,7 @@ const Reviews = () => {
             </div>
           </div>
           <div className="footer-review">
-            <p>See our 22 reviews on <FontAwesomeIcon icon={faStar} className="icon" /> <Link href="https://goo.gl/maps/V9qXQh6mKFZmb15Z7" target="_blank">Google</Link></p>
+            <p>See our 100+ reviews on <Link href="https://goo.gl/maps/V9qXQh6mKFZmb15Z7" target="_blank">Google <FontAwesomeIcon icon={faSquareArrowUpRight} className="icon" /></Link></p>
           </div>
         </div>
       </div >
