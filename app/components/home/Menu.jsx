@@ -10,7 +10,7 @@ import ReactPaginate from "react-paginate";
 const Menu = () => {
 
   const [page, setPage] = useState(0);
-  const [limit, setLimit] = useState(3);
+  const [limit, setLimit] = useState(4);
   const [pages, setPages] = useState(0);
   const [keyword, setKeyword] = useState(1);
   const [msg, setMsg] = useState("");
