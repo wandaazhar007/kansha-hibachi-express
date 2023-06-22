@@ -85,7 +85,7 @@ img {
     object-fit: cover !important;
 }
 
-input,
+/* input,
 textarea {
     width: 100%;
     padding: 12px 20px;
@@ -104,7 +104,7 @@ textarea {
 input::placeholder,
 textarea::placeholder {
     color: #a6a6ac;
-}
+} */
 
 button {
     border: none;

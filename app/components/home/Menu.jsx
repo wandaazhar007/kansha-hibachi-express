@@ -68,6 +68,11 @@ const Menu = () => {
               <button className={`btn-menu ${keyword === 4 ? 'active' : ''}`} onClick={() => handleClickMenu(4)}>Side Order</button>
               <button className={`btn-menu ${keyword === '' ? 'active' : ''}`} onClick={() => handleClickMenu('')}>All Menu</button>
             </div>
+
+          </div>
+          <div className="search-menu">
+            <input type="text" className="search" placeholder="Search here..." />
+            {/* <p>test</p> */}
           </div>
           <div className="content">
             {menus.map((menu, index) => (

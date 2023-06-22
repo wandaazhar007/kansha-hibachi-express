@@ -308,14 +308,13 @@ html {
 }
 
 .products .container .box-container .header .btn-menu-group .btn-menu {
-  width: 7rem;
+  width: 8rem;
   border-radius: .2rem;
   border: .1rem solid var(--colorBlue);
   color: var(--colorBlue);
   padding-top: .5rem;
   padding-bottom: .5rem;
-  font-size: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .products .container .box-container .header .btn-menu-group .btn-menu.active {
@@ -325,6 +324,31 @@ html {
   color: var(--colorYellow);
   padding-top: .5rem;
   padding-bottom: .5rem;
+}
+
+
+.products .container .box-container .search-menu {
+  /* border: .1rem solid salmon; */
+  /* margin: 10rem; */
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.products .container .box-container .search-menu .search {
+  /* border: 1rem solid var(--colorGrey);
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* width: 50%; */
+  /* width: 10rem !important; */
+  width: 41rem;
+  height: 3.5rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+
 }
 
 .products .container .box-container .content {
