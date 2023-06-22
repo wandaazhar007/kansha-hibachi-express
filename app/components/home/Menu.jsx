@@ -20,10 +20,10 @@ const Menu = () => {
 
   const getMenu = async () => {
     // const response = await axios.get('https://kansha-hibachi-express.vercel.app/api/products');
-    // const response = await axios.get(process.env.NEXT_PUBLIC_URL_PRODUCTS);
+    const response = await axios.get(process.env.NEXT_PUBLIC_URL_PRODUCTS + '?search_query=' + keyword + '&page=' + page + '&limit=' + limit);
     // const response = await axios.get(`http://localhost:2000/products?search_query=hibachi&page=${page}&limit=${limit}`);
     // console.log('nama menu', response.data)
-    const response = await axios.get(`http://localhost:2000/products?search_query=${keyword}&page=${page}&limit=${limit}`);
+    // const response = await axios.get(`http://localhost:2000/products?search_query=${keyword}&page=${page}&limit=${limit}`);
     setMenus(response.data.result);
     setPage(response.data.page);
     setPages(response.data.totalPage);
