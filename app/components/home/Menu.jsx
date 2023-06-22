@@ -12,22 +12,36 @@ const Menu = () => {
   const [page, setPage] = useState(0);
   const [limit, setLimit] = useState(4);
   const [pages, setPages] = useState(0);
-  const [keyword, setKeyword] = useState(1);
+  const [keywordButton, setKeywordButton] = useState(1);
+  const [keywordSearch, setKeywordSearch] = useState("");
   const [msg, setMsg] = useState("");
   const [rows, setRows] = useState(0);
-  const [query, setQuery] = useState('');
+  // const [query, setQuery] = useState('');
   const [menus, setMenus] = useState([]);
 
   const getMenu = async () => {
     // const response = await axios.get('https://kansha-hibachi-express.vercel.app/api/products');
-    const response = await axios.get(process.env.NEXT_PUBLIC_URL_PRODUCTS + '?search_query=' + keyword + '&page=' + page + '&limit=' + limit);
+    const response = await axios.get(process.env.NEXT_PUBLIC_URL_PRODUCTS + '?search_query=' + keywordButton + '&page=' + page + '&limit=' + limit);
     // const response = await axios.get(`http://localhost:2000/products?search_query=hibachi&page=${page}&limit=${limit}`);
     // console.log('nama menu', response.data)
     // const response = await axios.get(`http://localhost:2000/products?search_query=${keyword}&page=${page}&limit=${limit}`);
+    // const responseSearch = await axios.get(`http://localhost:2000/search-products?search_query${keywordSearch}&page=${page}&limit${limit}`);
+    // if (keyword > 0) {
+    //   setMenus(response.data.result);
+    // }
+    // if (keywordSearch === 'scallop') {
+    //   setMenus(responseSearch.data.result);
+    //   alert('test')
+    // }
     setMenus(response.data.result);
     setPage(response.data.page);
     setPages(response.data.totalPage);
     setRows(response.data.totalRows);
+  }
+
+  const getSearch = async () => {
+    const responseSearch = await axios.get(`http://localhost:2000/search-products?search_query=${keywordSearch}&page=${page}&limit${limit}`);
+    setMenus(responseSearch.data.result);
   }
 
   const changePage = ({ selected }) => {
@@ -43,17 +57,23 @@ const Menu = () => {
 
   const handleClickMenu = (id) => {
     // setPage('')
-    setKeyword(id)
+    setKeywordButton(id);
+    setKeywordSearch('')
   }
 
-  const handleChange = (e) => {
-    setQuery(e.target.value);
-    setKeyword(query)
-  }
+  // const handleChange = (e) => {
+  //   setQuery(e.target.value);
+  //   setKeywordSearch(query)
+  // }
 
   useEffect(() => {
     getMenu();
-  }, [page, keyword, query]);
+  }, [page, keywordButton]);
+
+
+  useEffect(() => {
+    getSearch();
+  }, [keywordSearch]);
 
 
   // const testDesc = 'test ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, fugit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque aperiam ad saepe libero vel amet nesciunt iste eum fugit nostrum.'
@@ -67,19 +87,20 @@ const Menu = () => {
               <span>Our Menu</span>
             </h1>
             <div className="btn-menu-group">
-              <button className={`btn-menu ${keyword === 1 ? 'active' : ''}`} onClick={() => handleClickMenu(1)}>Hibachi</button>
-              <button className={`btn-menu ${keyword === 2 ? 'active' : ''}`} onClick={() => handleClickMenu(2)}>Roll</button>
-              <button className={`btn-menu ${keyword === 3 ? 'active' : ''}`} onClick={() => handleClickMenu(3)}>Appetizer</button>
-              <button className={`btn-menu ${keyword === 4 ? 'active' : ''}`} onClick={() => handleClickMenu(4)}>Side Order</button>
-              <button className={`btn-menu ${keyword === '' ? 'active' : ''}`} onClick={() => handleClickMenu('')}>All Menu</button>
+              <button className={`btn-menu ${keywordButton === 1 ? 'active' : ''}`} onClick={() => handleClickMenu(1)}>Hibachi</button>
+              <button className={`btn-menu ${keywordButton === 2 ? 'active' : ''}`} onClick={() => handleClickMenu(2)}>Roll</button>
+              <button className={`btn-menu ${keywordButton === 3 ? 'active' : ''}`} onClick={() => handleClickMenu(3)}>Appetizer</button>
+              <button className={`btn-menu ${keywordButton === 4 ? 'active' : ''}`} onClick={() => handleClickMenu(4)}>Side Order</button>
+              <button className={`btn-menu ${keywordButton === '' ? 'active' : ''}`} onClick={() => handleClickMenu('')}>All Menu</button>
             </div>
           </div>
           <div className="search-menu">
-            <input type="text" className="search" placeholder="Search here..." onChange={handleChange} />
+            {/* <input type="text" className="search" placeholder="Search here..." onChange={handleChange} /> */}
+            <input type="text" className="search" placeholder="Search here..." onChange={(e) => setKeywordSearch(e.target.value)} value={keywordSearch} />
             {/* <p>test</p> */}
+            <p>{keywordSearch}</p>
           </div>
 
-          <p style={{ textAlign: 'center' }}>{query}</p>
           <div className="content">
             {menus.map((menu, index) => (
               <Link href={`/menu/${menu.slug}`} key={index}>
@@ -102,7 +123,7 @@ const Menu = () => {
               </Link>
             ))}
           </div>
-          <p className="total-row">Total {keyword === 1 ? 'Hibachi' : '' || keyword === 2 ? 'Roll' : '' || keyword === 3 ? 'Appetizer' : '' || keyword === 4 ? 'Side Order' : '' || keyword === '' ? 'All Menu' : ''} {rows} Page: {rows ? page + 1 : 0} of {pages}</p>
+          <p className="total-row">Total {keywordButton === 1 ? 'Hibachi' : '' || keywordButton === 2 ? 'Roll' : '' || keywordButton === 3 ? 'Appetizer' : '' || keywordButton === 4 ? 'Side Order' : '' || keywordButton === '' ? 'All Menu' : ''} {rows} Page: {rows ? page + 1 : 0} of {pages}</p>
           <div className="pagination">
             <div className="box-container">
               <ReactPaginate

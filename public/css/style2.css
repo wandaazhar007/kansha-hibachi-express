@@ -333,6 +333,8 @@ html {
   margin-top: 1rem;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   justify-content: flex-end;
 }
 
@@ -349,6 +351,15 @@ html {
   padding: 1rem;
   font-size: 1.4rem;
 
+}
+
+
+.products .container .box-container .search-menu p {
+  /* color: salmon;
+  border: .1rem solid salmon; */
+  width: 41.5rem;
+  margin-top: .5rem;
+  color: var(--colorGrey);
 }
 
 .products .container .box-container .content {
