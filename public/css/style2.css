@@ -381,6 +381,7 @@ html {
   grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
   gap: 1rem;
   border-radius: .5rem;
+  cursor: pointer;
 }
 
 
@@ -482,6 +483,118 @@ html {
 }
 
 /* === END PRODUCTS SECTION === */
+
+
+
+
+
+/* === MODAL PRODUCT */
+.modal-product {
+  position: fixed;
+  top: 5rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 99;
+  /* backdrop-filter: blur(.09rem); */
+}
+
+.modal-product .box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.modal-product .box-container .box {
+  background-color: var(--colorWhite);
+  width: 90%;
+  max-width: 60rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  position: relative;
+  box-shadow: 0rem 0rem 1rem .1rem rgba(245, 237, 8, 0.5);
+}
+
+.modal-product .box-container .close-btn {
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: var(--colorYellow);
+  cursor: pointer;
+  right: -2rem;
+  top: -2rem;
+  z-index: 9;
+}
+
+.modal-product .box-container .close-btn::after {
+  content: "X";
+  color: var(--colorBlue);
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(30%);
+  /* border: .1rem solid salmon; */
+}
+
+.modal-product .box-container .box .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .modal-product .box-container .box .modal-body {
+  
+} */
+
+.modal-product .box-container .box .modal-body .content-image {
+  width: 100%;
+  /* border: .1rem solid salmon; */
+}
+
+.modal-product .box-container .box .modal-body .content-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.modal-product .box-container .box .modal-body .title-detail-product {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.modal-product .box-container .box .modal-body .desc-detail-product {
+  font-size: 1.5rem;
+  margin-top: .5rem;
+}
+
+.modal-product .box-container .box .modal-footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-product .box-container .box .modal-footer .price-detail-product {
+  font-size: 2rem;
+}
+
+.modal-product .box-container .box .modal-footer .add-to-cart {
+  padding: 1rem;
+  background-color: var(--primary);
+  color: var(--white);
+  border: .01rem solid white;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+/* === END MODAL PRODUCT */
+
+
 
 
 

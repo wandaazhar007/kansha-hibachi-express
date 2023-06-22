@@ -1,4 +1,9 @@
-const ModalProduct = () => {
+import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
+
+const ModalProduct = ({ openModal, closeModal, id }) => {
+  if (!openModal) return null;
   return (
     <div className="modal-product">
       <div className="box-container">
