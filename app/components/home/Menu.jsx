@@ -15,6 +15,7 @@ const Menu = () => {
   const [keyword, setKeyword] = useState(1);
   const [msg, setMsg] = useState("");
   const [rows, setRows] = useState(0);
+  const [query, setQuery] = useState('');
   const [menus, setMenus] = useState([]);
 
   const getMenu = async () => {
@@ -46,9 +47,14 @@ const Menu = () => {
     // alert(id)
   }
 
+  const handleChange = (e) => {
+    setQuery(e.target.value);
+    setKeyword(query)
+  }
+
   useEffect(() => {
-    getMenu()
-  }, [page, keyword])
+    getMenu();
+  }, [page, keyword, query]);
 
 
   // const testDesc = 'test ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, fugit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque aperiam ad saepe libero vel amet nesciunt iste eum fugit nostrum.'
@@ -71,9 +77,11 @@ const Menu = () => {
 
           </div>
           <div className="search-menu">
-            <input type="text" className="search" placeholder="Search here..." />
+            <input type="text" className="search" placeholder="Search here..." onChange={handleChange} />
             {/* <p>test</p> */}
           </div>
+
+          <p style={{ textAlign: 'center' }}>{query}</p>
           <div className="content">
             {menus.map((menu, index) => (
               <Link href={`/menu/${menu.slug}`} key={index}>
