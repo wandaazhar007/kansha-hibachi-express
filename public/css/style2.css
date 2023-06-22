@@ -318,7 +318,7 @@ html {
 }
 
 .products .container .box-container .header .btn-menu-group .btn-menu.active {
-  width: 7rem;
+  width: 8rem;
   border-radius: .2rem;
   background-color: var(--colorBlue);
   color: var(--colorYellow);
@@ -344,7 +344,7 @@ html {
   align-items: center; */
   /* width: 50%; */
   /* width: 10rem !important; */
-  width: 41rem;
+  width: 42rem;
   height: 3.5rem;
   padding: 1rem;
   font-size: 1.4rem;

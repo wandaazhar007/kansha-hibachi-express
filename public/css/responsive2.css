@@ -207,6 +207,10 @@ CSS TABLE OF CONTENTS
     top: 31rem;
     right: 0rem;
   }
+
+  .products .container .box-container .search-menu {
+    justify-content: center;
+  }
 }
 
 
