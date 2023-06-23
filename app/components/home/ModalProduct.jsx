@@ -17,7 +17,7 @@ const ModalProduct = ({ openModal, closeModal, propSlug }) => {
     setPrice(response.data.price);
     setDesc(response.data.desc);
     setUrlImage(response.data.urlImage);
-    console.log('get product', response.data)
+    // console.log('get product', response.data)
   }
 
   useEffect(() => {
