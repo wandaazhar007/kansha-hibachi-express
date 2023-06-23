@@ -9,8 +9,8 @@ import ReactPaginate from "react-paginate";
 import ModalProduct from "./ModalProduct";
 
 const Menu = () => {
-  const [openModalProduct, setOpenModalProduct] = useState(false);
-
+  const [openModal, setOpenModal] = useState(false);
+  const [propSlug, setPropSlug] = useState('')
   const [page, setPage] = useState(0);
   const [limit, setLimit] = useState(4);
   const [pages, setPages] = useState(0);
@@ -18,7 +18,7 @@ const Menu = () => {
   const [keywordSearch, setKeywordSearch] = useState("");
   const [msg, setMsg] = useState("");
   const [rows, setRows] = useState(0);
-  // const [query, setQuery] = useState('');
+  // const [query, setQuery]              = useState('');
   const [menus, setMenus] = useState([]);
 
   const getMenu = async () => {
@@ -63,15 +63,14 @@ const Menu = () => {
     setKeywordSearch('')
   }
 
-  // const handleChange = (e) => {
-  //   setQuery(e.target.value);
-  //   setKeywordSearch(query)
-  // }
+  const handleModal = (slug) => {
+    setOpenModal(true);
+    setPropSlug(slug)
+  }
 
   useEffect(() => {
     getMenu();
   }, [page, keywordButton]);
-
 
   useEffect(() => {
     getSearch();
@@ -106,24 +105,28 @@ const Menu = () => {
 
             <div className="content">
               {menus.map((menu, index) => (
-                // <Link href={`/menu/${menu.slug}`} key={index}>
-                <div className="box" onClick={() => setOpenModalProduct(true)}>
-                  <div className="box-images">
-                    <Image height={100} width={100} src={menu.urlImage} alt={menu.name} />
-                  </div>
-                  <div className="box-contents">
-                    <h1 className="title">{menu.name}</h1>
-                    <p className="price">${menu.price}</p>
-                    <div className="footer-products">
-                      <div className="desc">
-                        <p>{menu.desc}</p>
-                      </div>
-                      <div className="btn-cart"><div className="add-cart"></div>
+                <>
+                  {/* <Link href={`/menu/${menu.slug}`} key={index}> */}
+                  <div className="box" onClick={() => handleModal(menu.slug)}>
+                    {/* <div className="box"> */}
+                    <div className="box-images">
+                      <Image height={100} width={100} src={menu.urlImage} alt={menu.name} />
+                    </div>
+                    <div className="box-contents">
+                      <h1 className="title">{menu.name}</h1>
+                      <p className="price">${menu.price}</p>
+                      <div className="footer-products">
+                        <div className="desc">
+                          <p>{menu.desc}</p>
+                        </div>
+                        <div className="btn-cart"><div className="add-cart"></div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                // </Link>
+                  {/* <ModalProduct openModal={openModalProduct} closeModal={() => setOpenModalProduct(false)} id={menu.id} key={index} name={menu.name} slug={'gyoza'} /> */}
+                  {/* </Link> */}
+                </>
               ))}
             </div>
             <p className="total-row">Total {keywordButton === 1 ? 'Hibachi' : '' || keywordButton === 2 ? 'Roll' : '' || keywordButton === 3 ? 'Appetizer' : '' || keywordButton === 4 ? 'Side Order' : '' || keywordButton === '' ? 'All Menu' : ''} {rows} Page: {rows ? page + 1 : 0} of {pages}</p>
@@ -154,9 +157,9 @@ const Menu = () => {
         </div>
       </section >
 
-      {menus.map((product, index) => (
-        <ModalProduct openModal={openModalProduct} closeModal={() => setOpenModalProduct(false)} id={product.id} key={index} name={product.name} />
-      ))}
+      <ModalProduct openModal={openModal} closeModal={() => setOpenModal(false)} propSlug={propSlug} />
+
+
     </>
   );
 }
