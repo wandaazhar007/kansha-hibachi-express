@@ -18,7 +18,7 @@ const Menu = () => {
   const [keywordSearch, setKeywordSearch] = useState("");
   const [msg, setMsg] = useState("");
   const [rows, setRows] = useState(0);
-  // const [query, setQuery]              = useState('');
+  const [query, setQuery] = useState('');
   const [menus, setMenus] = useState([]);
 
   const getMenu = async () => {
@@ -43,7 +43,11 @@ const Menu = () => {
 
   const getSearch = async () => {
     const responseSearch = await axios.get(`http://localhost:2000/search-products?search_query=${keywordSearch}&page=${page}&limit${limit}`);
+    // const responseSearch = await axios.get(`http://localhost:2000/search-products?search_query=${keywordSearch}`);
     setMenus(responseSearch.data.result);
+    setPage(responseSearch.data.page);
+    setPages(responseSearch.data.totalPage);
+    setRows(responseSearch.data.totalRows);
   }
 
   const changePage = ({ selected }) => {
@@ -63,6 +67,13 @@ const Menu = () => {
     setKeywordSearch('')
   }
 
+  const handleSearch = (e) => {
+    // alert('test')
+    // setQuery(e.target.value)
+    setKeywordSearch(e.target.value)
+    setPage(0)
+  }
+
   const handleModal = (slug) => {
     setOpenModal(true);
     setPropSlug(slug)
@@ -75,6 +86,18 @@ const Menu = () => {
   useEffect(() => {
     getSearch();
   }, [keywordSearch]);
+
+  useEffect(() => {
+    setKeywordButton(1)
+    getMenu();
+    // getSearch();
+  }, [])
+
+  useEffect(() => {
+    setKeywordButton(1)
+    getMenu();
+    // getSearch();
+  }, [keywordSearch])
 
 
   // const testDesc = 'test ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, fugit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque aperiam ad saepe libero vel amet nesciunt iste eum fugit nostrum.'
@@ -98,7 +121,7 @@ const Menu = () => {
             </div>
             <div className="search-menu">
               {/* <input type="text" className="search" placeholder="Search here..." onChange={handleChange} /> */}
-              <input type="text" className="search" placeholder="Search here..." onChange={(e) => setKeywordSearch(e.target.value)} value={keywordSearch} />
+              <input type="text" className="search" placeholder="Search here..." onChange={handleSearch} value={keywordSearch} />
               {/* <p>test</p> */}
               <p>{keywordSearch}</p>
             </div>
@@ -107,7 +130,7 @@ const Menu = () => {
               {menus.map((menu, index) => (
                 <>
                   {/* <Link href={`/menu/${menu.slug}`} key={index}> */}
-                  <div className="box" onClick={() => handleModal(menu.slug)}>
+                  <div className="box" key={index} onClick={() => handleModal(menu.slug)}>
                     {/* <div className="box"> */}
                     <div className="box-images">
                       <Image height={100} width={100} src={menu.urlImage} alt={menu.name} />
