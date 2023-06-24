@@ -78,7 +78,7 @@ const Menu = () => {
   }, [keywordSearch]);
 
   useEffect(() => {
-    setKeywordButton(1)
+    // setKeywordButton(1)
     getMenu();
     // getSearch();
   }, [])
@@ -131,6 +131,7 @@ const Menu = () => {
                       <div className="footer-products">
                         <div className="desc">
                           <p>{menu.desc}</p>
+                          {/* <p>{}</p> */}
                         </div>
                         <div className="btn-cart"><div className="add-cart"></div>
                         </div>
