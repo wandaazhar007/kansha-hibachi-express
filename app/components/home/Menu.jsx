@@ -68,26 +68,18 @@ const Menu = () => {
     setPropSlug(slug)
   }
 
+  // useEffect(() => {
+  //   getMenu();
+  // }, []);
+
   useEffect(() => {
     getMenu();
   }, [page, keywordButton]);
 
   useEffect(() => {
     getSearch();
+    setKeywordButton('search')
   }, [keywordSearch]);
-
-  useEffect(() => {
-    // setKeywordButton(1)
-    // getMenu();
-    // getSearch();
-  }, [])
-
-  useEffect(() => {
-    setKeywordButton(1)
-    getMenu();
-    // getSearch();
-  }, [keywordSearch])
-
 
   // const testDesc = 'test ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, fugit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque aperiam ad saepe libero vel amet nesciunt iste eum fugit nostrum.'
   return (
@@ -119,12 +111,12 @@ const Menu = () => {
               {menus.map((menu, index) => (
                 <>
                   {/* <Link href={`/menu/${menu.slug}`} key={index}> */}
-                  <div className="box" key={index} onClick={() => handleModal(menu.slug)}>
+                  <div className="box" onClick={() => handleModal(menu.slug)}>
                     {/* <div className="box"> */}
                     <div className="box-images">
                       <Image height={100} width={100} src={menu.urlImage} alt={menu.name} />
                     </div>
-                    <div className="box-contents">
+                    <div className="box-contents" key={menu.index}>
                       <h1 className="title">{menu.name}</h1>
                       <p className="price">${menu.price}</p>
                       <div className="footer-products">
@@ -142,7 +134,7 @@ const Menu = () => {
                 </>
               ))}
             </div>
-            <p className="total-row">Total {keywordButton === 1 ? 'Hibachi' : '' || keywordButton === 2 ? 'Roll' : '' || keywordButton === 3 ? 'Appetizer' : '' || keywordButton === 4 ? 'Side Order' : '' || keywordButton === '' ? 'All Menu' : ''} {rows} Page: {rows ? page + 1 : 0} of {pages}</p>
+            <p className="total-row">Total {keywordButton === 1 ? 'Hibachi' : '' || keywordButton === 2 ? 'Roll' : '' || keywordButton === 3 ? 'Appetizer' : '' || keywordButton === 4 ? 'Side Order' : '' || keywordButton === '' ? 'All Menu' : '' || keywordButton === 'search' ? 'search' : ''} {rows} Page: {rows ? page + 1 : 0} of {pages}</p>
             <div className="pagination">
               <div className="box-container">
                 <ReactPaginate
