@@ -12,7 +12,7 @@ const Menu = () => {
   const [openModal, setOpenModal] = useState(false);
   const [propSlug, setPropSlug] = useState('')
   const [page, setPage] = useState(0);
-  const [limit, setLimit] = useState(4);
+  const [limit, setLimit] = useState(3);
   const [pages, setPages] = useState(0);
   const [keywordButton, setKeywordButton] = useState(1);
   const [keywordSearch, setKeywordSearch] = useState("");
@@ -22,19 +22,9 @@ const Menu = () => {
   const [menus, setMenus] = useState([]);
 
   const getMenu = async () => {
-    // const response = await axios.get('https://kansha-hibachi-express.vercel.app/api/products');
-    const response = await axios.get(process.env.NEXT_PUBLIC_URL_PRODUCTS + '?search_query=' + keywordButton + '&page=' + page + '&limit=' + limit);
-    // const response = await axios.get(`http://localhost:2000/products?search_query=hibachi&page=${page}&limit=${limit}`);
-    // console.log('nama menu', response.data)
-    // const response = await axios.get(`http://localhost:2000/products?search_query=${keyword}&page=${page}&limit=${limit}`);
-    // const responseSearch = await axios.get(`http://localhost:2000/search-products?search_query${keywordSearch}&page=${page}&limit${limit}`);
-    // if (keyword > 0) {
-    //   setMenus(response.data.result);
-    // }
-    // if (keywordSearch === 'scallop') {
-    //   setMenus(responseSearch.data.result);
-    //   alert('test')
-    // }
+    // const response = await axios.get(process.env.NEXT_PUBLIC_URL_PRODUCTS + '?search_query=' + keywordButton + '&page=' + page + '&limit=' + limit);
+    const response = await axios.get(`http://localhost:2000/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
+
     setMenus(response.data.result);
     setPage(response.data.page);
     setPages(response.data.totalPage);

@@ -1,4 +1,4 @@
-import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
+import { faCartPlus, faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -29,19 +29,24 @@ const ModalProduct = ({ openModal, closeModal, propSlug }) => {
         <div className="box">
           <div className="close-btn" onClick={closeModal}></div>
           <div className="modal-body">
-
             <div className="content-image">
               <Image src={urlImage} alt="sakura sushi" width={500} height={500} />
             </div>
             <h1 className="title-detail-product">{nameProduct}</h1>
-            <p className="desc-detail-product">{desc}</p>
+            <h1 className="price-detail-product">${price}</h1>
+            {/* <p className="desc-detail-product">{desc}</p> */}
           </div>
           <div className="modal-footer">
-            <h1 className="price-detail-product">${price}</h1>
-            <button className="add-to-cart" onClick={() => handleClick(productData.id)}>
+            <p className="desc-detail-product">{desc}</p>
+            {/* <h1 className="price-detail-product">${price}</h1> */}
+            <button className="close-btn-2" onClick={closeModal}>
+              <FontAwesomeIcon icon={faClose} className="icon" />
+              Close
+            </button>
+            {/* <button className="add-to-cart" onClick={() => handleClick(productData.id)}>
               <FontAwesomeIcon icon={faCartPlus} className="icon" />
               Add To Cart
-            </button>
+            </button> */}
           </div>
         </div>
 
