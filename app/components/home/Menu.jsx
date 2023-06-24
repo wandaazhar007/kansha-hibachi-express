@@ -60,6 +60,7 @@ const Menu = () => {
   const handleSearch = (e) => {
     setKeywordSearch(e.target.value)
     setPage(0)
+    // setKeywordButton(1)
   }
 
   const handleModal = (slug) => {
@@ -100,11 +101,11 @@ const Menu = () => {
                 <span>Our Menu</span>
               </h1>
               <div className="btn-menu-group">
-                <button className={`btn-menu ${keywordButton === 1 && page === 1 ? 'active' : ''}`} onClick={() => handleClickMenu(1)}>Hibachi</button>
-                <button className={`btn-menu ${keywordButton === 2 && page === 2 ? 'active' : ''}`} onClick={() => handleClickMenu(2)}>Roll</button>
-                <button className={`btn-menu ${keywordButton === 3 && page === 3 ? 'active' : ''}`} onClick={() => handleClickMenu(3)}>Appetizer</button>
-                <button className={`btn-menu ${keywordButton === 4 && page === 4 ? 'active' : ''}`} onClick={() => handleClickMenu(4)}>Side Order</button>
-                <button className={`btn-menu ${keywordButton === '' && page === 0 ? 'active' : ''}`} onClick={() => handleClickMenu('')}>All Menu</button>
+                <button className={`btn-menu ${keywordButton === 1 ? 'active' : ''}`} onClick={() => handleClickMenu(1)}>Hibachi</button>
+                <button className={`btn-menu ${keywordButton === 2 ? 'active' : ''}`} onClick={() => handleClickMenu(2)}>Roll</button>
+                <button className={`btn-menu ${keywordButton === 3 ? 'active' : ''}`} onClick={() => handleClickMenu(3)}>Appetizer</button>
+                <button className={`btn-menu ${keywordButton === 4 ? 'active' : ''}`} onClick={() => handleClickMenu(4)}>Side Order</button>
+                <button className={`btn-menu ${keywordButton === '' ? 'active' : ''}`} onClick={() => handleClickMenu('')}>All Menu</button>
               </div>
             </div>
             <div className="search-menu">
