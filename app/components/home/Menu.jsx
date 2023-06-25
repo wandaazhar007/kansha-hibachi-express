@@ -68,9 +68,9 @@ const Menu = () => {
     setPropSlug(slug)
   }
 
-  // useEffect(() => {
-  //   getMenu();
-  // }, []);
+  useEffect(() => {
+    getMenu();
+  }, []);
 
   useEffect(() => {
     getMenu();
@@ -78,7 +78,7 @@ const Menu = () => {
 
   useEffect(() => {
     getSearch();
-    setKeywordButton('search')
+    // setKeywordButton('search')
   }, [keywordSearch]);
 
   // const testDesc = 'test ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, fugit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque aperiam ad saepe libero vel amet nesciunt iste eum fugit nostrum.'
@@ -116,8 +116,8 @@ const Menu = () => {
                     <div className="box-images">
                       <Image height={100} width={100} src={menu.urlImage} alt={menu.name} />
                     </div>
-                    <div className="box-contents" key={menu.index}>
-                      <h1 className="title">{menu.name}</h1>
+                    <div className="box-contents">
+                      <h1 className="title" key={menu.id}>{menu.name}</h1>
                       <p className="price">${menu.price}</p>
                       <div className="footer-products">
                         <div className="desc">
