@@ -14,7 +14,7 @@ const Menu = () => {
   const [page, setPage] = useState(0);
   const [limit, setLimit] = useState(3);
   const [pages, setPages] = useState(0);
-  const [keywordButton, setKeywordButton] = useState(1);
+  const [keywordButton, setKeywordButton] = useState("");
   const [keywordSearch, setKeywordSearch] = useState("");
   const [msg, setMsg] = useState("");
   const [rows, setRows] = useState(0);
@@ -22,8 +22,9 @@ const Menu = () => {
   const [menus, setMenus] = useState([]);
 
   const getMenu = async () => {
-    const response = await axios.get(process.env.NEXT_PUBLIC_URL_PRODUCTS + '?search_query=' + keywordButton + '&page=' + page + '&limit=' + limit);
-    // const response = await axios.get(`http://localhost:2000/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
+    // const response = await axios.get(process.env.NEXT_PUBLIC_URL_PRODUCTS + '?search_query=' + keywordButton + '&page=' + page + '&limit=' + limit);
+    // const responseSearch = await axios.get(`${process.env.NEXT_PUBLIC_URL_PRODUCTS}?search_query=${keywordButton}&page=${page}&limit=${limit}`);
+    const response = await axios.get(`http://localhost:2000/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
 
     setMenus(response.data.result);
     setPage(response.data.page);
@@ -32,9 +33,8 @@ const Menu = () => {
   }
 
   const getSearch = async () => {
-    const responseSearch = await axios.get(`${process.env.NEXT_PUBLIC_URL_PRODUCTS_SEARCH}?search_query=${keywordSearch}&page=${page}&limit=${limit1}`);
-    // const responseSearch = await axios.get(`http://localhost:2000/search-products?search_query=${keywordSearch}&page=${page}&limit${limit}`);
-    // const responseSearch = await axios.get(`http://localhost:2000/search-products?search_query=${keywordSearch}`);
+    // const responseSearch = await axios.get(`${process.env.NEXT_PUBLIC_URL_PRODUCTS_SEARCH}?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
+    const responseSearch = await axios.get(`http://localhost:2000/search-products?search_query=${keywordSearch}&page=${page}&limit${limit}`);
     setMenus(responseSearch.data.result);
     setPage(responseSearch.data.page);
     setPages(responseSearch.data.totalPage);
@@ -61,7 +61,6 @@ const Menu = () => {
   const handleSearch = (e) => {
     setKeywordSearch(e.target.value)
     setPage(0)
-    // setKeywordButton(1)
   }
 
   const handleModal = (slug) => {
@@ -79,8 +78,7 @@ const Menu = () => {
 
   useEffect(() => {
     getSearch();
-    // setKeywordButton('search')
-  }, [keywordSearch]);
+  }, [page, keywordSearch]);
 
   // const testDesc = 'test ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, fugit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque aperiam ad saepe libero vel amet nesciunt iste eum fugit nostrum.'
   return (

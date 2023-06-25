@@ -1,3 +1,4 @@
+'use client'
 import { faCartPlus, faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
@@ -10,6 +11,7 @@ const ModalProduct = ({ openModal, closeModal, propSlug }) => {
   const [price, setPrice] = useState('');
   const [desc, setDesc] = useState('');
   const [urlImage, setUrlImage] = useState('');
+
 
   const getProductById = async () => {
     const response = await axios.get(`http://localhost:2000/products/${propSlug}`);
