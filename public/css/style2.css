@@ -341,13 +341,6 @@ html {
 }
 
 .products .container .box-container .search-menu .search {
-  /* border: 1rem solid var(--colorGrey);
-  height: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* width: 50%; */
-  /* width: 10rem !important; */
   width: 42rem;
   height: 3.6rem;
   padding: 1rem;
