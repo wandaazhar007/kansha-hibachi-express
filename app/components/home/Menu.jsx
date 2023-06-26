@@ -79,7 +79,7 @@ const Menu = () => {
 
   useEffect(() => {
     getSearch();
-  }, [page, keywordSearch]);
+  }, [keywordSearch]);
 
   // const testDesc = 'test ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, fugit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque aperiam ad saepe libero vel amet nesciunt iste eum fugit nostrum.'
   return (
