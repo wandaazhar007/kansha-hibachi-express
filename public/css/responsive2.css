@@ -208,8 +208,29 @@ CSS TABLE OF CONTENTS
     right: 0rem;
   }
 
-  .products .container .box-container .search-menu {
+  .products .container .box-container .search-menu .search {
+    width: 100%;
+  }
+
+  .dialy-offer {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .dialy-offer .content-dialy-offer .box {
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-size: contain;
+    width: 100%;
+    height: 17rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     justify-content: center;
+    padding: 0 1rem;
+    gap: 1rem;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    border-radius: 1rem;
   }
 }
 

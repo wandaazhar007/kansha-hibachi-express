@@ -201,8 +201,8 @@ html {
 
 .dialy-offer {
   padding: 2rem 0;
-  margin-top: 2rem;
-  background-color: #E5FEFD;
+  /* margin-top: 2rem; */
+  /* background-color: #E5FEFD; */
 }
 
 .dialy-offer .heading-dialy-offer {
@@ -211,7 +211,9 @@ html {
 }
 
 .dialy-offer .heading-dialy-offer h1 {
-  font-size: 2rem;
+  font-size: 2.3rem;
+  font-weight: 700;
+  font-family: var(--cursiveFont);
 }
 
 
@@ -221,6 +223,7 @@ html {
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1rem;
   justify-items: center;
+  /* border: .1rem solid salmon; */
 }
 
 .dialy-offer .content-dialy-offer .box {
@@ -247,7 +250,7 @@ html {
 .dialy-offer .content-dialy-offer .box p {
   font-size: 1.4rem;
   text-align: end;
-  color: grey;
+  color: var(--colorGrey);
   width: 60%;
   line-height: 1.7rem;
 }
@@ -328,8 +331,7 @@ html {
 
 
 .products .container .box-container .search-menu {
-  /* border: .1rem solid salmon; */
-  /* margin: 10rem; */
+  border: .1rem solid salmon;
   margin-top: 1rem;
   width: 100%;
   display: flex;
@@ -347,7 +349,7 @@ html {
   /* width: 50%; */
   /* width: 10rem !important; */
   width: 42rem;
-  height: 3.5rem;
+  height: 3.6rem;
   padding: 1rem;
   font-size: 1.4rem;
 
