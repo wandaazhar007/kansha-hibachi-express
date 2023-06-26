@@ -22,8 +22,7 @@ const Menu = () => {
   const [menus, setMenus] = useState([]);
 
   const getMenu = async () => {
-    // const response = await axios.get(process.env.NEXT_PUBLIC_URL_PRODUCTS + '?search_query=' + keywordButton + '&page=' + page + '&limit=' + limit);
-    // const responseSearch = await axios.get(`${process.env.NEXT_PUBLIC_URL_PRODUCTS}?search_query=${keywordButton}&page=${page}&limit=${limit}`);
+    // const response = await axios.get(`${process.env.NEXT_PUBLIC_URL_PRODUCTS}?search_query=${keywordButton}&page=${page}&limit=${limit}`);
     const response = await axios.get(`http://localhost:2000/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
 
     setMenus(response.data.result);
