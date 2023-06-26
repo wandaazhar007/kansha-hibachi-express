@@ -123,9 +123,9 @@ CSS TABLE OF CONTENTS
 
 
 
+
 @media screen and (max-width: 1199px) {
   .hero .container .banner-hero .col-right {
-    /* background-color: salmon; */
     width: 40rem;
     height: 85.5vh;
     z-index: 2;
@@ -146,6 +146,8 @@ CSS TABLE OF CONTENTS
 
 
 
+
+
 @media screen and (max-width: 991px) {
   .tf__about_us .container .row .about-img .primary-img {
     width: 45rem;
@@ -157,6 +159,10 @@ CSS TABLE OF CONTENTS
   }
 
 }
+
+
+
+
 
 @media screen and (max-width: 767px) {
   .hero .container .banner-hero {
@@ -237,6 +243,9 @@ CSS TABLE OF CONTENTS
 
 
 
+
+
+
 @media screen and (max-width: 589px) {
   .tf__about_us .container .row .about-img .primary-img {
     width: 40rem;
@@ -254,6 +263,10 @@ CSS TABLE OF CONTENTS
     margin-left: 90px;
   }
 }
+
+
+
+
 
 
 @media screen and (max-width: 520px) {
@@ -320,6 +333,9 @@ CSS TABLE OF CONTENTS
 
 
 
+
+
+
 @media screen and (max-width: 428px) {
   html {
     font-size: 52.5%;
@@ -344,6 +360,9 @@ CSS TABLE OF CONTENTS
   }
 
 }
+
+
+
 
 
 @media screen and (max-width: 356px) {
