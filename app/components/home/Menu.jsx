@@ -23,7 +23,7 @@ const Menu = () => {
 
   const getMenu = async () => {
     // const response = await axios.get(`${process.env.NEXT_PUBLIC_URL_PRODUCTS}?search_query=${keywordButton}&page=${page}&limit=${limit}`);
-    const response = await axios.get(`http://kanshaapi.birojasa-sahabat.com/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
+    const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
     // const response = await axios.get(`http://localhost:2000/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
 
     setMenus(response.data.result);
@@ -34,7 +34,7 @@ const Menu = () => {
 
   const getSearch = async () => {
     // const responseSearch = await axios.get(`${process.env.NEXT_PUBLIC_URL_PRODUCTS_SEARCH}?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
-    const responseSearch = await axios.get(`http://kanshaapi.birojasa-sahabat.com/search-products?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
+    const responseSearch = await axios.get(`https://kanshaapi.birojasa-sahabat.com/search-products?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
     // const responseSearch = await axios.get(`http://localhost:2000/search-products?search_query=${keywordSearch}&page=${page}&limit${limit}`);
     setMenus(responseSearch.data.result);
     setPage(responseSearch.data.page);
