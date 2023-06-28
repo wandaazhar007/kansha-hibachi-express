@@ -44,11 +44,17 @@ const Menu = () => {
     // const responseSearch = await axios.get(`${process.env.NEXT_PUBLIC_URL_PRODUCTS_SEARCH}?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
     // const responseSearch = await axios.get(`https://kanshaapi.birojasa-sahabat.com/search-products?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
     const responseSearch = await axios.get(`http://localhost:2000/search-products?search_query=${keywordSearch}&page=${page}&limit${limit}`);
-    setMenus(responseSearch.data.result);
-    setPage(responseSearch.data.page);
-    setPages(responseSearch.data.totalPage);
-    setRows(responseSearch.data.totalRows);
-    setIsLoading(false)
+    setTimeout(() => {
+      setMenus(responseSearch.data.result);
+      setPage(responseSearch.data.page);
+      setPages(responseSearch.data.totalPage);
+      setRows(responseSearch.data.totalRows);
+      setIsLoading(false)
+    }, 1000)
+    // setMenus(responseSearch.data.result);
+    // setPage(responseSearch.data.page);
+    // setPages(responseSearch.data.totalPage);
+    // setRows(responseSearch.data.totalRows);
   }
 
   const changePage = ({ selected }) => {
@@ -79,12 +85,14 @@ const Menu = () => {
   }
 
   const handleSearch = (e) => {
-    // setTimeout(() => {
-    //   setKeywordSearch(e.target.value)
-    // }, 1000)
     setKeywordSearch(e.target.value)
     setPage(0)
+    setIsLoading(true)
   }
+
+  // setTimeout(() => {
+  //   handleSearch()
+  // }, 1000)
 
   const handleModal = (slug) => {
     setOpenModal(true);
@@ -132,22 +140,24 @@ const Menu = () => {
             {/* {isLoading && <p style={{ textAlign: 'center' }}>Loading..</p>} */}
             {isLoading &&
               <div className="content">
-                <div className="box">
-                  <div className="box-images-skeleton skeleton">
-                    {/* <Image height={100} width={100} src={menu.urlImage} alt={menu.name} className="skeleton skeleton-image" /> */}
-                  </div>
-                  <div className="box-contents">
-                    <h1 className="title skeleton skeleton-text-title"></h1>
-                    <p className="price skeleton skeleton-text-price"></p>
-                    <div className="footer-products">
-                      <div className="desc skeleton skeleton-text-price">
-                        <p></p>
-                      </div>
-                      <div className="btn-cart"><div className="add-cart"></div>
+                {menus.map((menu, index) => (
+                  <div className="box" key={menu.id}>
+                    <div className="box-images-skeleton skeleton">
+                      {/* <Image height={100} width={100} src={menu.urlImage} alt={menu.name} className="skeleton skeleton-image" /> */}
+                    </div>
+                    <div className="box-contents">
+                      <h1 className="title skeleton skeleton-text-title"></h1>
+                      <p className="price skeleton skeleton-text-price"></p>
+                      <div className="footer-products">
+                        <div className="desc skeleton skeleton-text-price">
+                          <p></p>
+                        </div>
+                        <div className="btn-cart"><div className="add-cart"></div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                ))}
               </div>
             }
             {!isLoading &&
