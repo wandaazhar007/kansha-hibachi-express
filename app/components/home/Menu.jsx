@@ -26,8 +26,8 @@ const Menu = () => {
 
   const getSearch = async () => {
     // const responseSearch = await axios.get(`${process.env.NEXT_PUBLIC_URL_PRODUCTS_SEARCH}?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
-    // const responseSearch = await axios.get(`https://kanshaapi.birojasa-sahabat.com/search-products?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
-    const responseSearch = await axios.get(`http://localhost:2000/search-products?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
+    const responseSearch = await axios.get(`https://kanshaapi.birojasa-sahabat.com/search-products?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
+    // const responseSearch = await axios.get(`http://localhost:2000/search-products?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
     setTimeout(() => {
       setMenus(responseSearch.data.result);
       setPage(responseSearch.data.page);
@@ -43,8 +43,8 @@ const Menu = () => {
 
   const getMenu = async () => {
     // const response = await axios.get(`${process.env.NEXT_PUBLIC_URL_PRODUCTS}?search_query=${keywordButton}&page=${page}&limit=${limit}`);
-    // const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
-    const response = await axios.get(`http://localhost:2000/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
+    const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
+    // const response = await axios.get(`http://localhost:2000/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
 
     // await new Promise((resolve) => setTimeout(resolve, 1000));
     // setTimeout(() => {
@@ -169,10 +169,10 @@ const Menu = () => {
                   <>
                     <div className="box" onClick={() => handleModal(menu.slug)}>
                       <div className="box-images">
-                        <Image height={100} width={100} src={menu.urlImage || <Skeleton />} alt={menu.name} />
+                        <Image height={100} width={100} src={menu.urlImage} alt={menu.name} />
                       </div>
                       <div className="box-contents">
-                        <h1 className="title" key={menu.id}>{menu.name || <Skeleton />}</h1>
+                        <h1 className="title" key={menu.id}>{menu.name}</h1>
                         <p className="price">${menu.price}</p>
                         <div className="footer-products">
                           <div className="desc">
@@ -192,10 +192,10 @@ const Menu = () => {
                 <>
                   <div className="box" onClick={() => handleModal(menu.slug)}>
                     <div className="box-images">
-                      <Image height={100} width={100} src={menu.urlImage || <Skeleton />} alt={menu.name} />
+                      <Image height={100} width={100} src={menu.urlImage} alt={menu.name} />
                     </div>
                     <div className="box-contents">
-                      <h1 className="title" key={menu.id}>{menu.name || <Skeleton />}</h1>
+                      <h1 className="title" key={menu.id}>{menu.name}</h1>
                       <p className="price">${menu.price}</p>
                       <div className="footer-products">
                         <div className="desc">
