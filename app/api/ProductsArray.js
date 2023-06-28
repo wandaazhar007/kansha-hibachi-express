@@ -140,7 +140,7 @@ const productsArray = [
     title: "seafood-lover",
     category: "hibachi",
     desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
-    price: 3.99,
+    price: 19.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
   {
@@ -149,7 +149,7 @@ const productsArray = [
     title: "kansha-special",
     category: "hibachi",
     desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
-    price: 3.99,
+    price: 15.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
   {
@@ -158,7 +158,7 @@ const productsArray = [
     title: "hibachi",
     category: "hibachi",
     desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
-    price: 3.99,
+    price: 15.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
   {
@@ -167,7 +167,7 @@ const productsArray = [
     title: "kansha-super",
     category: "hibachi",
     desc: "lorem Ipsum dolor sit amet lorem ipsum dolor sit amet",
-    price: 3.99,
+    price: 15.99,
     image: "/images/products/albacore-toro-bintoro-sushi.jpg"
   },
   {
