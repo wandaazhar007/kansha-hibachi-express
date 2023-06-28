@@ -26,8 +26,8 @@ const Menu = () => {
 
   const getSearch = async () => {
     // const responseSearch = await axios.get(`${process.env.NEXT_PUBLIC_URL_PRODUCTS_SEARCH}?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
-    const responseSearch = await axios.get(`https://kanshaapi.birojasa-sahabat.com/search-products?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
-    // const responseSearch = await axios.get(`http://localhost:2000/search-products?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
+    // const responseSearch = await axios.get(`https://kanshaapi.birojasa-sahabat.com/search-products?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
+    const responseSearch = await axios.get(`http://localhost:2000/search-products?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
     setTimeout(() => {
       setMenus(responseSearch.data.result);
       setPage(responseSearch.data.page);
@@ -35,21 +35,12 @@ const Menu = () => {
       setRows(responseSearch.data.totalRows);
       setIsLoading(false)
     }, 1000)
-    // setMenus(responseSearch.data.result);
-    // setPage(responseSearch.data.page);
-    // setPages(responseSearch.data.totalPage);
-    // setRows(responseSearch.data.totalRows);
   }
 
   const getMenu = async () => {
     // const response = await axios.get(`${process.env.NEXT_PUBLIC_URL_PRODUCTS}?search_query=${keywordButton}&page=${page}&limit=${limit}`);
-    const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
-    // const response = await axios.get(`http://localhost:2000/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
-
-    // await new Promise((resolve) => setTimeout(resolve, 1000));
-    // setTimeout(() => {
-    //   setMenus(response.data.result);
-    // }, 1000)
+    // const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
+    const response = await axios.get(`http://localhost:2000/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
     setMenus(response.data.result);
     setPage(response.data.page);
     setPages(response.data.totalPage);
@@ -64,7 +55,6 @@ const Menu = () => {
     setTimeout(() => {
       setPage(selected);
     }, 1000)
-    // setPage(selected);
     if (selected === 9) {
       setMsg(
         "Please search by specific keyword..."
@@ -81,9 +71,6 @@ const Menu = () => {
       setKeywordSearch('')
     }, 1000)
     setIsLoading(true)
-    // setPage(0)
-    // setKeywordButton(id);
-    // setKeywordSearch('')
   }
 
   const handleSearch = (e) => {
@@ -92,18 +79,11 @@ const Menu = () => {
     setIsLoading(true)
   }
 
-  // setTimeout(() => {
-  //   handleSearch()
-  // }, 1000)
-
   const handleModal = (slug) => {
     setOpenModal(true);
     setPropSlug(slug)
   }
 
-  // useEffect(() => {
-  //   getMenu();
-  // }, []);
   useEffect(() => {
     getSearch();
   }, [keywordSearch]);
@@ -152,9 +132,8 @@ const Menu = () => {
                       <h1 className="title skeleton skeleton-text-title"></h1>
                       <p className="price skeleton skeleton-text-price"></p>
                       <div className="footer-products">
-                        <div className="desc skeleton skeleton-text-price">
-                          <p></p>
-                        </div>
+                        <div className="desc skeleton skeleton-text-desc"></div>
+                        <div className="desc skeleton skeleton-text-desc"></div>
                         <div className="btn-cart"><div className="add-cart"></div>
                         </div>
                       </div>
@@ -187,28 +166,6 @@ const Menu = () => {
                 ))}
               </div>
             }
-            {/* <div className="content">
-              {menus.map((menu, index) => (
-                <>
-                  <div className="box" onClick={() => handleModal(menu.slug)}>
-                    <div className="box-images">
-                      <Image height={100} width={100} src={menu.urlImage} alt={menu.name} />
-                    </div>
-                    <div className="box-contents">
-                      <h1 className="title" key={menu.id}>{menu.name}</h1>
-                      <p className="price">${menu.price}</p>
-                      <div className="footer-products">
-                        <div className="desc">
-                          <p>{menu.desc}</p>
-                        </div>
-                        <div className="btn-cart"><div className="add-cart"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </>
-              ))}
-            </div> */}
             <p className="total-row">Total {keywordButton === 1 ? 'Hibachi' : '' || keywordButton === 2 ? 'Roll' : '' || keywordButton === 3 ? 'Appetizer' : '' || keywordButton === 4 ? 'Side Order' : '' || keywordButton === '' ? 'All Menu' : '' || keywordButton === 'search' ? 'search' : ''} {rows} Page: {rows ? page + 1 : 0} of {pages}</p>
             <div className="pagination">
               <div className="box-container">
