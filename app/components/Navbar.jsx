@@ -46,46 +46,19 @@ const Navbar = () => {
             <li className="nav-item">
               <Link className={`nav-link ${pathname === '/about' ? 'active' : ''}`} href="/about" onClick={() => handleShow()}>about</Link>
             </li>
-            <li className="nav-item">
-              <Link className={`nav-link ${pathname === '/menu' ? 'active' : ''}`} href="/menu" onClick={() => handleShow()}>menu</Link>
-            </li>
-            <li className="nav-item">
-              <Link className={`nav-link ${pathname === '/chefs' ? 'active' : ''}`} href="/chefs" onClick={() => handleShow()}>chefs</Link>
-            </li>
-
             {/* <li className="nav-item">
-              <a className="nav-link" href="#">pages <i className="far fa-angle-down"></i></a>
-              <ul className="droap_menu">
-                <li><a href="menu_details.html">menu details</a></li>
-                <li><a href="blog_details.html">blog details</a></li>
-                <li><a href="cart_view.html">cart view</a></li>
-                <li><a href="check_out.html">checkout</a></li>
-                <li><a href="payment.html">payment</a></li>
-                <li><a href="testimonial.html">testimonial</a></li>
-                <li><a href="404.html">404/Error</a></li>
-                <li><a href="faq.html">FAQs</a></li>
-                <li><a href="sign_in.html">sign in</a></li>
-                <li><a href="sign_up.html">sign up</a></li>
-                <li><a href="forgot_password.html">forgot password</a></li>
-                <li><a href="privacy_policy.html">privacy policy</a></li>
-                <li><a href="terms_condition.html">terms and condition</a></li>
-              </ul>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="blogs.html">blog</a>
+              <Link className={`nav-link ${pathname === '/menu' ? 'active' : ''}`} href="/menu" onClick={() => handleShow()}>menu</Link>
             </li> */}
-
+            {/* <li className="nav-item">
+              <Link className={`nav-link ${pathname === '/chefs' ? 'active' : ''}`} href="/chefs" onClick={() => handleShow()}>chefs</Link>
+            </li> */}
             <li className="nav-item">
               <Link className={`nav-link ${pathname === '/contact' ? 'active' : ''}`} href="/contact" onClick={() => handleShow()}>contact</Link>
             </li>
           </ul>
           <ul className="menu_icon d-flex flex-wrap">
-            {/* <li>
-              <a className="cart_icon" href="cart_view.html"><i className="fas fa-shopping-basket"></i>
-                <span>05</span></a>
-            </li> */}
             <li>
-              <Link href="tel:+16604299074"><i className="fas fa-phone"></i></Link>
+              <Link href="tel:+16604299074" target="_blank" rel="noreferrer"><i className="fas fa-phone"></i></Link>
             </li>
           </ul>
         </div>

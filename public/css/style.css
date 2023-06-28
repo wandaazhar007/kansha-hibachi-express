@@ -3014,7 +3014,7 @@ footer {
 }
 
 .tf__contact_info {
-    border-bottom: 1px solid #ff7c085c;
+    border-bottom: 1px solid #0873ff5c;
     padding-bottom: 35px;
     margin-bottom: 35px;
 }
@@ -3025,9 +3025,9 @@ footer {
     display: block;
     line-height: 70px;
     text-align: center;
-    background: var(--colorYellow);
+    background: var(--colorBlue);
     border-radius: 50%;
-    color: var(--colorWhite);
+    color: var(--colorBlue);
     font-size: 30px;
     margin: 0 auto;
     position: relative;
@@ -3044,7 +3044,7 @@ footer {
     height: 80px;
     top: -5px;
     left: -5px;
-    border: 1px dashed var(--colorYellow);
+    border: 1px dashed var(--colorBlue);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -3078,7 +3078,7 @@ footer {
     font-weight: 600;
     text-align: center;
     margin-bottom: 15px;
-    color: var(--colorYellow);
+    color: var(--colorBlue);
 }
 
 .tf__contact_info p {

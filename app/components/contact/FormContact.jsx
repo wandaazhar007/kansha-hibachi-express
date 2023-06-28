@@ -1,20 +1,26 @@
+import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
+
 const FormContact = () => {
   return (
     <section className="tf__contact mt_100 xs_mt_70 mb_100 xs_mb_70">
       <div className="container">
         <div className="tf__contact_form_area">
           <div className="row">
-            <div className="col-xl-5 col-md-6 col-lg-5 wow fadeInUp" data-wow-duration="1s">
+            <div className="col-xl-12 col-md-12 col-lg-12 wow fadeInUp" data-wow-duration="1s">
               <div className="tf__contact_info_area">
                 <div className="tf__contact_info">
                   <h3>call</h3>
-                  <p>+1347-430-9510</p>
-                  <p>+9658745554002</p>
+                  {/* <Link href="tel:+16604299074" target="_blank" rel="noreferrer"> */}
+                  <p>660-429-9027</p>
+                  {/* <FontAwesomeIcon icon={faArrowCircleRight} /> */}
+                  {/* </Link> */}
                 </div>
                 <div className="tf__contact_info">
                   <h3>mail</h3>
-                  <p>wandaazhar@gmail.com</p>
-                  <p>wandaazhar@gmail.com</p>
+                  <p>ss.kansha@gmail.com</p>
+                  {/* <p>wandaazhar@gmail.com</p> */}
                 </div>
                 <div className="tf__contact_info border-0 p-0 m-0">
                   <h3>location</h3>
@@ -23,7 +29,7 @@ const FormContact = () => {
               </div>
             </div>
 
-            <div className="col-xl-7 col-md-6 col-lg-7 wow fadeInUp" data-wow-duration="1s">
+            {/* <div className="col-xl-7 col-md-6 col-lg-7 wow fadeInUp" data-wow-duration="1s">
               <form className="tf__contact_form">
                 <h3>contact us</h3>
                 <div className="row">
@@ -60,7 +66,7 @@ const FormContact = () => {
                   </div>
                 </div>
               </form>
-            </div>
+            </div> */}
           </div>
         </div>
 
