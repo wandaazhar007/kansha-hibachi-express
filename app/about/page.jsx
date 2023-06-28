@@ -6,6 +6,7 @@ import Counter from "../components/home/Counter";
 import Testimonial from "../components/home/Testimonial";
 
 const AboutPage = () => {
+  // new Promise((resolve) => setTimeout(resolve, 5000));
   return (
     <>
       <BreadcrumbAbout />

@@ -7,8 +7,11 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import ReactPaginate from "react-paginate";
 import ModalProduct from "./ModalProduct";
+import Skeleton from "react-loading-skeleton";
+import 'react-loading-skeleton/dist/skeleton.css';
 
 const Menu = () => {
+  const [isLoading, setIsLoading] = useState(true);
   const [openModal, setOpenModal] = useState(false);
   const [propSlug, setPropSlug] = useState('')
   const [page, setPage] = useState(0);
@@ -23,27 +26,37 @@ const Menu = () => {
 
   const getMenu = async () => {
     // const response = await axios.get(`${process.env.NEXT_PUBLIC_URL_PRODUCTS}?search_query=${keywordButton}&page=${page}&limit=${limit}`);
-    const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
-    // const response = await axios.get(`http://localhost:2000/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
+    // const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
+    const response = await axios.get(`http://localhost:2000/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
 
+    // await new Promise((resolve) => setTimeout(resolve, 1000));
+    // setTimeout(() => {
+    //   setMenus(response.data.result);
+    // }, 1000)
     setMenus(response.data.result);
     setPage(response.data.page);
     setPages(response.data.totalPage);
     setRows(response.data.totalRows);
+    setIsLoading(false)
   }
 
   const getSearch = async () => {
     // const responseSearch = await axios.get(`${process.env.NEXT_PUBLIC_URL_PRODUCTS_SEARCH}?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
-    const responseSearch = await axios.get(`https://kanshaapi.birojasa-sahabat.com/search-products?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
-    // const responseSearch = await axios.get(`http://localhost:2000/search-products?search_query=${keywordSearch}&page=${page}&limit${limit}`);
+    // const responseSearch = await axios.get(`https://kanshaapi.birojasa-sahabat.com/search-products?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
+    const responseSearch = await axios.get(`http://localhost:2000/search-products?search_query=${keywordSearch}&page=${page}&limit${limit}`);
     setMenus(responseSearch.data.result);
     setPage(responseSearch.data.page);
     setPages(responseSearch.data.totalPage);
     setRows(responseSearch.data.totalRows);
+    setIsLoading(false)
   }
 
   const changePage = ({ selected }) => {
-    setPage(selected);
+    setIsLoading(true)
+    setTimeout(() => {
+      setPage(selected);
+    }, 1000)
+    // setPage(selected);
     if (selected === 9) {
       setMsg(
         "Please search by specific keyword..."
@@ -54,12 +67,21 @@ const Menu = () => {
   };
 
   const handleClickMenu = (id) => {
-    setPage(0)
-    setKeywordButton(id);
-    setKeywordSearch('')
+    setTimeout(() => {
+      setPage(0)
+      setKeywordButton(id)
+      setKeywordSearch('')
+    }, 1000)
+    setIsLoading(true)
+    // setPage(0)
+    // setKeywordButton(id);
+    // setKeywordSearch('')
   }
 
   const handleSearch = (e) => {
+    // setTimeout(() => {
+    //   setKeywordSearch(e.target.value)
+    // }, 1000)
     setKeywordSearch(e.target.value)
     setPage(0)
   }
@@ -107,33 +129,73 @@ const Menu = () => {
               <p>{keywordSearch}</p>
             </div>
 
-            <div className="content">
+            {/* {isLoading && <p style={{ textAlign: 'center' }}>Loading..</p>} */}
+            {isLoading &&
+              <div className="content">
+                <div className="box">
+                  <div className="box-images-skeleton skeleton">
+                    {/* <Image height={100} width={100} src={menu.urlImage} alt={menu.name} className="skeleton skeleton-image" /> */}
+                  </div>
+                  <div className="box-contents">
+                    <h1 className="title skeleton skeleton-text-title"></h1>
+                    <p className="price skeleton skeleton-text-price"></p>
+                    <div className="footer-products">
+                      <div className="desc skeleton skeleton-text-price">
+                        <p></p>
+                      </div>
+                      <div className="btn-cart"><div className="add-cart"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            }
+            {!isLoading &&
+              <div className="content">
+                {menus.map((menu, index) => (
+                  <>
+                    <div className="box" onClick={() => handleModal(menu.slug)}>
+                      <div className="box-images">
+                        <Image height={100} width={100} src={menu.urlImage || <Skeleton />} alt={menu.name} />
+                      </div>
+                      <div className="box-contents">
+                        <h1 className="title" key={menu.id}>{menu.name || <Skeleton />}</h1>
+                        <p className="price">${menu.price}</p>
+                        <div className="footer-products">
+                          <div className="desc">
+                            <p>{menu.desc}</p>
+                          </div>
+                          <div className="btn-cart"><div className="add-cart"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                ))}
+              </div>
+            }
+            {/* <div className="content">
               {menus.map((menu, index) => (
                 <>
-                  {/* <Link href={`/menu/${menu.slug}`} key={index}> */}
                   <div className="box" onClick={() => handleModal(menu.slug)}>
-                    {/* <div className="box"> */}
                     <div className="box-images">
-                      <Image height={100} width={100} src={menu.urlImage} alt={menu.name} />
+                      <Image height={100} width={100} src={menu.urlImage || <Skeleton />} alt={menu.name} />
                     </div>
                     <div className="box-contents">
-                      <h1 className="title" key={menu.id}>{menu.name}</h1>
+                      <h1 className="title" key={menu.id}>{menu.name || <Skeleton />}</h1>
                       <p className="price">${menu.price}</p>
                       <div className="footer-products">
                         <div className="desc">
                           <p>{menu.desc}</p>
-                          {/* <p>{}</p> */}
                         </div>
                         <div className="btn-cart"><div className="add-cart"></div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  {/* <ModalProduct openModal={openModalProduct} closeModal={() => setOpenModalProduct(false)} id={menu.id} key={index} name={menu.name} slug={'gyoza'} /> */}
-                  {/* </Link> */}
                 </>
               ))}
-            </div>
+            </div> */}
             <p className="total-row">Total {keywordButton === 1 ? 'Hibachi' : '' || keywordButton === 2 ? 'Roll' : '' || keywordButton === 3 ? 'Appetizer' : '' || keywordButton === 4 ? 'Side Order' : '' || keywordButton === '' ? 'All Menu' : '' || keywordButton === 'search' ? 'search' : ''} {rows} Page: {rows ? page + 1 : 0} of {pages}</p>
             <div className="pagination">
               <div className="box-container">

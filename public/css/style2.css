@@ -457,7 +457,57 @@ html {
   opacity: .3;
 }
 
+.box-images-skeleton {
+  opacity: .5;
+  width: 15rem;
+  height: 10rem;
+}
+
+.skeleton {
+  /* opacity: .7; */
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.skeleton.skeleton-image {
+  width: 70%;
+  height: 5rem;
+  border-radius: 1rem;
+  opacity: .5;
+}
+
+.skeleton.skeleton-text-title {
+  width: 70%;
+  height: 2rem;
+  border-radius: 1rem;
+}
+
+.skeleton.skeleton-text-price {
+  margin-top: 1rem;
+  width: 90%;
+  height: 1rem;
+  border-radius: 1rem;
+}
+
+.skeleton.skeleton-text-desc {
+  margin-top: 1rem;
+  width: 90%;
+  height: 1rem;
+  border-radius: 1rem;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
 /* === END PRODUCTS SECTION === */
+
+
 
 
 
