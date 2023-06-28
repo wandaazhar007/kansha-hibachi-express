@@ -24,6 +24,23 @@ const Menu = () => {
   const [query, setQuery] = useState('');
   const [menus, setMenus] = useState([]);
 
+  const getSearch = async () => {
+    // const responseSearch = await axios.get(`${process.env.NEXT_PUBLIC_URL_PRODUCTS_SEARCH}?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
+    // const responseSearch = await axios.get(`https://kanshaapi.birojasa-sahabat.com/search-products?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
+    const responseSearch = await axios.get(`http://localhost:2000/search-products?search_query=${keywordSearch}&page=${page}&limit${limit}`);
+    setTimeout(() => {
+      // setMenus(responseSearch.data.result);
+      // setPage(responseSearch.data.page);
+      // setPages(responseSearch.data.totalPage);
+      // setRows(responseSearch.data.totalRows);
+      setIsLoading(false)
+    }, 1000)
+    // setMenus(responseSearch.data.result);
+    // setPage(responseSearch.data.page);
+    // setPages(responseSearch.data.totalPage);
+    // setRows(responseSearch.data.totalRows);
+  }
+
   const getMenu = async () => {
     // const response = await axios.get(`${process.env.NEXT_PUBLIC_URL_PRODUCTS}?search_query=${keywordButton}&page=${page}&limit=${limit}`);
     // const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
@@ -40,22 +57,7 @@ const Menu = () => {
     setIsLoading(false)
   }
 
-  const getSearch = async () => {
-    // const responseSearch = await axios.get(`${process.env.NEXT_PUBLIC_URL_PRODUCTS_SEARCH}?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
-    // const responseSearch = await axios.get(`https://kanshaapi.birojasa-sahabat.com/search-products?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
-    const responseSearch = await axios.get(`http://localhost:2000/search-products?search_query=${keywordSearch}&page=${page}&limit${limit}`);
-    setTimeout(() => {
-      setMenus(responseSearch.data.result);
-      setPage(responseSearch.data.page);
-      setPages(responseSearch.data.totalPage);
-      setRows(responseSearch.data.totalRows);
-      setIsLoading(false)
-    }, 1000)
-    // setMenus(responseSearch.data.result);
-    // setPage(responseSearch.data.page);
-    // setPages(responseSearch.data.totalPage);
-    // setRows(responseSearch.data.totalRows);
-  }
+
 
   const changePage = ({ selected }) => {
     setIsLoading(true)
@@ -99,17 +101,18 @@ const Menu = () => {
     setPropSlug(slug)
   }
 
+  // useEffect(() => {
+  //   getMenu();
+  // }, []);
   useEffect(() => {
-    getMenu();
-  }, []);
+    getSearch();
+  }, [keywordSearch]);
 
   useEffect(() => {
     getMenu();
   }, [page, keywordButton]);
 
-  useEffect(() => {
-    getSearch();
-  }, [keywordSearch]);
+
 
   // const testDesc = 'test ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, fugit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque aperiam ad saepe libero vel amet nesciunt iste eum fugit nostrum.'
   return (
