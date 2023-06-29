@@ -29,6 +29,7 @@ CSS TABLE OF CONTENTS
 ================================*/
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&family=Oleo+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
 
 ::root {
   --colorYellow: #FFE473;
@@ -42,6 +43,7 @@ CSS TABLE OF CONTENTS
   --paraFont: 'Manrope', sans-serif;
   --headingFont: 'Barlow', sans-serif;
   --cursiveFont: 'Oleo Script', cursive;
+  --karla: 'Karla';
   --boxShadow: rgba(100, 100, 111, 0.15) 0px 7px 29px 0px;
 }
 
@@ -106,7 +108,7 @@ html {
 .hero .container .banner-hero .col-left h3 {
   color: var(--colorYellow) !important;
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 400;
   font-family: var(--cursiveFont);
 }
 
@@ -368,7 +370,7 @@ html {
 
 .products .container .box-container .content .box .box-images {
   height: 10rem;
-  border: .3rem solid var(--colorBlue);
+  /* border: .3rem solid var(--colorBlue); */
   border-radius: .5rem;
   overflow: hidden;
 }
@@ -461,6 +463,7 @@ html {
   opacity: .5;
   width: 15rem;
   height: 10rem;
+  border-radius: 1rem;
 }
 
 .skeleton {
@@ -519,9 +522,9 @@ html {
   top: 5rem;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 99;
-  /* backdrop-filter: blur(.09rem); */
+  backdrop-filter: blur(.2rem);
 }
 
 .modal-product .box-container {
@@ -539,6 +542,8 @@ html {
   border-radius: 1rem;
   position: relative;
   box-shadow: 0rem 0rem 1rem .1rem rgba(245, 237, 8, 0.5);
+
+  border: .1rem solid salmon;
 }
 
 .modal-product .box-container .close-btn {
@@ -546,7 +551,7 @@ html {
   height: 5rem;
   width: 5rem;
   border-radius: 50%;
-  background-color: var(--colorYellow);
+  background-color: var(--colorBlue);
   cursor: pointer;
   right: -2rem;
   top: -2rem;
@@ -555,7 +560,7 @@ html {
 
 .modal-product .box-container .close-btn::after {
   content: "X";
-  color: var(--colorBlue);
+  color: var(--colorYellow);
   font-size: 2rem;
   font-weight: 700;
   display: flex;
@@ -572,6 +577,8 @@ html {
 
 .modal-product .box-container .box .modal-body .content-image {
   max-width: 40rem;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .modal-product .box-container .box .modal-body .content-image img {
@@ -597,7 +604,7 @@ html {
   align-items: center;
 }
 
-.modal-product .box-container .box .modal-footer .desc-detail-product {
+.modal-product .box-container .box .modal-body .desc-detail-product {
   font-size: 1.6rem;
   margin-top: .5rem;
   color: var(--colorGrey);
@@ -607,21 +614,32 @@ html {
 
 .modal-product .box-container .box .modal-footer .add-to-cart {
   padding: 1rem;
+  height: 5rem;
+  width: 80%;
   background-color: var(--colorBlue);
-  color: var(--white);
+  color: var(--colorWhite);
   border: .01rem solid white;
   border-radius: .5rem;
   cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.modal-product .box-container .box .modal-footer .add-to-cart .icon {
+  /* color: var(--colorWhite); */
+  margin-right: 2rem;
 }
 
 .modal-product .box-container .box .modal-footer .close-btn-2 {
   padding: 1rem;
-  background-color: var(--colorYellow);
-  color: var(--colorBlue);
-  border: .01rem solid white;
+  height: 5rem;
+  width: 5rem;
+  background-color: var(--colorBlue);
+  color: var(--colorWhite);
+  border: .01rem solid var(--colorBlue);
   border-radius: .5rem;
   cursor: pointer;
   font-size: 1.4rem;
+  box-shadow: var(--boxShadow);
 }
 
 

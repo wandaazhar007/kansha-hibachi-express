@@ -15,8 +15,8 @@ const ModalProduct = ({ openModal, closeModal, propSlug }) => {
 
 
   const getProductById = async () => {
-    // const response = await axios.get(`http://localhost:2000/products/${propSlug}`);
-    const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products/${propSlug}`);
+    const response = await axios.get(`http://localhost:2000/products/${propSlug}`);
+    // const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products/${propSlug}`);
 
     setTimeout(() => {
       setNameProduct(response.data.name);
@@ -68,7 +68,7 @@ const ModalProduct = ({ openModal, closeModal, propSlug }) => {
         }
         {!isLoading &&
           <div className="box">
-            <div className="close-btn" onClick={closeModal}></div>
+            {/* <div className="close-btn" onClick={closeModal}></div> */}
             <div className="modal-body">
               <div className="content-image">
                 <Image src={urlImage} alt="sakura sushi" width={500} height={500} />
@@ -76,18 +76,17 @@ const ModalProduct = ({ openModal, closeModal, propSlug }) => {
               <h1 className="title-detail-product">{nameProduct}</h1>
               <h1 className="price-detail-product">${price}</h1>
               {/* <p className="desc-detail-product">{desc}</p> */}
+              <p className="desc-detail-product">{desc}</p>
             </div>
             <div className="modal-footer">
-              <p className="desc-detail-product">{desc}</p>
-              {/* <h1 className="price-detail-product">${price}</h1> */}
+              {/* <button className="add-to-cart" onClick={() => handleClick(productData.id)}>
+                <FontAwesomeIcon icon={faCartPlus} className="icon" />
+                Add To Cart
+              </button> */}
               <button className="close-btn-2" onClick={closeModal}>
-                Close
                 <FontAwesomeIcon icon={faClose} className="icon" />
               </button>
-              {/* <button className="add-to-cart" onClick={() => handleClick(productData.id)}>
-              <FontAwesomeIcon icon={faCartPlus} className="icon" />
-              Add To Cart
-            </button> */}
+
             </div>
           </div>
         }
