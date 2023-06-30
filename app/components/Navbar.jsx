@@ -1,13 +1,20 @@
 'use client'
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import { CartContext } from "../context/cartContext";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+
 
 const Navbar = () => {
+  const cart = useContext(CartContext);
   const pathname = usePathname();
   const [show, setShow] = useState(false);
   const [hideTopbar, setHideTopbar] = useState(false);
+
+  const productsCount = cart.items?.reduce((sum, product) => sum + product.quantity, 0);
 
   const changeTopbar = () => {
     // console.log(window.scrollY);
@@ -59,6 +66,16 @@ const Navbar = () => {
           <ul className="menu_icon d-flex flex-wrap">
             <li>
               <Link href="tel:+16604299074" target="_blank" rel="noreferrer"><i className="fas fa-phone"></i></Link>
+            </li>
+            <li>
+              <Link href="#">
+                {productsCount > 0 ? (
+                  <>
+                    {/* <FontAwesomeIcon icon={faCartShopping} className="icons" /> {productsCount} */}
+                    {productsCount}
+                  </>
+                ) : '0'}
+              </Link>
             </li>
           </ul>
         </div>

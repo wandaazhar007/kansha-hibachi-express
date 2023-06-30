@@ -8,12 +8,14 @@ import '../public/css/slick.css'
 import '../public/css/spacing.css'
 import '../public/css/style.css'
 import '../public/css/style2.css'
+import '../public/css/cart.css'
 import '../public/css/responsive2.css'
 import '../public/css/venobox.min.css'
 import { Inter } from 'next/font/google'
 import Topbar from './components/Topbar'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import CartProvider from './context/cartContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,12 +27,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Topbar />
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
+      <CartProvider>
+        <body className={inter.className}>
+          {/* <Topbar /> */}
+          {/* <Navbar /> */}
+          {children}
+          {/* <Footer /> */}
+        </body>
+      </CartProvider>
     </html>
   )
 }

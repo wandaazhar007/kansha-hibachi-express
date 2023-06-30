@@ -1,0 +1,183 @@
+/* ***************************************
+Website Name: Kansha Hibachi Express
+Author: Wanda Azhar 
+Author Email: wandaazhar@gmail.com
+website: https://wandaazhar.vercel.app/
+Version: 1.0
+Date Release: June-16-2023
+Description: This website is designed based on Grid System. and fully responsive layout. It fits perfectly on various displays and resolutions from regular desktop screens to tablets, iPads, iPhones, and small mobile devices.
+***************************************
+
+CSS TABLE OF CONTENTS
+===================================
+01. GLOBAL CSS 
+02. HOME PAGE
+03. ABOUT US PAGE
+04. MENU PAGE
+05. CONTACT PAGE
+06. BLOG DETAILS PAGE
+07. MENU DETAILS PAGE
+08. CART VIEW PAGE
+09. CHECKOUT PAGE
+10. SIGN IN PAGE
+11. PAYMENT PAGE
+12. FAQ PAGE
+13. TERMS AND CONDITION PAGE
+14. 404 PAGE
+15. DASHBOARD PAGE
+
+================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&family=Oleo+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+::root {
+  --colorYellow: #FFE473;
+  --colorOrange: #FE7C14;
+  --colorRed: #eb0029;
+  --colorGrey: #acacac;
+  --paraColor: #484747;
+  /* --colorBlue: #231f40; */
+  --colorBlue: #00274C;
+  --colorWhite: #ffffff;
+  --paraFont: 'Manrope', sans-serif;
+  --headingFont: 'Barlow', sans-serif;
+  --cursiveFont: 'Oleo Script', cursive;
+  --karla: 'Karla';
+  --boxShadow: rgba(100, 100, 111, 0.15) 0px 7px 29px 0px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*::selection {
+  background-color: var(--colorYellow);
+  color: var(--colorBlue);
+}
+
+.cart-page {
+  background-color: #e0dfdf;
+}
+
+.cart-page .container .header {
+  width: 100%;
+  height: 5rem;
+  /* background-color: var(--colorWhite); */
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-page .container .header .cart-header-left a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+}
+
+.cart-page .container .header .cart-header-left .icon {
+  font-size: 1.6rem;
+  width: 1.5rem;
+}
+
+.cart-page .container .header .cart-header-left span {
+  font-size: 1.6rem;
+  color: var(--colorGrey);
+}
+
+.cart-page .container .contents {
+  border: .1rem solid salmon;
+}
+
+.cart-page .container .contents .col-left {
+  border: .1rem solid salmon;
+  width: 50%;
+}
+
+.cart-page .container .contents .col-left .title {
+  font-size: 3rem;
+}
+
+.cart-page .container .contents .col-left .total-order {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+.cart-page .container .contents .col-left .list-items {
+  margin-top: 1.5rem;
+}
+
+.cart-page .container .contents .col-left .list-items .box {
+  background-color: var(--colorWhite);
+  display: flex;
+  /* justify-content: center; */
+  padding: 1rem;
+
+}
+
+.cart-page .container .contents .col-left .list-items .box .image {
+  width: 10rem;
+  flex-grow: 1;
+}
+
+.cart-page .container .contents .col-left .list-items .box .title {
+  border: .1rem solid salmon;
+  flex-grow: 2;
+  padding: 1rem;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.cart-page .container .contents .col-left .list-items .box .title .name-product {
+  flex-grow: 1;
+}
+
+.cart-page .container .contents .col-left .list-items .box .title .price-product {
+  flex-grow: 1;
+  /* border: .1rem solid salmon; */
+}
+
+.cart-page .container .contents .col-left .list-items .box .title .add-button {
+  flex-grow: 3;
+  display: flex;
+  align-items: end;
+  /* border: .1rem solid salmon; */
+}
+
+.cart-page .container .contents .col-left .list-items .box .title .button {
+  display: flex;
+  gap: 1rem;
+}
+
+.cart-page .container .contents .col-left .list-items .box .title .button span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+  background-color: var(--colorGrey);
+  border-radius: .5rem;
+}
+
+.cart-page .container .contents .col-left .list-items .box .title {
+  font-weight: 600;
+  color: salmon;
+}
+
+.cart-page .container .contents .col-left .list-items .box .delete {
+  border: .1rem solid salmon;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.cart-page .container .contents .col-left .list-items .box .delete .icon {
+  width: 2rem;
+}

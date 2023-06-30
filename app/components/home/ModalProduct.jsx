@@ -4,8 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { useContext } from "react";
+import { CartContext } from "../../context/cartContext";
 
-const ModalProduct = ({ openModal, closeModal, propSlug }) => {
+const ModalProduct = ({ openModal, closeModal, propSlug, propsId }) => {
   if (!openModal) return null;
   const [isLoading, setIsLoading] = useState(true)
   const [nameProduct, setNameProduct] = useState('');
@@ -13,6 +15,7 @@ const ModalProduct = ({ openModal, closeModal, propSlug }) => {
   const [desc, setDesc] = useState('');
   const [urlImage, setUrlImage] = useState('');
 
+  const cart = useContext(CartContext);
 
   const getProductById = async () => {
     const response = await axios.get(`http://localhost:2000/products/${propSlug}`);
@@ -36,6 +39,11 @@ const ModalProduct = ({ openModal, closeModal, propSlug }) => {
   useEffect(() => {
     getProductById();
   }, [])
+
+  const handleClick = (id) => {
+    cart.addOneToCart(id);
+    // notify();
+  }
   return (
     <div className="modal-product">
       <div className="box-container">
@@ -79,10 +87,10 @@ const ModalProduct = ({ openModal, closeModal, propSlug }) => {
               <p className="desc-detail-product">{desc}</p>
             </div>
             <div className="modal-footer">
-              {/* <button className="add-to-cart" onClick={() => handleClick(productData.id)}>
+              <button className="add-to-cart" onClick={() => handleClick(propsId)}>
                 <FontAwesomeIcon icon={faCartPlus} className="icon" />
-                Add To Cart
-              </button> */}
+                Add To Cart id: {propsId}
+              </button>
               <button className="close-btn-2" onClick={closeModal}>
                 <FontAwesomeIcon icon={faClose} className="icon" />
               </button>
