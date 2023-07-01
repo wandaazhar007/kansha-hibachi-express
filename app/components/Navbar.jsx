@@ -72,7 +72,9 @@ const Navbar = () => {
                 {productsCount > 0 ? (
                   <>
                     {/* <FontAwesomeIcon icon={faCartShopping} className="icons" /> {productsCount} */}
-                    {productsCount}
+                    <Link href="/cart">
+                      {productsCount}
+                    </Link>
                   </>
                 ) : '0'}
               </Link>

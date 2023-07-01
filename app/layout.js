@@ -29,10 +29,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <CartProvider>
         <body className={inter.className}>
-          {/* <Topbar /> */}
-          {/* <Navbar /> */}
+          <Topbar />
+          <Navbar />
           {children}
-          {/* <Footer /> */}
+          <Footer />
         </body>
       </CartProvider>
     </html>

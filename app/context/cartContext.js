@@ -17,6 +17,20 @@ export function getProductData(id) {
 export function CartProvider({ children }) {
   const [cartProducts, setCartProducts] = useState([]);
 
+  useEffect(() => {
+    localStorage.setItem('cart_kansha', JSON.stringify(cartProducts));
+  }, [cartProducts]);
+
+  if (typeof window !== 'undefined') {
+    var cartFromLocalStorage = JSON.parse(localStorage.getItem('cart')) || '[]';
+    var a = [].concat(cartFromLocalStorage);
+    // var a = Array.push(cartFromLocalStorage);
+    var b = [];
+    var c = b.push(cartFromLocalStorage)
+  } else {
+    false
+  }
+
   function getProductQuantity(id) {
     const quantity = cartProducts.find((product) => product.id === id)?.quantity
     if (quantity === undefined) {

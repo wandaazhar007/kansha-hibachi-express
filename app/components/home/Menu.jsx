@@ -65,6 +65,8 @@ const Menu = () => {
     }
   };
 
+
+
   const handleClickMenu = (id) => {
     setTimeout(() => {
       setPage(0)
