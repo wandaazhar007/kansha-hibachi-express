@@ -3,38 +3,70 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState, useContext } from "react";
 import axios from "axios";
-import { CartContext, getProductData } from "@/app/context/cartContext";
+import { CartContext } from "@/app/context/cartContext";
 
 const CartComponent = (props) => {
   const cart = useContext(CartContext);
   const id = props.id;
   const quantity = props.quantity;
-  const productData = getProductData(id)
+  const [name, setname] = useState("");
+  const [price, setPrice] = useState("");
+  const [urlImage, setUrlImage] = useState("");
 
-  console.log(productData);
-  //  const getProductData = async (id) => {
-  //     const response = await axios.get(`http://localhost:2000/products`);
-  //     const responseArray = response.data.result;
-  //     let productData = responseArray.find(product => product.id === id);
-  //     console.log('data', productData)
-  //     if (productData == undefined) {
-  //       console.log("Product data does not exist for ID: " + id);
-  //       return undefined;
-  //     }
-
-  //     return productData;
+  // const getProductData = async (id) => {
+  //   const response = await axios.get(`http://localhost:2000/products`);
+  //   const responseArray = response.data.result;
+  //   let productData = await responseArray.find(product => product.id === id);
+  //   if (productData == undefined) {
+  //     console.log("Product data does not exist for ID: " + id);
+  //     return undefined;
   //   }
+
+  //   return productData;
+  // }
+
+  const getProductData = async (id) => {
+    const response = await fetch('http://localhost:2000/products');
+    const data = await response.json();
+    // console.log(data.result)
+    const productData = data.result.find(product => product.id === id);
+    // console.log(productData)
+    // if (productData == undefined) {
+    //   console.log("Product data does not exist for ID: " + id);
+    //   return undefined;
+    // }
+
+    return productData;
+  }
+  // let productData = getProductData(id)
+
+  // getProductData(id).then(function (result) {
+  //   setname(result.name);
+  //   setPrice(result.price);
+  //   setUrlImage(result.urlImage)
+
+  //   return result
+  // })
+
+  getProductData(id).then((result) => {
+    setname(result.name);
+    setPrice(result.price);
+    setUrlImage(result.urlImage)
+  })
+
+  // console.log(productData)
+
 
 
   return (
     <div className="box">
       <div className="image">
-        <Image src="" width={100} height={100} alt="images" />
+        <Image src={urlImage} width={100} height={100} alt="images" />
       </div>
       <div className="title">
         <div className="detail">
-          <p className="name-product">Name: {productData.id}</p>
-          <p className="price-product">$3.50</p>
+          <p className="name-product">{name}</p>
+          <p className="price-product">${price}</p>
         </div>
         <div className="button">
           <span onClick={() => cart.removeOneFromCart(id)}>-</span>
@@ -43,7 +75,7 @@ const CartComponent = (props) => {
         </div>
       </div>
       <div className="delete">
-        <span>$3.50</span>
+        <span>${(quantity * price).toFixed(2)}</span>
         <FontAwesomeIcon icon={faTrash} className="icon" onClick={() => cart.deleteFromCart(id)} />
       </div>
     </div>

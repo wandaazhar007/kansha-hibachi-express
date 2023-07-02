@@ -16,19 +16,38 @@ import axios from "axios";
 //   return productData;
 // }
 
-export const getProductData = async (id) => {
-  const response = await axios.get(`http://localhost:2000/products`);
-  const responseArray = response.data.result;
-  // console.log('this is products', responseArray);
-  let productData = responseArray.find(product => product.id === id);
-  // console.log('data', productData)
-  if (productData == undefined) {
-    console.log("Product data does not exist for ID: " + id);
-    return undefined;
-  }
+// export const getProductData = async (id) => {
+//   const response = await axios.get(`http://localhost:2000/products`);
+//   const responseArray = response.data.result;
+//   let productData = responseArray.find(product => product.id === id);
+//   if (productData == undefined) {
+//     console.log("Product data does not exist for ID: " + id);
+//     return undefined;
+//   }
+
+//   return productData;
+// }
+
+const getProductData = async (id) => {
+  const response = await fetch('http://localhost:2000/products');
+  const data = await response.json();
+  // console.log(data.result)
+  const productData = data.result.find(product => product.id === id);
+  // console.log(productData)
+  // if (productData == undefined) {
+  //   console.log("Product data does not exist for ID: " + id);
+  //   return undefined;
+  // }
 
   return productData;
 }
+
+getProductData(id).then((result) => {
+  return result
+  // setname(result.name);
+  // setPrice(result.price);
+  // setUrlImage(result.urlImage)
+})
 
 export const CartContext = createContext({
   items: [],
@@ -111,7 +130,6 @@ export function CartProvider({ children }) {
     items: cartProducts,
     getProductQuantity,
     addOneToCart,
-    // removeOneToCart,
     removeOneFromCart,
     deleteFromCart,
     getTotalCost
