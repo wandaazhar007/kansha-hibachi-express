@@ -4,12 +4,24 @@ import { faArrowLeft, faClock, faMapLocation, faTrash } from "@fortawesome/free-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
-import CartComponent from "../components/cart/Cart";
+import CartComponent from "../components/cart/CartComponent";
 import { CartContext } from "../context/cartContext";
+import axios from "axios";
+import { getToken } from "next-auth/jwt";
 
 const CartPage = () => {
+  const [products, setProducts] = useState([]);
   const cart = useContext(CartContext);
+  // const id = cart.items.map((i) => i.id);
+  // return console.log('this is id', id)
+  // console.log(cart.items)
   const productsCount = cart.items?.reduce((sum, product) => sum + product.quantity, 0);
+  // const test = [cart.items];
+  // useEffect(() => {
+  //   console.log(cart)
+  // }, []);
+
+
 
   return (
     <section className="cart-page">
@@ -28,20 +40,16 @@ const CartPage = () => {
         <div className="contents">
           <div className="col-left">
             <h1 className="title">Your Cart</h1>
-            <p className="total-order">Total Order (2 Items)</p>
-            {productsCount > 0 ? (
-              <div className="list-items">
-                {cart.items.map((currentProduct, index) => (
-                  <CartComponent key={index} id={currentProduct.id} quantity={currentProduct.quantity} />
-                ))}
-              </div>
-            ) : (
-              ''
-            )}
+            <p className="total-order">Total Order {productsCount} items</p>
+            <div className="list-items">
+              {cart.items.map((currentProduct, idx) => (
+                <CartComponent key={idx} id={currentProduct.id} quantity={currentProduct.quantity} />
+              ))}
+            </div>
+          </div>
 
 
-
-            {/* <div className="box">
+          {/* <div className="box">
                 <div className="image">
                   <Image src="/images/products/menu2_img_1.jpg" width={100} height={100} alt="images" />
                 </div>
@@ -61,9 +69,6 @@ const CartPage = () => {
                   <FontAwesomeIcon icon={faTrash} className="icon" />
                 </div>
               </div> */}
-
-            {/* </div> */}
-          </div>
 
           <div className="col-right">
             <div className="pickup-location">
@@ -117,7 +122,7 @@ const CartPage = () => {
               </div>
               <div className="box-summary">
                 <p>Total</p>
-                <p>$7.42</p>
+                <p>${() => cart.getTotalCost()}</p>
               </div>
               <div className="info-summary">Additional taxes and fees will be calculated at checkout
               </div>

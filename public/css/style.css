@@ -2447,9 +2447,18 @@ footer {
 .tf__footer_bottom_text p {
     color: var(--colorBlue);
     text-align: center;
+    font-size: 1.5rem;
 }
 
-.tf__footer_bottom_text p b {
+.tf__footer_bottom_text a {
+    color: var(--colorBlue);
+    text-align: center;
+    font-size: 1.5rem;
+    /* font-style: italic; */
+    font-weight: 600;
+}
+
+.tf__footer_bottom_text p {
     text-transform: capitalize;
     color: var(--colorBlue);
     transition: all linear .3s;
@@ -2457,7 +2466,6 @@ footer {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
-    font-weight: 600;
 }
 
 .tf__footer_bottom {
