@@ -28,26 +28,15 @@ const CartComponent = (props) => {
   const getProductData = async (id) => {
     const response = await fetch('http://localhost:2000/products');
     const data = await response.json();
-    // console.log(data.result)
+    // console.log('cart component', data.result)
     const productData = data.result.find(product => product.id === id);
     // console.log(productData)
     // if (productData == undefined) {
     //   console.log("Product data does not exist for ID: " + id);
     //   return undefined;
     // }
-
     return productData;
   }
-  // let productData = getProductData(id)
-
-  // getProductData(id).then(function (result) {
-  //   setname(result.name);
-  //   setPrice(result.price);
-  //   setUrlImage(result.urlImage)
-
-  //   return result
-  // })
-
   getProductData(id).then((result) => {
     setname(result.name);
     setPrice(result.price);

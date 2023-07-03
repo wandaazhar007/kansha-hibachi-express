@@ -122,7 +122,7 @@ const CartPage = () => {
               </div>
               <div className="box-summary">
                 <p>Total</p>
-                <p>${() => cart.getTotalCost()}</p>
+                <p>${cart.getTotalCost().toFixed(2)}</p>
               </div>
               <div className="info-summary">Additional taxes and fees will be calculated at checkout
               </div>
