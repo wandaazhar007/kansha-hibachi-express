@@ -55,22 +55,13 @@ export const CartContext = createContext({
 });
 
 
-
 export function CartProvider({ children }) {
-  const [cartProducts, setCartProducts] = useState([]);
+  const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart_kansha' || '[]'));
+  const [cartProducts, setCartProducts] = useState(cartFromLocalStorage);
 
-  // useEffect(() => {
-  //   localStorage.setItem('cart_kansha', JSON.stringify(cartProducts));
-  // }, [cartProducts]);
-
-  // if (typeof window !== 'undefined') {
-  //   var cartFromLocalStorage = JSON.parse(localStorage.getItem('cart')) || '[]';
-  //   var a = [].concat(cartFromLocalStorage);
-  //   var b = [];
-  //   var c = b.push(cartFromLocalStorage)
-  // } else {
-  //   false
-  // }
+  useEffect(() => {
+    localStorage.setItem('cart_kansha', JSON.stringify(cartProducts));
+  }, [cartProducts]);
 
   function getProductQuantity(id) {
     const quantity = cartProducts.find((product) => product.id === id)?.quantity

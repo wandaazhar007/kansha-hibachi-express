@@ -12,6 +12,14 @@ const CartComponent = (props) => {
   const [name, setname] = useState("");
   const [price, setPrice] = useState("");
   const [urlImage, setUrlImage] = useState("");
+  const [local, setLocal] = useState("");
+
+  useEffect(() => {
+    let value = []
+    // Get the value from local storage if it exists
+    value = localStorage.getItem("cart_kansha") || ""
+    setLocal(value)
+  }, [])
 
   // const getProductData = async (id) => {
   //   const response = await axios.get(`http://localhost:2000/products`);
@@ -54,7 +62,7 @@ const CartComponent = (props) => {
       </div>
       <div className="title">
         <div className="detail">
-          <p className="name-product">{name}</p>
+          <p className="name-product">{name} {local}</p>
           <p className="price-product">${price}</p>
         </div>
         <div className="button">
