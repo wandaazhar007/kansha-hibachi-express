@@ -116,33 +116,29 @@ export function CartProvider({ children }) {
     let totalCost = 0;
     cartProducts.map((cartItem) => {
       const getData = async (id) => {
-        const res = await fetch('http://localhost:2000/products')
+        return fetch('http://localhost:2000/products')
           .then(response => response.json())
           .then(response => {
-            // console.log(response);
             const data = response.result.find(product => product.id === cartItem.id);
             return data
-            // console.log(data)
           })
-        // console.log(res);
-        // .then(response => console.log(response))
-
-        // const data = await res.json();
-        // console.log('res', data.result)
-        // const filterProduct = data.result.find(product => product.id === cartItem.id);
-        // console.log(filterProduct);
-        return res;
-        // return filterProduct;
+        // return await axios.get(`http://localhost:2000/products`)
       }
-      const productData = getData(cartItem.id).then(response => { return response.json() })
+      const productData = getData().then((resolve) => {
+        return resolve;
+      });
 
       // const productData = getData(cartItem.id).then((resolve) => {
       //   return resolve.price
       // })
-      console.log('total', productData);
-      totalCost += (productData.price * cartItem.quantity);
+      console.log('total', productData.then(e => console.log(e.price)));
+      // totalCost += (productData.price * cartItem.quantity);
+      totalCost += (3.00 * cartItem.quantity);
     });
+    // console.log('two', productData);
+    console.log('two', totalCost);
     return totalCost;
+    // return productData;
   }
 
   // function getTotalCost() {
