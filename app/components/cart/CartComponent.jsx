@@ -14,12 +14,6 @@ const CartComponent = (props) => {
   const [urlImage, setUrlImage] = useState("");
   const [local, setLocal] = useState("");
 
-  useEffect(() => {
-    let value = []
-    // Get the value from local storage if it exists
-    value = localStorage.getItem("cart_kansha") || ""
-    setLocal(value)
-  }, [])
 
   // const getProductData = async (id) => {
   //   const response = await axios.get(`http://localhost:2000/products`);
