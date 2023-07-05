@@ -10,7 +10,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
 
-const ModalProduct = ({ openModal, closeModal, propSlug, propsId }) => {
+const ModalProduct = ({ openModal, closeModal, propId, propName, propPrice }) => {
   if (!openModal) return null;
   const [isLoading, setIsLoading] = useState(true);
   const [isLoadingBtn, setIsLoadingBtn] = useState(true);
@@ -23,7 +23,7 @@ const ModalProduct = ({ openModal, closeModal, propSlug, propsId }) => {
   // const productsCount = cart.items?.reduce((sum, product) => sum + product.quantity, 0);
 
   const getProductById = async () => {
-    const response = await axios.get(`http://localhost:2000/products/${propSlug}`);
+    const response = await axios.get(`http://localhost:2000/products/${propId}`);
     // const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products/${propSlug}`);
 
     setTimeout(() => {
@@ -52,8 +52,8 @@ const ModalProduct = ({ openModal, closeModal, propSlug, propsId }) => {
     getProductById();
   }, [])
 
-  const handleClick = (id) => {
-    cart.addOneToCart(id);
+  const handleClick = (id, name, price) => {
+    cart.addOneToCart(id, name, price);
     setIsLoadingBtn(false);
     setTimeout(() => {
       setIsLoadingBtn(true);
@@ -105,7 +105,7 @@ const ModalProduct = ({ openModal, closeModal, propSlug, propsId }) => {
                 <p className="desc-detail-product">{desc}</p>
               </div>
               <div className="modal-footer">
-                <button className="add-to-cart" onClick={() => handleClick(propsId)}>
+                <button className="add-to-cart" onClick={() => handleClick(propId, propName, propPrice)}>
                   {isLoadingBtn ? (
                     <>
                       <FontAwesomeIcon icon={faCartPlus} className="icon" />

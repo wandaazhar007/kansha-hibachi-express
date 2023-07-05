@@ -12,7 +12,6 @@ const CartComponent = (props) => {
   const [name, setname] = useState("");
   const [price, setPrice] = useState("");
   const [urlImage, setUrlImage] = useState("");
-  const [local, setLocal] = useState("");
 
 
   // const getProductData = async (id) => {
@@ -28,10 +27,13 @@ const CartComponent = (props) => {
   // }
 
   const getProductData = async (id) => {
-    const response = await fetch('http://localhost:2000/products');
+    const response = await fetch('http://localhost:2000/all-products');
+    // const response = await fetch(`http://localhost:2000/products/${id}`);
+    // console.log('res', response)
+    // response.then((r) => console.log(r))
     const data = await response.json();
     // console.log('cart component', data.result)
-    const productData = data.result.find(product => product.id === id);
+    const productData = data.find(product => product.id === id);
     // console.log(productData)
     // if (productData == undefined) {
     //   console.log("Product data does not exist for ID: " + id);
@@ -56,7 +58,7 @@ const CartComponent = (props) => {
       </div>
       <div className="title">
         <div className="detail">
-          <p className="name-product">{name} {local}</p>
+          <p className="name-product">{name}</p>
           <p className="price-product">${price}</p>
         </div>
         <div className="button">

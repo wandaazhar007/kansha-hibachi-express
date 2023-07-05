@@ -14,7 +14,9 @@ const Menu = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [openModal, setOpenModal] = useState(false);
   const [propSlug, setPropSlug] = useState('')
-  const [propsId, setPropId] = useState('');
+  const [propId, setPropId] = useState('');
+  const [propName, setPropName] = useState('');
+  const [propPrice, setPropPrice] = useState(0);
   const [page, setPage] = useState(0);
   const [limit, setLimit] = useState(3);
   const [pages, setPages] = useState(0);
@@ -82,10 +84,12 @@ const Menu = () => {
     setIsLoading(true)
   }
 
-  const handleModal = (slug, id) => {
+  const handleModal = (slug, id, name, price) => {
     setOpenModal(true);
-    setPropSlug(slug)
-    setPropId(id)
+    setPropSlug(slug);
+    setPropId(id);
+    setPropName(name);
+    setPropPrice(price);
   }
 
   useEffect(() => {
@@ -150,7 +154,7 @@ const Menu = () => {
               <div className="content">
                 {menus.map((menu, index) => (
                   <>
-                    <div className="box" onClick={() => handleModal(menu.slug, menu.id)}>
+                    <div className="box" onClick={() => handleModal(menu.slug, menu.id, menu.name, parseFloat(menu.price))}>
                       <div className="box-images">
                         <Image height={100} width={100} src={menu.urlImage} alt={menu.name} />
                       </div>
@@ -198,7 +202,7 @@ const Menu = () => {
         </div>
       </section >
 
-      <ModalProduct openModal={openModal} closeModal={() => setOpenModal(false)} propSlug={propSlug} propsId={propsId} />
+      <ModalProduct openModal={openModal} closeModal={() => setOpenModal(false)} propId={propId} propName={propName} propPrice={propPrice} />
 
 
     </>

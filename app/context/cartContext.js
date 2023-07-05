@@ -57,7 +57,7 @@ export const CartContext = createContext({
 
 export function CartProvider({ children }) {
   const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart_kansha' || '[]'));
-  const [cartProducts, setCartProducts] = useState(cartFromLocalStorage);
+  const [cartProducts, setCartProducts] = useState(cartFromLocalStorage || []);
 
   useEffect(() => {
     localStorage.setItem('cart_kansha', JSON.stringify(cartProducts));
@@ -71,10 +71,10 @@ export function CartProvider({ children }) {
     return quantity;
   }
 
-  function addOneToCart(id) {
+  function addOneToCart(id, name, price) {
     const quantity = getProductQuantity(id);
     if (quantity === 0) {
-      setCartProducts([...cartProducts, { id: id, quantity: 1 }]);
+      setCartProducts([...cartProducts, { id: id, name: name, price: price, quantity: 1 }]);
     } else {
       setCartProducts(cartProducts.map((product) => product.id === id ? { ...product, quantity: product.quantity + 1 } : product));
     }
@@ -106,30 +106,55 @@ export function CartProvider({ children }) {
   function getTotalCost() {
     let totalCost = 0;
     cartProducts.map((cartItem) => {
-      const getData = async (id) => {
-        return fetch('http://localhost:2000/products')
-          .then(response => response.json())
-          .then(response => {
-            const data = response.result.find(product => product.id === cartItem.id);
-            return data
-          })
-        // return await axios.get(`http://localhost:2000/products`)
+      // const getData = async (id) => {
+      //   return fetch('http://localhost:2000/products')
+      //     .then(response => response.json())
+      //     .then(response => {
+      //       const data = response.result.find(product => product.id === cartItem.id);
+      //       return data;
+      //     })
+      // }
+      // const productData = getData().then((resolve) => {
+      //   return resolve;
+      // });
+      // let sum = cartFromLocalStorage.reduce((accumulator, object) => {
+      //   return accumulator + price
+      // const sum = cartProducts?.reduce((cartItem, product) => cartItem.price * product.quantity, 0)
+      // console.log(sum)
+    })
+    // const number = [5, 5, 10];
+    // const filter = number.reduce((accumulator, currentValue) => accumulator + currentValue);
+    // console.log('filter', filter)
+    // var arr = [{ x: 1 }, { x: 2 }, { x: 4 }, { x: 4 }];
+    var arr = [
+      {
+        "id": 7,
+        "name": "Crab Rangoon (4 Pcs)",
+        "price": 4.00,
+        "quantity": 9
+      },
+      {
+        "id": 8,
+        "name": "Egg",
+        "price": 10.00,
+        "quantity": 3
       }
-      const productData = getData().then((resolve) => {
-        return resolve;
-      });
-
-      // const productData = getData(cartItem.id).then((resolve) => {
-      //   return resolve.price
-      // })
-      console.log('total', productData.then(e => console.log(e.price)));
-      // totalCost += (productData.price * cartItem.quantity);
-      totalCost += (3.00 * cartItem.quantity);
-    });
-    // console.log('two', productData);
-    console.log('two', totalCost);
+    ]
+    // const cart = JSON.parse(cartFromLocalStorage)
+    const cart = cartProducts?.reduce(function (acc, obj) { return acc + obj.price; }, 0);
+    console.log(cartProducts);
+    // cartFromLocalStorage.map((e) => {
+    //   const price = e.price;
+    //   console.log('price', price)
+    // })
+    // console.log(cartItem)
+    // totalCost += (productData * cartItem.quantity);
+    // totalCost += (3.00 * cartItem.quantity);
+    // });
+    // const sum = cartProducts?.reduce((sum, product) => product.price * product.quantity, 0)
+    // console.log(sum)
+    totalCost += cart
     return totalCost;
-    // return productData;
   }
 
   // function getTotalCost() {
