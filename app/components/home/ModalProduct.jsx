@@ -20,11 +20,10 @@ const ModalProduct = ({ openModal, closeModal, propId, propName, propPrice }) =>
   const [urlImage, setUrlImage] = useState('');
 
   const cart = useContext(CartContext);
-  // const productsCount = cart.items?.reduce((sum, product) => sum + product.quantity, 0);
 
   const getProductById = async () => {
     const response = await axios.get(`http://localhost:2000/products/${propId}`);
-    // const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products/${propSlug}`);
+    // const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products/${propId}`);
 
     setTimeout(() => {
       setNameProduct(response.data.name);
@@ -67,41 +66,32 @@ const ModalProduct = ({ openModal, closeModal, propId, propName, propPrice }) =>
         <div className="box-container">
           {isLoading &&
             <div className="box">
-              <div className="close-btn" onClick={closeModal}></div>
               <div className="modal-body">
                 <div className="content-image skeleton skeleton-image-modal">
                   {/* <Image src={urlImage} alt="sakura sushi" width={500} height={500} /> */}
                 </div>
                 <h1 className="skeleton skeleton-title-modal"></h1>
                 <h1 className="skeleton skeleton-price-modal"></h1>
-                {/* <p className="desc-detail-product">{desc}</p> */}
               </div>
               <div className="modal-footer">
                 <p className="skeleton skeleton-desc-modal"></p>
                 <p className="skeleton skeleton-desc-modal"></p>
                 <p className="skeleton skeleton-desc-modal"></p>
-                {/* <h1 className="price-detail-product">${price}</h1> */}
-                {/* <button className="close-btn-2" onClick={closeModal}>
-                <FontAwesomeIcon icon={faClose} className="icon" />
-                Close
-              </button> */}
-                {/* <button className="add-to-cart" onClick={() => handleClick(productData.id)}>
-            <FontAwesomeIcon icon={faCartPlus} className="icon" />
-            Add To Cart
-          </button> */}
+                <button className="skeleton skeleton-btn-cart-modal add-to-cart">
+                </button>
+                <button className="skeleton skeleton-btn-close-modal">
+                </button>
               </div>
             </div>
           }
           {!isLoading &&
             <div className="box">
-              {/* <div className="close-btn" onClick={closeModal}></div> */}
               <div className="modal-body">
                 <div className="content-image">
                   <Image src={urlImage} alt="sakura sushi" width={500} height={500} />
                 </div>
                 <h1 className="title-detail-product">{nameProduct}</h1>
                 <h1 className="price-detail-product">${price}</h1>
-                {/* <p className="desc-detail-product">{desc}</p> */}
                 <p className="desc-detail-product">{desc}</p>
               </div>
               <div className="modal-footer">
@@ -116,11 +106,9 @@ const ModalProduct = ({ openModal, closeModal, propId, propName, propPrice }) =>
                 <button className="close-btn-2" onClick={closeModal}>
                   <FontAwesomeIcon icon={faClose} className="icon" />
                 </button>
-
               </div>
             </div>
           }
-
         </div>
       </div>
 

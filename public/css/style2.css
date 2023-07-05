@@ -672,6 +672,22 @@ html {
   border-radius: 1rem;
 }
 
+.skeleton.skeleton-btn-close-modal {
+  margin-top: 2rem;
+  padding: 1rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: .5rem;
+}
+
+.skeleton.skeleton-btn-cart-modal {
+  margin-top: 2rem;
+  padding: 1rem;
+  height: 5rem;
+  width: 80%;
+  border-radius: .5rem;
+}
+
 /* === END MODAL PRODUCT */
 
 

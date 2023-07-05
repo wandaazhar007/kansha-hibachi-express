@@ -6,22 +6,10 @@ import Image from "next/image";
 import Link from "next/link";
 import CartComponent from "../components/cart/CartComponent";
 import { CartContext } from "../context/cartContext";
-import axios from "axios";
-import { getToken } from "next-auth/jwt";
 
 const CartPage = () => {
-  const [products, setProducts] = useState([]);
   const cart = useContext(CartContext);
-  // const id = cart.items.map((i) => i.id);
-  // return console.log('this is id', id)
-  // console.log(cart.items)
   const productsCount = cart.items?.reduce((sum, product) => sum + product.quantity, 0);
-  // const test = [cart.items];
-  // useEffect(() => {
-  //   console.log(cart)
-  // }, []);
-
-
 
   return (
     <section className="cart-page">
