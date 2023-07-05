@@ -110,7 +110,7 @@ const CartPage = () => {
             <div className="summary">
               <div className="box-summary">
                 <p>Subtotal</p>
-                <p>$7.00</p>
+                <p>${cart.getTotalCost().toFixed(2)}</p>
               </div>
               <div className="box-summary">
                 <p>Estimated taxes (MI Sales Tax)</p>
@@ -122,7 +122,7 @@ const CartPage = () => {
               </div>
               <div className="box-summary">
                 <p>Total</p>
-                <p>${cart.getTotalCost().toFixed(2)}</p>
+                <p>$</p>
               </div>
               <div className="info-summary">Additional taxes and fees will be calculated at checkout
               </div>
