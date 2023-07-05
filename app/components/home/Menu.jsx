@@ -133,7 +133,7 @@ const Menu = () => {
               <div className="content">
                 {menus.map((menu, index) => (
                   <div className="box" key={menu.id}>
-                    <div className="box-images-skeleton skeleton">
+                    <div className="skeleton box-images-skeleton">
                       {/* <Image height={100} width={100} src={menu.urlImage} alt={menu.name} className="skeleton skeleton-image" /> */}
                     </div>
                     <div className="box-contents">
