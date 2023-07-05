@@ -12,33 +12,11 @@ const CartComponent = (props) => {
   const [name, setname] = useState("");
   const [price, setPrice] = useState("");
   const [urlImage, setUrlImage] = useState("");
-
-
-  // const getProductData = async (id) => {
-  //   const response = await axios.get(`http://localhost:2000/products`);
-  //   const responseArray = response.data.result;
-  //   let productData = await responseArray.find(product => product.id === id);
-  //   if (productData == undefined) {
-  //     console.log("Product data does not exist for ID: " + id);
-  //     return undefined;
-  //   }
-
-  //   return productData;
-  // }
-
   const getProductData = async (id) => {
     const response = await fetch('http://localhost:2000/all-products');
     // const response = await fetch(`http://localhost:2000/products/${id}`);
-    // console.log('res', response)
-    // response.then((r) => console.log(r))
     const data = await response.json();
-    // console.log('cart component', data.result)
     const productData = data.find(product => product.id === id);
-    // console.log(productData)
-    // if (productData == undefined) {
-    //   console.log("Product data does not exist for ID: " + id);
-    //   return undefined;
-    // }
     return productData;
   }
   getProductData(id).then((result) => {
@@ -46,10 +24,6 @@ const CartComponent = (props) => {
     setPrice(result.price);
     setUrlImage(result.urlImage)
   })
-
-  // console.log(productData)
-
-
 
   return (
     <div className="box">
