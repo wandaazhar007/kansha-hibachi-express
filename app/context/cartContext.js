@@ -1,49 +1,5 @@
 'use client'
 import { createContext, useEffect, useState } from "react";
-import axios from "axios";
-
-// export function getProductData(id) {
-//   const [products, setProducts] = useState([]);
-//   const response = axios.get(`http://localhost:2000/products`);
-//   console.log(response.data.result)
-//   setProducts(response.data.result)
-//   let productData = products.find(product => product.id === id);
-//   if (productData == undefined) {
-//     console.log("Product data does not exist for ID: " + id);
-//     return undefined;
-//   }
-
-//   return productData;
-// }
-
-// export const getProductData = async (id) => {
-//   const response = await axios.get(`http://localhost:2000/products`);
-//   const responseArray = response.data.result;
-//   let productData = responseArray.find(product => product.id === id);
-//   if (productData == undefined) {
-//     console.log("Product data does not exist for ID: " + id);
-//     return undefined;
-//   }
-
-//   return productData;
-// }
-
-const getProductData = async (id) => {
-  const response = await fetch('http://localhost:2000/products').then((result) => {
-    // return result
-    console.log('count product', result);
-  });
-  const data = await response.json();
-  // console.log(data.result)
-  const productData = data.result.find(product => product.id === id);
-  // console.log(productData)
-  // if (productData == undefined) {
-  //   console.log("Product data does not exist for ID: " + id);
-  //   return undefined;
-  // }
-
-  return productData;
-}
 
 export const CartContext = createContext({
   items: [],
@@ -105,67 +61,11 @@ export function CartProvider({ children }) {
 
   function getTotalCost() {
     let totalCost = 0;
-    cartProducts.map((cartItem) => {
-      // const getData = async (id) => {
-      //   return fetch('http://localhost:2000/products')
-      //     .then(response => response.json())
-      //     .then(response => {
-      //       const data = response.result.find(product => product.id === cartItem.id);
-      //       return data;
-      //     })
-      // }
-      // const productData = getData().then((resolve) => {
-      //   return resolve;
-      // });
-      // let sum = cartFromLocalStorage.reduce((accumulator, object) => {
-      //   return accumulator + price
-      // const sum = cartProducts?.reduce((cartItem, product) => cartItem.price * product.quantity, 0)
-      // console.log(sum)
-    })
-    // const number = [5, 5, 10];
-    // const filter = number.reduce((accumulator, currentValue) => accumulator + currentValue);
-    // console.log('filter', filter)
-    // var arr = [{ x: 1 }, { x: 2 }, { x: 4 }, { x: 4 }];
-    var arr = [
-      {
-        "id": 7,
-        "name": "Crab Rangoon (4 Pcs)",
-        "price": 4.00,
-        "quantity": 9
-      },
-      {
-        "id": 8,
-        "name": "Egg",
-        "price": 10.00,
-        "quantity": 3
-      }
-    ]
-    // const cart = JSON.parse(cartFromLocalStorage)
-    const cart = cartProducts?.reduce(function (acc, obj) { return acc + obj.price; }, 0);
-    console.log(cartProducts);
-    // cartFromLocalStorage.map((e) => {
-    //   const price = e.price;
-    //   console.log('price', price)
-    // })
-    // console.log(cartItem)
-    // totalCost += (productData * cartItem.quantity);
-    // totalCost += (3.00 * cartItem.quantity);
-    // });
-    // const sum = cartProducts?.reduce((sum, product) => product.price * product.quantity, 0)
-    // console.log(sum)
-    totalCost += cart
+    const amount = cartProducts.reduce((sum, product) => sum + (product.price * product.quantity), 0)
+
+    totalCost += amount
     return totalCost;
   }
-
-  // function getTotalCost() {
-  //   let totalCost = 0;
-  //   cartProducts.map((cartItem) => {
-  //     const productData = getProductData(cartItem.id);
-  //     console.log('total', productData);
-  //     totalCost += (productData.price * cartItem.quantity);
-  //   });
-  //   return totalCost;
-  // }
 
   const contextValue = {
     items: cartProducts,
