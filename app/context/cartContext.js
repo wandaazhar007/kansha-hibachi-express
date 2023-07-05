@@ -12,12 +12,19 @@ export const CartContext = createContext({
 
 
 export function CartProvider({ children }) {
+  // const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart_kansha' || '[]'));
+  // useEffect(() => {
   const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart_kansha' || '[]'));
+  // }, []);
   const [cartProducts, setCartProducts] = useState(cartFromLocalStorage || []);
 
   useEffect(() => {
     localStorage.setItem('cart_kansha', JSON.stringify(cartProducts));
   }, [cartProducts]);
+
+  // useEffect(() => {
+  //   const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart_kansha' || '[]'));
+  // }, []);
 
   function getProductQuantity(id) {
     const quantity = cartProducts.find((product) => product.id === id)?.quantity

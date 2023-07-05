@@ -267,7 +267,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 12rem;
+  /* height: 12rem; */
   padding-bottom: 2.5rem;
   box-sizing: border-box;
   border-bottom: .1rem solid var(--colorGrey);
@@ -303,6 +303,37 @@ html {
 
 .cart-page .container .contents .col-right .add-tip .boxes .box.active h1 {
   color: var(--colorWhite);
+}
+
+.cart-page .container .contents .col-right .add-tip .custom-tip {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.cart-page .container .contents .col-right .add-tip .custom-tip .input-tip {
+  height: 4rem;
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 1rem;
+  border: .01rem solid grey;
+  border-radius: .5rem;
+}
+
+.cart-page .container .contents .col-right .add-tip .custom-tip .btn-custom-tip {
+  padding: 1rem;
+  border-radius: .5rem;
+  background-color: var(--colorBlue);
+  color: var(--colorWhite);
+  font-size: 1.4rem;
+}
+
+.cart-page .container .contents .col-right .add-tip .custom-tip .btn-cancel-tip {
+  padding: 1rem;
+  border-radius: .5rem;
+  background-color: var(--colorBlue);
+  color: var(--colorWhite);
+  font-size: 1.4rem;
 }
 
 .cart-page .container .contents .col-right .summary {

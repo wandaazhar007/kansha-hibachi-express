@@ -12,9 +12,17 @@ const CartComponent = (props) => {
   const [name, setname] = useState("");
   const [price, setPrice] = useState("");
   const [urlImage, setUrlImage] = useState("");
+  // const getProductData = async (id) => {
+  //   // const response = await fetch('https://kanshaapi.birojasa-sahabat.com/all-products');
+  //   const response = await fetch('http://localhost:2000/all-products');
+  //   const data = await response.json();
+  //   const productData = data.find(product => product.id === id);
+  //   return productData;
+  // }
   const getProductData = async (id) => {
-    const response = await fetch('https://kanshaapi.birojasa-sahabat.com/all-products');
-    // const response = await fetch('http://localhost:2000/all-products');
+    // const response = await fetch('https://kanshaapi.birojasa-sahabat.com/all-products');
+    const response = await fetch('http://localhost:2000/all-products');
+    // const response = await JSON.parse(localStorage.getItem('cart_kansha' || '[]'))
     const data = await response.json();
     const productData = data.find(product => product.id === id);
     return productData;

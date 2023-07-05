@@ -9,11 +9,22 @@ import { CartContext } from "../context/cartContext";
 
 const CartPage = () => {
   const [tip, setTip] = useState(0);
+  const [valueCustomTip, setValueCustumTip] = useState(0);
+  const [showCustomTip, setShowCustomTip] = useState(false);
   const cart = useContext(CartContext);
   const productsCount = cart.items?.reduce((sum, product) => sum + product.quantity, 0);
   const tipValue = (cart.getTotalCost().toFixed(2) / 100 * tip).toFixed(2);
   const handleTip = (value) => {
     setTip(value);
+  }
+  const handleCustomTip = () => {
+    setTip(0);
+    setShowCustomTip(!showCustomTip);
+    // alert('test')
+  }
+
+  const handleAddCustomTip = () => {
+
   }
   return (
     <section className="cart-page">
@@ -72,10 +83,19 @@ const CartPage = () => {
                   <h1>20%</h1>
                   <h1>${(cart.getTotalCost().toFixed(2) / 100 * 20).toFixed(2)}</h1>
                 </button>
-                <button className="box">
+                <button className={`box`} onClick={() => handleCustomTip()}>
                   <h1>Other</h1>
                 </button>
               </div>
+              {showCustomTip ? (
+                <div className="custom-tip">
+                  <input type="number" placeholder="type your tip here..." className="input-tip" onChange={(e) => setShowCustomTip(e.target.value)} />
+                  {valueCustomTip}
+                  <button className="btn-custom-tip" onClick={() => handleAddCustomTip()}>Add</button>
+                  <button className="btn-cancel-tip" onClick={() => handleCustomTip()}>Cancel</button>
+                </div>
+              ) : ''}
+
             </div>
             <div className="summary">
               <div className="box-summary">
