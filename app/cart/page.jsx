@@ -8,9 +8,13 @@ import CartComponent from "../components/cart/CartComponent";
 import { CartContext } from "../context/cartContext";
 
 const CartPage = () => {
+  const [tip, setTip] = useState(0);
   const cart = useContext(CartContext);
   const productsCount = cart.items?.reduce((sum, product) => sum + product.quantity, 0);
-
+  const tipValue = (cart.getTotalCost().toFixed(2) / 100 * tip).toFixed(2);
+  const handleTip = (value) => {
+    setTip(value);
+  }
   return (
     <section className="cart-page">
       <div className="container">
@@ -36,28 +40,6 @@ const CartPage = () => {
             </div>
           </div>
 
-
-          {/* <div className="box">
-                <div className="image">
-                  <Image src="/images/products/menu2_img_1.jpg" width={100} height={100} alt="images" />
-                </div>
-                <div className="title">
-                  <div className="detail">
-                    <p className="name-product">Alborcore Tuna</p>
-                    <p className="price-product">$3.50</p>
-                  </div>
-                  <div className="button">
-                    <span>-</span>
-                    <span>1</span>
-                    <span>+</span>
-                  </div>
-                </div>
-                <div className="delete">
-                  <span>$3.50</span>
-                  <FontAwesomeIcon icon={faTrash} className="icon" />
-                </div>
-              </div> */}
-
           <div className="col-right">
             <div className="pickup-location">
               <div className="header-pickup-location">
@@ -78,17 +60,17 @@ const CartPage = () => {
             <div className="add-tip">
               <h1>ADD A TIP</h1>
               <div className="boxes">
-                <button className="box">
+                <button className={`box ${tip === 10 ? 'active' : ''}`} onClick={() => handleTip(10)}>
                   <h1>10%</h1>
-                  <h1>$0.70</h1>
+                  <h1>${(cart.getTotalCost().toFixed(2) / 100 * 10).toFixed(2)}</h1>
                 </button>
-                <button className="box">
+                <button className={`box ${tip === 15 ? 'active' : ''}`} onClick={() => handleTip(15)}>
                   <h1>15%</h1>
-                  <h1>$1.50</h1>
+                  <h1>${(cart.getTotalCost().toFixed(2) / 100 * 15).toFixed(2)}</h1>
                 </button>
-                <button className="box active">
+                <button className={`box ${tip === 20 ? 'active' : ''}`} onClick={() => handleTip(20)}>
                   <h1>20%</h1>
-                  <h1>$2.50</h1>
+                  <h1>${(cart.getTotalCost().toFixed(2) / 100 * 20).toFixed(2)}</h1>
                 </button>
                 <button className="box">
                   <h1>Other</h1>
@@ -106,11 +88,11 @@ const CartPage = () => {
               </div>
               <div className="box-summary">
                 <p>Tip</p>
-                <p>$0.00</p>
+                <p>${tipValue}</p>
               </div>
               <div className="box-summary">
                 <p>Total</p>
-                <p>$</p>
+                <p>${cart.getTotalCost().toFixed(2)}</p>
               </div>
               <div className="info-summary">Additional taxes and fees will be calculated at checkout
               </div>
