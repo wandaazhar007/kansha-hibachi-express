@@ -321,7 +321,7 @@ html {
 }
 
 .cart-page .container .contents .col-right .add-tip .custom-tip .btn-custom-tip {
-  padding: 1rem;
+  padding: 1rem 4rem;
   border-radius: .5rem;
   background-color: var(--colorBlue);
   color: var(--colorWhite);

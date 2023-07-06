@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CartComponent from "../components/cart/CartComponent";
 import { CartContext } from "../context/cartContext";
+import { color } from "framer-motion";
 
 const CartPage = () => {
   const [tip, setTip] = useState(0);
@@ -14,17 +15,18 @@ const CartPage = () => {
   const cart = useContext(CartContext);
   const productsCount = cart.items?.reduce((sum, product) => sum + product.quantity, 0);
   const tipValue = (cart.getTotalCost().toFixed(2) / 100 * tip).toFixed(2);
+
   const handleTip = (value) => {
     setTip(value);
   }
   const handleCustomTip = () => {
-    setTip(0);
+    // setTip(0);
     setShowCustomTip(!showCustomTip);
     // alert('test')
   }
 
   const handleAddCustomTip = () => {
-
+    setTip(valueCustomTip)
   }
   return (
     <section className="cart-page">
@@ -84,15 +86,16 @@ const CartPage = () => {
                   <h1>${(cart.getTotalCost().toFixed(2) / 100 * 20).toFixed(2)}</h1>
                 </button>
                 <button className={`box`} onClick={() => handleCustomTip()}>
-                  <h1>Other</h1>
+
+                  {showCustomTip ? <h1 style={{ color: "red" }}>Cancel</h1> : <h1>Other</h1>}
+
                 </button>
               </div>
               {showCustomTip ? (
                 <div className="custom-tip">
-                  <input type="number" placeholder="type your tip here..." className="input-tip" onChange={(e) => setShowCustomTip(e.target.value)} />
-                  {valueCustomTip}
+                  <input type="number" placeholder="type your tip here..." className="input-tip" value={valueCustomTip} onChange={(e) => setValueCustumTip(e.target.value)} />
+                  {/* {valueCustomTip} */}
                   <button className="btn-custom-tip" onClick={() => handleAddCustomTip()}>Add</button>
-                  <button className="btn-cancel-tip" onClick={() => handleCustomTip()}>Cancel</button>
                 </div>
               ) : ''}
 

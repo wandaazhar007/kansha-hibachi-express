@@ -68,16 +68,16 @@ const Navbar = () => {
               <Link href="tel:+16604299074" target="_blank" rel="noreferrer"><i className="fas fa-phone"></i></Link>
             </li>
             <li>
-              <Link href="#">
-                {productsCount > 0 ? (
-                  <>
-                    {/* <FontAwesomeIcon icon={faCartShopping} className="icons" /> {productsCount} */}
-                    <Link href="/cart" onClick={(() => handleShow())}>
-                      {productsCount}
-                    </Link>
-                  </>
-                ) : '0'}
-              </Link>
+              {/* <Link href="#"> */}
+              {productsCount > 0 ? (
+                <>
+                  {/* <FontAwesomeIcon icon={faCartShopping} className="icons" /> {productsCount} */}
+                  <Link href="/cart" onClick={(() => handleShow())}>
+                    {productsCount}
+                  </Link>
+                </>
+              ) : '0'}
+              {/* </Link> */}
             </li>
           </ul>
         </div>

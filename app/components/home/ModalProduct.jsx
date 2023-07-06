@@ -22,8 +22,8 @@ const ModalProduct = ({ openModal, closeModal, propId, propName, propPrice }) =>
   const cart = useContext(CartContext);
 
   const getProductById = async () => {
-    const response = await axios.get(`http://localhost:2000/products/${propId}`);
-    // const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products/${propId}`);
+    // const response = await axios.get(`http://localhost:2000/products/${propId}`);
+    const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products/${propId}`);
 
     setTimeout(() => {
       setNameProduct(response.data.name);

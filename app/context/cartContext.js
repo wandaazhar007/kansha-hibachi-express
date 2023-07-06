@@ -12,19 +12,30 @@ export const CartContext = createContext({
 
 
 export function CartProvider({ children }) {
+
+
   // const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart_kansha' || '[]'));
+
+  let cartFromLocalStorage = [];
   // useEffect(() => {
-  const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart_kansha' || '[]'));
+  if (typeof window !== 'undefined') {
+    cartFromLocalStorage = JSON.parse(localStorage.getItem('cart_kansha' || '[]'));
+    console.log(cartFromLocalStorage);
+
+  }
   // }, []);
   const [cartProducts, setCartProducts] = useState(cartFromLocalStorage || []);
 
-  useEffect(() => {
-    localStorage.setItem('cart_kansha', JSON.stringify(cartProducts));
-  }, [cartProducts]);
 
-  // useEffect(() => {
-  //   const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart_kansha' || '[]'));
-  // }, []);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('cart_kansha', JSON.stringify(cartProducts));
+      // const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart_kansha' || '[]'));
+      // console.log(storedData);
+    }
+    // localStorage.setItem('cart_kansha', JSON.stringify(cartProducts));
+  }, [cartProducts]);
 
   function getProductQuantity(id) {
     const quantity = cartProducts.find((product) => product.id === id)?.quantity
