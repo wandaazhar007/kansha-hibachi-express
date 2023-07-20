@@ -22,7 +22,7 @@ const Counter = () => {
                 <p>experience chef</p>
               </div>
             </div>
-            <div className="col-xl-3 col-sm-6 col-lg-3 wow fadeInUp" data-wow-duration="1s">
+            {/* <div className="col-xl-3 col-sm-6 col-lg-3 wow fadeInUp" data-wow-duration="1s">
               <div className="tf__single_counter">
                 <div className="text">
                   <h2 className="counter">72,000</h2>
@@ -39,7 +39,7 @@ const Counter = () => {
                 </div>
                 <p>winning award</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

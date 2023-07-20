@@ -7,6 +7,7 @@ import Link from "next/link";
 import CartComponent from "../components/cart/CartComponent";
 import { CartContext } from "../context/cartContext";
 import { color } from "framer-motion";
+import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 
 const CartPage = () => {
   const [tip, setTip] = useState(0);
@@ -119,7 +120,8 @@ const CartPage = () => {
               </div>
               <div className="info-summary">Additional taxes and fees will be calculated at checkout
               </div>
-              <button>Continue Payment</button>
+              <button className="btn-payment">Continue Payment (As Guest)</button>
+              <Link className="btn-login" href="#">Login With Google <FontAwesomeIcon icon={faGoogle} className="icon" /></Link>
             </div>
           </div>
         </div>

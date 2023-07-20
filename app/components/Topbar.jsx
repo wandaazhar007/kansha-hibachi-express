@@ -16,7 +16,7 @@ const Topbar = () => {
           <div className="col-xl-6 col-sm-6 col-md-4">
             <ul className="topbar_icon d-flex flex-wrap">
               <li><Link href="https://www.facebook.com/kanshahibachiexpress/" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f"></i></Link> </li>
-              <li><Link href="https://instagram.com/wanda_azharr/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></Link> </li>
+              <li><Link href="https://www.instagram.com/kansha_express/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></Link> </li>
               <li><Link href="https://goo.gl/maps/V9qXQh6mKFZmb15Z7" target="_blank" rel="noreferrer"><i className="fab fa-google"></i></Link> </li>
             </ul>
           </div>
