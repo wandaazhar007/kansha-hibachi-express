@@ -24,7 +24,7 @@ const FormContact = () => {
                 </div>
                 <div className="tf__contact_info border-0 p-0 m-0">
                   <h3>location</h3>
-                  <p>208 E Young Ave, Warrensburg, MO 64093, United States</p>
+                  <p>303 Cooper Blvd Suite I, Warrensburg, MO 64093, United States</p>
                 </div>
               </div>
             </div>

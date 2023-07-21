@@ -1,4 +1,4 @@
-import BannerHero from './components/home/BannerHero'
+import BannerHero from './components/home/bannerHero/BannerHero'
 import DailyOffer from './components/home/DailyOffer'
 import Reservation from './components/home/Reservation'
 import Menu from './components/home/Menu'

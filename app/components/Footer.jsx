@@ -13,11 +13,10 @@ const Footer = () => {
                 <a className="footer_logo" href="index.html">
                   <Image width={100} height={100} src="/images/logo-kansha-header.png" alt="RegFood" className="img-fluid w-100" />
                 </a>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere delectus qui
-                  placeat inventore consectetur repellendus optio debitis.</span>
+                <span>Our friendly and attentive staff are here to make your visit an enjoyable one, providing prompt service and answering any questions you may have.</span>
                 <ul className="social_link d-flex flex-wrap">
                   <li><a href="https://www.facebook.com/kanshahibachiexpress/" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#" target="_blank"><i className="fab fa-instagram"></i></a></li>
+                  <li><a href="https://www.instagram.com/kansha_express/" target="_blank"><i className="fab fa-instagram"></i></a></li>
                   <li><a href="https://goo.gl/maps/V9qXQh6mKFZmb15Z7" target="_blank" rel="noreferrer"><i className="fab fa-google-plus-g"></i></a></li>
                 </ul>
               </div>
@@ -29,7 +28,7 @@ const Footer = () => {
                   <li><Link href="/">Home</Link></li>
                   <li><Link href="/about">About Us</Link></li>
                   <li><Link href="/contact">Contact Us</Link></li>
-                  <li><Link href="/about">Our Service</Link></li>
+                  {/* <li><Link href="/about">Our Service</Link></li> */}
                   <li><Link href="/galery">gallery</Link></li>
                 </ul>
               </div>
@@ -42,7 +41,7 @@ const Footer = () => {
                   <li><Link href="/privacy-policy">Privacy Policy</Link></li>
                   <li><Link href="/refund-policy">Refund Policy</Link></li>
                   <li><Link href="/faq">FAQ</Link></li>
-                  <li><Link href="/contact">contact</Link></li>
+                  {/* <li><Link href="/contact">contact</Link></li> */}
                 </ul>
               </div>
             </div>
@@ -55,12 +54,12 @@ const Footer = () => {
                   </Link>
                 </p>
                 <p className="info">
-                  <Link href="tel:+16604299074" target="_blank" rel="noreferrer">
+                  <Link href="mailto:ss.kansha@gmail.com" target="_blank" rel="noreferrer">
                     <i className="fas fa-envelope"></i>ss.kansha@gmail.com
                   </Link>
                 </p>
                 <p className="info">
-                  <Link href="tel:+16604299074" target="_blank" rel="noreferrer">
+                  <Link href="https://goo.gl/maps/V9qXQh6mKFZmb15Z7" target="_blank" rel="noreferrer">
                     <i className="fas fa-map-marker-alt"></i> 303 Cooper Blvd Suite I, Warrensburg, MO 64093, United States
                   </Link>
                 </p>

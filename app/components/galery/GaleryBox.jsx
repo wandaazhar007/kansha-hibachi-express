@@ -1,4 +1,5 @@
 import Image from "next/image";
+import './galery-component.scss';
 
 const GaleryBox = () => {
   return (

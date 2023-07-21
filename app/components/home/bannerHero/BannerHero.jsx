@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import './banner-hero.scss';
 
 const BannerHero = () => {
   return (
