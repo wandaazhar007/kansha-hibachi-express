@@ -25,7 +25,7 @@ const ContactSection = () => {
             </div>
             <div className="contact-group">
               <FontAwesomeIcon icon={faMap} className="icons" />
-              <Link href="https://goo.gl/maps/V9qXQh6mKFZmb15Z7" target="_blank" rel="noreferrer"> <h1 className="location">208 E Young Ave, Warrensburg, MO 64093, United States <FontAwesomeIcon icon={faSquareArrowUpRight} className="icons-link" /></h1> </Link>
+              <Link href="https://goo.gl/maps/V9qXQh6mKFZmb15Z7" target="_blank" rel="noreferrer"> <h1 className="location">303 Cooper Blvd Suite I, Warrensburg, MO 64093, United States <FontAwesomeIcon icon={faSquareArrowUpRight} className="icons-link" /></h1> </Link>
             </div>
             <div className="contact-group">
               <FontAwesomeIcon icon={faCommentAlt} className="icons" />

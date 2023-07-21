@@ -38,7 +38,7 @@ const Footer = () => {
               <div className="tf__footer_content">
                 <h3>Help Link</h3>
                 <ul>
-                  <li><Link href="/term-condition">Terms & Conditions</Link></li>
+                  <li><Link href="/terms-conditions">Terms & Conditions</Link></li>
                   <li><Link href="/privacy-policy">Privacy Policy</Link></li>
                   <li><Link href="/refund-policy">Refund Policy</Link></li>
                   <li><Link href="/faq">FAQ</Link></li>

@@ -4,20 +4,20 @@ const Counter = () => {
       <div className="tf__counter_overlay pt_120 xs_pt_90 pb_100 xs_pb_0">
         <div className="container">
           <div className="row">
-            <div className="col-xl-3 col-sm-6 col-lg-3 wow fadeInUp" data-wow-duration="1s">
+            <div className="col-xl-6 col-sm-6 col-lg-6 wow fadeInUp" data-wow-duration="1s">
               <div className="tf__single_counter">
                 <div className="text">
-                  <h2 className="counter">85,000</h2>
-                  <span><i className="fas fa-user"></i></span>
+                  <h2 className="counter">2.500</h2>
+                  <span><i className="fas fa-users"></i></span>
                 </div>
                 <p>customer serve</p>
               </div>
             </div>
-            <div className="col-xl-3 col-sm-6 col-lg-3 wow fadeInUp" data-wow-duration="1s">
+            <div className="col-xl-6 col-sm-6 col-lg-6 wow fadeInUp" data-wow-duration="1s">
               <div className="tf__single_counter">
                 <div className="text">
-                  <h2 className="counter">120</h2>
-                  <span><i className="fas fa-hat-chef"></i></span>
+                  <h2 className="chef">5</h2>
+                  <span><i className="fas fa-chess-rook"></i></span>
                 </div>
                 <p>experience chef</p>
               </div>

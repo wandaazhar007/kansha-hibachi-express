@@ -30,7 +30,7 @@ const BannerHero = () => {
           <div className="col-left" >
             <h3>Unleash Your Taste Buds.</h3>
             {/* <h3>WE BARE BEARS x KURA SUSHI</h3> */}
-            <h1>Indulge in Authentic Hibachi Delights</h1>
+            <h1>Indulge Kansha Hibachi Delights</h1>
             <p>Visit us today and experience the thrill of hibachi cuisine brought to life at Kansha Hibachi Express. We look forward to serving you and sharing the joy of our flavorful creations.</p>
             <div className="cta-hero">
               <Link href="tel:16604299074">

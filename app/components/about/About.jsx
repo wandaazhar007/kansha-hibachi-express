@@ -18,7 +18,7 @@ const About = () => {
             </div> */}
             <div className="about-img">
               <div className="primary-img">
-                <Image width={100} height={100} src="/images/about_chef.jpg" alt="kansha hibachi express" />
+                <Image width={500} height={500} src="/images/owner-kansha-hibachi.jpeg" alt="kansha hibachi express" />
               </div>
               <div className="experience">
                 <h1>12</h1>
@@ -29,7 +29,7 @@ const About = () => {
                   <p>At Kansha Hibachi Express, we're committed to serving you more than just exceptional food ...</p>
                 </div>
                 <div className="quote-name">
-                  <p>Krisdiyanto</p>
+                  <p>Krisdianto</p>
                 </div>
               </div>
             </div>

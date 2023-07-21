@@ -38,7 +38,7 @@ CSS TABLE OF CONTENTS
 ul,
 ol,
 li {
-    list-style: none;
+    /* list-style: none; */
     margin: 0;
     padding: 0;
 }
@@ -2086,7 +2086,17 @@ button {
     margin-right: 25px;
 }
 
-.tf__single_counter .text h2::after {
+.tf__single_counter .text .chef {
+    color: var(--colorWhite);
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    /* margin-right: 25px; */
+    margin-right: 0;
+}
+
+.tf__single_counter .text .counter::after {
     position: absolute;
     content: "+";
     color: var(--colorWhite);
@@ -2099,9 +2109,9 @@ button {
     display: block;
     width: 50px;
     height: 50px;
-    background: var(--colorYellow);
+    background: var(--colorWhite);
     line-height: 50px;
-    color: var(--colorWhite);
+    color: var(--colorBlue);
     border-radius: 50%;
     position: absolute;
     bottom: -25px;

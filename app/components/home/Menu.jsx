@@ -15,7 +15,7 @@ const Menu = () => {
   const [propName, setPropName] = useState('');
   const [propPrice, setPropPrice] = useState(0);
   const [page, setPage] = useState(0);
-  const [limit, setLimit] = useState(3);
+  const [limit, setLimit] = useState(4);
   const [pages, setPages] = useState(0);
   const [keywordButton, setKeywordButton] = useState("");
   const [keywordSearch, setKeywordSearch] = useState("");
@@ -105,8 +105,8 @@ const Menu = () => {
           <div className="box-container">
             <div className="header">
               <h1 className="title">
-                <FontAwesomeIcon icon={faSquareCaretRight} className="icon" />
-                <span>Our Menu</span>
+                {/* <FontAwesomeIcon icon={faSquareCaretRight} className="icon" /> */}
+                <span>Menu Kansha</span>
               </h1>
               <div className="btn-menu-group">
                 <button className={`btn-menu ${keywordButton === 1 ? 'active' : ''}`} onClick={() => handleClickMenu(1)}>Hibachi</button>
