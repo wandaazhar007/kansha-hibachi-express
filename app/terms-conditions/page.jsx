@@ -5,10 +5,8 @@ const TermsConditions = () => {
     <section className="termsConditions">
       <div className="container">
         <div className="box-container">
-          <div className="header">TERMS & CONDITIONS</div>
-          {/* <div className="header">KANSHA HIBACHI EXPRESS</div> */}
-          <div className="sub-header">KANSHA HIBACHI EXPRESS</div>
-          {/* <div className="sub-header">TERMS & CONDITIONS</div> */}
+          <div className="header">Kansha Hibachi Express</div>
+          <div className="sub-header">TERMS & CONDITIONS</div>
           <div className="content">
             <p>
               Welcome to Kansha Hibachi Express! These Terms and Conditions govern your access to and use of the website, services, and content provided by Kansha Hibachi Express ("we," "us," or "our"). By accessing or using our website, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, please do not use our website.
@@ -16,26 +14,6 @@ const TermsConditions = () => {
             <ol className="content-header">
               <li>1. Acceptance of Terms</li>
               <p>By using this website, you represent that you are at least 18 years old or have the consent of a parent or legal guardian. If you are accessing and using this website on behalf of a company or organization, you represent that you have the authority to bind that entity to these Terms and Conditions.</p>
-              {/* <ol className="sub-content-header">
-                <li>
-                  “Informasi Pribadi” berarti informasi pribadi yang teridentifikasi tentang Anda yang dapat dikumpulkan melalui Platform, seperti nama, alamat, tanggal lahir, jenis kelamin, pekerjaan, nomor telepon/HP, alamat email, kartu kredit, nomor rekening bank dan informasi Anda lainnya yang terkait dengan orang yang teridentifikasi (misalnya, informasi demografi dan usaha, atau informasi tentang kegiatan Anda ketika informasi tersebut terhubung dengan informasi pribadi yang teridentifikasi, atau informasi yang dapat mengidentifikasi individual tertentu yang menggunakan Platform)
-                </li>
-                <li>
-                  “Layanan” berarti setiap transaksi yang dilakukan pada atau oleh Biro Jasa Sahabat
-                </li>
-                <li>
-                  “Penyedia Layanan” berarti setiap vendor, konsultan, penyedia layanan atau setiap pihak ketiga lainnya sehubungan dengan pengoperasian Platform dan usaha kami;
-                </li>
-                <li>
-                  “Kami”, “kita”, “milik kami atau milik kita” dan Biro Jasa Shabat berarti CV Biro Jasa Sahabat, suatu perseroan yang didirikan berdasarkan hukum negara Republik Indonesia dan/atau afiliasinya;
-                </li>
-                <li>
-                  “Platform” berarti suatu situs web di (https://birojasa-sahabat.com/), setiap subdomainnya, platform lainnya, aplikasi perangkat seluler, tablet, dan perangkat pintar lainnya, serta program aplikasi antarmuka, dan semua layanan terkait yang dimiliki, didesain, dikembangkan dan dipelihara oleh kami; dan
-                </li>
-                <li>
-                  “Anda” berarti setiap pengguna Layanan melalui Platform, termasuk namun tidak terbatas pada karyawan pengguna mana pun.
-                </li>
-              </ol> */}
 
               <li>2. Use of the Website</li>
               <ol className="sub-content-header">
@@ -81,11 +59,11 @@ const TermsConditions = () => {
                   ou shall not use any automated means, such as bots or crawlers, to access or collect information from the website without our prior written consent
                 </li>
               </ol>
+
               <li>5. Privacy Policy</li>
               <p>
                 Your use of this website is subject to our Privacy Policy, which governs the collection, use, and disclosure of personal information provided by you. By using this website, you consent to the practices described in our Privacy Policy.
               </p>
-
 
               <li>6. Ordering and Purchasing</li>
               <ul className="sub-content-header">
@@ -122,6 +100,7 @@ const TermsConditions = () => {
                   You agree to defend, indemnify, and hold harmless Kansha Hibachi Express and its affiliates from any claims, liabilities, or expenses arising from your use of the website.
                 </li>
               </ol>
+
               <li>9. Links to Third-Party Websites</li>
               <ol className="sub-content-header">
                 <li>

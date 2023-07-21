@@ -1,4 +1,4 @@
-.termsConditions {
+.refundPolicy {
   margin: 5rem 0;
   padding: 5rem 2rem;
   margin-top: 13rem;
@@ -44,9 +44,31 @@
             line-height: 3rem;
             list-style-type: square;
 
-            LI {
-
+            li {
               font-weight: normal;
+
+              ul {
+                padding-left: 2.5rem;
+                list-style-type: lower-alpha;
+
+                li {
+                  margin-top: .5rem;
+                }
+              }
+            }
+          }
+
+          .contactUs {
+            margin-top: 1rem;
+            font-weight: 600;
+
+            table {
+              tr {
+                td {
+                  padding: .5rem 1rem;
+
+                }
+              }
             }
           }
         }

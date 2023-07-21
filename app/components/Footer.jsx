@@ -61,7 +61,7 @@ const Footer = () => {
                 </p>
                 <p className="info">
                   <Link href="tel:+16604299074" target="_blank" rel="noreferrer">
-                    <i className="fas fa-map-marker-alt"></i> 208 E Young Ave, Warrensburg, MO 64093, United States
+                    <i className="fas fa-map-marker-alt"></i> 303 Cooper Blvd Suite I, Warrensburg, MO 64093, United States
                   </Link>
                 </p>
               </div>
