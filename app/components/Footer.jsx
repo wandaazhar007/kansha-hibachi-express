@@ -3,7 +3,6 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    // <footer style="background: url(images/footer_bg.jpg);">
     <footer>
       <div className="footer_overlay pt_100 xs_pt_70 pb_100 xs_pb_20" style={{ padding: '0 20px' }}>
         <div className="container wow fadeInUp" data-wow-duration="1s">
@@ -28,7 +27,6 @@ const Footer = () => {
                   <li><Link href="/">Home</Link></li>
                   <li><Link href="/about">About Us</Link></li>
                   <li><Link href="/contact">Contact Us</Link></li>
-                  {/* <li><Link href="/about">Our Service</Link></li> */}
                   <li><Link href="/galery">gallery</Link></li>
                 </ul>
               </div>
@@ -41,7 +39,6 @@ const Footer = () => {
                   <li><Link href="/privacy-policy">Privacy Policy</Link></li>
                   <li><Link href="/refund-policy">Refund Policy</Link></li>
                   <li><Link href="/faq">FAQ</Link></li>
-                  {/* <li><Link href="/contact">contact</Link></li> */}
                 </ul>
               </div>
             </div>
@@ -73,8 +70,9 @@ const Footer = () => {
           <div className="row">
             <div className="col-12">
               <div className="tf__footer_bottom_text">
-                {/* <p>Copyright ©<b> Kansha Express</b> 2023. All Rights Reserved</p> */}
-                <p>Made with ❤️ by<b> <Link href="https://instagram.com/wanda_azharr/" target="_blank">Wanda Azhar</Link> </b> © 2023 in Michigan, USA 🇺🇸</p>
+                <p>Copyright ©<b> 2023 Kansha Hibachi Express.</b> All Rights Reserved.</p>
+                {/* <p>&copy; 2023 Kansha Hibachi Express. All rights reserved.</p> */}
+                {/* <p>Made with ❤️ by<b> <Link href="https://instagram.com/wanda_azharr/" target="_blank">Wanda Azhar</Link> </b> © 2023 in Michigan, USA 🇺🇸</p> */}
               </div>
             </div>
           </div>
