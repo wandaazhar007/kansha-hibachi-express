@@ -16,29 +16,29 @@ const WhyChooseUs = () => {
                 <div className="col-xl-6">
                   <div className="tf__about_choose_text_box">
                     <span><i className="fas fa-burger-soda"></i></span>
-                    <h4>Fresh food</h4>
-                    <p>Objectively pontificate quality models before intuitive information.</p>
+                    <h4>Community Engagemen</h4>
+                    <p>We cherish our bond with the community and actively participate in local events and initiatives. We believe in giving back to the people who have supported us on this journey.</p>
                   </div>
                 </div>
                 <div className="col-xl-6">
                   <div className="tf__about_choose_text_box">
                     <span><i className="fal fa-truck"></i></span>
-                    <h4>Fast Delivery</h4>
-                    <p>Objectively pontificate quality models before intuitive information.</p>
+                    <h4>Commitment to Quality</h4>
+                    <p>From the ingredients we select to the presentation on your plate, we are committed to delivering the highest quality in every aspect of your dining experience.</p>
                   </div>
                 </div>
                 <div className="col-xl-6">
                   <div className="tf__about_choose_text_box">
                     <span><i className="fas fa-file-certificate"></i></span>
-                    <h4>Quality Maintain</h4>
-                    <p>Objectively pontificate quality models before intuitive information.</p>
+                    <h4>Exquisite Menu Selection</h4>
+                    <p>Our thoughtfully crafted menu offers a wide selection of hibachi delights, including mouthwatering entrees, flavorful sushi rolls, and savory appetizers. There's something for every palate to enjoy.</p>
                   </div>
                 </div>
                 <div className="col-xl-6">
                   <div className="tf__about_choose_text_box">
                     <span><i className="fas fa-headset"></i></span>
-                    <h4>24/7 Service</h4>
-                    <p>Objectively pontificate quality models before intuitive information.</p>
+                    <h4>Continuous Improvement</h4>
+                    <p>We constantly strive to enhance our menu, service, and overall experience to ensure that your next visit is even better than the last.</p>
                   </div>
                 </div>
               </div>

@@ -21,10 +21,10 @@ import CartProvider from './context/cartContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Kansha Hibachi Express - Authentic Hibachi Delights',
-  description: 'Indulge in Authentic Hibachi Delights at Kansha Hibachi Express. Unleash your taste buds with flavorful creations brought to life through sizzling hibachi cuisine. Join us for an unforgettable dining experience. Call us now to reserve your table and embark on a culinary journey.',
-}
+// export const metadata = {
+//   title: 'Kansha Hibachi Express - Authentic Hibachi Delights',
+//   description: 'Indulge in Authentic Hibachi Delights at Kansha Hibachi Express. Unleash your taste buds with flavorful creations brought to life through sizzling hibachi cuisine. Join us for an unforgettable dining experience. Call us now to reserve your table and embark on a culinary journey.',
+// }
 
 export default function RootLayout({ children }) {
   return (
