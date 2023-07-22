@@ -50,7 +50,7 @@ const BannerHero = () => {
 
               <div className="desc-review">
                 <p>
-                  5 Stars Ratings on <Link href="#" target="_blank"><span>Google Review</span><FontAwesomeIcon icon={faArrowUpRightFromSquare} className="icon" /></Link>
+                  5 Stars Ratings on <Link href="https://goo.gl/maps/V9qXQh6mKFZmb15Z7" target="_blank"><span>Google Review</span><FontAwesomeIcon icon={faArrowUpRightFromSquare} className="icon" /></Link>
                 </p>
               </div>
             </div>
