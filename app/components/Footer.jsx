@@ -34,7 +34,11 @@ const Footer = () => {
                 </motion.ul>
               </div>
             </div>
-            <div className="col-xxl-2 col-lg-2 col-sm-5 col-md-5">
+            <motion.div
+              initial={{ opacity: 1, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              className="col-xxl-2 col-lg-2 col-sm-5 col-md-5">
               <div className="tf__footer_content">
                 <h3>Short Link</h3>
                 <ul>
@@ -44,8 +48,12 @@ const Footer = () => {
                   <li><Link href="/galery">gallery</Link></li>
                 </ul>
               </div>
-            </div>
-            <div className="col-xxl-2 col-lg-2 col-sm-6 col-md-5 order-md-4">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 1, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              className="col-xxl-2 col-lg-2 col-sm-6 col-md-5 order-md-4">
               <div className="tf__footer_content">
                 <h3>Help Link</h3>
                 <ul>
@@ -55,7 +63,7 @@ const Footer = () => {
                   <li><Link href="/faq">FAQ</Link></li>
                 </ul>
               </div>
-            </div>
+            </motion.div>
             <div className="col-xxl-3 col-lg-4 col-sm-9 col-md-7 order-lg-4">
               <div className="tf__footer_content">
                 <h3>contact us</h3>
