@@ -1,15 +1,6 @@
 import BannerHero from './components/home/bannerHero/BannerHero'
-import DailyOffer from './components/home/DailyOffer'
-import Reservation from './components/home/Reservation'
 import Menu from './components/home/Menu'
-import Team from './components/home/Team'
-import Ads from './components/home/Ads'
-import DownloadApp from './components/home/DownloadApp'
-import Testimonial from './components/home/Testimonial'
 import Counter from './components/home/Counter'
-import Blog from './components/home/Blog'
-import Faq from './components/home/Faq'
-import Review from './components/home/Reviews'
 import Reviews from './components/home/Reviews'
 import ContactSection from './components/home/ContactSection'
 import GaleryBox from './components/galery/GaleryBox'
@@ -17,109 +8,14 @@ import FaqComponent from './components/faq/FaqComponent'
 
 export default function Home() {
   return (
-    // <main className={styles.main}>
-    //   <div className={styles.description}>
-    //     <p>
-    //       Get started by editing&nbsp;
-    //       <code className={styles.code}>app/page.js</code>
-    //     </p>
-    //     <div>
-    //       <a
-    //         href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-    //         target="_blank"
-    //         rel="noopener noreferrer"
-    //       >
-    //         By{' '}
-    //         <Image
-    //           src="/vercel.svg"
-    //           alt="Vercel Logo"
-    //           className={styles.vercelLogo}
-    //           width={100}
-    //           height={24}
-    //           priority
-    //         />
-    //       </a>
-    //     </div>
-    //   </div>
-
-    //   <div className={styles.center}>
-    //     <Image
-    //       className={styles.logo}
-    //       src="/next.svg"
-    //       alt="Next.js Logo"
-    //       width={180}
-    //       height={37}
-    //       priority
-    //     />
-    //   </div>
-
-    //   <div className={styles.grid}>
-    //     <a
-    //       href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-    //       className={styles.card}
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <h2>
-    //         Docs <span>-&gt;</span>
-    //       </h2>
-    //       <p>Find in-depth information about Next.js features and API.</p>
-    //     </a>
-
-    //     <a
-    //       href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-    //       className={styles.card}
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <h2>
-    //         Learn <span>-&gt;</span>
-    //       </h2>
-    //       <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-    //     </a>
-
-    //     <a
-    //       href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-    //       className={styles.card}
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <h2>
-    //         Templates <span>-&gt;</span>
-    //       </h2>
-    //       <p>Explore the Next.js 13 playground.</p>
-    //     </a>
-
-    //     <a
-    //       href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-    //       className={styles.card}
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <h2>
-    //         Deploy <span>-&gt;</span>
-    //       </h2>
-    //       <p>
-    //         Instantly deploy your Next.js site to a shareable URL with Vercel.
-    //       </p>
-    //     </a>
-    //   </div>
-    // </main>
     <>
       <BannerHero />
-      {/* <DailyOffer /> */}
-      {/* <Reservation /> */}
       <Menu />
       <FaqComponent />
       <Reviews />
-      {/* <Team /> */}
-      {/* <Ads /> */}
       <GaleryBox />
       <Counter />
       <ContactSection />
-      {/* <DownloadApp /> */}
-      {/* <Testimonial /> */}
-      {/* <Blog /> */}
     </>
   )
 }
