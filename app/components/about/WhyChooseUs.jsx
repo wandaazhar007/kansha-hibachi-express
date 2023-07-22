@@ -31,21 +31,21 @@ const WhyChooseUs = () => {
                 className="row">
                 <div className="col-xl-6">
                   <div className="tf__about_choose_text_box">
-                    <span><i className="fas fa-burger-soda"></i></span>
+                    <span><i className="fas fa-users"></i></span>
                     <h4>Community Engagemen</h4>
                     <p>We cherish our bond with the community and actively participate in local events and initiatives. We believe in giving back to the people who have supported us on this journey.</p>
                   </div>
                 </div>
                 <div className="col-xl-6">
                   <div className="tf__about_choose_text_box">
-                    <span><i className="fal fa-truck"></i></span>
+                    <span><i className="fas fa-chess-rook"></i></span>
                     <h4>Commitment to Quality</h4>
                     <p>From the ingredients we select to the presentation on your plate, we are committed to delivering the highest quality in every aspect of your dining experience.</p>
                   </div>
                 </div>
                 <div className="col-xl-6">
                   <div className="tf__about_choose_text_box">
-                    <span><i className="fas fa-file-certificate"></i></span>
+                    <span><i className="fas fa-book"></i></span>
                     <h4>Exquisite Menu Selection</h4>
                     <p>Our thoughtfully crafted menu offers a wide selection of hibachi delights, including mouthwatering entrees, flavorful sushi rolls, and savory appetizers. There's something for every palate to enjoy.</p>
                   </div>

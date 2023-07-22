@@ -2852,7 +2852,7 @@ footer {
     padding: 20px 20px 20px 55px;
     background: #f1f0fa;
     margin-top: 25px;
-    border-left: 3px solid var(--colorYellow);
+    border-left: 3px solid var(--colorBlue);
     border-radius: 10px;
     transform: skewX(-10deg);
     position: relative;
@@ -2869,7 +2869,7 @@ footer {
 
 .tf__about_choose_text_box span {
     display: block;
-    background: var(--colorYellow);
+    background: var(--colorBlue);
     font-size: 25px;
     width: 60px;
     height: 60px;
@@ -2894,7 +2894,7 @@ footer {
 
 .tf__about_choose_text_box h4 {
     text-align: left;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     margin-bottom: 10px;
     transform: skewX(10deg);
@@ -2910,10 +2910,12 @@ footer {
     -moz-transform: skewX(10deg);
     -ms-transform: skewX(10deg);
     -o-transform: skewX(10deg);
+    font-size: 14px;
+    color: grey;
 }
 
 .tf__about_choose_text_box.orange {
-    background: var(--colorYellow);
+    background: var(--colorBlue);
 }
 
 .tf__about_choose_text_box.orange span {
