@@ -7,12 +7,20 @@ const Faq = () => {
     <section className="faq">
       <div className="container">
         <div className="box-container">
-          <div className="header">
+          <motion.div
+            initial={{ opacity: 1, scale: 1, y: -100 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="header">
             <h1>Frequently Asked Questions</h1>
             <p>Let&apos;s answer some of your questions.</p>
-          </div>
+          </motion.div>
           <ul className="accordion">
-            <li>
+            <motion.li
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+            >
               <input type="radio" name='accordion' id="first" />
               <label htmlFor="first">What are your operating hours?</label>
               <div className="content">
@@ -20,7 +28,7 @@ const Faq = () => {
                   Our operating hours are (<b>Monday to Saturday 11:00AM - 2:30PM, and 04:00PM - 09:00PM</b>). (<b>Sunday 04:00PM - 09:00PM</b>). We're open 7 days of the week for lunch and dinner, so you can satisfy your hibachi cravings at your convenience.
                 </p>
               </div>
-            </li>
+            </motion.li>
             <li>
               <input type="radio" name='accordion' id="second" />
               <label htmlFor="second">Do you offer delivery?</label>

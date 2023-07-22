@@ -83,9 +83,9 @@ const BannerHero = () => {
           </div>
           <div className="col-right">
             <motion.div
-              initial={{ opacity: 0, x: +200 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 2 }}
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
               className="image-right">
               <Image src={'/images/slider_img_1.png'} alt="kansha hibachi express" height={100} width={100} />
             </motion.div>

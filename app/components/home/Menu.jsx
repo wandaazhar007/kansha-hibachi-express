@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import ReactPaginate from "react-paginate";
 import ModalProduct from "./ModalProduct";
+import { motion } from "framer-motion";
 
 const Menu = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -26,8 +27,8 @@ const Menu = () => {
 
   const getSearch = async () => {
     // const responseSearch = await axios.get(`${process.env.NEXT_PUBLIC_URL_PRODUCTS_SEARCH}?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
-    const responseSearch = await axios.get(`https://kanshaapi.birojasa-sahabat.com/search-products?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
-    // const responseSearch = await axios.get(`http://localhost:2000/search-products?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
+    // const responseSearch = await axios.get(`https://kanshaapi.birojasa-sahabat.com/search-products?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
+    const responseSearch = await axios.get(`http://localhost:2000/search-products?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
     setTimeout(() => {
       setMenus(responseSearch.data.result);
       setPage(responseSearch.data.page);
@@ -39,8 +40,8 @@ const Menu = () => {
 
   const getMenu = async () => {
     // const response = await axios.get(`${process.env.NEXT_PUBLIC_URL_PRODUCTS}?search_query=${keywordButton}&page=${page}&limit=${limit}`);
-    const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
-    // const response = await axios.get(`http://localhost:2000/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
+    // const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
+    const response = await axios.get(`http://localhost:2000/products?search_query=${keywordButton}&page=${page}&limit=${limit}`);
     setMenus(response.data.result);
     setPage(response.data.page);
     setPages(response.data.totalPage);
@@ -108,22 +109,34 @@ const Menu = () => {
                 {/* <FontAwesomeIcon icon={faSquareCaretRight} className="icon" /> */}
                 <span>Menu Kansha</span>
               </h1>
-              <div className="btn-menu-group">
+              <motion.div
+                initial={{ opacity: 0, x: +200 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 2 }}
+                className="btn-menu-group">
                 <button className={`btn-menu ${keywordButton === 1 ? 'active' : ''}`} onClick={() => handleClickMenu(1)}>Hibachi</button>
                 <button className={`btn-menu ${keywordButton === 2 ? 'active' : ''}`} onClick={() => handleClickMenu(2)}>Roll</button>
                 <button className={`btn-menu ${keywordButton === 3 ? 'active' : ''}`} onClick={() => handleClickMenu(3)}>Appetizer</button>
                 <button className={`btn-menu ${keywordButton === 4 ? 'active' : ''}`} onClick={() => handleClickMenu(4)}>Side Order</button>
                 <button className={`btn-menu ${keywordButton === '' ? 'active' : ''}`} onClick={() => handleClickMenu('')}>All Menu</button>
-              </div>
+              </motion.div>
             </div>
-            <div className="search-menu">
+            <motion.div
+              initial={{ opacity: 1, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              className="search-menu">
               <input type="text" className="search" placeholder="Search here..." onChange={handleSearch} value={keywordSearch} />
               <p>{keywordSearch}</p>
-            </div>
+            </motion.div>
 
             {/* {isLoading && <p style={{ textAlign: 'center' }}>Loading..</p>} */}
             {isLoading &&
-              <div className="content">
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4 }}
+                className="content">
                 {menus.map((menu, index) => (
                   <div className="box" key={menu.id}>
                     <div className="skeleton box-images-skeleton">
@@ -141,7 +154,7 @@ const Menu = () => {
                     </div>
                   </div>
                 ))}
-              </div>
+              </motion.div>
             }
             {!isLoading &&
               <div className="content">
