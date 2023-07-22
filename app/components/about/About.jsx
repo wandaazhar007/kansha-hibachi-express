@@ -1,3 +1,5 @@
+'use client'
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const About = () => {
@@ -6,7 +8,11 @@ const About = () => {
       <div className="container">
         <div className="row">
           <div className="col-xl-6 col-lg-6 wow fadeInLeft" data-wow-duration="1s">
-            <div className="about-img">
+            <motion.div
+              initial={{ opacity: 1, x: -200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              className="about-img">
               <div className="primary-img">
                 <Image width={500} height={500} src="/images/owner-kansha-hibachi.jpeg" alt="kansha hibachi express" />
               </div>
@@ -22,14 +28,22 @@ const About = () => {
                   <p>Krisdianto</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
           <div className="col-xl-6 col-lg-6 wow fadeInRight" data-wow-duration="1s" style={{ padding: '0 20px' }}>
-            <div className="tf__section_heading mb_25">
+            <motion.div
+              initial={{ opacity: 1, y: -50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              className="tf__section_heading mb_25">
               <h4>About Kansha Hibachi</h4>
               <h2>Healthy Foods Provider</h2>
-            </div>
-            <div className="tf__about_us_text">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 1, x: +200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              className="tf__about_us_text">
               <p>At Kansha Hibachi Express, we are passionate about bringing the authentic flavors of hibachi cuisine to your plate. Our goal is to provide you with an unforgettable dining experience, where taste, quality, and hospitality converge. We offer a streamlined dining process that ensures you can enjoy your meal without delay. Here's what sets us apart:</p>
               <ul>
                 <li>
@@ -45,7 +59,7 @@ const About = () => {
                   <p>our satisfaction is our top priority. We value your feedback and continuously strive to improve your dining experience.</p>
                 </li>
               </ul>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
