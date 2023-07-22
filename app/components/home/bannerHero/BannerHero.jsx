@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import './banner-hero.scss';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 const BannerHero = () => {
   return (
@@ -30,7 +32,6 @@ const BannerHero = () => {
 
           <div className="col-left" >
             <h3>Unleash Your Taste Buds.</h3>
-            {/* <h3>WE BARE BEARS x KURA SUSHI</h3> */}
             <h1>Indulge Kansha Hibachi Delights</h1>
             <p>Visit us today and experience the thrill of hibachi cuisine brought to life at Kansha Hibachi Express. We look forward to serving you and sharing the joy of our flavorful creations.</p>
             <div className="cta-hero">
@@ -48,7 +49,9 @@ const BannerHero = () => {
               </div>
 
               <div className="desc-review">
-                <p>5 Stars Ratings on <Link href="#" target="_blank"><span>Google Review</span></Link></p>
+                <p>
+                  5 Stars Ratings on <Link href="#" target="_blank"><span>Google Review</span><FontAwesomeIcon icon={faArrowUpRightFromSquare} className="icon" /></Link>
+                </p>
               </div>
             </div>
 

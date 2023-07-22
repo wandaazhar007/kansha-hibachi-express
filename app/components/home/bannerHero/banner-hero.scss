@@ -88,6 +88,8 @@
         }
 
         .desc-review {
+          margin-top: .5rem;
+
           p {
             color: $colorWhite;
             font-size: 1.6rem;
@@ -98,6 +100,12 @@
             color: $colorWhite;
             font-size: 1.6rem;
             font-style: italic;
+            font-weight: 600;
+          }
+
+          .icon {
+            color: $colorWhite;
+            margin-left: 1rem;
           }
         }
       }
