@@ -701,12 +701,9 @@ html {
 
 /* === FAQ SECTION === */
 
-.faq {
-  /* margin: 4rem 0; */
+/* .faq {
   padding: 5rem 0;
-  /* background-color: var(--colorYellow); */
   background-color: rgb(255, 228, 116, .3);
-  /* color: var(--colorWhite); */
 }
 
 .faq .container .box-container .header h1 {
@@ -738,7 +735,6 @@ html {
   padding: .2rem;
   border-radius: .8rem;
   background: var(--white);
-  /* border: .1rem solid white; */
 }
 
 .faq .container .box-container .accordion li label {
@@ -787,7 +783,7 @@ html {
   font-size: 1.6rem;
   line-height: 2.5rem;
   color: grey;
-}
+} */
 
 /* === END FAQ SECTION === */
 

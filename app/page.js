@@ -13,6 +13,7 @@ import Review from './components/home/Reviews'
 import Reviews from './components/home/Reviews'
 import ContactSection from './components/home/ContactSection'
 import GaleryBox from './components/galery/GaleryBox'
+import FaqComponent from './components/faq/FaqComponent'
 
 export default function Home() {
   return (
@@ -109,7 +110,7 @@ export default function Home() {
       {/* <DailyOffer /> */}
       {/* <Reservation /> */}
       <Menu />
-      <Faq />
+      <FaqComponent />
       <Reviews />
       {/* <Team /> */}
       {/* <Ads /> */}
