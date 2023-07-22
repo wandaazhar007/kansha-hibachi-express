@@ -254,6 +254,7 @@ button {
     line-height: 50px;
     position: relative;
     justify-content: center;
+    list-style: none;
 }
 
 .tf__topbar_info::after {
@@ -277,6 +278,16 @@ button {
 }
 
 .tf__topbar_info li a {
+    color: var(--colorBlue);
+    font-size: 16px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.tf__topbar_info li a:hover {
     color: var(--colorBlue);
     font-size: 16px;
     transition: all linear .3s;
