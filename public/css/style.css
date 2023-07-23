@@ -287,15 +287,6 @@ button {
     -o-transition: all linear .3s;
 }
 
-.tf__topbar_info li a:hover {
-    color: var(--colorBlue);
-    font-size: 16px;
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s;
-}
 
 @media screen and (max-width: 992px) {
     .tf__topbar_info li a {
@@ -303,9 +294,6 @@ button {
     }
 }
 
-.tf__topbar_info li a:hover {
-    color: var(--colorYellow);
-}
 
 .tf__topbar_info li a i {
     font-size: 1.6rem;
