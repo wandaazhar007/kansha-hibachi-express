@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { faArrowCircleRight, faArrowUpRightFromSquare, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const FormContact = () => {
   return (
@@ -132,10 +133,25 @@ const FormContact = () => {
             </div>
           </div>
           <div className=" box box4">Box 4</div>
-          <div className=" box box5">Box 5</div>
-          <div className=" box box6">Box 6</div>
-          <div className=" box box7">Box 7</div>
-          <div className=" box box8">Box 8</div>
+          <div className=" box box5">
+            <FontAwesomeIcon icon={faInstagram} className="icon" />
+            {/* <button>Follow Us</button> */}
+            <ul>
+              <li>Posts: 203</li>
+              <li>Followers: 578</li>
+              <li>Following: 20</li>
+            </ul>
+            <Link href="#"><span>Follow Us <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='icon' /> </span></Link>
+          </div>
+          <div className=" box box6">
+            <FontAwesomeIcon icon={faFacebook} className="icon" />
+            <button>Join Us</button>
+          </div>
+          <div className=" box box7">
+            <h1>Stay Connected...</h1>
+            <p>Lorem ipsum dolor sit amet Lorem</p>
+          </div>
+          {/* <div className=" box box8">Box 8</div> */}
         </section>
       </div>
     </>

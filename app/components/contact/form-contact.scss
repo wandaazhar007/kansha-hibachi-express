@@ -6,10 +6,11 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(15rem, auto);
-  row-gap: 2rem;
+  // row-gap: 2rem;
+  gap: 2rem;
 
   .box {
-    border: .1rem solid $colorGrey;
+    // border: .1rem solid $colorGrey;
     // border-radius: 1rem;
     // height: 20rem;
     // width: 20rem;
@@ -75,6 +76,7 @@
     flex-direction: column;
     gap: 2.5rem;
     // width: 40rem;
+    border: .1rem solid $colorGrey;
 
     .title {
       border-bottom: .01rem solid grey;
@@ -173,7 +175,7 @@
             .detailContact a {
               padding-left: 1.5rem;
               font-size: 1.4rem;
-              color: #2841cb;
+              // color: #2841cb;
             }
 
             .detailContact .icon {
@@ -190,20 +192,95 @@
     grid-column: span 3;
     grid-row: span 3;
     background-color: grey;
-    margin-left: 2rem;
+    // margin-left: 2rem;
   }
 
   .box5 {
-    max-width: 10rem;
-    background-color: grey;
-    margin-left: 2rem;
+    // max-width: 10rem;
+    // background-color: grey;
+    // margin-left: 2rem;
+    border: .1rem solid $colorGrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    .icon {
+      width: 7rem;
+      height: 7rem;
+      color: grey;
+    }
+
+    ul {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      font-size: 1.2rem;
+    }
+
+    span {
+      font-weight: 600;
+      // color: #2841cb;
+
+
+      .icon {
+        height: 1.5rem;
+        width: 1.5rem;
+        // color: #2841cb;
+      }
+    }
+
+    // button {
+    //   padding: 1rem 2rem;
+    //   background-color: $colorBlue;
+    //   color: $colorWhite;
+    //   border-radius: .5rem;
+    //   font-size: 1.4rem;
+    // }
+  }
+
+  .box6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: .1rem solid $colorGrey;
+
+    .icon {
+      width: 7rem;
+      height: 7rem;
+      color: grey;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      background-color: grey;
+      color: $colorWhite;
+      border-radius: .5rem;
+      font-size: 1.4rem;
+    }
   }
 
   .box7 {
     grid-column: span 2;
     grid-row: span 1;
     // max-width: 110rem;
-    background-color: salmon;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1rem;
+
+    h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+    }
+
+    p {
+      color: grey;
+    }
   }
 
 }
