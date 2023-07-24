@@ -197,19 +197,20 @@
 
   .box5 {
     // max-width: 10rem;
-    // background-color: grey;
     // margin-left: 2rem;
+    // background-color: #94d4d2;
     border: .1rem solid $colorGrey;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    // color: white;
 
     .icon {
       width: 7rem;
       height: 7rem;
-      color: grey;
+      // color: white;
     }
 
     ul {
@@ -221,7 +222,7 @@
 
     span {
       font-weight: 600;
-      // color: #2841cb;
+      // color: white;
 
 
       .icon {
@@ -246,12 +247,13 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    border: .1rem solid $colorGrey;
+    // border: .1rem solid $colorGrey;
+    background-color: #698AB4;
 
     .icon {
       width: 7rem;
       height: 7rem;
-      color: grey;
+      color: white;
     }
 
     button {
