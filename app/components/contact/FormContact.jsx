@@ -1,10 +1,14 @@
-import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
+'use client'
+import './form-contact.scss';
+import { motion } from 'framer-motion';
+import { faArrowCircleRight, faArrowUpRightFromSquare, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 const FormContact = () => {
   return (
-    <section className="tf__contact mt_100 xs_mt_70 mb_100 xs_mb_70">
+    <>
+      {/* <section className="tf__contact mt_100 xs_mt_70 mb_100 xs_mb_70">
       <div className="container">
         <div className="tf__contact_form_area">
           <div className="row">
@@ -12,15 +16,11 @@ const FormContact = () => {
               <div className="tf__contact_info_area">
                 <div className="tf__contact_info">
                   <h3>call</h3>
-                  {/* <Link href="tel:+16604299074" target="_blank" rel="noreferrer"> */}
-                  <p>660-429-9027</p>
-                  {/* <FontAwesomeIcon icon={faArrowCircleRight} /> */}
-                  {/* </Link> */}
+                  <p>660-429-9027  <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="icon" /></p>
                 </div>
                 <div className="tf__contact_info">
                   <h3>mail</h3>
                   <p>ss.kansha@gmail.com</p>
-                  {/* <p>wandaazhar@gmail.com</p> */}
                 </div>
                 <div className="tf__contact_info border-0 p-0 m-0">
                   <h3>location</h3>
@@ -28,45 +28,6 @@ const FormContact = () => {
                 </div>
               </div>
             </div>
-
-            {/* <div className="col-xl-7 col-md-6 col-lg-7 wow fadeInUp" data-wow-duration="1s">
-              <form className="tf__contact_form">
-                <h3>contact us</h3>
-                <div className="row">
-                  <div className="col-xl-12">
-                    <div className="tf__contact_form_input">
-                      <span><i className="fas fa-user"></i></span>
-                      <input type="text" placeholder="Name" />
-                    </div>
-                  </div>
-                  <div className="col-xl-6">
-                    <div className="tf__contact_form_input">
-                      <span><i className="fas fa-envelope"></i></span>
-                      <input type="email" placeholder="Email" />
-                    </div>
-                  </div>
-                  <div className="col-xl-6">
-                    <div className="tf__contact_form_input">
-                      <span><i className="fas fa-phone-alt"></i></span>
-                      <input type="text" placeholder="Phone" />
-                    </div>
-                  </div>
-                  <div className="col-xl-12">
-                    <div className="tf__contact_form_input">
-                      <span><i className="fas fa-book"></i></span>
-                      <input type="text" placeholder="Subject" />
-                    </div>
-                  </div>
-                  <div className="col-xl-12">
-                    <div className="tf__contact_form_input textarea">
-                      <span><i className="fas fa-pen"></i></span>
-                      <textarea rows="5" placeholder="Message"></textarea>
-                    </div>
-                    <button className="common_btn" type="submit">send message</button>
-                  </div>
-                </div>
-              </form>
-            </div> */}
           </div>
         </div>
 
@@ -83,7 +44,101 @@ const FormContact = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
+      <div className="container">
+        <section className="formContact">
+          <div className=" box box1">
+            <h1>We Are Here...</h1>
+            <p>We'd love to hear your feedback</p>
+          </div>
+          <div className=" box box2">
+            <h1>Let's Talk.</h1>
+            <p>We'd love to hear your feedback</p>
+            <Link href="#">
+              <button><FontAwesomeIcon icon={faPhone} /> Call Us</button>
+            </Link>
+          </div>
+          <div className="box box3">
+            <div className="title">
+              <h1>Kansha Hibachi Express</h1>
+              <p>Hibachi & Sushi Restaurant</p>
+            </div>
+            <div className="address">
+              <h3>Address:</h3>
+              <p>303 Cooper Blvd Suite I, Warrensburg, MO 64093, United States</p>
+            </div>
+            <div className="hours">
+              <h3>Hours:</h3>
+              {/* <ul>
+                <li>Sun: <span>04:00 - 09:00</span></li>
+                <li>Mon: <span>11.00 - 02:30 04:00 - 09:00</span></li>
+                <li>Tue: <span>11.00 - 02:30 04:00 - 09:00</span></li>
+                <li>Wed: <span>11.00 - 02:30 04:00 - 09:00</span></li>
+                <li>Thu: <span>11.00 - 02:30 04:00 - 09:00</span></li>
+                <li>Fri: <span>11.00 - 02:30 04:00 - 09:00</span></li>
+                <li>Sat: <span>11.00 - 02:30 04:00 - 09:00</span></li>
+              </ul> */}
+              <table>
+                <tbody>
+                  <tr>
+                    <td className="days">Sun:</td>
+                    <td className="clock">04:00 - 09:00</td>
+                  </tr>
+                  <tr>
+                    <td className="days">Mon:</td>
+                    <td className="clock">11.00 AM - 02:30 PM & 04:00 PM - 09:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td className="days">Tue:</td>
+                    <td className="clock">11.00 AM - 02:30 PM & 04:00 PM - 09:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td className="days">Wed:</td>
+                    <td className="clock">11.00 AM - 02:30 PM & 04:00 PM - 09:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td className="days">Thu:</td>
+                    <td className="clock">11.00 AM - 02:30 PM & 04:00 PM - 09:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td className="days">Fri:</td>
+                    <td className="clock">11.00 AM - 02:30 PM & 04:00 PM - 09:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td className="days">Sat:</td>
+                    <td className="clock">11.00 AM - 02:30 PM & 04:00 PM - 09:00 PM</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="contact">
+              <h3>Contact</h3>
+              {/* <ul>
+                <li>Phone <span><Link href="#">(660) 429-9074 <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></Link> </span></li>
+                <li>E-mail <span><Link href="#">ss.kansha@gmail.com <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></Link></span></li>
+              </ul> */}
+              <table>
+                <tbody>
+                  <tr>
+                    <td className='titleContact'>Phone:</td>
+                    <td className="detailContact"><Link href="tel:+16604299074" target="_blank" rel="noreferrer">(660) 429-9074 <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="icon" /></Link> </td>
+                  </tr>
+                  <tr>
+                    <td className="titleContact">E-mail:</td>
+                    <td className="detailContact"><Link href="mailto:ss.kansha@gmail.com" target="_blank" rel="noreferrer">ss.kansha@gmail.com <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="icon" /></Link></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div className=" box box4">Box 4</div>
+          <div className=" box box5">Box 5</div>
+          <div className=" box box6">Box 6</div>
+          <div className=" box box7">Box 7</div>
+          <div className=" box box8">Box 8</div>
+        </section>
+      </div>
+    </>
   );
 }
 

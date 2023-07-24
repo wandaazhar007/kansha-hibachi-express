@@ -1,0 +1,209 @@
+@import '../../style/responsive.scss';
+@import '../../style/variable.scss';
+
+.formContact {
+  margin: 5rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(15rem, auto);
+  row-gap: 2rem;
+
+  .box {
+    border: .1rem solid $colorGrey;
+    // border-radius: 1rem;
+    // height: 20rem;
+    // width: 20rem;
+  }
+
+  .box1 {
+    grid-column: span 3;
+    grid-row: span 2;
+    // background-color: salmon;
+    max-width: 110rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      font-size: 3.6rem;
+      font-weight: 700;
+    }
+
+    p {
+      color: grey;
+    }
+  }
+
+  .box2 {
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: yellow;
+    max-width: 110rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    h1 {
+      font-size: 3.6rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    p {
+      color: grey;
+      text-align: center;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      background-color: $colorBlue;
+      color: $colorWhite;
+      border-radius: .5rem;
+    }
+  }
+
+  .box3 {
+    grid-column: span 1;
+    grid-row: span 3;
+    // background-color: greenyellow;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    // width: 40rem;
+
+    .title {
+      border-bottom: .01rem solid grey;
+
+      h1 {
+        font-size: 2.4rem;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 1.6rem;
+        color: grey;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .address {
+      border-bottom: .01rem solid grey;
+
+      h3 {
+        font-size: 1.6rem;
+        font-weight: 700;
+      }
+
+      p {
+        color: grey;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    .hours {
+      border-bottom: .01rem solid grey;
+
+      h3 {
+        font-size: 1.6rem;
+        font-weight: 700;
+      }
+
+      table {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        // border: .1rem solid salmon;
+
+        tbody {
+          tr {
+            td {
+              padding-top: 1rem;
+              font-size: 1.4rem;
+              color: grey;
+
+              // border: .1rem solid salmon;
+              // width: 10rem;
+            }
+
+            .days {
+              font-weight: 700;
+            }
+
+            .clock {
+              padding-left: 1.5rem;
+              font-size: 1.3rem;
+
+              // color: salmon;
+            }
+          }
+        }
+      }
+    }
+
+    .contact {
+      border-bottom: .01rem solid grey;
+
+      h3 {
+        font-size: 1.6rem;
+        font-weight: 700;
+      }
+
+      table {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+
+        tbody {
+          tr {
+            td {
+              padding-top: 1rem;
+              font-size: 1.4rem;
+              color: grey;
+            }
+
+            .titleContact {
+              font-weight: 700;
+            }
+
+            .detailContact a {
+              padding-left: 1.5rem;
+              font-size: 1.4rem;
+              color: #2841cb;
+            }
+
+            .detailContact .icon {
+              width: 1.5rem;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .box4 {
+    grid-column: span 3;
+    grid-row: span 3;
+    background-color: grey;
+    margin-left: 2rem;
+  }
+
+  .box5 {
+    max-width: 10rem;
+    background-color: grey;
+    margin-left: 2rem;
+  }
+
+  .box7 {
+    grid-column: span 2;
+    grid-row: span 1;
+    // max-width: 110rem;
+    background-color: salmon;
+  }
+
+}
