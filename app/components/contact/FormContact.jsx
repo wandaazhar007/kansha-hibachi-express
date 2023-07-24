@@ -5,6 +5,7 @@ import { faArrowCircleRight, faArrowUpRightFromSquare, faPhone } from "@fortawes
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import Image from 'next/image';
 
 const FormContact = () => {
   return (
@@ -61,8 +62,11 @@ const FormContact = () => {
           </div>
           <div className="box box3">
             <div className="title">
-              <h1>Kansha Hibachi Express</h1>
-              <p>Hibachi & Sushi Restaurant</p>
+              <div className="boxImage">
+                <Image width={500} height={500} src="/images/logo-kansha-header.png" alt="RegFood" className="logoImage" />
+              </div>
+              {/* <h1>Kansha Hibachi Express</h1>
+              <p>Hibachi & Sushi Restaurant</p> */}
             </div>
             <div className="address">
               <h3>Address:</h3>

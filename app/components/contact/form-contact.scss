@@ -8,6 +8,7 @@
   grid-auto-rows: minmax(15rem, auto);
   // row-gap: 2rem;
   gap: 2rem;
+  // border: .1rem solid salmon;
 
   .box {
     // border: .1rem solid $colorGrey;
@@ -26,9 +27,20 @@
     justify-content: center;
     flex-direction: column;
 
+    @include tablet {
+      grid-column: span 4;
+      grid-row: span 1;
+      align-items: center;
+    }
+
     h1 {
-      font-size: 3.6rem;
+      font-size: 5.6rem;
       font-weight: 700;
+      font-family: Arial, $paraFont, sans-serif;
+
+      @include tablet {
+        font-size: 4.6rem;
+      }
     }
 
     p {
@@ -47,6 +59,11 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+
+    @include tablet {
+      grid-column: span 4;
+      grid-row: span 1;
+    }
 
     h1 {
       font-size: 3.6rem;
@@ -70,25 +87,48 @@
   .box3 {
     grid-column: span 1;
     grid-row: span 3;
-    // background-color: greenyellow;
+    background-color: $colorBlue;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
     // width: 40rem;
     border: .1rem solid $colorGrey;
+    border-radius: 1rem;
+
+    @include tablet {
+      grid-column: span 4;
+      grid-row: span 1;
+    }
 
     .title {
-      border-bottom: .01rem solid grey;
+      // border-bottom: .01rem solid grey;
+
+      .boxImage {
+        width: 100%;
+        height: 100%;
+        // border: .1rem solid salmon;
+
+        // img {
+        //   width: 50rem;
+        // }
+
+        @include tablet {
+          width: 70%;
+          margin: 0 auto;
+          // height: 70%;
+        }
+      }
 
       h1 {
         font-size: 2.4rem;
         font-weight: 700;
+        color: white;
       }
 
       p {
         font-size: 1.6rem;
-        color: grey;
+        color: white;
         margin-bottom: 1rem;
       }
     }
@@ -99,10 +139,11 @@
       h3 {
         font-size: 1.6rem;
         font-weight: 700;
+        color: white;
       }
 
       p {
-        color: grey;
+        color: #c4c4c4;
         font-size: 1.4rem;
         margin-top: 1rem;
         margin-bottom: 2rem;
@@ -110,11 +151,12 @@
     }
 
     .hours {
-      border-bottom: .01rem solid grey;
+      // border-bottom: .01rem solid grey;
 
       h3 {
         font-size: 1.6rem;
         font-weight: 700;
+        color: white;
       }
 
       table {
@@ -127,7 +169,7 @@
             td {
               padding-top: 1rem;
               font-size: 1.4rem;
-              color: grey;
+              color: #c4c4c4;
 
               // border: .1rem solid salmon;
               // width: 10rem;
@@ -154,6 +196,7 @@
       h3 {
         font-size: 1.6rem;
         font-weight: 700;
+        color: white;
       }
 
       table {
@@ -165,7 +208,7 @@
             td {
               padding-top: 1rem;
               font-size: 1.4rem;
-              color: grey;
+              color: #b6b4b4;
             }
 
             .titleContact {
@@ -175,7 +218,7 @@
             .detailContact a {
               padding-left: 1.5rem;
               font-size: 1.4rem;
-              // color: #2841cb;
+              color: #b6b4b4;
             }
 
             .detailContact .icon {
@@ -192,8 +235,17 @@
     grid-column: span 3;
     grid-row: span 3;
     background-color: grey;
+    border-radius: 1rem;
+    overflow: hidden;
     // margin-left: 2rem;
+
+    @include tablet {
+      grid-column: span 4;
+      grid-row: span 1;
+    }
   }
+
+
 
   .box5 {
     // max-width: 10rem;
@@ -205,7 +257,14 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
     // color: white;
+
+    @include tablet {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
 
     .icon {
       width: 7rem;
@@ -215,9 +274,12 @@
 
     ul {
       display: flex;
-      gap: 2rem;
+      gap: 1rem;
       list-style: none;
       font-size: 1.2rem;
+      margin: 0 auto;
+      text-align: center;
+      border: .1rem solid salmon;
     }
 
     span {
@@ -249,6 +311,13 @@
     gap: 1rem;
     // border: .1rem solid $colorGrey;
     background-color: #698AB4;
+    padding: 1rem;
+    box-sizing: border-box;
+
+    @include tablet {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
 
     .icon {
       width: 7rem;
@@ -274,6 +343,11 @@
     justify-content: center;
     align-items: center;
     grid-area: 1rem;
+
+    @include tablet {
+      grid-column: span 4;
+      grid-row: span 1;
+    }
 
     h1 {
       font-size: 2.6rem;
