@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <BannerHero />
-      <Menu />
+      {/* <Menu /> */}
       <FaqComponent />
       <Reviews />
       <GaleryBox />

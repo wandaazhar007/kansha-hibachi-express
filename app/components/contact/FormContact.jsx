@@ -65,8 +65,6 @@ const FormContact = () => {
               <div className="boxImage">
                 <Image width={500} height={500} src="/images/logo-kansha-header.png" alt="RegFood" className="logoImage" />
               </div>
-              {/* <h1>Kansha Hibachi Express</h1>
-              <p>Hibachi & Sushi Restaurant</p> */}
             </div>
             <div className="address">
               <h3>Address:</h3>
@@ -74,15 +72,6 @@ const FormContact = () => {
             </div>
             <div className="hours">
               <h3>Hours:</h3>
-              {/* <ul>
-                <li>Sun: <span>04:00 - 09:00</span></li>
-                <li>Mon: <span>11.00 - 02:30 04:00 - 09:00</span></li>
-                <li>Tue: <span>11.00 - 02:30 04:00 - 09:00</span></li>
-                <li>Wed: <span>11.00 - 02:30 04:00 - 09:00</span></li>
-                <li>Thu: <span>11.00 - 02:30 04:00 - 09:00</span></li>
-                <li>Fri: <span>11.00 - 02:30 04:00 - 09:00</span></li>
-                <li>Sat: <span>11.00 - 02:30 04:00 - 09:00</span></li>
-              </ul> */}
               <table>
                 <tbody>
                   <tr>
@@ -118,10 +107,6 @@ const FormContact = () => {
             </div>
             <div className="contact">
               <h3>Contact</h3>
-              {/* <ul>
-                <li>Phone <span><Link href="#">(660) 429-9074 <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></Link> </span></li>
-                <li>E-mail <span><Link href="#">ss.kansha@gmail.com <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></Link></span></li>
-              </ul> */}
               <table>
                 <tbody>
                   <tr>

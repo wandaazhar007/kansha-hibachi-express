@@ -2844,6 +2844,11 @@ footer {
     color: var(--colorWhite);
 }
 
+.tf__about_choose {
+    border: .1rem solid salmon;
+    width: 100%;
+}
+
 .tf__about_choose_img {
     width: 405px;
     height: 465px;

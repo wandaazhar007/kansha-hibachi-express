@@ -1,3 +1,5 @@
+'use client'
+import { motion } from 'framer-motion';
 import './terms-conditions.scss';
 
 const TermsConditions = () => {
@@ -5,8 +7,20 @@ const TermsConditions = () => {
     <section className="termsConditions">
       <div className="container">
         <div className="box-container">
-          <div className="header">Kansha Hibachi Express</div>
-          <div className="sub-header">TERMS & CONDITIONS</div>
+          <motion.div
+            initial={{ opacity: 1, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="header">
+            Kansha Hibachi Express
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 1, x: -200 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="sub-header">
+            TERMS & CONDITIONS
+          </motion.div>
           <div className="content">
             <p>
               Welcome to Kansha Hibachi Express! These Terms and Conditions govern your access to and use of the website, services, and content provided by Kansha Hibachi Express ("we," "us," or "our"). By accessing or using our website, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, please do not use our website.

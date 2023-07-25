@@ -1,3 +1,5 @@
+'use client'
+import { motion } from 'framer-motion';
 import './privacy-policy.scss';
 
 const PrivacyPolicy = () => {
@@ -5,8 +7,20 @@ const PrivacyPolicy = () => {
     <section className="privacyPolicy">
       <div className="container">
         <div className="box-container">
-          <div className="header">Kansha Hibachi Express</div>
-          <div className="sub-header">PRIVACY POLICY</div>
+          <motion.div
+            initial={{ opacity: 1, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="header">
+            Kansha Hibachi Express
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 1, x: -200 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="sub-header">
+            PRIVACY POLICY
+          </motion.div>
           <div className="content">
             <p>
               Last Updated: 23 August 2023
@@ -88,18 +102,20 @@ const PrivacyPolicy = () => {
               </p>
               <div className='contactUs'>
                 <table>
-                  <tr>
-                    <td>Phone Number:</td>
-                    <td>660-429-9074</td>
-                  </tr>
-                  <tr>
-                    <td>Email:</td>
-                    <td>ss.kansha@gmail.com</td>
-                  </tr>
-                  <tr>
-                    <td>Address:</td>
-                    <td>303 Cooper Blvd Suite I, Warrensburg, MO 64093, United States</td>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <td>Phone Number:</td>
+                      <td>660-429-9074</td>
+                    </tr>
+                    <tr>
+                      <td>Email:</td>
+                      <td>ss.kansha@gmail.com</td>
+                    </tr>
+                    <tr>
+                      <td>Address:</td>
+                      <td>303 Cooper Blvd Suite I, Warrensburg, MO 64093, United States</td>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
             </ol>

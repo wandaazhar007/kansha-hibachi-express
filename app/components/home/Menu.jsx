@@ -137,6 +137,7 @@ const Menu = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.4 }}
                 className="content">
+                {/* <div className="content"> */}
                 {menus.map((menu, index) => (
                   <div className="box" key={menu.id}>
                     <div className="skeleton box-images-skeleton">
@@ -154,10 +155,15 @@ const Menu = () => {
                     </div>
                   </div>
                 ))}
+                {/* </div> */}
               </motion.div>
             }
             {!isLoading &&
-              <div className="content">
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4 }}
+                className="content">
                 {menus.map((menu, index) => (
                   <>
                     <div className="box" key={menu.id} onClick={() => handleModal(menu.slug, menu.id, menu.name, parseFloat(menu.price))}>
@@ -178,7 +184,7 @@ const Menu = () => {
                     </div>
                   </>
                 ))}
-              </div>
+              </motion.div>
             }
             <p className="total-row">Total {keywordButton === 1 ? 'Hibachi' : '' || keywordButton === 2 ? 'Roll' : '' || keywordButton === 3 ? 'Appetizer' : '' || keywordButton === 4 ? 'Side Order' : '' || keywordButton === '' ? 'All Menu' : '' || keywordButton === 'search' ? 'search' : ''} {rows} Page: {rows ? page + 1 : 0} of {pages}</p>
             <div className="pagination">
