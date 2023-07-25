@@ -2,7 +2,7 @@ import BannerHero from './components/home/bannerHero/BannerHero'
 import Menu from './components/home/menu/Menu'
 import Counter from './components/home/Counter'
 import Reviews from './components/home/reviews/Reviews'
-import ContactSection from './components/home/ContactSection'
+import ContactSection from './components/home/contactSection/ContactSection'
 import GaleryBox from './components/galery/GaleryBox'
 import FaqComponent from './components/faq/FaqComponent'
 

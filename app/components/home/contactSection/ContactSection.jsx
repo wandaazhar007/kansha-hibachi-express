@@ -1,4 +1,5 @@
 'use client'
+import './contact-section.scss';
 import { faCommentAlt, faEnvelope, faHome, faMap, faPhone, faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
