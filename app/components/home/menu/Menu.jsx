@@ -150,8 +150,6 @@ const Menu = () => {
                       <div className="footer-products">
                         <div className="desc skeleton skeleton-text-desc"></div>
                         <div className="desc skeleton skeleton-text-desc"></div>
-                        <div className="btn-cart"><div className="add-cart"></div>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -177,8 +175,6 @@ const Menu = () => {
                         <div className="footer-products">
                           <div className="desc">
                             <p>{menu.desc}</p>
-                          </div>
-                          <div className="btn-cart"><div className="add-cart"></div>
                           </div>
                         </div>
                       </div>

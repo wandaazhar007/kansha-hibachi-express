@@ -459,15 +459,15 @@ html {
   opacity: .3;
 }
 
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
 .box-images-skeleton {
   opacity: .5;
   width: 16.5rem;
   height: 10rem;
   border-radius: 1rem;
-}
-
-.skeleton {
-  animation: skeleton-loading 1s linear infinite alternate;
 }
 
 .skeleton.skeleton-image {

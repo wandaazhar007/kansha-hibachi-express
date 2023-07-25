@@ -100,7 +100,7 @@
           border-radius: .5rem;
           cursor: pointer;
 
-          .box-image {
+          .box-images {
             height: 10rem;
             border-radius: .5rem;
             overflow: hidden;
@@ -109,44 +109,10 @@
               object-fit: contain;
             }
           }
-
-          @keyframes skeleton-loading {
-            0% {
-              background-color: hsl(200, 20%, 70%);
-            }
-
-            100% {
-              background-color: hsl(200, 20%, 95%);
-            }
-          }
-
-          .skeleton {
-            animation: skeleton-loading 1s linear infinite alternate;
-          }
-
-          .box-image-skeleton {
-            opacity: .5;
-            width: 16.5rem;
-            height: 10rem;
-            border-radius: 1rem;
-          }
         }
 
         .box-contents {
           flex-grow: 2;
-
-          .skeleton-text-title {
-            width: 70%;
-            height: 1.64rem;
-            border-radius: 1rem;
-          }
-
-          .skeleton-text-price {
-            margin-top: 1rem;
-            width: 40%;
-            height: 1rem;
-            border-radius: 1rem;
-          }
 
           .title {
             font-size: 1.7rem;
@@ -158,14 +124,6 @@
           }
 
           .footer-products {
-
-            .skeleton-text-desc {
-              margin-top: 1rem;
-              width: 90%;
-              height: 1rem;
-              border-radius: 1rem;
-            }
-
             .desc {
               p {
                 font-size: 1.4rem;
@@ -173,11 +131,6 @@
                 line-height: 1.7rem;
                 opacity: .7;
               }
-            }
-
-            .btn-cart {
-
-              .add-cart {}
             }
           }
         }
@@ -242,7 +195,46 @@
         }
       }
     }
-
-
   }
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.skeleton.box-images-skeleton {
+  opacity: .5;
+  width: 12.5rem;
+  height: 10rem;
+  border-radius: 1rem;
+}
+
+.skeleton.skeleton-text-title {
+  width: 70%;
+  height: 1.64rem;
+  border-radius: 1rem;
+}
+
+.skeleton.skeleton-text-price {
+  margin-top: 1rem;
+  width: 40%;
+  height: 1rem;
+  border-radius: 1rem;
+}
+
+.skeleton.skeleton-text-desc {
+  margin-top: 1rem;
+  width: 90%;
+  height: 1rem;
+  border-radius: 1rem;
 }
