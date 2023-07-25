@@ -1,5 +1,5 @@
 import BannerHero from './components/home/bannerHero/BannerHero'
-import Menu from './components/home/Menu'
+import Menu from './components/home/menu/Menu'
 import Counter from './components/home/Counter'
 import Reviews from './components/home/Reviews'
 import ContactSection from './components/home/ContactSection'
@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <BannerHero />
-      {/* <Menu /> */}
+      <Menu />
       <FaqComponent />
       <Reviews />
       <GaleryBox />

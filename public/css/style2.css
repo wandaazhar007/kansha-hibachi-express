@@ -263,7 +263,7 @@ html {
 
 /* === PRODUCTS SECTION === */
 
-.products {
+/* .products {
   width: 95%;
   margin: 2rem auto 0;
   padding: 2rem 0;
@@ -371,7 +371,6 @@ html {
 
 .products .container .box-container .content .box .box-images {
   height: 10rem;
-  /* border: .3rem solid var(--colorBlue); */
   border-radius: .5rem;
   overflow: hidden;
 }
@@ -468,7 +467,6 @@ html {
 }
 
 .skeleton {
-  /* opacity: .7; */
   animation: skeleton-loading 1s linear infinite alternate;
 }
 
@@ -507,7 +505,7 @@ html {
   100% {
     background-color: hsl(200, 20%, 95%);
   }
-}
+} */
 
 /* === END PRODUCTS SECTION === */
 

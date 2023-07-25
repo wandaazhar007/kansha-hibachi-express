@@ -1,11 +1,12 @@
 'use client'
+import './menu.scss';
 import Image from "next/image";
 import { faSquareCaretRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import ReactPaginate from "react-paginate";
-import ModalProduct from "./ModalProduct";
+import ModalProduct from "../ModalProduct";
 import { motion } from "framer-motion";
 
 const Menu = () => {
