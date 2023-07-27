@@ -4,7 +4,12 @@ import './terms-conditions.scss';
 
 const TermsConditions = () => {
   return (
-    <section className="termsConditions">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2 }}
+      exit={{ opacity: 1 }}
+      className="termsConditions">
       <div className="container">
         <div className="box-container">
           <motion.div
@@ -148,7 +153,7 @@ const TermsConditions = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

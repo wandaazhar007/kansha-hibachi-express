@@ -5,6 +5,7 @@ import Reviews from './components/home/reviews/Reviews'
 import ContactSection from './components/home/contactSection/ContactSection'
 import GaleryBox from './components/galery/GaleryBox'
 import FaqComponent from './components/faq/FaqComponent'
+import Head from 'next/head';
 
 export const metadata = {
   title: 'Kansha Hibachi Express - Authentic Hibachi Delights',
@@ -14,6 +15,14 @@ export const metadata = {
 export default function Home() {
   return (
     <>
+      <Head>
+        <meta
+          property="og:image"
+          content="/images/logo-kansha-header.png"
+        />
+
+        <link rel="icon" href="/images/logo-kansha-header.png" />
+      </Head>
       <BannerHero />
       <Menu />
       <FaqComponent />

@@ -4,7 +4,12 @@ import './refund-policy.scss';
 
 const RefundPolicy = () => {
   return (
-    <section className="refundPolicy">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2 }}
+      exit={{ opacity: 1 }}
+      className="refundPolicy">
       <div className="container">
         <div className="box-container">
           <motion.div
@@ -86,7 +91,7 @@ const RefundPolicy = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
