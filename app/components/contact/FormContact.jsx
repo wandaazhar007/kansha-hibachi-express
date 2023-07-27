@@ -51,7 +51,7 @@ const FormContact = () => {
         <section className="formContact">
           <div className=" box box1">
             <h1>We Are Here...</h1>
-            <p>We'd love to hear your feedback</p>
+            <p>We'd love to hear from you! Whether you have a question, <br /> want to book a table, or simply crave a sizzling hibachi experience</p>
           </div>
           <div className=" box box2">
             <h1>Let's Talk.</h1>
@@ -132,9 +132,9 @@ const FormContact = () => {
             <FontAwesomeIcon icon={faInstagram} className="icon" />
             {/* <button>Follow Us</button> */}
             <ul>
-              <li>Posts: 203</li>
-              <li>Followers: 578</li>
-              <li>Following: 20</li>
+              <li>Posts: 40</li>
+              <li>Followers: 179</li>
+              <li>Following: 97</li>
             </ul>
             <Link href="https://www.instagram.com/kansha_express/" target="_blank" rel="noreferrer"><span>Follow Us <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='icon' /> </span></Link>
           </div>
@@ -145,8 +145,8 @@ const FormContact = () => {
             </Link>
           </div>
           <div className=" box box7">
-            <h1>Stay Connected...</h1>
-            <p>Lorem ipsum dolor sit amet Lorem</p>
+            <h1>Community, Connection, Care</h1>
+            <p>Join us in our commitment to make a positive impact, as we actively participate in local events and initiatives that matter to our community.</p>
           </div>
           {/* <div className=" box box8">Box 8</div> */}
         </section>
