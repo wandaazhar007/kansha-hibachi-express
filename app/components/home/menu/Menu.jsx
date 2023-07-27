@@ -1,11 +1,13 @@
 'use client'
+import './menu.scss';
 import Image from "next/image";
 import { faSquareCaretRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import ReactPaginate from "react-paginate";
-import ModalProduct from "./ModalProduct";
+import ModalProduct from "../ModalProduct";
+import { motion } from "framer-motion";
 
 const Menu = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -108,22 +110,35 @@ const Menu = () => {
                 {/* <FontAwesomeIcon icon={faSquareCaretRight} className="icon" /> */}
                 <span>Menu Kansha</span>
               </h1>
-              <div className="btn-menu-group">
+              <motion.div
+                initial={{ opacity: 0, x: +200 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 2 }}
+                className="btn-menu-group">
                 <button className={`btn-menu ${keywordButton === 1 ? 'active' : ''}`} onClick={() => handleClickMenu(1)}>Hibachi</button>
                 <button className={`btn-menu ${keywordButton === 2 ? 'active' : ''}`} onClick={() => handleClickMenu(2)}>Roll</button>
                 <button className={`btn-menu ${keywordButton === 3 ? 'active' : ''}`} onClick={() => handleClickMenu(3)}>Appetizer</button>
                 <button className={`btn-menu ${keywordButton === 4 ? 'active' : ''}`} onClick={() => handleClickMenu(4)}>Side Order</button>
                 <button className={`btn-menu ${keywordButton === '' ? 'active' : ''}`} onClick={() => handleClickMenu('')}>All Menu</button>
-              </div>
+              </motion.div>
             </div>
-            <div className="search-menu">
+            <motion.div
+              initial={{ opacity: 1, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              className="search-menu">
               <input type="text" className="search" placeholder="Search here..." onChange={handleSearch} value={keywordSearch} />
               <p>{keywordSearch}</p>
-            </div>
+            </motion.div>
 
             {/* {isLoading && <p style={{ textAlign: 'center' }}>Loading..</p>} */}
             {isLoading &&
-              <div className="content">
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4 }}
+                className="content">
+                {/* <div className="content"> */}
                 {menus.map((menu, index) => (
                   <div className="box" key={menu.id}>
                     <div className="skeleton box-images-skeleton">
@@ -135,16 +150,19 @@ const Menu = () => {
                       <div className="footer-products">
                         <div className="desc skeleton skeleton-text-desc"></div>
                         <div className="desc skeleton skeleton-text-desc"></div>
-                        <div className="btn-cart"><div className="add-cart"></div>
-                        </div>
                       </div>
                     </div>
                   </div>
                 ))}
-              </div>
+                {/* </div> */}
+              </motion.div>
             }
             {!isLoading &&
-              <div className="content">
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4 }}
+                className="content">
                 {menus.map((menu, index) => (
                   <>
                     <div className="box" key={menu.id} onClick={() => handleModal(menu.slug, menu.id, menu.name, parseFloat(menu.price))}>
@@ -158,14 +176,12 @@ const Menu = () => {
                           <div className="desc">
                             <p>{menu.desc}</p>
                           </div>
-                          <div className="btn-cart"><div className="add-cart"></div>
-                          </div>
                         </div>
                       </div>
                     </div>
                   </>
                 ))}
-              </div>
+              </motion.div>
             }
             <p className="total-row">Total {keywordButton === 1 ? 'Hibachi' : '' || keywordButton === 2 ? 'Roll' : '' || keywordButton === 3 ? 'Appetizer' : '' || keywordButton === 4 ? 'Side Order' : '' || keywordButton === '' ? 'All Menu' : '' || keywordButton === 'search' ? 'search' : ''} {rows} Page: {rows ? page + 1 : 0} of {pages}</p>
             <div className="pagination">

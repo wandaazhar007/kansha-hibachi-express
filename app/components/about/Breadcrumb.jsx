@@ -1,19 +1,28 @@
+'use client'
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const BreadcrumbAbout = () => {
 
   return (
     <>
-      {/* <section className="tf__breadcrumb" style="background: url(images/breadcrumb_bg.jpg);"> */}
       <section className="tf__breadcrumb" style={{ backgroundImage: "url(" + "/images/breadcrumb_bg.jpg" + ")" }}>
         <div className="tf__breadcrumb_overlay">
           <div className="container">
             <div className="tf__breadcrumb_text">
-              <h1>about us</h1>
-              <ul>
+              <motion.h1
+                initial={{ opacity: 1, x: -200 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >about us</motion.h1>
+              <motion.ul
+                initial={{ opacity: 1, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+              >
                 <li><Link href="/">home</Link></li>
                 <li><Link href="/about">about us</Link></li>
-              </ul>
+              </motion.ul>
             </div>
           </div>
         </div>

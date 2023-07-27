@@ -254,6 +254,7 @@ button {
     line-height: 50px;
     position: relative;
     justify-content: center;
+    list-style: none;
 }
 
 .tf__topbar_info::after {
@@ -286,15 +287,13 @@ button {
     -o-transition: all linear .3s;
 }
 
+
 @media screen and (max-width: 992px) {
     .tf__topbar_info li a {
         color: var(--colorWhite);
     }
 }
 
-.tf__topbar_info li a:hover {
-    color: var(--colorYellow);
-}
 
 .tf__topbar_info li a i {
     font-size: 1.6rem;
@@ -2697,13 +2696,14 @@ footer {
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
+    list-style: none;
 }
 
 .tf__about_us_text ul li,
 .tf__about_us_text ol li {
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     font-size: 16px;
-    color: var(--colorBlue);
+    color: var(--colorYellow) !important;
     padding-left: 85px;
     position: relative;
     margin-bottom: 35px;
@@ -2718,6 +2718,12 @@ footer {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 10px;
+    color: var(--colorBlue);
+}
+
+.tf__about_us_text ul li p {
+    color: grey;
+    font-size: 14px;
 }
 
 .tf__about_us_text ul li::after,
@@ -2838,6 +2844,11 @@ footer {
     color: var(--colorWhite);
 }
 
+.tf__about_choose {
+    border: .1rem solid salmon;
+    width: 100%;
+}
+
 .tf__about_choose_img {
     width: 405px;
     height: 465px;
@@ -2852,7 +2863,7 @@ footer {
     padding: 20px 20px 20px 55px;
     background: #f1f0fa;
     margin-top: 25px;
-    border-left: 3px solid var(--colorYellow);
+    border-left: 3px solid var(--colorBlue);
     border-radius: 10px;
     transform: skewX(-10deg);
     position: relative;
@@ -2869,7 +2880,7 @@ footer {
 
 .tf__about_choose_text_box span {
     display: block;
-    background: var(--colorYellow);
+    background: var(--colorBlue);
     font-size: 25px;
     width: 60px;
     height: 60px;
@@ -2894,7 +2905,7 @@ footer {
 
 .tf__about_choose_text_box h4 {
     text-align: left;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     margin-bottom: 10px;
     transform: skewX(10deg);
@@ -2910,10 +2921,12 @@ footer {
     -moz-transform: skewX(10deg);
     -ms-transform: skewX(10deg);
     -o-transform: skewX(10deg);
+    font-size: 14px;
+    color: grey;
 }
 
 .tf__about_choose_text_box.orange {
-    background: var(--colorYellow);
+    background: var(--colorBlue);
 }
 
 .tf__about_choose_text_box.orange span {

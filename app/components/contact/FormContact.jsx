@@ -1,10 +1,16 @@
-import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
+'use client'
+import './form-contact.scss';
+import { motion } from 'framer-motion';
+import { faArrowCircleRight, faArrowUpRightFromSquare, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import Image from 'next/image';
 
 const FormContact = () => {
   return (
-    <section className="tf__contact mt_100 xs_mt_70 mb_100 xs_mb_70">
+    <>
+      {/* <section className="tf__contact mt_100 xs_mt_70 mb_100 xs_mb_70">
       <div className="container">
         <div className="tf__contact_form_area">
           <div className="row">
@@ -12,15 +18,11 @@ const FormContact = () => {
               <div className="tf__contact_info_area">
                 <div className="tf__contact_info">
                   <h3>call</h3>
-                  {/* <Link href="tel:+16604299074" target="_blank" rel="noreferrer"> */}
-                  <p>660-429-9027</p>
-                  {/* <FontAwesomeIcon icon={faArrowCircleRight} /> */}
-                  {/* </Link> */}
+                  <p>660-429-9027  <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="icon" /></p>
                 </div>
                 <div className="tf__contact_info">
                   <h3>mail</h3>
                   <p>ss.kansha@gmail.com</p>
-                  {/* <p>wandaazhar@gmail.com</p> */}
                 </div>
                 <div className="tf__contact_info border-0 p-0 m-0">
                   <h3>location</h3>
@@ -28,45 +30,6 @@ const FormContact = () => {
                 </div>
               </div>
             </div>
-
-            {/* <div className="col-xl-7 col-md-6 col-lg-7 wow fadeInUp" data-wow-duration="1s">
-              <form className="tf__contact_form">
-                <h3>contact us</h3>
-                <div className="row">
-                  <div className="col-xl-12">
-                    <div className="tf__contact_form_input">
-                      <span><i className="fas fa-user"></i></span>
-                      <input type="text" placeholder="Name" />
-                    </div>
-                  </div>
-                  <div className="col-xl-6">
-                    <div className="tf__contact_form_input">
-                      <span><i className="fas fa-envelope"></i></span>
-                      <input type="email" placeholder="Email" />
-                    </div>
-                  </div>
-                  <div className="col-xl-6">
-                    <div className="tf__contact_form_input">
-                      <span><i className="fas fa-phone-alt"></i></span>
-                      <input type="text" placeholder="Phone" />
-                    </div>
-                  </div>
-                  <div className="col-xl-12">
-                    <div className="tf__contact_form_input">
-                      <span><i className="fas fa-book"></i></span>
-                      <input type="text" placeholder="Subject" />
-                    </div>
-                  </div>
-                  <div className="col-xl-12">
-                    <div className="tf__contact_form_input textarea">
-                      <span><i className="fas fa-pen"></i></span>
-                      <textarea rows="5" placeholder="Message"></textarea>
-                    </div>
-                    <button className="common_btn" type="submit">send message</button>
-                  </div>
-                </div>
-              </form>
-            </div> */}
           </div>
         </div>
 
@@ -83,7 +46,112 @@ const FormContact = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
+      <div className="container">
+        <section className="formContact">
+          <div className=" box box1">
+            <h1>We Are Here...</h1>
+            <p>We'd love to hear your feedback</p>
+          </div>
+          <div className=" box box2">
+            <h1>Let's Talk.</h1>
+            <p>We'd love to hear your feedback</p>
+            <Link href="#">
+              <button><FontAwesomeIcon icon={faPhone} /> Call Us</button>
+            </Link>
+          </div>
+          <div className="box box3">
+            <div className="title">
+              <div className="boxImage">
+                <Image width={500} height={500} src="/images/logo-kansha-header.png" alt="RegFood" className="logoImage" />
+              </div>
+            </div>
+            <div className="address">
+              <h3>Address:</h3>
+              <p>303 Cooper Blvd Suite I, Warrensburg, MO 64093, United States</p>
+            </div>
+            <div className="hours">
+              <h3>Hours:</h3>
+              <table>
+                <tbody>
+                  <tr>
+                    <td className="days">Sun:</td>
+                    <td className="clock">04:00 - 09:00</td>
+                  </tr>
+                  <tr>
+                    <td className="days">Mon:</td>
+                    <td className="clock">11.00 AM - 02:30 PM & 04:00 PM - 09:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td className="days">Tue:</td>
+                    <td className="clock">11.00 AM - 02:30 PM & 04:00 PM - 09:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td className="days">Wed:</td>
+                    <td className="clock">11.00 AM - 02:30 PM & 04:00 PM - 09:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td className="days">Thu:</td>
+                    <td className="clock">11.00 AM - 02:30 PM & 04:00 PM - 09:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td className="days">Fri:</td>
+                    <td className="clock">11.00 AM - 02:30 PM & 04:00 PM - 09:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td className="days">Sat:</td>
+                    <td className="clock">11.00 AM - 02:30 PM & 04:00 PM - 09:00 PM</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="contact">
+              <h3>Contact</h3>
+              <table>
+                <tbody>
+                  <tr>
+                    <td className='titleContact'>Phone:</td>
+                    <td className="detailContact"><Link href="tel:+16604299074" target="_blank" rel="noreferrer">(660) 429-9074 <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="icon" /></Link> </td>
+                  </tr>
+                  <tr>
+                    <td className="titleContact">E-mail:</td>
+                    <td className="detailContact"><Link href="mailto:ss.kansha@gmail.com" target="_blank" rel="noreferrer">ss.kansha@gmail.com <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="icon" /></Link></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div className=" box box4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12442.744552741196!2d-93.7368245!3d38.7709022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c3e304e1e59d4d%3A0xd91636cc2fb9e159!2sKansha%20Hibachi%20Express!5e0!3m2!1sen!2sus!4v1685732677839!5m2!1sen!2sus"
+              style={{ border: 0 }}
+              referrerPolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div className=" box box5">
+            <FontAwesomeIcon icon={faInstagram} className="icon" />
+            {/* <button>Follow Us</button> */}
+            <ul>
+              <li>Posts: 203</li>
+              <li>Followers: 578</li>
+              <li>Following: 20</li>
+            </ul>
+            <Link href="https://www.instagram.com/kansha_express/" target="_blank" rel="noreferrer"><span>Follow Us <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='icon' /> </span></Link>
+          </div>
+          <div className=" box box6">
+            <FontAwesomeIcon icon={faFacebook} className="icon" />
+            <Link href="https://www.facebook.com/kanshahibachiexpress/" target="_blank" rel="noreferrer">
+              <button>Join Us</button>
+            </Link>
+          </div>
+          <div className=" box box7">
+            <h1>Stay Connected...</h1>
+            <p>Lorem ipsum dolor sit amet Lorem</p>
+          </div>
+          {/* <div className=" box box8">Box 8</div> */}
+        </section>
+      </div>
+    </>
   );
 }
 

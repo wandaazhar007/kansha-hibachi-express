@@ -1,12 +1,31 @@
+'use client'
+import { motion } from 'framer-motion';
 import './refund-policy.scss';
 
 const RefundPolicy = () => {
   return (
-    <section className="refundPolicy">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2 }}
+      exit={{ opacity: 1 }}
+      className="refundPolicy">
       <div className="container">
         <div className="box-container">
-          <div className="header">Kansha Hibachi Express</div>
-          <div className="sub-header">REFUND POLICY</div>
+          <motion.div
+            initial={{ opacity: 1, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="header">
+            Kansha Hibachi Express
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 1, x: -200 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="sub-header">
+            REFUND POLICY
+          </motion.div>
           <div className="content">
             <p>
               Last Updated: June 07 2023
@@ -72,7 +91,7 @@ const RefundPolicy = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

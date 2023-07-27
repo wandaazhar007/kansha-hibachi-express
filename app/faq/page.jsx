@@ -1,5 +1,5 @@
 import './faq.scss';
-import Faq from "../components/home/Faq";
+import Faq from "../components/home/faq/Faq";
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareArrowUpRight } from '@fortawesome/free-solid-svg-icons';

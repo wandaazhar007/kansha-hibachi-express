@@ -1,11 +1,17 @@
+'use client'
 import Image from "next/image";
 import './galery-component.scss';
+import { motion } from "framer-motion";
 
 const GaleryBox = () => {
   return (
     <section className="galery-box">
       <div className="container">
-        <div className="box-container">
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="box-container">
           <div className="box-images">
             <Image src={'/images/menu2_img_1.jpg'} width={100} height={100} alt="kanhsa hibachi" />
           </div>
@@ -48,7 +54,7 @@ const GaleryBox = () => {
           <div className="box-images">
             <Image src={'/images/menu2_img_5.jpg'} width={100} height={100} alt="kanhsa hibachi" />
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
