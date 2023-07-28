@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import ReactPaginate from "react-paginate";
-import ModalProduct from "../ModalProduct";
+import ModalProduct from "../modalProduct/ModalProduct";
 import { motion } from "framer-motion";
 
 const Menu = () => {
@@ -174,7 +174,7 @@ const Menu = () => {
                         <p className="price">${menu.price}</p>
                         <div className="footer-products">
                           <div className="desc">
-                            <p>{menu.desc}</p>
+                            <p>{menu.desc.substring(0, 40)}</p>
                           </div>
                         </div>
                       </div>
