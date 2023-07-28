@@ -516,7 +516,7 @@ html {
 
 
 /* === MODAL PRODUCT */
-.modal-product {
+/* .modal-product {
   position: fixed;
   top: 5rem;
   width: 100%;
@@ -624,7 +624,6 @@ html {
 }
 
 .modal-product .box-container .box .modal-footer .add-to-cart .icon {
-  /* color: var(--colorWhite); */
   margin-right: 2rem;
 }
 
@@ -685,7 +684,7 @@ html {
   height: 5rem;
   width: 80%;
   border-radius: .5rem;
-}
+} */
 
 /* === END MODAL PRODUCT */
 

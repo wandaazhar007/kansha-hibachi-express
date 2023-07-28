@@ -1,11 +1,12 @@
 'use client'
+import './modal-product.scss';
 import { faCartPlus, faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useContext } from "react";
-import { CartContext } from "../../context/cartContext";
+import { CartContext } from "../../../context/cartContext";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
