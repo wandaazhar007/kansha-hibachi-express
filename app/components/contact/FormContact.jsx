@@ -55,8 +55,8 @@ const FormContact = () => {
           </div>
           <div className=" box box2">
             <h1>Let's Talk.</h1>
-            <p>We'd love to hear your feedback</p>
-            <Link href="#">
+            <p>Have a question or want to make a reservation? Give us a call and our friendly staff will be delighted to assist you.</p>
+            <Link href="tel:+16604299074" target="_blank" rel="noreferrer">
               <button><FontAwesomeIcon icon={faPhone} /> Call Us</button>
             </Link>
           </div>
@@ -145,8 +145,10 @@ const FormContact = () => {
             </Link>
           </div>
           <div className=" box box7">
-            <h1>Community, Connection, Care</h1>
-            <p>Join us in our commitment to make a positive impact, as we actively participate in local events and initiatives that matter to our community.</p>
+
+            <h1>Stay Connected...</h1>
+            <p>Stay connected with us on social media to get the latest updates, exclusive offers, and behind-the-scenes peeks into the hibachi magic happening at Kansha Hibachi Express. </p>
+
           </div>
           {/* <div className=" box box8">Box 8</div> */}
         </section>

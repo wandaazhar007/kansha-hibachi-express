@@ -87,7 +87,7 @@ const BannerHero = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
               className="image-right">
-              <Image src={'/images/slider_img_1.png'} alt="kansha hibachi express" height={100} width={100} />
+              <Image src={'/images/slider_img.jpg'} alt="kansha hibachi express" height={100} width={100} />
             </motion.div>
           </div>
         </div>
