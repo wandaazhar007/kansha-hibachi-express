@@ -8,27 +8,15 @@ const WhyChooseUs = () => {
       <div className="container">
         <div className="row">
           <div className="col-xxl-8 col-lg-7 wow fadeInLeft" data-wow-duration="1s">
-            <motion.div
-              initial={{ opacity: 0, y: -50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              className="tf__section_heading mb_25">
+            <div className="tf__section_heading mb_25">
               <h4>Why choose us</h4>
               <h2>Why we are the best</h2>
-            </motion.div>
+            </div>
             <div className="tf__about_choose_text">
-              <motion.p
-                initial={{ opacity: 0, scale: 0 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6 }}
-              >
+              <p>
                 At Kansha Hibachi Express, we're committed to serving you more than just exceptional food. Our friendly and attentive staff are here to make your visit an enjoyable one, providing prompt service and answering any questions you may have. We take pride in creating a dining experience that not only tantalizes your taste buds but also leaves you with a smile
-              </motion.p>
-              <motion.div
-                initial={{ opacity: 0, x: -200 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1 }}
-                className="row">
+              </p>
+              <div className="row">
                 <div className="col-xl-6">
                   <div className="tf__about_choose_text_box">
                     <span><i className="fas fa-users"></i></span>
@@ -57,18 +45,14 @@ const WhyChooseUs = () => {
                     <p>We constantly strive to enhance our menu, service, and overall experience to ensure that your next visit is even better than the last.</p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
 
           <div className="col-xxl-4 col-lg-5 wow fadeInRight" data-wow-duration="1s">
-            <motion.div
-              initial={{ opacity: 0, x: +200 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1 }}
-              className="tf__about_choose_img">
+            <div className="tf__about_choose_img">
               <Image height={100} width={100} src="/images/why_choose_img.jpg" alt="about kansha hibachi express" className="img-fluid w-100" />
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>
