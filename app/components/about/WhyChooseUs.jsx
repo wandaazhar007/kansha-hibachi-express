@@ -51,7 +51,7 @@ const WhyChooseUs = () => {
 
           <div className="col-xxl-4 col-lg-5 wow fadeInRight" data-wow-duration="1s">
             <div className="tf__about_choose_img">
-              <Image height={100} width={100} src="/images/why_choose_img.jpg" alt="about kansha hibachi express" className="img-fluid w-100" />
+              <Image height={100} width={100} src="/images/about_2.jpg" alt="about kansha hibachi express" className="img-fluid w-100" />
             </div>
           </div>
         </div>
