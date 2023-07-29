@@ -13,47 +13,30 @@ const GaleryBox = () => {
           transition={{ duration: 0.6 }}
           className="box-container">
           <div className="box-images">
-            <Image src={'/images/menu2_img_1.jpg'} width={100} height={100} alt="kanhsa hibachi" />
+            <Image src={'/images/galery_1.jpg'} width={100} height={100} alt="kanhsa hibachi" />
           </div>
           <div className="box-images">
-            <Image src={'/images/menu2_img_2.jpg'} width={100} height={100} alt="kanhsa hibachi" />
+            <Image src={'/images/galery_2.jpg'} width={100} height={100} alt="kanhsa hibachi" />
           </div>
           <div className="box-images">
-            <Image src={'/images/menu2_img_3.jpg'} width={100} height={100} alt="kanhsa hibachi" />
+            <Image src={'/images/galery_3.jpg'} width={100} height={100} alt="kanhsa hibachi" />
           </div>
           <div className="box-images">
-            <Image src={'/images/menu2_img_4.jpg'} width={100} height={100} alt="kanhsa hibachi" />
+            <Image src={'/images/galery_4.jpg'} width={100} height={100} alt="kanhsa hibachi" />
           </div>
           <div className="box-images">
-            <Image src={'/images/menu2_img_5.jpg'} width={100} height={100} alt="kanhsa hibachi" />
+            <Image src={'/images/galery_5.jpg'} width={100} height={100} alt="kanhsa hibachi" />
           </div>
           <div className="box-images">
-            <Image src={'/images/menu2_img_1.jpg'} width={100} height={100} alt="kanhsa hibachi" />
+            <Image src={'/images/galery_6.jpg'} width={100} height={100} alt="kanhsa hibachi" />
           </div>
           <div className="box-images">
-            <Image src={'/images/menu2_img_2.jpg'} width={100} height={100} alt="kanhsa hibachi" />
+            <Image src={'/images/galery_7.jpg'} width={100} height={100} alt="kanhsa hibachi" />
           </div>
           <div className="box-images">
-            <Image src={'/images/menu2_img_5.jpg'} width={100} height={100} alt="kanhsa hibachi" />
+            <Image src={'/images/galery_8.jpg'} width={100} height={100} alt="kanhsa hibachi" />
           </div>
-          <div className="box-images">
-            <Image src={'/images/menu2_img_6.jpg'} width={100} height={100} alt="kanhsa hibachi" />
-          </div>
-          <div className="box-images">
-            <Image src={'/images/menu2_img_7.jpg'} width={100} height={100} alt="kanhsa hibachi" />
-          </div>
-          <div className="box-images">
-            <Image src={'/images/menu2_img_8.jpg'} width={100} height={100} alt="kanhsa hibachi" />
-          </div>
-          <div className="box-images">
-            <Image src={'/images/menu2_img_7.jpg'} width={100} height={100} alt="kanhsa hibachi" />
-          </div>
-          <div className="box-images">
-            <Image src={'/images/menu2_img_6.jpg'} width={100} height={100} alt="kanhsa hibachi" />
-          </div>
-          <div className="box-images">
-            <Image src={'/images/menu2_img_5.jpg'} width={100} height={100} alt="kanhsa hibachi" />
-          </div>
+
         </motion.div>
       </div>
     </section>

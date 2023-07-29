@@ -110,17 +110,15 @@ const Menu = () => {
                 {/* <FontAwesomeIcon icon={faSquareCaretRight} className="icon" /> */}
                 <span>Menu Kansha</span>
               </h1>
-              <motion.div
-                initial={{ opacity: 0, x: +200 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 2 }}
-                className="btn-menu-group">
-                <button className={`btn-menu ${keywordButton === 1 ? 'active' : ''}`} onClick={() => handleClickMenu(1)}>Hibachi</button>
-                <button className={`btn-menu ${keywordButton === 2 ? 'active' : ''}`} onClick={() => handleClickMenu(2)}>Roll</button>
-                <button className={`btn-menu ${keywordButton === 3 ? 'active' : ''}`} onClick={() => handleClickMenu(3)}>Appetizer</button>
-                <button className={`btn-menu ${keywordButton === 4 ? 'active' : ''}`} onClick={() => handleClickMenu(4)}>Side Order</button>
+              <div className="btn-menu-group">
+                <button className={`btn-menu ${keywordButton === 2 ? 'active' : ''}`} onClick={() => handleClickMenu(2)}>Hibachi</button>
+                <button className={`btn-menu ${keywordButton === 6 ? 'active' : ''}`} onClick={() => handleClickMenu(6)}>Sushi Roll</button>
+                <button className={`btn-menu ${keywordButton === 1 ? 'active' : ''}`} onClick={() => handleClickMenu(1)}>Appetizer</button>
+                <button className={`btn-menu ${keywordButton === 5 ? 'active' : ''}`} onClick={() => handleClickMenu(5)}>Side Order</button>
+                <button className={`btn-menu ${keywordButton === 4 ? 'active' : ''}`} onClick={() => handleClickMenu(4)}>Add Ons</button>
+                <button className={`btn-menu ${keywordButton === 3 ? 'active' : ''}`} onClick={() => handleClickMenu(3)}>Bento Box</button>
                 <button className={`btn-menu ${keywordButton === '' ? 'active' : ''}`} onClick={() => handleClickMenu('')}>All Menu</button>
-              </motion.div>
+              </div>
             </div>
             <motion.div
               initial={{ opacity: 1, y: 100 }}
@@ -128,21 +126,13 @@ const Menu = () => {
               transition={{ duration: 1 }}
               className="search-menu">
               <input type="text" className="search" placeholder="Search here..." onChange={handleSearch} value={keywordSearch} />
-              <p>{keywordSearch}</p>
             </motion.div>
 
-            {/* {isLoading && <p style={{ textAlign: 'center' }}>Loading..</p>} */}
             {isLoading &&
-              <motion.div
-                initial={{ opacity: 0, scale: 0 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.4 }}
-                className="content">
-                {/* <div className="content"> */}
+              <div className="content">
                 {menus.map((menu, index) => (
                   <div className="box" key={menu.id}>
                     <div className="skeleton box-images-skeleton">
-                      {/* <Image height={100} width={100} src={menu.urlImage} alt={menu.name} className="skeleton skeleton-image" /> */}
                     </div>
                     <div className="box-contents">
                       <h1 className="title skeleton skeleton-text-title"></h1>
@@ -154,8 +144,7 @@ const Menu = () => {
                     </div>
                   </div>
                 ))}
-                {/* </div> */}
-              </motion.div>
+              </div>
             }
             {!isLoading &&
               <motion.div
@@ -183,7 +172,7 @@ const Menu = () => {
                 ))}
               </motion.div>
             }
-            <p className="total-row">Total {keywordButton === 1 ? 'Hibachi' : '' || keywordButton === 2 ? 'Roll' : '' || keywordButton === 3 ? 'Appetizer' : '' || keywordButton === 4 ? 'Side Order' : '' || keywordButton === '' ? 'All Menu' : '' || keywordButton === 'search' ? 'search' : ''} {rows} Page: {rows ? page + 1 : 0} of {pages}</p>
+            <p className="total-row">Total {keywordButton === 1 ? 'Appetizer' : '' || keywordButton === 2 ? 'Hibachi' : '' || keywordButton === 3 ? 'Bento' : '' || keywordButton === 4 ? 'Add Ons' : '' || keywordButton === '' ? 'All Menu' : '' || keywordButton === 'search' ? 'search' : ''} {rows} Page: {rows ? page + 1 : 0} of {pages}</p>
             <div className="pagination">
               <div className="box-container">
                 <ReactPaginate
