@@ -25,7 +25,7 @@ const GaleryBox = () => {
             <Image src={'/images/galery_4.jpg'} width={100} height={100} alt="kanhsa hibachi" />
           </div>
           <div className="box-images">
-            <Image src={'/images/galery_5.jpg'} width={100} height={100} alt="kanhsa hibachi" />
+            <Image src={'/images/galery_9.jpg'} width={100} height={100} alt="kanhsa hibachi" />
           </div>
           <div className="box-images">
             <Image src={'/images/galery_6.jpg'} width={100} height={100} alt="kanhsa hibachi" />
