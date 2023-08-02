@@ -30,52 +30,39 @@ const BoxMenu = () => {
 
   const getMenuHibachi = async () => {
     // const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products?search_query=2&page=${page}&limit=${limit}`)
-    // const response = await axios.get(`http://localhost:2000/products?search_query=2&page=${page}&limit=${limit}`)
     const response = await axios.get(`http://localhost:2000/products-per-category?search_query=2&page=${page}&limit=${limit}`)
+    // const response = await axios.get(`http://localhost:2000/products-per-category?search_query=2&page=${page}&limit=${limit}`)
     setHibachi(response.data.result);
   }
 
   const getMenuSushi = async () => {
-    // const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products?search_query=6&page=${page}&limit=${limit}`)
-    const response = await axios.get(`http://localhost:2000/products-per-category?search_query=6&page=${page}&limit=${limit}`)
+    const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products-per-category?search_query=6&page=${page}&limit=${limit}`)
+    // const response = await axios.get(`http://localhost:2000/products-per-category?search_query=6&page=${page}&limit=${limit}`)
     setSushi(response.data.result);
   }
 
   const getMenuSideOrder = async () => {
-    // const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products?search_query=5&page=${page}&limit=${limit}`)
-    const response = await axios.get(`http://localhost:2000/products-per-category?search_query=5&page=${page}&limit=${limit}`)
+    const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products-per-category?search_query=5&page=${page}&limit=${limit}`)
+    // const response = await axios.get(`http://localhost:2000/products-per-category?search_query=5&page=${page}&limit=${limit}`)
     setSideOrder(response.data.result);
   }
 
   const getMenuAppetizer = async () => {
-    // const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products?search_query=1&page=${page}&limit=${limit}`)
-    const response = await axios.get(`http://localhost:2000/products-per-category?search_query=1&page=${page}&limit=${limit}`)
+    const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products-per-category?search_query=1&page=${page}&limit=${limit}`)
+    // const response = await axios.get(`http://localhost:2000/products-per-category?search_query=1&page=${page}&limit=${limit}`)
     setAppetizer(response.data.result);
   }
 
   const getMenuAddOns = async () => {
-    // const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products?search_query=4&page=${page}&limit=${limit}`)
-    const response = await axios.get(`http://localhost:2000/products-per-category?search_query=4&page=${page}&limit=${limit}`)
+    const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products-per-category?search_query=4&page=${page}&limit=${limit}`)
+    // const response = await axios.get(`http://localhost:2000/products-per-category?search_query=4&page=${page}&limit=${limit}`)
     setAddOns(response.data.result);
   }
 
   const getMenuBentoBox = async () => {
-    // const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products?search_query=3&page=${page}&limit=${limit}`)
-    const response = await axios.get(`http://localhost:2000/products-per-category?search_query=3&page=${page}&limit=${limit}`)
+    const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products-per-category?search_query=3&page=${page}&limit=${limit}`)
+    // const response = await axios.get(`http://localhost:2000/products-per-category?search_query=3&page=${page}&limit=${limit}`)
     setBentoBox(response.data.result);
-  }
-
-  const getSearch = async () => {
-    // const responseSearch = await axios.get(`${process.env.NEXT_PUBLIC_URL_PRODUCTS_SEARCH}?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
-    // const responseSearch = await axios.get(`https://kanshaapi.birojasa-sahabat.com/search-products?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
-    const responseSearch = await axios.get(`http://localhost:2000/search-products?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
-    setTimeout(() => {
-      setMenus(responseSearch.data.result);
-      setPage(responseSearch.data.page);
-      setPages(responseSearch.data.totalPage);
-      setRows(responseSearch.data.totalRows);
-      setIsLoading(false)
-    }, 5000)
   }
 
   useEffect(() => {
