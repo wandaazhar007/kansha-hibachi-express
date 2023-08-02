@@ -9,28 +9,43 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 50rem;
-      border: .1rem solid salmon;
+      height: 30rem;
       position: relative;
 
       .bgImage {
         width: 10rem;
         height: 10rem;
         position: absolute;
-        right: 3rem;
-        top: 3rem;
-        opacity: .5;
-        animation: rotate linear 10s infinite;
+        // opacity: .9;
         z-index: 1;
       }
 
-      .bgImage2 {
-        width: 10rem;
-        height: 10rem;
+      .image1 {
+        top: 1rem;
+        right: 3rem;
+        // -webkit-animation: shake inear 7s infinite alternate;
+        z-index: 1;
+        animation: shake linear 1.5s infinite alternate;
+      }
+
+      .image2 {
+        right: 4rem;
+        bottom: 0rem;
         position: absolute;
-        right: 8rem;
-        bottom: 5rem;
-        opacity: .5;
+        animation: rotate linear 10s infinite;
+        // animation: shake linear 1.5s infinite alternate;
+      }
+
+      .image3 {
+        left: 4rem;
+        bottom: 0rem;
+        // animation: rotate linear 10s infinite;
+      }
+
+      .image4 {
+        left: 4rem;
+        top: 1rem;
+        animation: rotate linear 10s infinite;
       }
 
       a {
@@ -66,5 +81,15 @@
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
+  }
+}
+
+@keyframes shake {
+  from {
+    margin-left: 10px;
+  }
+
+  to {
+    margin-left: 0px;
   }
 }

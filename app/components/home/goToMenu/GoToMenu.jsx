@@ -10,13 +10,19 @@ const GoToMenu = () => {
       <div className="container">
 
         <div className="boxContainer">
-          <div className="bg-menu">
+          {/* <div className="bg-menu">
             <Image src="/images/bg-menu.png" width={300} height={100} alt="kansha hibachi" />
+          </div> */}
+          <div className="bgImage image1">
+            <Image src="/images/tree_2.png" width={200} height={200} alt="Kansha Hibachi Express" className="bgImage" />
           </div>
-          <div className="bgImage">
-            <Image src="/images/tree_5.png" width={200} height={200} alt="Kansha Hibachi Express" className="bgImage" />
+          <div className="bgImage image2">
+            <Image src="/images/tree_4.png" width={200} height={200} alt="Kansha Hibachi Express" className="bgImage" />
           </div>
-          <div className="bgImage2">
+          <div className="bgImage image3">
+            <Image src="/images/tree_3.png" width={200} height={200} alt="Kansha Hibachi Express" className="bgImage" />
+          </div>
+          <div className="bgImage image4">
             <Image src="/images/tree_5.png" width={200} height={200} alt="Kansha Hibachi Express" className="bgImage" />
           </div>
           <Link href="/menu">
