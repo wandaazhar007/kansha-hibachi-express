@@ -10,9 +10,12 @@ import { CartContext } from "../../../context/cartContext";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
+import ModalMaintenance from '../modalMaintenance/ModalMaintenance';
 
 const ModalProduct = ({ openModal, closeModal, propId, propName, propPrice }) => {
   if (!openModal) return null;
+
+  // const [openModal, setOpenModal] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [isLoadingBtn, setIsLoadingBtn] = useState(true);
   const [nameProduct, setNameProduct] = useState('');
@@ -23,8 +26,8 @@ const ModalProduct = ({ openModal, closeModal, propId, propName, propPrice }) =>
   const cart = useContext(CartContext);
 
   const getProductById = async () => {
-    const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products/${propId}`);
-    // const response = await axios.get(`http://localhost:2000/products/${propId}`);
+    // const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products/${propId}`);
+    const response = await axios.get(`http://localhost:2000/products/${propId}`);
 
     setTimeout(() => {
       setNameProduct(response.data.name);
@@ -38,7 +41,20 @@ const ModalProduct = ({ openModal, closeModal, propId, propName, propPrice }) =>
   const notify = () => {
     toast.success('Item has been added in the cart!', {
       position: "top-center",
-      autoClose: 3000,
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+  }
+
+  const notifyMaintenance = () => {
+    toast.warning('currently, we do not take online order, please call our phone number to order', {
+      position: "bottom-center",
+      autoClose: 7000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -52,14 +68,17 @@ const ModalProduct = ({ openModal, closeModal, propId, propName, propPrice }) =>
     getProductById();
   }, [])
 
-  const handleClick = (id, name, price) => {
-    cart.addOneToCart(id, name, price);
-    setIsLoadingBtn(false);
-    setTimeout(() => {
-      setIsLoadingBtn(true);
-      // closeModal()
-    }, 2000);
-    notify();
+  // const handleClick = (id, name, price) => {
+  //   cart.addOneToCart(id, name, price);
+  //   setIsLoadingBtn(false);
+  //   setTimeout(() => {
+  //     setIsLoadingBtn(true);
+  //   }, 2000);
+  //   notify();
+  // }
+
+  const handleClick2 = () => {
+    notifyMaintenance();
   }
   return (
     <>
@@ -96,7 +115,8 @@ const ModalProduct = ({ openModal, closeModal, propId, propName, propPrice }) =>
                 <p className="desc-detail-product">{desc}</p>
               </div>
               <div className="modal-footer">
-                <button className="add-to-cart" onClick={() => handleClick(propId, propName, propPrice)}>
+                {/* <button className="add-to-cart" onClick={() => handleClick(propId, propName, propPrice)}> */}
+                <button className="add-to-cart" onClick={() => handleClick2()}>
                   {isLoadingBtn ? (
                     <>
                       <FontAwesomeIcon icon={faCartPlus} className="icon" />
@@ -112,6 +132,8 @@ const ModalProduct = ({ openModal, closeModal, propId, propName, propPrice }) =>
           }
         </div>
       </div>
+
+      <ModalMaintenance />
 
       <ToastContainer
         position="bottom-center"

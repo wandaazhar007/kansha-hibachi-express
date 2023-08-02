@@ -2341,6 +2341,10 @@ footer {
     color: var(--colorWhite);
 }
 
+.tf__footer_content .social_link li {
+    list-style: none;
+}
+
 .tf__footer_content .social_link li a {
     color: var(--colorBlue);
     width: 35px;
@@ -2401,6 +2405,10 @@ footer {
     border-bottom: 1px solid var(--colorYellow);
     display: inline-block;
     padding-bottom: 5px;
+}
+
+.tf__footer_content ul li {
+    list-style: none;
 }
 
 .tf__footer_content ul li a {

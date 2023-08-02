@@ -51,7 +51,10 @@ const Navbar = () => {
               <Link className={`nav-link ${pathname === '/' ? 'active' : ''}`} aria-current="page" href="/" onClick={() => handleShow()}>Home</Link>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link ${pathname === '/about' ? 'active' : ''}`} href="/about" onClick={() => handleShow()}>about</Link>
+              <Link className={`nav-link ${pathname === '/about' ? 'active' : ''}`} href="/about" onClick={() => handleShow()}>About</Link>
+            </li>
+            <li className="nav-item">
+              <Link className={`nav-link ${pathname === '/menu' ? 'active' : ''}`} href="/menu" onClick={() => handleShow()}>Menu</Link>
             </li>
             {/* <li className="nav-item">
               <Link className={`nav-link ${pathname === '/menu' ? 'active' : ''}`} href="/menu" onClick={() => handleShow()}>menu</Link>
