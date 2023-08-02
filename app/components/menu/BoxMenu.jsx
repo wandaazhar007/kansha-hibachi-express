@@ -30,7 +30,7 @@ const BoxMenu = () => {
 
   const getMenuHibachi = async () => {
     // const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products?search_query=2&page=${page}&limit=${limit}`)
-    const response = await axios.get(`http://localhost:2000/products-per-category?search_query=2&page=${page}&limit=${limit}`)
+    const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products-per-category?search_query=2&page=${page}&limit=${limit}`)
     // const response = await axios.get(`http://localhost:2000/products-per-category?search_query=2&page=${page}&limit=${limit}`)
     setHibachi(response.data.result);
   }
