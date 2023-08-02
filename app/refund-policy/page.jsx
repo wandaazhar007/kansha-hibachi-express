@@ -37,7 +37,7 @@ const RefundPolicy = () => {
               <li>2. Order Cancellation and Refunds</li>
               <ol className="sub-content-header">
                 <li>
-                  <b>Online Orders:</b> If you wish to cancel an online order, please contact us at [Your Contact Information] as soon as possible. Orders that have not been processed or prepared for delivery may be eligible for cancellation and a full refund.
+                  <b>Online Orders:</b> If you wish to cancel an online order, please contact us at <b>660-429-9074</b> as soon as possible. Orders that have not been processed or prepared for delivery may be eligible for cancellation and a full refund.
                 </li>
                 <li>
                   <b>In-Person Orders</b>: For orders placed at our restaurant, please speak to a member of our staff immediately if you wish to cancel or modify your order. We will do our best to accommodate your request, subject to the order's preparation status.

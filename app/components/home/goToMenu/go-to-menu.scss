@@ -1,0 +1,70 @@
+@import '../../../style/responsive.scss';
+@import '../../../style/variable.scss';
+
+.goToMenu {
+  background-color: $colorYellow;
+
+  .container {
+    .boxContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50rem;
+      border: .1rem solid salmon;
+      position: relative;
+
+      .bgImage {
+        width: 10rem;
+        height: 10rem;
+        position: absolute;
+        right: 3rem;
+        top: 3rem;
+        opacity: .5;
+        animation: rotate linear 10s infinite;
+        z-index: 1;
+      }
+
+      .bgImage2 {
+        width: 10rem;
+        height: 10rem;
+        position: absolute;
+        right: 8rem;
+        bottom: 5rem;
+        opacity: .5;
+      }
+
+      a {
+
+        button {
+          // animation: rotate linear 5s infinite;
+          background-color: $colorBlue;
+          color: $colorWhite;
+          padding: 1rem 2rem;
+          border-radius: .5rem;
+
+          .icon {
+            margin-left: .5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}

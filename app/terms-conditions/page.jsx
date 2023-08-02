@@ -143,10 +143,10 @@ const TermsConditions = () => {
               <li>11. Governing Law and Jurisdiction</li>
               <ol className="sub-content-header">
                 <li>
-                  These Terms and Conditions shall be governed by and construed in accordance with the laws of [Your Jurisdiction].
+                  These Terms and Conditions shall be governed by and construed in accordance with the laws.
                 </li>
                 <li>
-                  Any disputes arising out of or in connection with these Terms and Conditions shall be subject to the exclusive jurisdiction of the courts of [Your Jurisdiction].
+                  Any disputes arising out of or in connection with these Terms and Conditions shall be subject to the exclusive jurisdiction of the courts.
                 </li>
               </ol>
             </ol>

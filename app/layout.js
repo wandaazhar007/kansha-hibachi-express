@@ -18,6 +18,7 @@ import Topbar from './components/Topbar'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import CartProvider from './context/cartContext'
+import SearchProvider from './context/searchContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,17 +31,19 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <CartProvider>
-        <body className={inter.className}>
-          <Topbar />
-          <header>
-            <Navbar />
-          </header>
-          <main>
-            {children}
-          </main>
-          <Footer />
-        </body>
+        <SearchProvider >
+          <body className={inter.className}>
+            <Topbar />
+            <header>
+              <Navbar />
+            </header>
+            <main>
+              {children}
+            </main>
+            <Footer />
+          </body>
+        </SearchProvider>
       </CartProvider>
-    </html>
+    </html >
   )
 }

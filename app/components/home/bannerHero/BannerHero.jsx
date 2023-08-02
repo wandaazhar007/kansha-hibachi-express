@@ -56,7 +56,7 @@ const BannerHero = () => {
               transition={{ duration: 1 }}
               className="cta-hero">
               <Link href="tel:16604299074">
-                <button className="btn-cta-hero"><i className="fas fa-phone"></i> Call Us Now</button>
+                <button className="btn-cta-hero"><i className="fas fa-phone"></i> ORDER NOW</button>
               </Link>
             </motion.div>
             <motion.div
