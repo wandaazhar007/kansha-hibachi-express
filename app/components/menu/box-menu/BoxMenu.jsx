@@ -3,7 +3,7 @@ import './box-menu.scss';
 import Image from 'next/image';
 import axios from 'axios';
 import { useEffect, useState, useContext } from "react";
-import ModalProduct from '../home/modalProduct/ModalProduct';
+import ModalProduct from '../modalProduct/ModalProduct';
 import { SearchContext } from '@/app/context/searchContext';
 
 const BoxMenu = () => {
@@ -27,37 +27,38 @@ const BoxMenu = () => {
 
   const getMenuHibachi = async () => {
     // const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products?search_query=2&page=${page}&limit=${limit}`)
-    const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products-per-category?search_query=2&page=${page}&limit=${limit}`)
+    const response = await axios.get(`${process.env.NEXT_PUBLIC_PRODUCT_PER_CATEGORY}search_query=2&page=${page}&limit=${limit}`)
+    // const response = await axios.get(`https://api.kanshamissouri.com/products-per-category?search_query=2&page=${page}&limit=${limit}`)
     // const response = await axios.get(`http://localhost:2000/products-per-category?search_query=2&page=${page}&limit=${limit}`)
     setHibachi(response.data.result);
   }
 
   const getMenuSushi = async () => {
-    const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products-per-category?search_query=6&page=${page}&limit=${limit}`)
+    const response = await axios.get(`${process.env.NEXT_PUBLIC_PRODUCT_PER_CATEGORY}search_query=6&page=${page}&limit=${limit}`)
     // const response = await axios.get(`http://localhost:2000/products-per-category?search_query=6&page=${page}&limit=${limit}`)
     setSushi(response.data.result);
   }
 
   const getMenuSideOrder = async () => {
-    const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products-per-category?search_query=5&page=${page}&limit=${limit}`)
+    const response = await axios.get(`${process.env.NEXT_PUBLIC_PRODUCT_PER_CATEGORY}search_query=5&page=${page}&limit=${limit}`)
     // const response = await axios.get(`http://localhost:2000/products-per-category?search_query=5&page=${page}&limit=${limit}`)
     setSideOrder(response.data.result);
   }
 
   const getMenuAppetizer = async () => {
-    const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products-per-category?search_query=1&page=${page}&limit=${limit}`)
+    const response = await axios.get(`${process.env.NEXT_PUBLIC_PRODUCT_PER_CATEGORY}search_query=1&page=${page}&limit=${limit}`)
     // const response = await axios.get(`http://localhost:2000/products-per-category?search_query=1&page=${page}&limit=${limit}`)
     setAppetizer(response.data.result);
   }
 
   const getMenuAddOns = async () => {
-    const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products-per-category?search_query=4&page=${page}&limit=${limit}`)
+    const response = await axios.get(`${process.env.NEXT_PUBLIC_PRODUCT_PER_CATEGORY}search_query=4&page=${page}&limit=${limit}`)
     // const response = await axios.get(`http://localhost:2000/products-per-category?search_query=4&page=${page}&limit=${limit}`)
     setAddOns(response.data.result);
   }
 
   const getMenuBentoBox = async () => {
-    const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products-per-category?search_query=3&page=${page}&limit=${limit}`)
+    const response = await axios.get(`${process.env.NEXT_PUBLIC_PRODUCT_PER_CATEGORY}search_query=3&page=${page}&limit=${limit}`)
     // const response = await axios.get(`http://localhost:2000/products-per-category?search_query=3&page=${page}&limit=${limit}`)
     setBentoBox(response.data.result);
   }

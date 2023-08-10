@@ -1,6 +1,6 @@
 import './menu.scss';
-import BoxMenu from '../components/menu/BoxMenu';
-import SearchMenu from '../components/menu/SearchMenu';
+import BoxMenu from '../components/menu/box-menu/BoxMenu';
+import SearchMenu from '../components/menu/search-menu/SearchMenu';
 
 export const metadata = {
   title: 'Menu Kansha Hibachi Express',

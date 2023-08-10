@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import ReactPaginate from "react-paginate";
-import ModalProduct from "../modalProduct/ModalProduct";
+import ModalProduct from "../../menu/modalProduct/ModalProduct";
 import { motion } from "framer-motion";
 
 const Menu = () => {

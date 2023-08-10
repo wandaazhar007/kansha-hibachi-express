@@ -11,7 +11,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
 
-const ModalProduct = ({ openModal, closeModal, propId, propName, propPrice }) => {
+const ModalProduct = ({ openModal, closeModal, propId }) => {
   if (!openModal) return null;
 
   const [isLoading, setIsLoading] = useState(true);
@@ -24,8 +24,7 @@ const ModalProduct = ({ openModal, closeModal, propId, propName, propPrice }) =>
   const cart = useContext(CartContext);
 
   const getProductById = async () => {
-    const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products/${propId}`);
-    // const response = await axios.get(`http://localhost:2000/products/${propId}`);
+    const response = await axios.get(`${process.env.NEXT_PUBLIC_PRODUCT_ALL}${propId}`);
 
     setTimeout(() => {
       setNameProduct(response.data.name);

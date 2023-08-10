@@ -5,7 +5,7 @@ import { faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContext, useState } from "react";
 import axios from "axios";
-import ModalProduct from '../home/modalProduct/ModalProduct';
+import ModalProduct from '../modalProduct/ModalProduct';
 import { SearchContext } from '@/app/context/searchContext';
 
 const SearchMenu = () => {
@@ -21,9 +21,7 @@ const SearchMenu = () => {
   const [menus, setMenus] = useState([]);
 
   const getSearch = async () => {
-    // const responseSearch = await axios.get(`${process.env.NEXT_PUBLIC_URL_PRODUCTS_SEARCH}?search_query=${keywordSearch}&page=${page}&limit=${limit}`);
-    const responseSearch = await axios.get(`https://kanshaapi.birojasa-sahabat.com/search-products?search_query=${querySearch}`);
-    // const responseSearch = await axios.get(`http://localhost:2000/search-products?search_query=${querySearch}`);
+    const responseSearch = await axios.get(`${process.env.NEXT_PUBLIC_PRODUCT_SEARCH}search_query=${querySearch}`);
     setTimeout(() => {
       setMenus(responseSearch.data.result);
       setIsLoading(false)
@@ -31,7 +29,6 @@ const SearchMenu = () => {
   }
 
   const handleSearch = (e) => {
-    // setKeywordSearch(e.target.value);
     setQuerySearch(e.target.value);
     setIsLoading(true);
     getSearch();
@@ -46,7 +43,6 @@ const SearchMenu = () => {
   }
 
   const handleReset = () => {
-    // setKeywordSearch('');
     setQuerySearch('');
   }
 
