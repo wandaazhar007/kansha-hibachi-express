@@ -17,8 +17,6 @@ const BoxMenu = () => {
   const [propName, setPropName] = useState('');
   const [propPrice, setPropPrice] = useState(0);
   const [limit, setLimit] = useState("");
-  const [pages, setPages] = useState(0);
-  const [keywordButton, setKeywordButton] = useState("");
   const [hibachi, setHibachi] = useState([]);
   const [sushi, setSushi] = useState([]);
   const [sideOrder, setSideOrder] = useState([]);
@@ -26,7 +24,6 @@ const BoxMenu = () => {
   const [addOns, setAddOns] = useState([]);
   const [bentoBox, setBentoBox] = useState([]);
   const [page, setPage] = useState(0);
-  const [keywordSearch, setKeywordSearch] = useState("");
 
   const getMenuHibachi = async () => {
     // const response = await axios.get(`https://kanshaapi.birojasa-sahabat.com/products?search_query=2&page=${page}&limit=${limit}`)
