@@ -8,7 +8,7 @@ import ContactSection from "../components/home/contactSection/ContactSection";
 import WhyChooseUs2 from "../components/about/WhyChooseUs2";
 export const metadata = {
   title: 'About Kansha Hibachi Express',
-  description: 'Discover the authentic flavors of hibachi cuisine at Kansha Hibachi Express. Indulge in sizzling hibachi grills, premium ingredients, and warm hospitality. Join us on a culinary journey and unleash your taste buds with every delightful dish. Our commitment to sustainability and community involvement makes us more than just a restaurant. Experience the joy of Kansha – gratitude in every flavorful bite.',
+  description: 'Discover the heart and soul of Kansha Hibachi Express. Immerse yourself in the world of authentic hibachi cuisine, sizzling grills, and warm hospitality. Join our culinary journey and experience the joy of Kansha – where every dish is a celebration of flavor and culture.',
 }
 const AboutPage = () => {
   return (

@@ -9,7 +9,7 @@ import GoToMenu from './components/home/goToMenu/GoToMenu'
 
 export const metadata = {
   title: 'Kansha Hibachi Express - Authentic Hibachi Delights',
-  description: 'Indulge in Authentic Hibachi Delights at Kansha Hibachi Express. Unleash your taste buds with flavorful creations brought to life through sizzling hibachi cuisine. Join us for an unforgettable dining experience. Call us now to reserve your table and embark on a culinary journey.',
+  description: 'IExperience the art of hibachi cuisine at Kansha Hibachi Express. Indulge in sizzling grills, premium ingredients, and warm hospitality. Join us for an authentic culinary journey and unleash your taste buds with every flavorful dish.',
 }
 
 export default function Home() {
