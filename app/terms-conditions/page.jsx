@@ -1,5 +1,3 @@
-
-// import './terms-conditions.scss';
 import TermsConditions from '../components/terms-conditions/TermsConditions';
 
 export const metadata = {
