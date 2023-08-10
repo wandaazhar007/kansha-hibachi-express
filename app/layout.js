@@ -1,4 +1,3 @@
-// import './globals.css'
 import '../public/css/all.min.css'
 import '../public/css/animate.css'
 import '../public/css/bootstrap.min.css'
