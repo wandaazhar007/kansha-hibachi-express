@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const DailyOffer = () => {
@@ -6,8 +5,6 @@ const DailyOffer = () => {
     <section className="dialy-offer">
       <div className="container">
         <div className="heading-dialy-offer">
-          {/* <h1>Favorite</h1> */}
-          {/* <h1>Up to 50% off</h1> */}
         </div>
         <div className="content-dialy-offer">
           <div className=" box" style={{ backgroundImage: "url(" + "/images/offer_item_img1.jpg" + ")" }}>
