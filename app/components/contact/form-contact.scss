@@ -6,19 +6,15 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(15rem, auto);
-  // row-gap: 2rem;
   gap: 2rem;
-  // border: .1rem solid salmon;
 
   .box {
     border-radius: 1rem;
-    // border: .1rem sol
   }
 
   .box1 {
     grid-column: span 3;
     grid-row: span 2;
-    // background-color: #B4EACD;
     max-width: 110rem;
     padding: 2rem;
     display: flex;
@@ -98,7 +94,6 @@
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
-    // width: 40rem;
     border: .1rem solid $colorGrey;
     border-radius: 1rem;
 
@@ -108,21 +103,14 @@
     }
 
     .title {
-      // border-bottom: .01rem solid grey;
 
       .boxImage {
         width: 100%;
         height: 100%;
-        // border: .1rem solid salmon;
-
-        // img {
-        //   width: 50rem;
-        // }
 
         @include tablet {
           width: 70%;
           margin: 0 auto;
-          // height: 70%;
         }
       }
 
@@ -157,8 +145,6 @@
     }
 
     .hours {
-      // border-bottom: .01rem solid grey;
-
       h3 {
         font-size: 1.6rem;
         font-weight: 700;
@@ -168,7 +154,6 @@
       table {
         margin-top: 1rem;
         margin-bottom: 2rem;
-        // border: .1rem solid salmon;
 
         tbody {
           tr {
@@ -176,9 +161,6 @@
               padding-top: 1rem;
               font-size: 1.4rem;
               color: #c4c4c4;
-
-              // border: .1rem solid salmon;
-              // width: 10rem;
             }
 
             .days {
@@ -188,8 +170,6 @@
             .clock {
               padding-left: 1.5rem;
               font-size: 1.3rem;
-
-              // color: salmon;
             }
           }
         }
@@ -240,10 +220,8 @@
   .box4 {
     grid-column: span 3;
     grid-row: span 3;
-    // background-color: grey;
     border-radius: 1rem;
     overflow: hidden;
-    // margin-left: 2rem;
 
 
     @include tablet {
@@ -260,10 +238,7 @@
 
 
   .box5 {
-    // max-width: 10rem;
-    // margin-left: 2rem;
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 71%, rgba(252, 176, 69, 1) 100%);
-    // border: .1rem solid $colorGrey;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -271,8 +246,6 @@
     gap: 1rem;
     padding: 1rem;
     box-sizing: border-box;
-    // padding: 3rem;
-    // color: white;
 
     @include tablet {
       grid-column: span 2;
@@ -293,7 +266,6 @@
       margin: 0 auto;
       text-align: center;
       color: white;
-      // border: .1rem solid salmon;
     }
 
     span {
@@ -305,17 +277,8 @@
         height: 1.5rem;
         width: 1.5rem;
         margin-left: .5 rem;
-        // color: #2841cb;
       }
     }
-
-    // button {
-    //   padding: 1rem 2rem;
-    //   background-color: $colorBlue;
-    //   color: $colorWhite;
-    //   border-radius: .5rem;
-    //   font-size: 1.4rem;
-    // }
   }
 
   .box6 {
@@ -324,7 +287,6 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    // border: .1rem solid $colorGrey;
     background-color: #4267B2;
     padding: 1rem;
     box-sizing: border-box;
@@ -353,13 +315,11 @@
   .box7 {
     grid-column: span 2;
     grid-row: span 1;
-    // max-width: 110rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     grid-area: 1rem;
-    // border: .1rem solid salmon;
     padding: 3rem;
     gap: 1rem;
 
