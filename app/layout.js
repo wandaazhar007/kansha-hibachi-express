@@ -23,21 +23,24 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <CartProvider>
-        <SearchProvider >
-          <body className={inter.className}>
-            <Topbar />
-            <header>
-              <Navbar />
-            </header>
-            <main>
-              {children}
-            </main>
-            <Footer />
-          </body>
-        </SearchProvider>
-      </CartProvider>
-    </html >
+    <>
+
+      <html lang="en">
+        <CartProvider>
+          <SearchProvider >
+            <body className={inter.className}>
+              <Topbar />
+              <header>
+                <Navbar />
+              </header>
+              <main>
+                {children}
+              </main>
+              <Footer />
+            </body>
+          </SearchProvider>
+        </CartProvider>
+      </html >
+    </>
   )
 }
