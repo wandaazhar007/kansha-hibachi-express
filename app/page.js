@@ -1,5 +1,4 @@
 import BannerHero from './components/home/bannerHero/BannerHero'
-import Menu from './components/home/menu/Menu'
 import Counter from './components/home/Counter'
 import Reviews from './components/home/reviews/Reviews'
 import ContactSection from './components/home/contactSection/ContactSection'
@@ -25,7 +24,6 @@ export default function Home() {
         <link rel="icon" href="/images/logo-kansha-header.png" />
       </Head>
       <BannerHero />
-      {/* <Menu /> */}
       <GoToMenu />
       <FaqComponent />
       <Reviews />
