@@ -17,7 +17,6 @@ const SearchMenu = () => {
   const [propId, setPropId] = useState('');
   const [propName, setPropName] = useState('');
   const [propPrice, setPropPrice] = useState(0);
-  // const [keywordSearch, setKeywordSearch] = useState("");
   const [msg, setMsg] = useState("");
   const [menus, setMenus] = useState([]);
 
