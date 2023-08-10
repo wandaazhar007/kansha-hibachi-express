@@ -1,7 +1,6 @@
 'use client'
 import './form-contact.scss';
-import { motion } from 'framer-motion';
-import { faArrowCircleRight, faArrowUpRightFromSquare, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUpRightFromSquare, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -10,43 +9,6 @@ import Image from 'next/image';
 const FormContact = () => {
   return (
     <>
-      {/* <section className="tf__contact mt_100 xs_mt_70 mb_100 xs_mb_70">
-      <div className="container">
-        <div className="tf__contact_form_area">
-          <div className="row">
-            <div className="col-xl-12 col-md-12 col-lg-12 wow fadeInUp" data-wow-duration="1s">
-              <div className="tf__contact_info_area">
-                <div className="tf__contact_info">
-                  <h3>call</h3>
-                  <p>660-429-9027  <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="icon" /></p>
-                </div>
-                <div className="tf__contact_info">
-                  <h3>mail</h3>
-                  <p>ss.kansha@gmail.com</p>
-                </div>
-                <div className="tf__contact_info border-0 p-0 m-0">
-                  <h3>location</h3>
-                  <p>303 Cooper Blvd Suite I, Warrensburg, MO 64093, United States</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="tf__contact_map_area">
-          <div className="row mt_100 xs_mt_70">
-            <div className="col-12 wow fadeInUp" data-wow-duration="1s">
-              <div className="tf__contact_map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12442.744552741196!2d-93.7368245!3d38.7709022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c3e304e1e59d4d%3A0xd91636cc2fb9e159!2sKansha%20Hibachi%20Express!5e0!3m2!1sen!2sus!4v1685732677839!5m2!1sen!2sus"
-                  style={{ border: 0 }}
-                  referrerPolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> */}
       <div className="container">
         <section className="formContact">
           <div className=" box box1">
@@ -130,7 +92,6 @@ const FormContact = () => {
           </div>
           <div className=" box box5">
             <FontAwesomeIcon icon={faInstagram} className="icon" />
-            {/* <button>Follow Us</button> */}
             <ul>
               <li>Posts: 40</li>
               <li>Followers: 179</li>
@@ -145,12 +106,9 @@ const FormContact = () => {
             </Link>
           </div>
           <div className=" box box7">
-
             <h1>Stay Connected...</h1>
             <p>Stay connected with us on social media to get the latest updates, exclusive offers, and behind-the-scenes peeks into the hibachi magic happening at Kansha Hibachi Express. </p>
-
           </div>
-          {/* <div className=" box box8">Box 8</div> */}
         </section>
       </div>
     </>
