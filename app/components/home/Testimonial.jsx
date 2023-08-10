@@ -2,7 +2,6 @@ import Image from "next/image";
 
 const Testimonial = () => {
   return (
-    // <section className="tf__testimonial pt_90 xs_pt_60 pb_100 xs_pb_70" style="background: url(images/testimonial_bg.jpg);">
     <section className="tf__testimonial pt_90 xs_pt_60 pb_100 xs_pb_70" style={{ backgroundImage: "url(" + "/images/testimonial_bg.jpg" + ")" }}>
       <div className="container">
         <div className="row wow fadeInUp" data-wow-duration="1s">
