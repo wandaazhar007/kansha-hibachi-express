@@ -16,14 +16,12 @@
         width: 10rem;
         height: 10rem;
         position: absolute;
-        // opacity: .9;
         z-index: 1;
       }
 
       .image1 {
         top: 1rem;
         right: 3rem;
-        // -webkit-animation: shake inear 7s infinite alternate;
         z-index: 1;
         animation: shake linear 1.5s infinite alternate;
       }
@@ -33,13 +31,11 @@
         bottom: 0rem;
         position: absolute;
         animation: rotate linear 10s infinite;
-        // animation: shake linear 1.5s infinite alternate;
       }
 
       .image3 {
         left: 4rem;
         bottom: 0rem;
-        // animation: rotate linear 10s infinite;
       }
 
       .image4 {
@@ -51,7 +47,6 @@
       a {
 
         button {
-          // animation: rotate linear 5s infinite;
           background-color: $colorBlue;
           color: $colorWhite;
           padding: 1rem 2rem;
