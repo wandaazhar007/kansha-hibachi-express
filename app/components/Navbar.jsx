@@ -18,7 +18,6 @@ const Navbar = () => {
 
   const changeTopbar = () => {
     // console.log(window.scrollY);
-    // const window = 
     if (window.scrollY >= 10) {
       setHideTopbar(true);
     } else {
@@ -29,10 +28,8 @@ const Navbar = () => {
   if (typeof window !== "undefined") {
     window.addEventListener('scroll', changeTopbar);
   }
-  // window.addEventListener('scroll', changeTopbar);
   const handleShow = () => {
     setShow(!show);
-    // alert("test")
   }
   return (
     <nav className={`navbar navbar-expand-lg main_menu ${hideTopbar ? 'menu_fix' : ''} `}>
@@ -56,12 +53,6 @@ const Navbar = () => {
             <li className="nav-item">
               <Link className={`nav-link ${pathname === '/menu' ? 'active' : ''}`} href="/menu" onClick={() => handleShow()}>Menu</Link>
             </li>
-            {/* <li className="nav-item">
-              <Link className={`nav-link ${pathname === '/menu' ? 'active' : ''}`} href="/menu" onClick={() => handleShow()}>menu</Link>
-            </li> */}
-            {/* <li className="nav-item">
-              <Link className={`nav-link ${pathname === '/chefs' ? 'active' : ''}`} href="/chefs" onClick={() => handleShow()}>chefs</Link>
-            </li> */}
             <li className="nav-item">
               <Link className={`nav-link ${pathname === '/contact' ? 'active' : ''}`} href="/contact" onClick={() => handleShow()}>contact</Link>
             </li>
@@ -71,16 +62,13 @@ const Navbar = () => {
               <Link href="tel:+16604299074" target="_blank" rel="noreferrer"><i className="fas fa-phone"></i></Link>
             </li>
             <li>
-              {/* <Link href="#"> */}
               {productsCount > 0 ? (
                 <>
-                  {/* <FontAwesomeIcon icon={faCartShopping} className="icons" /> {productsCount} */}
                   <Link href="/cart" onClick={(() => handleShow())}>
                     {productsCount}
                   </Link>
                 </>
               ) : '0'}
-              {/* </Link> */}
             </li>
           </ul>
         </div>
