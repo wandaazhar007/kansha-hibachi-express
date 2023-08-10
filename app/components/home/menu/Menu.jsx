@@ -107,7 +107,6 @@ const Menu = () => {
           <div className="box-container">
             <div className="header">
               <h1 className="title">
-                {/* <FontAwesomeIcon icon={faSquareCaretRight} className="icon" /> */}
                 <span>Menu Kansha</span>
               </h1>
               <div className="btn-menu-group">
