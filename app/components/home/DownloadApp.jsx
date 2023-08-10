@@ -5,7 +5,6 @@ const DownloadApp = () => {
     <section className="tf__download mt_100 xs_mt_70">
       <div className="row">
         <div className="col-xl-4 col-lg-4">
-          {/* <div className="tf__download_text_bg" style="background: url(images/download_img.png);"> */}
           <div className="tf__download_text_bg" style={{ backgroundImage: "url(" + "/images/download_img.png" + ")" }}>
             <div className="tf__download_text_overlay">
               <div className="tf__download_text wow fadeInUp" data-wow-duration="1s">
