@@ -96,7 +96,8 @@ const BoxMenu = () => {
                     <div className="col-right">
                       <div className="top">
                         <h1 className="title">{menu.name}</h1>
-                        <h3 className='price'>{menu.price}</h3>
+                        {/* <h3 className='price'>{menu.price}</h3> */}
+                        <h3 className='price'>{menu.name === 'Hibachi Lobster' ? 'Market Price' : menu.price}</h3>
                       </div>
                       <p className='desc'>{menu.desc.substring(0, 80)}</p>
                     </div>
@@ -156,7 +157,8 @@ const BoxMenu = () => {
                     <div className="col-right">
                       <div className="top">
                         <h1 className="title">{menu.name}</h1>
-                        <h3 className='price'>{menu.price}</h3>
+                        {/* <h3 className='price'>{menu.price}</h3> */}
+                        <h3 className='price'>{menu.name === 'Lobster' ? 'Market Price' : menu.price}</h3>
                       </div>
                       <p className='desc'>{menu.desc.substring(0, 80)}</p>
                     </div>
@@ -196,7 +198,8 @@ const BoxMenu = () => {
                     <div className="col-right">
                       <div className="top">
                         <h1 className="title">{menu.name}</h1>
-                        <h3 className='price'>{menu.price}</h3>
+                        {/* <h3 className='price'>{menu.price}</h3> */}
+                        <h3 className='price'>{menu.name === 'Lobster Roll' ? 'Market Price' : menu.price}</h3>
                       </div>
                       <p className='desc'>{menu.desc.substring(0, 80)}</p>
                     </div>

@@ -99,7 +99,8 @@ const ModalProduct = ({ openModal, closeModal, propId }) => {
                   <Image src={urlImage} alt="sakura sushi" width={500} height={500} />
                 </div>
                 <h1 className="title-detail-product">{nameProduct}</h1>
-                <h1 className="price-detail-product">${price}</h1>
+                {/* <h1 className="price-detail-product">${price}</h1> */}
+                <h1 className="price-detail-product">{nameProduct == 'Lobster' ? 'Market Price' : nameProduct == 'Hibachi Lobster' ? 'Market Price' : nameProduct == 'Lobster Roll' ? 'Market Price' : `$${price}`}</h1>
                 <p className="desc-detail-product">{desc}</p>
               </div>
               <div className="modal-footer">

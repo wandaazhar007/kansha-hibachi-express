@@ -90,7 +90,9 @@ const SearchMenu = () => {
                             </div>
                             <div className="box-contents">
                               <h1 className="title" >{menu.name}</h1>
-                              <p className="price">${menu.price}</p>
+                              {/* <p className="price">${menu.price}</p> */}
+                              {/* `$${menu.price}` */}
+                              <p className="price">{menu.name == 'Lobster' ? 'Market Price' : menu.name == 'Hibachi Lobster' ? 'Market Price' : menu.name == 'Lobster Roll' ? 'Market Price' : `$${menu.price}`}</p>
                               <div className="footer-products">
                                 <div className="desc">
                                   <p>{menu.desc.substring(0, 40)}</p>
