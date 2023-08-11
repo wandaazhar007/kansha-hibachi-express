@@ -1,4 +1,4 @@
-# Restaurant Website using Next.js, React, and Node.js
+# Restaurant Website using Next.js, React, And More
 
 Welcome to the Website repository! This project is a dynamic and modern website for a restaurant, developed using Next.js, React, and Node.js. It features an enticing user interface and a seamless browsing experience, all backed by a robust backend built with Node.js, Express, Sequelize, MySQL, and JWT authentication.
 
