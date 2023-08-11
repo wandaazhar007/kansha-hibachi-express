@@ -1,6 +1,12 @@
 # Restaurant Website using Next.js, React, and Node.js
 
-Welcome to the Kansha Website repository! This project is a dynamic and modern website for a restaurant, developed using Next.js, React, and Node.js. It features an enticing user interface and a seamless browsing experience, all backed by a robust backend built with Node.js, Express, Sequelize, MySQL, and JWT authentication.
+Welcome to the Website repository! This project is a dynamic and modern website for a restaurant, developed using Next.js, React, and Node.js. It features an enticing user interface and a seamless browsing experience, all backed by a robust backend built with Node.js, Express, Sequelize, MySQL, and JWT authentication.
+
+<img src="public/images/ss_1.png" alt="Screenshot" width="400"/> <img src="public/images/ss_2.png" alt="Screenshot" width="400"/>
+<img src="public/images/ss_3.png" alt="Screenshot" width="400"/> <img src="public/images/ss_4.png" alt="Screenshot" width="400"/>
+<img src="public/images/ss_5.png" alt="Screenshot" width="400"/> <img src="public/images/ss_6.png" alt="Screenshot" width="400"/>
+<img src="public/images/ss_7.png" alt="Screenshot" width="400"/> <img src="public/images/ss_8.png" alt="Screenshot" width="400"/>
+<img src="public/images/ss_9.png" alt="Screenshot" width="400"/> <img src="public/images/ss_10.png" alt="Screenshot" width="400"/>
 
 ## Features
 
